@@ -1,0 +1,377 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Fri, 9 Mar
+ 2018 12:36:42 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id D63BD25A1F; Fri,  9 Mar 2018
+ 12:36:42 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id CAF2325A1E	for
+ <rz+certapple@hs-esslingen.de>; Fri,  9 Mar 2018 12:36:42 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.011
+X-Spam-Level:
+X-Spam-Status: No, score=-4.011 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, ENGLISH_UCE_SUBJECT=2.899, RCVD_IN_DNSWL_HI=-5,
+	T_RP_MATCHES_RCVD=-0.01] autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ 9nKnU90+XdYp for <rz+certapple@hs-esslingen.de>;	Fri,  9 Mar 2018 12:36:41
+ +0100 (CET)
+Received: from irt-mx.dfn-cert.de (irt-mx.dfn-cert.de [193.174.13.208])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Fri,  9 Mar 2018 12:36:40 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=sha-256; boundary="===============5939986227424713488=="
+Subject: =?utf-8?q?=5BADV=5D_UPDATE=3A_DFN-CERT-2018-0399_PHP=3A_Eine_Schwa?=
+ =?utf-8?q?chstelle_erm=C3=B6glicht_einen_Denial-of-Service-Angriff?=
+To: <rz+certapple@hs-esslingen.de>
+From: =?utf-8?q?DFN-CERT_Portal?= <portal@dfn-cert.de>
+Message-ID: <4366f4ed-b43e-4e31-9f6e-c019153ba8f1@dfn-cert.de>
+Date: Fri, 9 Mar 2018 11:35:09 +0000
+Return-Path: portal@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;-833534;0;PM
+MIME-Version: 1.0
+
+--===============5939986227424713488==
+Content-Type: multipart/mixed; boundary="===============3767405616695366459=="
+
+--===============3767405616695366459==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+TGllYmUgS29sbGVnaW5uZW4gdW5kIEtvbGxlZ2VuLAoKYml0dGUgYmVhY2h0ZW4gU2llIGRpZSBJ
+bmZvcm1hdGlvbmVuIHp1IGRlbiB2ZXJmw7xnYmFyZW4gU2ljaGVyaGVpdHN1cGRhdGVzCm9kZXIg
+V29ya2Fyb3VuZHMgaW4gZGVyIGZvbGdlbmRlbiBTaWNoZXJoZWl0c21lbGR1bmcuCgpIaXN0b3Jp
+ZToKClZlcnNpb24gMiAoMDkuMDMuMTgpOgogICAgRsO8ciBTVVNFIExpbnV4IEVudGVycHJpc2Ug
+U29mdHdhcmUgRGV2ZWxvcG1lbnQgS2l0IDEyIFNQMiB1bmQgMTIgU1AzIHNvd2llCiAgICBTVVNF
+IExpbnV4IEVudGVycHJpc2UgTW9kdWxlIGZvciBXZWIgU2NyaXB0aW5nIDEyIHN0ZWhlbgogICAg
+U2ljaGVyaGVpdHN1cGRhdGVzIGbDvHIgJ3BocDcnIGJlcmVpdCwgdW0gZGllc2UgU2Nod2FjaHN0
+ZWxsZSB1bmQgZWluZW4gQnVnCiAgICB6dSBiZWhlYmVuLgpWZXJzaW9uIDEgKDAyLjAzLjE4KToK
+ICAgIE5ldWVzIEFkdmlzb3J5CgoKQmV0cm9mZmVuZSBTb2Z0d2FyZToKCiAgUEhQIDwgNy4yLjMK
+ICBQSFAgPCA3LjEuMTUKICBQSFAgPCA3LjAuMjgKICBQSFAgPCA1LjYuMzQKCgpCZXRyb2ZmZW5l
+IFBsYXR0Zm9ybWVuOgoKICBSZWQgSGF0IEZlZG9yYSAyNwogIFJlZCBIYXQgRmVkb3JhIDI2CiAg
+TWljcm9zb2Z0IFdpbmRvd3MKICBHTlUvTGludXgKICBBcHBsZSBNYWMgT1MKICBTVVNFIExpbnV4
+IEVudGVycHJpc2UgU29mdHdhcmUgRGV2ZWxvcG1lbnQgS2l0ICAxMiBTUDMKICBTVVNFIExpbnV4
+IEVudGVycHJpc2UgU29mdHdhcmUgRGV2ZWxvcG1lbnQgS2l0ICAxMiBTUDIKICBTVVNFIExpbnV4
+IEVudGVycHJpc2UgTW9kdWxlIGZvciBXZWIgU2NyaXB0aW5nIDEyCgoKCkJld2VydHVuZzoKCkdl
+c2FtdHJpc2lrbyAoREFGKTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEdl
+cmluZwoKQmV3ZXJ0dW5nIGdlbcOkw58gQ1ZTUyB2MjoKQmFzaXNyaXNpa28gKENWU1MgQmFzZSBT
+Y29yZSk6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgNS4wCkFrdHVlbGxlcyBTY2hhZGVu
+c3BvdGVuemlhbCAoVGVtcG9yYWwgU2NvcmUpOiAgICAgICAgICAgICAgIDMuOQoKQW5ncmlmZnN2
+ZWt0b3IgKEFWKTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5ldHp3ZXJrCkFu
+Z3JpZmZza29tcGxleGl0w6R0IChBQyk6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5p
+ZWRyaWcKQXV0aGVudGlmaXppZXJ1bmcgKEF1KTogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgIEtlaW5lCgpBdXN3aXJrdW5nOgpWZXJ0cmF1bGljaGtlaXQgKEMpOiAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgS2VpbmUKSW50ZWdyaXTDpHQgKEkpOiAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBLZWluZQpWZXJmw7xnYmFya2VpdCAo
+QSk6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVGVpbHdlaXNlCgpBdXNudXR6
+YmFya2VpdCAoRSk6ICAgICAgICAgICAgICAgICAgUHJvb2Ytb2YtQ29uY2VwdCBleGlzdGllcnQK
+VmVyZsO8Z2JhcmUgR2VnZW5tYcOfbmFobWUgKFJMKTogICAgICAgICAgICAgICAgICBPZmZpemll
+bGxlciBGaXgKQmVyaWNodHN6dXZlcmzDpHNzaWdrZWl0IChSQyk6ICAgICAgICAgICAgICAgICAg
+ICAgICAgIEJlc3TDpHRpZ3QKClZla3RvcjogICAgICAgICAgICAgQVY6Ti9BQzpML0F1Ok4vQzpO
+L0k6Ti9BOlAvRTpQT0MvUkw6T0YvUkM6QwoKCkVpbiBlbnRmZXJudGVyLCBuaWNodCBhdXRoZW50
+aXNpZXJ0ZXIgQW5ncmVpZmVyIGthbm4gZWluZSBTY2h3YWNoc3RlbGxlIGluCmRlbiBsZXR6dGVu
+IFBIUC1WZXJzaW9uZW4gYXVzbnV0emVuLCB1bSBlaW5lbiBBYnN0dXJ6IHZvbiBQSFAgdW5kIHNv
+IGVpbmVuCkRlbmlhbC1vZi1TZXJ2aWNlIChEb1MpLVp1c3RhbmQgZsO8ciBtaXQgUEhQIHZlcmtu
+w7xwZnRlIEFud2VuZHVuZ2VuIHp1CmJld2lya2VuLgoKRGllIEVudHdpY2tsZXIgdm9uIFBIUCBo
+YWJlbiBkaWUgVmVyc2lvbmVuIDUuNi4zNCwgNy4wLjI4LCA3LjEuMTUgdW5kIDcuMi4zCmFscyBT
+aWNoZXJoZWl0c3VwZGF0ZXMgdmVyw7ZmZmVudGxpY2h0LiBOw6RoZXJlIEluZm9ybWF0aW9uZW4g
+enUgZGVyIGdlbmFubnRlbgpTY2h3YWNoc3RlbGxlIHVuZCB3ZWl0ZXJlbiBCdWdzIGZpbmRlbiBz
+aWNoIGluIGRlbiB6dWdlaMO2cmlnZW4gQ2hhbmdlTG9ncy4KCkbDvHIgRmVkb3JhIDI2IHVuZCAy
+NyBzdGVoZW4gU2ljaGVyaGVpdHN1cGRhdGVzIGluIEZvcm0gZGVyIFBha2V0ZQoncGhwLTcuMS4x
+NS0xLmZjMjYnIGltIFN0YXR1cyAndGVzdGluZycgdW5kICdwaHAtNy4xLjE1LTEuZmMyNycgaW0g
+U3RhdHVzCidwZW5kaW5nJyBiZXJlaXQuCgoKQ1ZFLTIwMTgtNzU4NCBTY2h3YWNoc3RlbGxlIGlu
+IFBIUCBlcm3DtmdsaWNodCBEZW5pYWwtb2YtU2VydmljZS1BbmdyaWZmCgogIEluIFBIUCA1LjYu
+MzMsIDcuMC4yNywgNy4xLjE0IHVuZCA3LjIuMiBleGlzdGllcnQgZWluZSBTY2h3YWNoc3RlbGxl
+CiAgYXVmZ3J1bmQgZWluZXMgUHVmZmVyw7xiZXJsYXVmcyBhdWYgZGVtIFN0YWNrIChTdGFjay1i
+YXNlZCBCdWZmZXIgT3ZlcmZsb3cpCiAgd8OkaHJlbmQgZGVzIFBhcnNlbnMgc2Now6RkbGljaCBw
+csOkcGFyaWVydGVyIEhUVFAtQW50d29ydHBha2V0ZSwgd29kdXJjaCBlcyB6dQogIGVpbmVyIFNw
+ZWljaGVya29ycnVwdGlvbiAoTWVtb3J5IENvcnJ1cHRpb24pIGtvbW10LgoKCkxpc3RlIGRlciBT
+Y2h3YWNoc3RlbGxlbjoKICBDVkUtMjAxOC03NTg0CgoKUmVmZXJlbnplbjoKCkRpZXNlcyBBZHZp
+c29yeSBmaW5kZW4gU2llIGF1Y2ggaW0gREZOLUNFUlQgUG9ydGFsIHVudGVyOgpbaHR0cHM6Ly9w
+b3J0YWwtbmV1LmNlcnQuZGZuLmRlL2Fkdmlzb3JpZXMvZGV0YWlscy8yMDE4LTAzOTldCgoKWnVz
+w6R0emxpY2hlIEluZm9ybWF0aW9uZW46CgogIFBIUCBTZWMgQnVnICM3NTk4MTogc3RhY2stYnVm
+ZmVyLW92ZXJmbG93IHdoaWxlIHBhcnNpbmcgSFRUUCByZXNwb25zZQogICAgaHR0cHM6Ly9idWdz
+LnBocC5uZXQvYnVnLnBocD9pZD03NTk4MQoKUGF0Y2hlczoKCiAgRmVkb3JhIFNlY3VyaXR5IFVw
+ZGF0ZSBGRURPUkEtMjAxOC1hODljY2Y3MTMzIChGZWRvcmEgMjcsIHBocC03LjEuMTUtMS5mYzI3
+KQogICAgaHR0cHM6Ly9ib2RoaS5mZWRvcmFwcm9qZWN0Lm9yZy91cGRhdGVzL0ZFRE9SQS0yMDE4
+LWE4OWNjZjcxMzMKCiAgRmVkb3JhIFNlY3VyaXR5IFVwZGF0ZSBGRURPUkEtMjAxOC1lOGJjOGQy
+Nzg0IChGZWRvcmEgMjYsIHBocC03LjEuMTUtMS5mYzI2KQogICAgaHR0cHM6Ly9ib2RoaS5mZWRv
+cmFwcm9qZWN0Lm9yZy91cGRhdGVzL0ZFRE9SQS0yMDE4LWU4YmM4ZDI3ODQKCiAgUEhQIDcuMS4x
+NSBDaGFuZ2VMb2cKICAgIGh0dHBzOi8vc2VjdXJlLnBocC5uZXQvQ2hhbmdlTG9nLTcucGhwIzcu
+MS4xNQoKICBQSFAgNy4wLjI4IENoYW5nZUxvZwogICAgaHR0cHM6Ly9zZWN1cmUucGhwLm5ldC9D
+aGFuZ2VMb2ctNy5waHAjNy4wLjI4CgogIFBIUCA1LjYuMzQgQ2hhbmdlTG9nCiAgICBodHRwczov
+L3NlY3VyZS5waHAubmV0L0NoYW5nZUxvZy01LnBocCM1LjYuMzQKCiAgUEhQIDcuMi4zIENoYW5n
+ZUxvZwogICAgaHR0cHM6Ly9zZWN1cmUucGhwLm5ldC9DaGFuZ2VMb2ctNy5waHAjNy4yLjMKCiAg
+U1VTRSBTZWN1cml0eSBVcGRhdGUgU1VTRS1TVS0yMDE4OjA2NDYtMQogICAgaHR0cDovL2xpc3Rz
+LnN1c2UuY29tL3BpcGVybWFpbC9zbGUtc2VjdXJpdHktdXBkYXRlcy8yMDE4LU1hcmNoLzAwMzc5
+OC5odG1sCgoKTWl0IGZyZXVuZGxpY2hlbiBHcsO8w59lbiwKSWhyIERGTi1DRVJUIEluY2lkZW50
+IFJlc3BvbnNlIFRlYW0KCgotLSAKKGMpIERGTi1DRVJUIFNlcnZpY2VzIEdtYkgsIGFsbCByaWdo
+dHMgcmVzZXJ2ZWQhCkRpZSBXZWl0ZXJ2ZXJicmVpdHVuZyBpc3QgbWl0IEhpbndlaXMgYXVmIGRl
+biBDb3B5cmlnaHRpbmhhYmVyIGlubmVyaGFsYiBkZXIKZWlnZW5lbiBFaW5yaWNodHVuZyBlcmxh
+dWJ0LiBFaW5lIGRhcsO8YmVyIGhpbmF1c2dlaGVuZGUgVmVyYnJlaXR1bmcgYmVkYXJmCmRlcyBz
+Y2hyaWZ0bGljaGVuIEVpbnZlcnN0w6RuZG5pc3NlcyBkZXMgUmVjaHRlaW5oYWJlcnMu
+
+--===============3767405616695366459==
+Content-Type: application/json; charset="UTF-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment; filename="2018-0399.json"
+
+{
+=20=20"version":=20"2",=20
+=20=20"ref_num":=20"2018-0399",=20
+=20=20"fieldsets":=20{
+=20=20=20=20"scoring":=20{
+=20=20=20=20=20=20"daf":=20{
+=20=20=20=20=20=20=20=20"risk":=20"low"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cvss":=20{
+=20=20=20=20=20=20=20=20"temporal_score":=20"3.9",=20
+=20=20=20=20=20=20=20=20"vector":=20"AV:N/AC:L/Au:N/C:N/I:N/A:P/E:POC/RL:OF=
+/RC:C",=20
+=20=20=20=20=20=20=20=20"base_score":=20"5.0",=20
+=20=20=20=20=20=20=20=20"exploitability_score":=20"10.0",=20
+=20=20=20=20=20=20=20=20"impact_score":=20"2.9"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cpes":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Red=20Hat=20Fedora=2027\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:redhat:fedora:27",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Red=20Hat=20Fedora=2026\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:redhat:fedora:26",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Microsoft=20Windows=20",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:microsoft:windows",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"GNU/Linux",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:gnu:linux",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Apple=20Mac=20OS",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:apple:mac_os",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"SUSE=20Linux=20Enterprise=
+=20Software=20Development=20Kit=20=2012=20SP3\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:novell:suse_linux_enterprise=
+_software_development_kit:12:sp3",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"SUSE=20Linux=20Enterprise=
+=20Software=20Development=20Kit=20=2012=20SP2\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:novell:suse_linux_enterprise=
+_software_development_kit:12:sp2",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"SUSE=20Linux=20Enterprise=
+=20Module=20for=20Web=20Scripting=2012\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:novell:suse_linux_enterprise=
+_module_for_web_scripting:12",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"PHP=20<=207.2.3\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:php:php:7.2.3",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"PHP=20<=207.1.15\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:php:php:7.1.15",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"PHP=20<=207.0.28\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:php:php:7.0.28",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"PHP=20<=205.6.34\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:php:php:5.6.34",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20},=20
+=20=20=20=20"basic":=20{
+=20=20=20=20=20=20"description":=20"Ein=20entfernter,=20nicht=20authentisie=
+rter=20Angreifer=20kann=20eine=20Schwachstelle=20in=20den=20letzten=20PHP-V=
+ersionen=20ausnutzen,=20um=20einen=20Absturz=20von=20PHP=20und=20so=20einen=
+=20Denial-of-Service=20(DoS)-Zustand=20f\u00fcr=20mit=20PHP=20verkn\u00fcpf=
+te=20Anwendungen=20zu=20bewirken.\n\nDie=20Entwickler=20von=20PHP=20haben=
+=20die=20Versionen=205.6.34,=207.0.28,=207.1.15=20und=207.2.3=20als=20Siche=
+rheitsupdates=20ver\u00f6ffentlicht.=20N\u00e4here=20Informationen=20zu=20d=
+er=20genannten=20Schwachstelle=20und=20weiteren=20Bugs=20finden=20sich=20in=
+=20den=20zugeh\u00f6rigen=20ChangeLogs.\n\nF\u00fcr=20Fedora=2026=20und=202=
+7=20stehen=20Sicherheitsupdates=20in=20Form=20der=20Pakete=20'php-7.1.15-1.=
+fc26'=20im=20Status=20'testing'=20und=20'php-7.1.15-1.fc27'=20im=20Status=
+=20'pending'=20bereit.",=20
+=20=20=20=20=20=20"workaround":=20null,=20
+=20=20=20=20=20=20"created":=20"20180228T16:55:38",=20
+=20=20=20=20=20=20"vulnerabilities":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"title":=20"Schwachstelle=20in=20PHP=20erm\u0=
+0f6glicht=20Denial-of-Service-Angriff",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"In=20PHP=205.6.33,=207.0.27=
+,=207.1.14=20und=207.2.2=20existiert=20eine=20Schwachstelle=20aufgrund=20ei=
+nes=20Puffer\u00fcberlaufs=20auf=20dem=20Stack=20(Stack-based=20Buffer=20Ov=
+erflow)=20w\u00e4hrend=20des=20Parsens=20sch\u00e4dlich=20pr\u00e4parierter=
+=20HTTP-Antwortpakete,=20wodurch=20es=20zu=20einer=20Speicherkorruption=20(=
+Memory=20Corruption)=20kommt.",=20
+=20=20=20=20=20=20=20=20=20=20"name":=20"CVE-2018-7584"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"title":=20"PHP:=20Eine=20Schwachstelle=20erm\u00f6glicht=
+=20einen=20Denial-of-Service-Angriff",=20
+=20=20=20=20=20=20"references":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://bodhi.fedoraproject.org/upd=
+ates/FEDORA-2018-a89ccf7133",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Fedora=20Security=20Update=
+=20FEDORA-2018-a89ccf7133=20(Fedora=2027,=20php-7.1.15-1.fc27)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://bodhi.fedoraproject.org/upd=
+ates/FEDORA-2018-e8bc8d2784",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Fedora=20Security=20Update=
+=20FEDORA-2018-e8bc8d2784=20(Fedora=2026,=20php-7.1.15-1.fc26)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://secure.php.net/ChangeLog-7.=
+php#7.1.15",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"PHP=207.1.15=20ChangeLog"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://bugs.php.net/bug.php?id=3D7=
+5981",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"PHP=20Sec=20Bug=20#75981:=
+=20stack-buffer-overflow=20while=20parsing=20HTTP=20response"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://secure.php.net/ChangeLog-7.=
+php#7.0.28",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"PHP=207.0.28=20ChangeLog"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://secure.php.net/ChangeLog-5.=
+php#5.6.34",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"PHP=205.6.34=20ChangeLog"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://secure.php.net/ChangeLog-7.=
+php#7.2.3",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"PHP=207.2.3=20ChangeLog"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"http://lists.suse.com/pipermail/sle=
+-security-updates/2018-March/003798.html",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"SUSE=20Security=20Update=20=
+SUSE-SU-2018:0646-1"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"history":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"timestamp":=20"20180309T12:33:11",=20
+=20=20=20=20=20=20=20=20=20=20"version":=20"2",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"F\u00fcr=20SUSE=20Linux=20E=
+nterprise=20Software=20Development=20Kit=2012=20SP2=20und=2012=20SP3=20sowi=
+e=20SUSE=20Linux=20Enterprise=20Module=20for=20Web=20Scripting=2012=20stehe=
+n=20Sicherheitsupdates=20f\u00fcr=20'php7'=20bereit,=20um=20diese=20Schwach=
+stelle=20und=20einen=20Bug=20zu=20beheben."
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"timestamp":=20"20180302T10:45:49",=20
+=20=20=20=20=20=20=20=20=20=20"version":=20"1",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Neues=20Advisory"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20}
+=20=20}
+}
+--===============3767405616695366459==--
+
+--===============5939986227424713488==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIII7QYJKoZIhvcNAQcCoIII3jCCCNoCAQExDzANBglghkgBZQMEAgEFADALBgkqhkiG9w0BBwGg
+ggYAMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3DQEBCwUAMIGNMQswCQYDVQQG
+EwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3Jz
+Y2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUwIwYDVQQDDBxERk4tVmVyZWlu
+IEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIwMTIwNDExNDExN1owgaIxCzAJ
+BgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdIYW1idXJnMR8wHQYDVQQKDBZE
+Rk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAbBgNVBAMMFEdSUDogREZOLUNF
+UlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNlcnQuZGUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0Yw0ZS9sOZLRfN6nFe6HOj8Az
+NO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZPjuBRtsi+hKSvncR7oCNPDigs
+GbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVmW27fs5I61rP66DkqgrRXZh0w
+AZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvtsAJ2VXFhNNbtRY9XTDXi/Yar
+5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoGeUKrwG5TQM9FAgMBAAGjggJD
+MIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYBBAGBrSGCLAEBBAMGMBEGDysG
+AQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIGwDATBgNVHSUEDDAKBggrBgEF
+BQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYDVR0jBBgwFoAUazqYi/nyU4na
+4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0LmRlMIGNBgNVHR8EgYUwgYIw
+P6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWdsb2JhbC1nMi9wdWIvY3JsL2Nh
+Y3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9kZm4tY2EtZ2xvYmFsLWcyL3B1
+Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggrBgEFBQcwAYYnaHR0cDovL29j
+c3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMS5w
+Y2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsXu7Gk4M32/Rs2jdf9rTw3/Aag
+meXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JHhwv5JSdyzM2/pG63uRi/WJ7z
+VYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB8Qb+p3YVTa9vcnmNpci1SYtM
+9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqooGuMgkeB5hi2xUcxKhR8uUYhN
+ftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYFS2sAbrrt2PhOtTHm5o51SbfI
+MYICsTCCAq0CAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQKDDxWZXJlaW4genVyIEZvZXJk
+ZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMgZS4gVi4xEDAOBgNVBAsMB0RG
+Ti1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3VpbmcgQ0ECDB5GA2zY8pjckgcl
+SzANBglghkgBZQMEAgEFAKCB5DAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJ
+BTEPFw0xODAzMDkxMTM2NDBaMC8GCSqGSIb3DQEJBDEiBCCuM/uXZ/2mevMb+hVxvKDIiaGvRyEC
+XAopyw7ZxbuEKzB5BgkqhkiG9w0BCQ8xbDBqMAsGCWCGSAFlAwQBKjALBglghkgBZQMEARYwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMA4GCCqGSIb3DQMCAgIAgDANBggqhkiG9w0DAgIBQDAHBgUr
+DgMCBzANBggqhkiG9w0DAgIBKDANBgkqhkiG9w0BAQEFAASCAQBRs/qG1nUsawO59qmo9kM5OWyj
+vo7NBrV0rQUdmsDtz1xbVq5A7QC9TPNEB73HhQJuv+PxObQMqLop3y1ySse4c8s3oUh9GmXKirWU
+VE4ez54L4FZJ+oDAC7QweVUrs+QIyR4P+Yc9Xx/0BWYVeXKr1Ul5m2XbVd0hnScyFZwFsJ99WwDV
+EYmY1ZVcPYExVce53JRYffTvecdgAiqITapDjiPRuZYACevGCNGhZ2cGoWdWb4ZQ3umPtm51IGXk
+OztmLmXWro03QPG8f0XdJSrizguwET9DSYTo4dfzVu5VizgjAHz25Ej1tzHHXuXpDxPRPGgj5cPj
+851FBOLOAIZI
+
+--===============5939986227424713488==--

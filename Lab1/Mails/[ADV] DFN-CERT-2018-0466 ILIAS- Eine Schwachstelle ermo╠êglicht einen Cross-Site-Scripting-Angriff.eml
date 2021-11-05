@@ -1,0 +1,326 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Fri, 9 Mar
+ 2018 17:12:02 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id 1AAAA25A1E; Fri,  9 Mar 2018
+ 17:12:02 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id 102A725A1A	for
+ <rz+certapple@hs-esslingen.de>; Fri,  9 Mar 2018 17:12:02 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.011
+X-Spam-Level:
+X-Spam-Status: No, score=-4.011 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, ENGLISH_UCE_SUBJECT=2.899, RCVD_IN_DNSWL_HI=-5,
+	T_RP_MATCHES_RCVD=-0.01] autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ 6bRMKkMV3IoP for <rz+certapple@hs-esslingen.de>;	Fri,  9 Mar 2018 17:12:01
+ +0100 (CET)
+Received: from irt-mx.dfn-cert.de (irt-mx.dfn-cert.de [193.174.13.208])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Fri,  9 Mar 2018 17:12:00 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=sha-256; boundary="===============0322172090522637428=="
+Subject: =?utf-8?q?=5BADV=5D_DFN-CERT-2018-0466_ILIAS=3A_Eine_Schwachstelle?=
+ =?utf-8?q?_erm=C3=B6glicht_einen_Cross-Site-Scripting-Angriff?=
+To: <rz+certapple@hs-esslingen.de>
+From: =?utf-8?q?DFN-CERT_Portal?= <portal@dfn-cert.de>
+Message-ID: <e8876009-90b1-4992-8608-efab4a27f16e@dfn-cert.de>
+Date: Fri, 9 Mar 2018 16:10:09 +0000
+Return-Path: portal@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;-830206;0;PM
+MIME-Version: 1.0
+
+--===============0322172090522637428==
+Content-Type: multipart/mixed; boundary="===============5203273808498337183=="
+
+--===============5203273808498337183==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+TGllYmUgS29sbGVnaW5uZW4gdW5kIEtvbGxlZ2VuLAoKYml0dGUgYmVhY2h0ZW4gU2llIGRpZSBJ
+bmZvcm1hdGlvbmVuIHp1IGRlbiB2ZXJmw7xnYmFyZW4gU2ljaGVyaGVpdHN1cGRhdGVzCm9kZXIg
+V29ya2Fyb3VuZHMgaW4gZGVyIGZvbGdlbmRlbiBTaWNoZXJoZWl0c21lbGR1bmcuCgpIaXN0b3Jp
+ZToKClZlcnNpb24gMSAoMDkuMDMuMTgpOgogICAgTmV1ZXMgQWR2aXNvcnkKCgpCZXRyb2ZmZW5l
+IFNvZnR3YXJlOgoKICBJTElBUyA8IDUuMy4xCiAgSUxJQVMgPCA1LjIuMTMKICBJTElBUyA8IDUu
+MS4yNAoKCkJldHJvZmZlbmUgUGxhdHRmb3JtZW46CgogIE1pY3Jvc29mdCBXaW5kb3dzCiAgR05V
+L0xpbnV4CiAgQXBwbGUgbWFjT1MKCgoKQmV3ZXJ0dW5nOgoKR2VzYW10cmlzaWtvIChEQUYpOiAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTWl0dGVsCgpCZXdlcnR1bmcgZ2Vt
+w6TDnyBDVlNTIHYyOgpCYXNpc3Jpc2lrbyAoQ1ZTUyBCYXNlIFNjb3JlKTogICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICA0LjMKQWt0dWVsbGVzIFNjaGFkZW5zcG90ZW56aWFsIChUZW1wb3Jh
+bCBTY29yZSk6ICAgICAgICAgICAgICAgMy40CgpBbmdyaWZmc3Zla3RvciAoQVYpOiAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgTmV0endlcmsKQW5ncmlmZnNrb21wbGV4aXTDpHQg
+KEFDKTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1pdHRlbApBdXRoZW50aWZpemll
+cnVuZyAoQXUpOiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgS2VpbmUKCkF1c3dp
+cmt1bmc6ClZlcnRyYXVsaWNoa2VpdCAoQyk6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICBLZWluZQpJbnRlZ3JpdMOkdCAoSSk6ICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgVGVpbHdlaXNlClZlcmbDvGdiYXJrZWl0IChBKTogICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgS2VpbmUKCkF1c251dHpiYXJrZWl0IChFKTogICAgICAg
+ICAgICAgICAgICBQcm9vZi1vZi1Db25jZXB0IGV4aXN0aWVydApWZXJmw7xnYmFyZSBHZWdlbm1h
+w59uYWhtZSAoUkwpOiAgICAgICAgICAgICAgICAgIE9mZml6aWVsbGVyIEZpeApCZXJpY2h0c3p1
+dmVybMOkc3NpZ2tlaXQgKFJDKTogICAgICAgICAgICAgICAgICAgICAgICAgQmVzdMOkdGlndAoK
+VmVrdG9yOiAgICAgICAgICAgICBBVjpOL0FDOk0vQXU6Ti9DOk4vSTpQL0E6Ti9FOlBPQy9STDpP
+Ri9SQzpDCgoKRWluZSBTY2h3YWNoc3RlbGxlIGluIElMSUFTIGVybcO2Z2xpY2h0IGVpbmVtIGVu
+dGZlcm50ZW4sIG5pY2h0CmF1dGhlbnRpc2llcnRlbiBBbmdyZWlmZXIgZGllIER1cmNoZsO8aHJ1
+bmcgZWluZXMgUmVmbGVjdGVkIENyb3NzLVNpdGUtClNjcmlwdGluZyAoWFNTKS1BbmdyaWZmcy4K
+CkRlciBIZXJzdGVsbGVyIGJlc3TDpHRpZ3QgZGllIFNjaHdhY2hzdGVsbGUgdW5kIHN0ZWxsdCBk
+aWUgVmVyc2lvbmVuIDUuMS4yNCwKNS4yLjEzIHVuZCA1LjMuMSBhbHMgU2ljaGVyaGVpdHN1cGRh
+dGUgenVyIFZlcmbDvGd1bmcuCgpBdWZncnVuZCBkZXIgbWVkaWFsZW4gQXVmbWVya3NhbWtlaXQs
+IGRpZSBkaWVzZSBTb2Z0d2FyZSBkdXJjaCBkaWUgQW5ncmlmZmUKYXVmIEVpbnJpY2h0dW5nZW4g
+ZGVzIEJ1bmRlcyBtb21lbnRhbiBlcmjDpGx0LCBzb2xsdGVuIGJlc3RlaGVuZGUKSW5zdGFsbGF0
+aW9uZW4gdW1nZWhlbmQgYXVmIEFrdHVhbGl0w6R0IGdlcHLDvGZ0IHdlcmRlbi4gQmlzaGVyIGlz
+dCBhbGxlcmRpbmdzCm5vY2ggdW5rbGFyLCBvYiBkZXIgQW5ncmlmZiB0YXRzw6RjaGxpY2ggw7xi
+ZXIgZGllc2UgU29mdHdhcmUgdW5kIGZhbGxzIGphLCBvYgplciDDvGJlciBlaW5lIGJpc2xhbmcg
+dW5iZWthbm50ZSBTY2h3YWNoc3RlbGxlIGVyZm9sZ3QgaXN0LiBEZW5ub2NoIGlzdCBlaW4KQW5z
+dGllZyBkZXIgQW5ncmlmZmUgYXVmIGJla2FubnRlIFNjaHdhY2hzdGVsbGVuIGluIMOkbHRlcmVu
+IFZlcnNpb25lbiBkZXIKU29mdHdhcmUgYXVmZ3J1bmQgZGVyIG1lZGlhbGVuIEZva3Vzc2llcnVu
+ZyB6ZWl0bmFoIG3DtmdsaWNoLgoKWnVzw6R0emxpY2ggaXN0IHp1IGJlYWNodGVuLCBkYXNzIGlu
+IFN0YW5kYXJkaW5zdGFsbGF0aW9uZW4gdm9uIElMSUFTCmJla2FubnRlIFp1Z2FuZ3NkYXRlbiBm
+w7xyIGRlbiBCZW51dHplciAncm9vdCcgdmVyd2VuZGV0IHVuZCBBZG1pbmlzdHJhdG9yZW4KZGVy
+IFNvZnR3YXJlIHp1IGtlaW5lciBaZWl0IGltIEluc3RhbGxhdGlvbnN2b3JnYW5nIHp1IGVpbmVy
+IMOEbmRlcnVuZyBkZXMKUGFzc3dvcnRzIGF1ZmdlZm9yZGVydCB3ZXJkZW4uIEVzIHNvbGx0ZSBk
+YWhlciBzaWNoZXJnZXN0ZWxsdCB3ZXJkZW4sIGRhc3MKZGFzIFN0YW5kYXJkcGFzc3dvcnQgZsO8
+ciAncm9vdCcgbmljaHQgdmVyd2VuZGV0IHdpcmQuCgoKSUxJQVMtNS0zLTEtQSBTY2h3YWNoc3Rl
+bGxlIGluIElMSUFTIGVybcO2Z2xpY2h0IFJlZmxlY3RlZCBDcm9zcy1TaXRlLVNjcmlwdGluZy1B
+bmdyaWZmCgogIEluIElMSUFTIHZvciBkZW4gVmVyc2lvbmVuIDUuMS4yNCwgNS4yLjEzIHVuZCA1
+LjMuMSB3ZXJkZW4gQmVudXR6ZXJlaW5nYWJlbgogIG5pY2h0IGF1c3JlaWNoZW5kIGdlZmlsdGVy
+dCBiencuIG1hc2tpZXJ0LiBFaW4gZW50ZmVybnRlciwgbmljaHQKICBhdXRoZW50aXNpZXJ0ZXIg
+QW5ncmVpZmVyLCBkZXIgZWluZW4gQmVudXR6ZXIgenVtIEJlc3VjaCBlaW5lciBzcGV6aWVsbAog
+IHByw6RwYXJpZXJ0ZW4gVVJMIHZlcmxlaXRldCwga2FubiBiZWxpZWJpZ2VuIEhUTUwtIHVuZCBT
+a3JpcHRjb2RlIGltIEJyb3dzZXIKICBkZXMgQmVudXR6ZXJzIGltIEtvbnRleHQgZGVyIGJldHJv
+ZmZlbmVuIFdlYnNlaXRlIGF1c2bDvGhyZW4uCgoKTGlzdGUgZGVyIFNjaHdhY2hzdGVsbGVuOgog
+IElMSUFTLTUtMy0xLUEKCgpSZWZlcmVuemVuOgoKRGllc2VzIEFkdmlzb3J5IGZpbmRlbiBTaWUg
+YXVjaCBpbSBERk4tQ0VSVCBQb3J0YWwgdW50ZXI6CltodHRwczovL3BvcnRhbC1uZXUuY2VydC5k
+Zm4uZGUvYWR2aXNvcmllcy9kZXRhaWxzLzIwMTgtMDQ2Nl0KCgpadXPDpHR6bGljaGUgSW5mb3Jt
+YXRpb25lbjoKCiAgR29sZW0uZGUgLSAnSGFjayBhdWYgQnVuZGVzcmVnaWVydW5nIGVyZm9sZ3Rl
+IMO8YmVyIExlcm5wbGF0dGZvcm0gSWxpYXMnCiAgICBodHRwczovL3d3dy5nb2xlbS5kZS9uZXdz
+L2J1bmRlc2hhY2staGFjay1hdWYtYnVuZGVzcmVnaWVydW5nLWVyZm9sZ3RlLXVlYmVyLWxlcm5w
+bGF0dGZvcm0taWxpYXMtMTgwMy0xMzMyMjcuaHRtbAoKICBJTElBUyBTaWNoZXJoZWl0c2hpbndl
+aXMgMDkuMDIuMjAxOCAtICdJTElBUyBTZWN1cml0eSBJc3N1ZTogUmVmbGVjdGVkIFhTUwogIFZ1
+bG5lcmFiaWxpdHknCiAgICBodHRwczovL2xpc3RzLmlsaWFzLmRlL3BpcGVybWFpbC9pbGlhcy1h
+ZG1pbnMvMjAxOC1GZWJydWFyeS8wMDAwNjQuaHRtbAoKICBPU1MtU2VjIDA4LjAzLjIwMTggLSAn
+VnVsbmVyYWJpbGl0aWVzIGFuZCBkZWZhdWx0IGNyZWRlbnRpYWxzIGluIElsaWFzCiAgZS1sZWFy
+bmluZyBzb2Z0d2FyZSAvIEdlcm1hbiBnb3YgaGFjaycKICAgIGh0dHA6Ly9zZWNsaXN0cy5vcmcv
+b3NzLXNlYy8yMDE4L3ExLzIzMAoKUGF0Y2hlczoKCiAgSUxJQVMgUmVsZWFzZSA1LjEuMjQKICAg
+IGh0dHBzOi8vZ2l0aHViLmNvbS9JTElBUy1lTGVhcm5pbmcvSUxJQVMvcmVsZWFzZXMvdGFnL3Y1
+LjEuMjQKCiAgSUxJQVMgUmVsZWFzZSA1LjIuMTMKICAgIGh0dHBzOi8vZ2l0aHViLmNvbS9JTElB
+Uy1lTGVhcm5pbmcvSUxJQVMvcmVsZWFzZXMvdGFnL3Y1LjIuMTMKCiAgSUxJQVMgUmVsZWFzZSA1
+LjMuMQogICAgaHR0cHM6Ly9naXRodWIuY29tL0lMSUFTLWVMZWFybmluZy9JTElBUy9yZWxlYXNl
+cy90YWcvdjUuMy4xCgoKTWl0IGZyZXVuZGxpY2hlbiBHcsO8w59lbiwKSWhyIERGTi1DRVJUIElu
+Y2lkZW50IFJlc3BvbnNlIFRlYW0KCgotLSAKKGMpIERGTi1DRVJUIFNlcnZpY2VzIEdtYkgsIGFs
+bCByaWdodHMgcmVzZXJ2ZWQhCkRpZSBXZWl0ZXJ2ZXJicmVpdHVuZyBpc3QgbWl0IEhpbndlaXMg
+YXVmIGRlbiBDb3B5cmlnaHRpbmhhYmVyIGlubmVyaGFsYiBkZXIKZWlnZW5lbiBFaW5yaWNodHVu
+ZyBlcmxhdWJ0LiBFaW5lIGRhcsO8YmVyIGhpbmF1c2dlaGVuZGUgVmVyYnJlaXR1bmcgYmVkYXJm
+CmRlcyBzY2hyaWZ0bGljaGVuIEVpbnZlcnN0w6RuZG5pc3NlcyBkZXMgUmVjaHRlaW5oYWJlcnMu
+
+--===============5203273808498337183==
+Content-Type: application/json; charset="UTF-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment; filename="2018-0466.json"
+
+{
+=20=20"version":=20"1",=20
+=20=20"ref_num":=20"2018-0466",=20
+=20=20"fieldsets":=20{
+=20=20=20=20"scoring":=20{
+=20=20=20=20=20=20"daf":=20{
+=20=20=20=20=20=20=20=20"risk":=20"medium"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cvss":=20{
+=20=20=20=20=20=20=20=20"temporal_score":=20"3.4",=20
+=20=20=20=20=20=20=20=20"vector":=20"AV:N/AC:M/Au:N/C:N/I:P/A:N/E:POC/RL:OF=
+/RC:C",=20
+=20=20=20=20=20=20=20=20"base_score":=20"4.3",=20
+=20=20=20=20=20=20=20=20"exploitability_score":=20"8.6",=20
+=20=20=20=20=20=20=20=20"impact_score":=20"2.9"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cpes":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Microsoft=20Windows=20",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:microsoft:windows",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"GNU/Linux",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:gnu:linux",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Apple=20macOS",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:apple:macos",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"ILIAS=20<=205.3.1\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:ilias:ilias:5.3.1",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"ILIAS=20<=205.2.13\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:ilias:ilias:5.2.13",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"ILIAS=20<=205.1.24\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:ilias:ilias:5.1.24",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20},=20
+=20=20=20=20"basic":=20{
+=20=20=20=20=20=20"description":=20"Eine=20Schwachstelle=20in=20ILIAS=20erm=
+\u00f6glicht=20einem=20entfernten,=20nicht=20authentisierten=20Angreifer=20=
+die=20Durchf\u00fchrung=20eines=20Reflected=20Cross-Site-Scripting=20(XSS)-=
+Angriffs.\n\nDer=20Hersteller=20best\u00e4tigt=20die=20Schwachstelle=20und=
+=20stellt=20die=20Versionen=205.1.24,=205.2.13=20und=205.3.1=20als=20Sicher=
+heitsupdate=20zur=20Verf\u00fcgung.\n\nAufgrund=20der=20medialen=20Aufmerks=
+amkeit,=20die=20diese=20Software=20durch=20die=20Angriffe=20auf=20Einrichtu=
+ngen=20des=20Bundes=20momentan=20erh\u00e4lt,=20sollten=20bestehende=20Inst=
+allationen=20umgehend=20auf=20Aktualit\u00e4t=20gepr\u00fcft=20werden.=20Bi=
+sher=20ist=20allerdings=20noch=20unklar,=20ob=20der=20Angriff=20tats\u00e4c=
+hlich=20\u00fcber=20diese=20Software=20und=20falls=20ja,=20ob=20er=20\u00fc=
+ber=20eine=20bislang=20unbekannte=20Schwachstelle=20erfolgt=20ist.=20Dennoc=
+h=20ist=20ein=20Anstieg=20der=20Angriffe=20auf=20bekannte=20Schwachstellen=
+=20in=20\u00e4lteren=20Versionen=20der=20Software=20aufgrund=20der=20medial=
+en=20Fokussierung=20zeitnah=20m\u00f6glich.\n\nZus\u00e4tzlich=20ist=20zu=
+=20beachten,=20dass=20in=20Standardinstallationen=20von=20ILIAS=20bekannte=
+=20Zugangsdaten=20f\u00fcr=20den=20Benutzer=20'root'=20verwendet=20und=20Ad=
+ministratoren=20der=20Software=20zu=20keiner=20Zeit=20im=20Installationsvor=
+gang=20zu=20einer=20\u00c4nderung=20des=20Passworts=20aufgefordert=20werden=
+.=20Es=20sollte=20daher=20sichergestellt=20werden,=20dass=20das=20Standardp=
+asswort=20f\u00fcr=20'root'=20nicht=20verwendet=20wird.",=20
+=20=20=20=20=20=20"workaround":=20null,=20
+=20=20=20=20=20=20"created":=20"20180309T15:34:07",=20
+=20=20=20=20=20=20"vulnerabilities":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"title":=20"Schwachstelle=20in=20ILIAS=20erm\=
+u00f6glicht=20Reflected=20Cross-Site-Scripting-Angriff",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"In=20ILIAS=20vor=20den=20Ve=
+rsionen=205.1.24,=205.2.13=20und=205.3.1=20werden=20Benutzereingaben=20nich=
+t=20ausreichend=20gefiltert=20bzw.=20maskiert.=20Ein=20entfernter,=20nicht=
+=20authentisierter=20Angreifer,=20der=20einen=20Benutzer=20zum=20Besuch=20e=
+iner=20speziell=20pr\u00e4parierten=20URL=20verleitet,=20kann=20beliebigen=
+=20HTML-=20und=20Skriptcode=20im=20Browser=20des=20Benutzers=20im=20Kontext=
+=20der=20betroffenen=20Webseite=20ausf\u00fchren.",=20
+=20=20=20=20=20=20=20=20=20=20"name":=20"ILIAS-5-3-1-A"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"title":=20"ILIAS:=20Eine=20Schwachstelle=20erm\u00f6glic=
+ht=20einen=20Cross-Site-Scripting-Angriff",=20
+=20=20=20=20=20=20"references":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://github.com/ILIAS-eLearning/=
+ILIAS/releases/tag/v5.1.24",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"ILIAS=20Release=205.1.24"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://github.com/ILIAS-eLearning/=
+ILIAS/releases/tag/v5.2.13",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"ILIAS=20Release=205.2.13"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://github.com/ILIAS-eLearning/=
+ILIAS/releases/tag/v5.3.1",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"ILIAS=20Release=205.3.1"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://www.golem.de/news/bundeshac=
+k-hack-auf-bundesregierung-erfolgte-ueber-lernplattform-ilias-1803-133227.h=
+tml",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Golem.de=20-=20'Hack=20auf=
+=20Bundesregierung=20erfolgte=20\u00fcber=20Lernplattform=20Ilias'"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://lists.ilias.de/pipermail/il=
+ias-admins/2018-February/000064.html",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"ILIAS=20Sicherheitshinweis=
+=2009.02.2018=20-=20'ILIAS=20Security=20Issue:=20Reflected=20XSS=20Vulnerab=
+ility'"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"http://seclists.org/oss-sec/2018/q1=
+/230",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"OSS-Sec=2008.03.2018=20-=20=
+'Vulnerabilities=20and=20default=20credentials=20in=20Ilias=20e-learning=20=
+software=20/=20German=20gov=20hack'"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"history":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"timestamp":=20"20180309T17:03:46",=20
+=20=20=20=20=20=20=20=20=20=20"version":=20"1",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Neues=20Advisory"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20}
+=20=20}
+}
+--===============5203273808498337183==--
+
+--===============0322172090522637428==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIII7QYJKoZIhvcNAQcCoIII3jCCCNoCAQExDzANBglghkgBZQMEAgEFADALBgkqhkiG9w0BBwGg
+ggYAMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3DQEBCwUAMIGNMQswCQYDVQQG
+EwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3Jz
+Y2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUwIwYDVQQDDBxERk4tVmVyZWlu
+IEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIwMTIwNDExNDExN1owgaIxCzAJ
+BgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdIYW1idXJnMR8wHQYDVQQKDBZE
+Rk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAbBgNVBAMMFEdSUDogREZOLUNF
+UlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNlcnQuZGUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0Yw0ZS9sOZLRfN6nFe6HOj8Az
+NO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZPjuBRtsi+hKSvncR7oCNPDigs
+GbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVmW27fs5I61rP66DkqgrRXZh0w
+AZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvtsAJ2VXFhNNbtRY9XTDXi/Yar
+5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoGeUKrwG5TQM9FAgMBAAGjggJD
+MIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYBBAGBrSGCLAEBBAMGMBEGDysG
+AQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIGwDATBgNVHSUEDDAKBggrBgEF
+BQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYDVR0jBBgwFoAUazqYi/nyU4na
+4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0LmRlMIGNBgNVHR8EgYUwgYIw
+P6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWdsb2JhbC1nMi9wdWIvY3JsL2Nh
+Y3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9kZm4tY2EtZ2xvYmFsLWcyL3B1
+Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggrBgEFBQcwAYYnaHR0cDovL29j
+c3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMS5w
+Y2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsXu7Gk4M32/Rs2jdf9rTw3/Aag
+meXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JHhwv5JSdyzM2/pG63uRi/WJ7z
+VYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB8Qb+p3YVTa9vcnmNpci1SYtM
+9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqooGuMgkeB5hi2xUcxKhR8uUYhN
+ftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYFS2sAbrrt2PhOtTHm5o51SbfI
+MYICsTCCAq0CAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQKDDxWZXJlaW4genVyIEZvZXJk
+ZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMgZS4gVi4xEDAOBgNVBAsMB0RG
+Ti1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3VpbmcgQ0ECDB5GA2zY8pjckgcl
+SzANBglghkgBZQMEAgEFAKCB5DAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJ
+BTEPFw0xODAzMDkxNjExNTlaMC8GCSqGSIb3DQEJBDEiBCCWynGnnD/N5iKshdKFMqZzUi/WC9Ff
+6Fki4Mf0XCR/YTB5BgkqhkiG9w0BCQ8xbDBqMAsGCWCGSAFlAwQBKjALBglghkgBZQMEARYwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMA4GCCqGSIb3DQMCAgIAgDANBggqhkiG9w0DAgIBQDAHBgUr
+DgMCBzANBggqhkiG9w0DAgIBKDANBgkqhkiG9w0BAQEFAASCAQAzT0ijqj3UbyN95Hbt1nJ2cI4A
+yMkWLO3KR0d4a40rj94M/O9eT+qQmgz13qeejCpE6F7zsjrMrlMdmNIunY4fCDPextNnkE1UwDon
+p0pzK+NYzBC1i3r1hkdHQ8GQE+YUAn/pEpeIEleUNhoNuRQyIk/s5LwchkXAbIOc+3QNGZ+E3AhR
+UTamdUaFJAJ6FsoZ5S4HtmIDUbNL02LrbkzuLjBV0IiJs0kIx7yB+5MJlzwi+nRjftQX1EP6MXl7
+EZT2seLa1zEopLeMVgTaoR6RJWXZeR57Wsx7LVAHqMGtYwS6IcZrD9gEsH9428Gaktgd4GvuPojd
+D+utenYcJ7lP
+
+--===============0322172090522637428==--

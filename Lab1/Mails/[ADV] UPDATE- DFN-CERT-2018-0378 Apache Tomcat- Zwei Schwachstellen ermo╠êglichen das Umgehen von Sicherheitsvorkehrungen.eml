@@ -1,0 +1,400 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Tue, 20 Mar
+ 2018 09:20:34 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id A82B325A1F; Tue, 20 Mar 2018
+ 09:20:34 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id 9DAFA25A1E	for
+ <rz+certapple@hs-esslingen.de>; Tue, 20 Mar 2018 09:20:34 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.011
+X-Spam-Level:
+X-Spam-Status: No, score=-4.011 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, ENGLISH_UCE_SUBJECT=2.899, RCVD_IN_DNSWL_HI=-5,
+	T_RP_MATCHES_RCVD=-0.01] autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ GG5iAL51qPWb for <rz+certapple@hs-esslingen.de>;	Tue, 20 Mar 2018 09:20:33
+ +0100 (CET)
+Received: from irt-mx.dfn-cert.de (irt-mx.dfn-cert.de [193.174.13.208])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Tue, 20 Mar 2018 09:20:32 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=sha-256; boundary="===============1654152529693652989=="
+Subject: =?utf-8?q?=5BADV=5D_UPDATE=3A_DFN-CERT-2018-0378_Apache_Tomcat=3A_?=
+ =?utf-8?q?Zwei_Schwachstellen_erm=C3=B6glichen_das_Umgehen_von_Sicherheitsv?=
+ =?utf-8?q?orkehrungen?=
+To: <rz+certapple@hs-esslingen.de>
+From: =?utf-8?q?DFN-CERT_Portal?= <portal@dfn-cert.de>
+Message-ID: <163319fb-32a6-4bec-a628-275169ec79f9@dfn-cert.de>
+Date: Tue, 20 Mar 2018 08:20:03 +0000
+Return-Path: portal@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;297788674;0;PM
+MIME-Version: 1.0
+
+--===============1654152529693652989==
+Content-Type: multipart/mixed; boundary="===============2064164450296507237=="
+
+--===============2064164450296507237==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+TGllYmUgS29sbGVnaW5uZW4gdW5kIEtvbGxlZ2VuLAoKYml0dGUgYmVhY2h0ZW4gU2llIGRpZSBJ
+bmZvcm1hdGlvbmVuIHp1IGRlbiB2ZXJmw7xnYmFyZW4gU2ljaGVyaGVpdHN1cGRhdGVzCm9kZXIg
+V29ya2Fyb3VuZHMgaW4gZGVyIGZvbGdlbmRlbiBTaWNoZXJoZWl0c21lbGR1bmcuCgpIaXN0b3Jp
+ZToKClZlcnNpb24gMiAoMjAuMDMuMTgpOgogICAgRsO8ciBGZWRvcmEgMjYgdW5kIDI3IHNvd2ll
+IGbDvHIgRmVkb3JhIEVQRUwgNiBzdGVoZW4gU2ljaGVyaGVpdHN1cGRhdGVzIGbDvHIKICAgIFRv
+bWNhdCBhdWYgVmVyc2lvbiA4LjAuNTAgKEZlZG9yYSAyNiB1bmQgMjcpIHVuZCA3LjAuODUgKEZl
+ZG9yYSBFUEVMIDYpIGltCiAgICBTdGF0dXMgJ3Rlc3RpbmcnIGJlcmVpdC4KVmVyc2lvbiAxICgy
+My4wMi4xOCk6CiAgICBOZXVlcyBBZHZpc29yeQoKCkJldHJvZmZlbmUgU29mdHdhcmU6CgogIEFw
+YWNoZSBTb2Z0d2FyZSBGb3VuZGF0aW9uIFRvbWNhdCA8IDkuMC41CiAgQXBhY2hlIFNvZnR3YXJl
+IEZvdW5kYXRpb24gVG9tY2F0IDwgOC41LjI4CiAgQXBhY2hlIFNvZnR3YXJlIEZvdW5kYXRpb24g
+VG9tY2F0IDwgOC4wLjUwCiAgQXBhY2hlIFNvZnR3YXJlIEZvdW5kYXRpb24gVG9tY2F0IDwgNy4w
+Ljg1CgoKQmV0cm9mZmVuZSBQbGF0dGZvcm1lbjoKCiAgRXh0cmEgUGFja2FnZXMgZm9yIFJlZCBI
+YXQgRW50ZXJwcmlzZSBMaW51eCA2CiAgUmVkIEhhdCBGZWRvcmEgMjcKICBSZWQgSGF0IEZlZG9y
+YSAyNgogIE1pY3Jvc29mdCBXaW5kb3dzCiAgR05VL0xpbnV4CiAgQXBwbGUgbWFjT1MKCgoKQmV3
+ZXJ0dW5nOgoKR2VzYW10cmlzaWtvIChEQUYpOiAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgR2VyaW5nCgpCZXdlcnR1bmcgZ2Vtw6TDnyBDVlNTIHYyOgpCYXNpc3Jpc2lrbyAo
+Q1ZTUyBCYXNlIFNjb3JlKTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2LjQKQWt0dWVs
+bGVzIFNjaGFkZW5zcG90ZW56aWFsIChUZW1wb3JhbCBTY29yZSk6ICAgICAgICAgICAgICAgNS4w
+CgpBbmdyaWZmc3Zla3RvciAoQVYpOiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+TmV0endlcmsKQW5ncmlmZnNrb21wbGV4aXTDpHQgKEFDKTogICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgTmllZHJpZwpBdXRoZW50aWZpemllcnVuZyAoQXUpOiAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgS2VpbmUKCkF1c3dpcmt1bmc6ClZlcnRyYXVsaWNoa2VpdCAoQyk6
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFRlaWx3ZWlzZQpJbnRlZ3JpdMOkdCAo
+SSk6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVGVpbHdlaXNlClZlcmbD
+vGdiYXJrZWl0IChBKTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgS2Vp
+bmUKCkF1c251dHpiYXJrZWl0IChFKTogICAgICAgICAgICAgICAgICBQcm9vZi1vZi1Db25jZXB0
+IGV4aXN0aWVydApWZXJmw7xnYmFyZSBHZWdlbm1hw59uYWhtZSAoUkwpOiAgICAgICAgICAgICAg
+ICAgIE9mZml6aWVsbGVyIEZpeApCZXJpY2h0c3p1dmVybMOkc3NpZ2tlaXQgKFJDKTogICAgICAg
+ICAgICAgICAgICAgICAgICAgQmVzdMOkdGlndAoKVmVrdG9yOiAgICAgICAgICAgICBBVjpOL0FD
+OkwvQXU6Ti9DOlAvSTpQL0E6Ti9FOlBPQy9STDpPRi9SQzpDCgoKWndlaSBTY2h3YWNoc3RlbGxl
+biBpbiBBcGFjaGUgVG9tY2F0IGVybcO2Z2xpY2hlbiBlaW5lbSBlbnRmZXJudGVuLCBuaWNodAph
+dXRoZW50aXNpZXJ0ZW4gQW5ncmVpZmVyIGRhcyBVbWdlaGVuIHZvbiBTaWNoZXJoZWl0c3Zvcmtl
+aHJ1bmdlbiB1bmQKZGFkdXJjaCBkZW4gWnVncmlmZiBhdWYgZWlnZW50bGljaCBnZXNjaMO8dHp0
+ZSBSZXNzb3VyY2VuLgoKRGVyIEhlcnN0ZWxsZXIgc3RlbGx0IEFwYWNoZSBUb21jYXQgNy4wLjg1
+LCA4LjAuNTAsIDguNS4yOCB1bmQgOS4wLjUgYWxzClNpY2hlcmhlaXRzdXBkYXRlcyB6dXIgVmVy
+ZsO8Z3VuZy4KCgpDVkUtMjAxOC0xMzA0IFNjaHdhY2hzdGVsbGUgaW4gQXBhY2hlIFRvbWNhdCBl
+cm3DtmdsaWNodCBVbWdlaGVuIHZvbgogIFNpY2hlcmhlaXRzdm9ya2VocnVuZ2VuCgogIEVpbmUg
+bGVlcmUgWmVpY2hlbmtldHRlIGthbm4gaW4gQXBhY2hlIFRvbWNhdCBhbHMgVVJMLVBhdHRlcm4g
+ZsO8cgogIERlZmluaXRpb25lbiB2b24gU2ljaGVyaGVpdHNiZXNjaHLDpG5rdW5nZW4gdmVyd2Vu
+ZGV0IHdlcmRlbi4gTWl0IGRpZXNlbQogIFBhdHRlcm4gd2lyZCBkZXIgS29udGV4dCBhdWYgZGFz
+IFd1cnplbHZlcnplaWNobmlzIGRlciBBbndlbmR1bmcgZmVzdGdlbGVndC4KICBEaWUgQmVyw7xj
+a3NpY2h0aWd1bmcgZGVzIFBhdHRlcm5zIGbDvHIgc29sY2hlIEJlc2NocsOkbmt1bmdlbiBpc3Qg
+aW4gQXBhY2hlCiAgVG9tY2F0IGZlaGxlcmhhZnQgdW1nZXNldHp0LCBzbyBkYXNzIGVpbiBlbnRm
+ZXJudGVyLCBuaWNodCBhdXRoZW50aXNpZXJ0ZXIKICBBbmdyZWlmZXIgYXVmIGVpZ2VudGxpY2gg
+Z2VzY2jDvHR6dGUgQW53ZW5kdW5nc3Jlc3NvdXJjZW4genVncmVpZmVuLgoKQ1ZFLTIwMTgtMTMw
+NSBTY2h3YWNoc3RlbGxlIGluIEFwYWNoZSBUb21jYXQgZXJtw7ZnbGljaHQgVW1nZWhlbiB2b24K
+ICBTaWNoZXJoZWl0c3ZvcmtlaHJ1bmdlbgoKICBTaWNoZXJoZWl0c2Jlc2NocsOkbmt1bmdlbiwg
+ZGllIGR1cmNoIEFubWVya3VuZ2VuIChBbm5vdGF0aW9ucykgaW4gU2VydmxldHMKICBkZWZpbmll
+cnQgc2luZCwgd2VyZGVuIGVyc3QgZGFubiB1bWdlc2V0enQsIHdlbm4gZGFzIFNlcnZsZXQgdm9s
+bHN0w6RuZGlnCiAgZ2VsYWRlbiBpc3QuIEVpbiBlbnRmZXJudGVyLCBuaWNodCBhdXRoZW50aXNp
+ZXJ0ZXIgQW5ncmVpZmVyIGthbm4gZGllCiAgU2Nod2FjaHN0ZWxsZSBhdXNudXR6ZW4sIHVtIHVu
+YXV0b3Jpc2llcnQgYXVmIFJlc3NvdXJjZW4genV6dWdyZWlmZW4sIGRpZQogIGR1cmNoIGRpZXNl
+IEJlc2NocsOkbmt1bmdlbiBnZXNjaMO8dHp0IHdlcmRlbiBzb2xsZW4uCgoKTGlzdGUgZGVyIFNj
+aHdhY2hzdGVsbGVuOgogIENWRS0yMDE4LTEzMDQKICBDVkUtMjAxOC0xMzA1CgoKUmVmZXJlbnpl
+bjoKCkRpZXNlcyBBZHZpc29yeSBmaW5kZW4gU2llIGF1Y2ggaW0gREZOLUNFUlQgUG9ydGFsIHVu
+dGVyOgpbaHR0cHM6Ly9wb3J0YWwtbmV1LmNlcnQuZGZuLmRlL2Fkdmlzb3JpZXMvZGV0YWlscy8y
+MDE4LTAzNzhdCgoKWnVzw6R0emxpY2hlIEluZm9ybWF0aW9uZW46CgogIFNjaHdhY2hzdGVsbGUg
+Q1ZFLTIwMTgtMTMwNCAoTlZEKQogICAgaHR0cDovL3dlYi5udmQubmlzdC5nb3Yvdmlldy92dWxu
+L2RldGFpbD92dWxuSWQ9Q1ZFLTIwMTgtMTMwNAoKICBTY2h3YWNoc3RlbGxlIENWRS0yMDE4LTEz
+MDUgKE5WRCkKICAgIGh0dHA6Ly93ZWIubnZkLm5pc3QuZ292L3ZpZXcvdnVsbi9kZXRhaWw/dnVs
+bklkPUNWRS0yMDE4LTEzMDUKClBhdGNoZXM6CgogIEFwYWNoZSBTZWN1cml0eSBBZHZpc29yeTog
+QXBhY2hlIFRvbWNhdCBWdWxuZXJhYmlsaXRpZXMgZml4ZWQgaW4gOC4wLjUwCiAgICBodHRwczov
+L3RvbWNhdC5hcGFjaGUub3JnL3NlY3VyaXR5LTguaHRtbCNGaXhlZF9pbl9BcGFjaGVfVG9tY2F0
+XzguMC41MAoKICBBcGFjaGUgU2VjdXJpdHkgQWR2aXNvcnk6IEFwYWNoZSBUb21jYXQgVnVsbmVy
+YWJpbGl0aWVzIGZpeGVkIGluIDguNS4yOAogICAgaHR0cHM6Ly90b21jYXQuYXBhY2hlLm9yZy9z
+ZWN1cml0eS04Lmh0bWwjRml4ZWRfaW5fQXBhY2hlX1RvbWNhdF84LjUuMjgKCiAgQXBhY2hlIFNl
+Y3VyaXR5IEFkdmlzb3J5OiBBcGFjaGUgVG9tY2F0IHZ1bG5lcmFiaWxpdGllcyBmaXhlZCBpbiBB
+cGFjaGUKICBUb21jYXQgNy4wLjg1CiAgICBodHRwczovL3RvbWNhdC5hcGFjaGUub3JnL3NlY3Vy
+aXR5LTcuaHRtbCNGaXhlZF9pbl9BcGFjaGVfVG9tY2F0XzcuMC44NQoKICBBcGFjaGUgU2VjdXJp
+dHkgQWR2aXNvcnk6IEFwYWNoZSBUb21jYXQgVnVsbmVyYWJpbGl0aWVzIGZpeGVkIGluIEFwYWNo
+ZQogIFRvbWNhdCA5LjAuNQogICAgaHR0cHM6Ly90b21jYXQuYXBhY2hlLm9yZy9zZWN1cml0eS05
+Lmh0bWwjRml4ZWRfaW5fQXBhY2hlX1RvbWNhdF85LjAuNQoKICBGZWRvcmEgU2VjdXJpdHkgVXBk
+YXRlIEZFRE9SQS0yMDE4LTUwZjBkYTVkMzggKEZlZG9yYSAyNywKICB0b21jYXQtOC4wLjUwLTEu
+ZmMyNykKICAgIGh0dHBzOi8vYm9kaGkuZmVkb3JhcHJvamVjdC5vcmcvdXBkYXRlcy9GRURPUkEt
+MjAxOC01MGYwZGE1ZDM4CgogIEZlZG9yYSBTZWN1cml0eSBVcGRhdGUgRkVET1JBLTIwMTgtYTIz
+M2RhZTRhYiAoRmVkb3JhIDI2LAogIHRvbWNhdC04LjAuNTAtMS5mYzI2KQogICAgaHR0cHM6Ly9i
+b2RoaS5mZWRvcmFwcm9qZWN0Lm9yZy91cGRhdGVzL0ZFRE9SQS0yMDE4LWEyMzNkYWU0YWIKCiAg
+RmVkb3JhIFNlY3VyaXR5IFVwZGF0ZSBGRURPUkEtRVBFTC0yMDE4LWY1Y2Q5NGRiNGUgKEZlZG9y
+YSBFUEVMIDYsCiAgdG9tY2F0LTcuMC44NS0xLmVsNikKICAgIGh0dHBzOi8vYm9kaGkuZmVkb3Jh
+cHJvamVjdC5vcmcvdXBkYXRlcy9GRURPUkEtRVBFTC0yMDE4LWY1Y2Q5NGRiNGUKCgpNaXQgZnJl
+dW5kbGljaGVuIEdyw7zDn2VuLApJaHIgREZOLUNFUlQgSW5jaWRlbnQgUmVzcG9uc2UgVGVhbQoK
+Ci0tIAooYykgREZOLUNFUlQgU2VydmljZXMgR21iSCwgYWxsIHJpZ2h0cyByZXNlcnZlZCEKRGll
+IFdlaXRlcnZlcmJyZWl0dW5nIGlzdCBtaXQgSGlud2VpcyBhdWYgZGVuIENvcHlyaWdodGluaGFi
+ZXIgaW5uZXJoYWxiIGRlcgplaWdlbmVuIEVpbnJpY2h0dW5nIGVybGF1YnQuIEVpbmUgZGFyw7xi
+ZXIgaGluYXVzZ2VoZW5kZSBWZXJicmVpdHVuZyBiZWRhcmYKZGVzIHNjaHJpZnRsaWNoZW4gRWlu
+dmVyc3TDpG5kbmlzc2VzIGRlcyBSZWNodGVpbmhhYmVycy4=
+
+--===============2064164450296507237==
+Content-Type: application/json; charset="UTF-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment; filename="2018-0378.json"
+
+{
+=20=20"version":=20"2",=20
+=20=20"ref_num":=20"2018-0378",=20
+=20=20"fieldsets":=20{
+=20=20=20=20"scoring":=20{
+=20=20=20=20=20=20"daf":=20{
+=20=20=20=20=20=20=20=20"risk":=20"low"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cvss":=20{
+=20=20=20=20=20=20=20=20"temporal_score":=20"5.0",=20
+=20=20=20=20=20=20=20=20"vector":=20"AV:N/AC:L/Au:N/C:P/I:P/A:N/E:POC/RL:OF=
+/RC:C",=20
+=20=20=20=20=20=20=20=20"base_score":=20"6.4",=20
+=20=20=20=20=20=20=20=20"exploitability_score":=20"10.0",=20
+=20=20=20=20=20=20=20=20"impact_score":=20"4.9"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cpes":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Extra=20Packages=20for=20Re=
+d=20Hat=20Enterprise=20Linux=206\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:redhat:fedora_epel:6",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Red=20Hat=20Fedora=2027\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:redhat:fedora:27",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Red=20Hat=20Fedora=2026\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:redhat:fedora:26",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Microsoft=20Windows=20",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:microsoft:windows",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"GNU/Linux",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:gnu:linux",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Apple=20macOS",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:apple:macos",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Apache=20Software=20Foundat=
+ion=20Tomcat=20<=209.0.5\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:apache:tomcat:9.0.5",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Apache=20Software=20Foundat=
+ion=20Tomcat=20<=208.5.28\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:apache:tomcat:8.5.28",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Apache=20Software=20Foundat=
+ion=20Tomcat=20<=208.0.50\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:apache:tomcat:8.0.50",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Apache=20Software=20Foundat=
+ion=20Tomcat=20<=207.0.85\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:apache:tomcat:7.0.85",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20},=20
+=20=20=20=20"basic":=20{
+=20=20=20=20=20=20"description":=20"Zwei=20Schwachstellen=20in=20Apache=20T=
+omcat=20erm\u00f6glichen=20einem=20entfernten,=20nicht=20authentisierten=20=
+Angreifer=20das=20Umgehen=20von=20Sicherheitsvorkehrungen=20und=20dadurch=
+=20den=20Zugriff=20auf=20eigentlich=20gesch\u00fctzte=20Ressourcen.\n\nDer=
+=20Hersteller=20stellt=20Apache=20Tomcat=207.0.85,=208.0.50,=208.5.28=20und=
+=209.0.5=20als=20Sicherheitsupdates=20zur=20Verf\u00fcgung.",=20
+=20=20=20=20=20=20"workaround":=20null,=20
+=20=20=20=20=20=20"created":=20"20180223T13:27:20",=20
+=20=20=20=20=20=20"vulnerabilities":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"title":=20"Schwachstelle=20in=20Apache=20Tom=
+cat=20erm\u00f6glicht=20Umgehen=20von=20Sicherheitsvorkehrungen",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Eine=20leere=20Zeichenkette=
+=20kann=20in=20Apache=20Tomcat=20als=20URL-Pattern=20f\u00fcr=20Definitione=
+n=20von=20Sicherheitsbeschr\u00e4nkungen=20verwendet=20werden.=20Mit=20dies=
+em=20Pattern=20wird=20der=20Kontext=20auf=20das=20Wurzelverzeichnis=20der=
+=20Anwendung=20festgelegt.=20Die=20Ber\u00fccksichtigung=20des=20Patterns=
+=20f\u00fcr=20solche=20Beschr\u00e4nkungen=20ist=20in=20Apache=20Tomcat=20f=
+ehlerhaft=20umgesetzt,=20so=20dass=20ein=20entfernter,=20nicht=20authentisi=
+erter=20Angreifer=20auf=20eigentlich=20gesch\u00fctzte=20Anwendungsressourc=
+en=20zugreifen.",=20
+=20=20=20=20=20=20=20=20=20=20"name":=20"CVE-2018-1304"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"title":=20"Schwachstelle=20in=20Apache=20Tom=
+cat=20erm\u00f6glicht=20Umgehen=20von=20Sicherheitsvorkehrungen",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Sicherheitsbeschr\u00e4nkun=
+gen,=20die=20durch=20Anmerkungen=20(Annotations)=20in=20Servlets=20definier=
+t=20sind,=20werden=20erst=20dann=20umgesetzt,=20wenn=20das=20Servlet=20voll=
+st\u00e4ndig=20geladen=20ist.=20Ein=20entfernter,=20nicht=20authentisierter=
+=20Angreifer=20kann=20die=20Schwachstelle=20ausnutzen,=20um=20unautorisiert=
+=20auf=20Ressourcen=20zuzugreifen,=20die=20durch=20diese=20Beschr\u00e4nkun=
+gen=20gesch\u00fctzt=20werden=20sollen.",=20
+=20=20=20=20=20=20=20=20=20=20"name":=20"CVE-2018-1305"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"title":=20"Apache=20Tomcat:=20Zwei=20Schwachstellen=20er=
+m\u00f6glichen=20das=20Umgehen=20von=20Sicherheitsvorkehrungen",=20
+=20=20=20=20=20=20"references":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://tomcat.apache.org/security-=
+8.html#Fixed_in_Apache_Tomcat_8.0.50",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Apache=20Security=20Advisor=
+y:=20Apache=20Tomcat=20Vulnerabilities=20fixed=20in=208.0.50"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://tomcat.apache.org/security-=
+8.html#Fixed_in_Apache_Tomcat_8.5.28",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Apache=20Security=20Advisor=
+y:=20Apache=20Tomcat=20Vulnerabilities=20fixed=20in=208.5.28"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://tomcat.apache.org/security-=
+7.html#Fixed_in_Apache_Tomcat_7.0.85",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Apache=20Security=20Advisor=
+y:=20Apache=20Tomcat=20vulnerabilities=20fixed=20in=20Apache=20Tomcat=207.0=
+.85"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://tomcat.apache.org/security-=
+9.html#Fixed_in_Apache_Tomcat_9.0.5",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Apache=20Security=20Advisor=
+y:=20Apache=20Tomcat=20Vulnerabilities=20fixed=20in=20Apache=20Tomcat=209.0=
+.5"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"http://web.nvd.nist.gov/view/vuln/d=
+etail?vulnId=3DCVE-2018-1304",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Schwachstelle=20CVE-2018-13=
+04=20(NVD)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"http://web.nvd.nist.gov/view/vuln/d=
+etail?vulnId=3DCVE-2018-1305",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Schwachstelle=20CVE-2018-13=
+05=20(NVD)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://bodhi.fedoraproject.org/upd=
+ates/FEDORA-2018-50f0da5d38",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Fedora=20Security=20Update=
+=20FEDORA-2018-50f0da5d38=20(Fedora=2027,=20tomcat-8.0.50-1.fc27)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://bodhi.fedoraproject.org/upd=
+ates/FEDORA-2018-a233dae4ab",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Fedora=20Security=20Update=
+=20FEDORA-2018-a233dae4ab=20(Fedora=2026,=20tomcat-8.0.50-1.fc26)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://bodhi.fedoraproject.org/upd=
+ates/FEDORA-EPEL-2018-f5cd94db4e",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Fedora=20Security=20Update=
+=20FEDORA-EPEL-2018-f5cd94db4e=20(Fedora=20EPEL=206,=20tomcat-7.0.85-1.el6)"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"history":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"timestamp":=20"20180320T09:17:50",=20
+=20=20=20=20=20=20=20=20=20=20"version":=20"2",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"F\u00fcr=20Fedora=2026=20un=
+d=2027=20sowie=20f\u00fcr=20Fedora=20EPEL=206=20stehen=20Sicherheitsupdates=
+=20f\u00fcr=20Tomcat=20auf=20Version=208.0.50=20(Fedora=2026=20und=2027)=20=
+und=207.0.85=20(Fedora=20EPEL=206)=20im=20Status=20'testing'=20bereit."
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"timestamp":=20"20180223T14:49:21",=20
+=20=20=20=20=20=20=20=20=20=20"version":=20"1",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Neues=20Advisory"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20}
+=20=20}
+}
+--===============2064164450296507237==--
+
+--===============1654152529693652989==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIII7QYJKoZIhvcNAQcCoIII3jCCCNoCAQExDzANBglghkgBZQMEAgEFADALBgkqhkiG9w0BBwGg
+ggYAMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3DQEBCwUAMIGNMQswCQYDVQQG
+EwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3Jz
+Y2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUwIwYDVQQDDBxERk4tVmVyZWlu
+IEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIwMTIwNDExNDExN1owgaIxCzAJ
+BgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdIYW1idXJnMR8wHQYDVQQKDBZE
+Rk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAbBgNVBAMMFEdSUDogREZOLUNF
+UlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNlcnQuZGUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0Yw0ZS9sOZLRfN6nFe6HOj8Az
+NO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZPjuBRtsi+hKSvncR7oCNPDigs
+GbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVmW27fs5I61rP66DkqgrRXZh0w
+AZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvtsAJ2VXFhNNbtRY9XTDXi/Yar
+5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoGeUKrwG5TQM9FAgMBAAGjggJD
+MIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYBBAGBrSGCLAEBBAMGMBEGDysG
+AQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIGwDATBgNVHSUEDDAKBggrBgEF
+BQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYDVR0jBBgwFoAUazqYi/nyU4na
+4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0LmRlMIGNBgNVHR8EgYUwgYIw
+P6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWdsb2JhbC1nMi9wdWIvY3JsL2Nh
+Y3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9kZm4tY2EtZ2xvYmFsLWcyL3B1
+Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggrBgEFBQcwAYYnaHR0cDovL29j
+c3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMS5w
+Y2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsXu7Gk4M32/Rs2jdf9rTw3/Aag
+meXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JHhwv5JSdyzM2/pG63uRi/WJ7z
+VYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB8Qb+p3YVTa9vcnmNpci1SYtM
+9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqooGuMgkeB5hi2xUcxKhR8uUYhN
+ftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYFS2sAbrrt2PhOtTHm5o51SbfI
+MYICsTCCAq0CAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQKDDxWZXJlaW4genVyIEZvZXJk
+ZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMgZS4gVi4xEDAOBgNVBAsMB0RG
+Ti1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3VpbmcgQ0ECDB5GA2zY8pjckgcl
+SzANBglghkgBZQMEAgEFAKCB5DAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJ
+BTEPFw0xODAzMjAwODIwMzJaMC8GCSqGSIb3DQEJBDEiBCDFlMVm5IA9y1ANbpl9HuFV5bZL/vUF
+1sTTPEZYWwqJ5TB5BgkqhkiG9w0BCQ8xbDBqMAsGCWCGSAFlAwQBKjALBglghkgBZQMEARYwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMA4GCCqGSIb3DQMCAgIAgDANBggqhkiG9w0DAgIBQDAHBgUr
+DgMCBzANBggqhkiG9w0DAgIBKDANBgkqhkiG9w0BAQEFAASCAQAu6n3Os3wrnEpULZdkxLg5vS0P
+XyQuWxiqxIacAPhc0Rg2JBV8t7WjkGRZppjXXBaz8Z9so16miZqgTg89IffykNC59PHFZeLO+yFf
++4uB8dGfx1E2ZE2bErohXbqNoJ/eyWZze/lVPs4tgn9VseTrATkiiK1zKmvP4hlORaZbznfcvU/3
+a9NHeUjQ4bNY9QLh7uK62NnXvc5FDNXoWEIJQ88c+iJhOPYm0u748A7otnUqxkoxB+32h7qpaUMp
+bBzK1WHa68T/AiLGe6zJr/03YKb5r396bCrQ/J3n8pk/feRJEXplVXAaOX+1mxnEXDoB0i3OQ2fg
+YH3YMdVDupzB
+
+--===============1654152529693652989==--

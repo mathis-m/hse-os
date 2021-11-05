@@ -1,0 +1,656 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Wed, 7 Mar
+ 2018 15:05:54 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id 6E9F525A15; Wed,  7 Mar 2018
+ 15:05:54 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id 63E8725A13	for
+ <rz+certapple@hs-esslingen.de>; Wed,  7 Mar 2018 15:05:54 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.21
+X-Spam-Level:
+X-Spam-Status: No, score=-4.21 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, T_RP_MATCHES_RCVD=-0.01]
+	autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ wrBWioi6WgxI for <rz+certapple@hs-esslingen.de>;	Wed,  7 Mar 2018 15:05:52
+ +0100 (CET)
+Received: from mail2.dfn-cert.de (mail2.dfn-cert.de [193.174.13.207])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Wed,  7 Mar 2018 15:05:52 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=SHA256; boundary="===============7647865029962207114=="
+From: DFN-CERT <portal@dfn-cert.de>
+Subject: =?utf-8?q?DFN-CERT-2018-0437_Google_Chrome=2C_Chromium=3A_Mehrere_Schwachstellen_erm=C3=B6glichen_u=2Ea=2E_die_Ausf=C3=BChrung_beliebigen_Programmcodes_=5BLinux=5D=5BApple=5D=5BWindows=5D?=
+Date: Wed, 7 Mar 2018 14:05:02 +0000
+To: <rz+certapple@hs-esslingen.de>
+Message-ID: <20180307140552.664A42E05BF@mail2.dfn-cert.de>
+Return-Path: dfn-adv-bounces@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;-900606;0;PM
+MIME-Version: 1.0
+
+--===============7647865029962207114==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Liebe Kolleginnen und Kollegen,
+
+bitte beachten Sie die folgende Sicherheitsmeldung.
+
+Betroffene Software:
+
+  Chromium < 65.0.3325.146
+  Google Chrome < 65.0.3325.146
+  =
+
+
+Betroffene Plattformen:
+
+  Apple macOS
+  GNU/Linux
+  Microsoft Windows =
+
+  =
+
+
+
+Eine Vielzahl von Schwachstellen erm=C3=B6glichen einem vermutlich entfernt=
+en und
+nicht authentisierten Angreifer, zumeist mit Hilfe einer manipulierten
+Webseite, welche ein Benutzer =C3=B6ffnen muss, die Ausf=C3=BChrung beliebi=
+gen
+Programmcodes, das Umgehen von Sicherheitsvorkehrungen, das Aussp=C3=A4hen =
+von
+Informationen und das Darstellen falscher Informationen (unter anderem URL
+Spoofing), die Manipulation von Dateien, die Durchf=C3=BChrung von
+Denial-of-Service (DoS)-Angriffen sowie eines Cross-Site-Scripting
+(XSS)-Angriffs.
+
+Google stellt Chrome 65.0.3325.146 f=C3=BCr Windows, macOS und Linux als
+Sicherheitsupdate zur Verf=C3=BCgung. Weitere Informationen zu den Schwachs=
+tellen
+werden erst ver=C3=B6ffentlicht, wenn eine signifikante Anzahl von Benutzer=
+n die
+Sicherheitsupdates installiert hat.
+
+
+Patch:
+
+  Chrome Stable Channel Update 65.0.3325.146, 6. M=C3=A4rz 2018
+
+  <https://chromereleases.googleblog.com/2018/03/stable-channel-update-for-=
+desktop.html>
+
+
+CVE-2018-6083: Schwachstelle in Google Chrome und Chromium erm=C3=B6glicht =
+nicht
+  spezifizierte Angriffe
+
+  In Google Chrome und Chromium vor Version 65.0.3325.146 existiert eine
+  Schwachstelle wodurch sogenannte 'AppManifests' falsch verarbeitet werden.
+  Ein vermutlich entfernter, nicht authentisierter Angreifer kann die
+  Schwachstelle ausnutzen, um nicht genauer spezifizierte Angriffe
+  durchzuf=C3=BChren, welche vermutlich das Darstellen falscher Information=
+en zur
+  Folge haben.
+
+
+CVE-2018-6082: Schwachstelle in Google Chrome und Chromium erm=C3=B6glicht
+  Umgehen von Sicherheitsvorkehrungen
+
+  In Google Chrome und Chromium vor Version 65.0.3325.146 existiert eine
+  Schwachstelle, welche es erm=C3=B6glicht etwaige Blockierungen von Ports =
+zu
+  umgehen. Ein vermutlich entfernter, nicht authentisierter Angreifer kann =
+die
+  Schwachstelle mit Hilfe einer manipulierten Webseite, welche ein Benutzer
+  =C3=B6ffnen muss, ausnutzen, um Sicherheitsvorkehrungen zu umgehen und da=
+durch
+  weitere nicht genauer spezifizierte Angriffe auszuf=C3=BChren.
+
+
+CVE-2018-6081: Schwachstelle in Google Chrome und Chromium erm=C3=B6glicht
+  Cross-Site-Scripting-Angriff
+
+  In Google Chrome und Chromium vor Version 65.0.3325.146 existiert eine
+  Schwachstelle aufgrund ungen=C3=BCgender =C3=9Cberpr=C3=BCfung von Eingab=
+en bei sogenannten
+  'Interstitials'. Ein vermutlich entfernter, nicht authentisierter Angreif=
+er
+  kann die Schwachstelle mit Hilfe einer manipulierten Webseite ausnutzen,
+  welche ein Benutzer =C3=B6ffnen muss, um einen Cross-Site-Scripting (XSS)=
+-Angriff
+  auszuf=C3=BChren und dadurch weitere nicht genauer spezifizierte Angriffe
+  durchzuf=C3=BChren.
+
+
+CVE-2018-6080: Schwachstelle in Google Chrome und Chromium erm=C3=B6glicht
+  Aussp=C3=A4hen von Informationen
+
+  In Google Chrome und Chromium vor Version 65.0.3325.146 existiert eine
+  Schwachstelle aufgrund fehlerhafter Verarbeitung von 'Inter-Process
+  Communication'-Aufrufen (IPC Calls). Ein vermutlich entfernter, nicht
+  authentisierter Angreifer kann die Schwachstelle mit Hilfe einer
+  manipulierten Webseite ausnutzen, welche ein Benutzer =C3=B6ffnen muss, um
+  Informationen auszusp=C3=A4hen.
+
+
+CVE-2018-6079: Schwachstelle in WebGL erm=C3=B6glicht Aussp=C3=A4hen von In=
+formationen
+
+  In der Komponente 'WebGL' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund fehlerhafter
+  Verarbeitung von Texturdaten (Texture Data). Ein vermutlich entfernter,
+  nicht authentisierter Angreifer kann die Schwachstelle mit Hilfe einer
+  manipulierten Webseite ausnutzen, welche ein Benutzer =C3=B6ffnen muss, um
+  Informationen auszusp=C3=A4hen.
+
+
+CVE-2018-6078: Schwachstelle in OmnibBox erm=C3=B6glicht Darstellen falscher
+  Informationen
+
+  In der Komponente 'OmniBox' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle, welche es erm=C3=B6glicht eine
+  falsche URL vorzut=C3=A4uschen (Spoofing). Ein vermutlich entfernter, nic=
+ht
+  authentisierter Angreifer kann die Schwachstelle ausnutzen, um einen
+  Benutzer dazu zu verleiten, eine URL zu einer manipulierten Webseite zu
+  =C3=B6ffnen, um weitere nicht genauer spezifizierte Angriffe durchzuf=C3=
+=BChren.
+
+
+CVE-2018-6077: Schwachstelle in Google Chrome und Chromium erm=C3=B6glicht
+  vermutlich Aussp=C3=A4hen von Informationen
+
+  In Google Chrome und Chromium vor Version 65.0.3325.146 existiert eine
+  Schwachstelle, welche einen sogenannten Timing-Angriff (Timing Attack) un=
+ter
+  Verwendung von SVG-Filtern erm=C3=B6glicht. Ein vermutlich entfernter, ni=
+cht
+  authentisierter Angreifer kann die Schwachstelle ausnutzen, um durch den
+  Vergleich von Verarbeitungszeiten m=C3=B6glicherweise Informationen zu er=
+langen.
+
+
+CVE-2018-6076: Schwachstelle in Blink erm=C3=B6glicht Darstellen falscher
+  Informationen
+
+  In der Komponente 'Blink' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund fehlerhafter
+  Verarbeitung von URL Fragmentbezeichner (Fragment Identifier). Dadurch ka=
+nn
+  es bei der Darstellung von Inhalten aus einer untergeordneten Quelle
+  (Subordinate Resource, hierzu z=C3=A4hlen beispielsweise '#'-Tags) zu ein=
+em
+  Fehlverhalten kommen. Ein vermutlich entfernter, nicht authentisierter
+  Angreifer kann die Schwachstelle ausnutzen, um falsche Informationen
+  darzustellen, wodurch weitere nicht spezifizierte Angriffe m=C3=B6glich s=
+ind.
+
+
+CVE-2018-6075: Schwachstelle in Google Chrome und Chromium erm=C3=B6glicht
+  Umgehen von Sicherheitsvorkehrungen
+
+  In Google Chrome und Chromium vor Version 65.0.3325.146 existiert eine
+  Schwachstelle aufgrund ungen=C3=BCgender Zugriffsbeschr=C3=A4nkungen f=C3=
+=BCr Downloads aus
+  fremden / dritten Quellen (Cross-Origin). Ein vermutlich entfernter, nicht
+  authentisierter Angreifer kann die Schwachstelle mit Hilfe einer
+  manipulierten Webseite, welche ein Benutzer =C3=B6ffnen muss, ausnutzen, =
+um
+  Sicherheitsvorkehrungen zu umgehen und dadurch weitere nicht genauer
+  spezifizierte Angriffe durchzuf=C3=BChren.
+
+
+CVE-2018-6074: Schwachstelle in Google Chrome und Chromium erm=C3=B6glicht
+  Umgehen von Sicherheitsvorkehrungen
+
+  In Google Chrome und Chromium vor Version 65.0.3325.146 existiert eine
+  Schwachstelle wodurch der Schutzmechanismus 'Mark-of-the-Web' (MOTW)
+  umgangen werden kann. Der Mechanismus dient der Markierung von Dateien,
+  welche aus unbekannten Quellen bezogen werden und potentiell sch=C3=A4dli=
+ch sein
+  k=C3=B6nnten. Diese Dateien werden zun=C3=A4chst in einer gesch=C3=BCtzte=
+n Ansicht
+  dargestellt. Ein vermutlich entfernter, nicht authentisierter Angreifer k=
+ann
+  die Schwachstelle mit Hilfe einer manipulierten Webseite, welche ein
+  Benutzer =C3=B6ffnen muss, ausnutzen, um Sicherheitsvorkehrungen zu umgeh=
+en und
+  dadurch weitere nicht genauer spezifizierte Angriffe durchzuf=C3=BChren.
+
+
+CVE-2018-6073: Schwachstelle in WebGL erm=C3=B6glicht vermutlich u.a. Aussp=
+=C3=A4hen
+  von Informationen
+
+  In der Komponente 'WebGL' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund fehlerhafter
+  Speicherverwaltung. In der Folge kommt es unter Umst=C3=A4nden zum =C3=9C=
+berlauf des
+  Heap-basierten Pufferspeichers (Heap Buffer Overflow). Ein vermutlich
+  entfernter, nicht authentisierter Angreifer kann die Schwachstelle mit Hi=
+lfe
+  einer manipulierten Webseite ausnutzen, welche ein Benutzer =C3=B6ffnen m=
+uss, um
+  u.a. Informationen auszusp=C3=A4hen, Daten zu manipulieren oder weitere n=
+icht
+  genauer spezifizierte Angriffe auszuf=C3=BChren.
+
+
+CVE-2018-6072: Schwachstelle in PDFium erm=C3=B6glicht vermutlich
+  Denial-of-Service (DoS)-Angriff
+
+  In der Komponente 'PDFium' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund fehlerhafter
+  Speicherverwaltung. In der Folge kommt es unter Umst=C3=A4nden zu einem
+  Ganzzahl=C3=BCberlauf (Integer Overflow) und damit vermutlich zum Absturz=
+ der
+  Anwendung. Ein vermutlich entfernter, nicht authentisierter Angreifer kann
+  die Schwachstelle mit Hilfe einer manipulierten PDF-Datei ausnutzen, welc=
+he
+  ein Benutzer =C3=B6ffnen muss, um einen Denial-of-Service (DoS)-Angriff
+  durchzuf=C3=BChren.
+
+
+CVE-2018-6071: Schwachstelle in Skia erm=C3=B6glicht vermutlich u.a. Aussp=
+=C3=A4hen
+  von Informationen
+
+  In der Komponente 'Skia' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund fehlerhafter
+  Speicherverwaltung. In der Folge kommt es unter Umst=C3=A4nden zum =C3=9C=
+berlauf des
+  Heap-basierten Pufferspeichers Heap Buffer Overflow). Ein vermutlich
+  entfernter, nicht authentisierter Angreifer kann die Schwachstelle mit Hi=
+lfe
+  einer manipulierten Webseite ausnutzen, welche ein Benutzer =C3=B6ffnen m=
+uss, um
+  u.a. Informationen auszusp=C3=A4hen, Daten zu manipulieren oder weitere n=
+icht
+  genauer spezifizierte Angriffe auszuf=C3=BChren.
+
+
+CVE-2018-6070: Schwachstelle in Google Chrome und Chromium erm=C3=B6glicht
+  Umgehen von Sicherheitsvorkehrungen
+
+  In Google Chrome und Chromium vor Version 65.0.3325.146 existiert eine
+  Schwachstelle wodurch der Schutzmechanismus 'Content Security Policy' (CS=
+P)
+  mit Hilfe einer Erweiterung (Extension) umgangen werden kann. Ein vermutl=
+ich
+  entfernter, nicht authentisierter Angreifer kann die Schwachstelle mit Hi=
+lfe
+  einer manipulierten Extension, welche ein Benutzer installieren muss,
+  ausnutzen, um Sicherheitsvorkehrungen zu umgehen und dadurch weitere nicht
+  genauer spezifizierte Angriffe durchzuf=C3=BChren.
+
+
+CVE-2018-6069: Schwachstelle in Skia erm=C3=B6glicht vermutlich u.a. Aussp=
+=C3=A4hen
+  von Informationen
+
+  In der Komponente 'Skia' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund fehlerhafter
+  Speicherverwaltung. In der Folge kommt es unter Umst=C3=A4nden zum =C3=9C=
+berlauf des
+  Stack-basierten Pufferspeichers (Stack Buffer Overflow). Ein vermutlich
+  entfernter, nicht authentisierter Angreifer kann die Schwachstelle mit Hi=
+lfe
+  einer manipulierten Webseite ausnutzen, welche ein Benutzer =C3=B6ffnen m=
+uss, um
+  u.a. Informationen auszusp=C3=A4hen, Daten zu manipulieren oder weitere n=
+icht
+  genauer spezifizierte Angriffe durchzuf=C3=BChren.
+
+
+CVE-2018-6068: Schwachstelle in Google Chrome und Chromium erm=C3=B6glicht
+  vermutlich Aussp=C3=A4hen von Informationen
+
+  In Google Chrome und Chromium vor Version 65.0.3325.146 existiert eine
+  Schwachstelle aufgrund der Lebensdauer von Objekten im Speicher (Object
+  Lifecycle) im Bezug auf die Funktion 'Chrome Custom Tab'. Ein vermutlich
+  entfernter, nicht authentisierter Angreifer kann die Schwachstelle mit Hi=
+lfe
+  einer manipulierten Webseite, welche ein Benutzer besuchen muss, ausnutze=
+n,
+  um Informationen auszusp=C3=A4hen und dadurch weitere nicht genauer spezi=
+fizierte
+  Angriffe durchzuf=C3=BChren.
+
+
+CVE-2018-6067: Schwachstelle in Skia erm=C3=B6glicht vermutlich u.a. Aussp=
+=C3=A4hen
+  von Informationen
+
+  In der Komponente 'Skia' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund fehlerhafter
+  Speicherverwaltung. In der Folge kommt es unter Umst=C3=A4nden zum =C3=9C=
+berlauf des
+  Pufferspeichers (Buffer Overflow). Ein vermutlich entfernter, nicht
+  authentisierter Angreifer kann die Schwachstelle mit Hilfe einer
+  manipulierten Webseite ausnutzen, welche ein Benutzer =C3=B6ffnen muss, u=
+m u.a.
+  Informationen auszusp=C3=A4hen, Daten zu manipulieren oder weitere nicht =
+genauer
+  spezifizierte Angriffe durchzuf=C3=BChren.
+
+
+CVE-2018-6066: Schwachstelle in Google Chrome und Chromium erm=C3=B6glicht
+  Umgehen von Sicherheitsvorkehrungen
+
+  In Google Chrome und Chromium vor Version 65.0.3325.146 existiert eine
+  Schwachstelle wodurch der Schutzmechanismus der gleichen Herkunft (Same
+  Origin) mit Hilfe von Canvas-Elementen umgangen werden kann. Ein vermutli=
+ch
+  entfernter, nicht authentisierter Angreifer kann die Schwachstelle mit Hi=
+lfe
+  einer manipulierten Webseite, welche ein Benutzer besuchen muss, ausnutze=
+n,
+  um Sicherheitsvorkehrungen zu umgehen und dadurch weitere nicht genauer
+  spezifizierte Angriffe durchzuf=C3=BChren.
+
+
+CVE-2018-6065: Schwachstelle in V8 erm=C3=B6glicht vermutlich Ausf=C3=BChru=
+ng
+  beliebigen Programmcodes
+
+  In der Komponente 'V8' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund fehlerhafter
+  Variablenverwaltung. In der Folge kommt es unter Umst=C3=A4nden zu einem
+  Ganzzahl=C3=BCberlauf (Integer Overflow) und damit m=C3=B6glicherweise zu=
+ einem
+  Speicher=C3=BCberlauf kommen. Ein vermutlich entfernter, nicht authentisi=
+erter
+  Angreifer kann die Schwachstelle mit Hilfe einer manipulierten Webseite
+  ausnutzen, welche ein Benutzer =C3=B6ffnen muss, um m=C3=B6glicherweise b=
+eliebigen
+  Programmcode zur Ausf=C3=BChrung zu bringen.
+
+
+CVE-2018-6064: Schwachstelle in V8 erm=C3=B6glicht Ausf=C3=BChrung beliebig=
+en
+  Programmcodes
+
+  In der Komponente 'V8' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund einer abweichenden
+  Nutzung von Daten-Objekten (Type Confusion). Ein vermutlich entfernter,
+  nicht authentisierter Angreifer kann die Schwachstelle mit Hilfe einer
+  manipulierten Webseite ausnutzen, welche ein Benutzer =C3=B6ffnen muss, um
+  beliebigen Programmcode zur Ausf=C3=BChrung zu bringen.
+
+
+CVE-2018-6062: Schwachstelle in Skia erm=C3=B6glicht Ausf=C3=BChrung belieb=
+igen
+  Programmcodes
+
+  In der Komponente 'Skia' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund fehlerhafter
+  Speicherverwaltung. In der Folge kommt es unter Umst=C3=A4nden zum =C3=9C=
+berlauf des
+  Heap-basierten Pufferspeichers (Heap Buffer Overflow). Ein vermutlich
+  entfernter, nicht authentisierter Angreifer kann die Schwachstelle mit Hi=
+lfe
+  einer manipulierten Webseite ausnutzen, welche ein Benutzer =C3=B6ffnen m=
+uss, um
+  beliebigen Programmcode zur Ausf=C3=BChrung zu bringen.
+
+
+CVE-2018-6061: Schwachstelle in V8 erm=C3=B6glicht Ausf=C3=BChrung beliebig=
+en
+  Programmcodes
+
+  In der Komponente 'V8' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund einer Wettlaufsituati=
+on
+  (Race Condition). Ein vermutlich entfernter, nicht authentisierter Angrei=
+fer
+  kann die Schwachstelle ausnutzen, um beliebigen Programmcode zur Ausf=C3=
+=BChrung
+  zu bringen.
+
+
+CVE-2018-6060: Schwachstelle in Blink erm=C3=B6glicht Ausf=C3=BChrung belie=
+bigen
+  Programmcodes
+
+  In der Komponente 'Blink' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existiert eine Schwachstelle aufgrund fehlerhafter
+  Speicherverwaltung. In der Folge kommt es unter Umst=C3=A4nden zur Nutzung
+  bereits freigegebenen Speichers (Use After Free). Ein vermutlich entfernt=
+er,
+  nicht authentisierter Angreifer kann die Schwachstelle mit Hilfe einer
+  manipulierten Webseite ausnutzen, welche ein Benutzer =C3=B6ffnen muss, um
+  beliebigen Programmcode zur Ausf=C3=BChrung zu bringen.
+
+
+CVE-2018-6058 CVE-2018-6059: Schwachstellen in Chrome und Chromium
+  erm=C3=B6glichen Ausf=C3=BChrung beliebigen Programmcodes
+
+  In der Komponente 'Flash' in Google Chrome und Chromium vor Version
+  65.0.3325.146 existieren zwei Schwachstellen aufgrund fehlerhafter
+  Speicherverwaltung. In der Folge kommt es unter Umst=C3=A4nden zur Nutzung
+  bereits freigegebenen Speichers (Use After Free). Ein vermutlich entfernt=
+er,
+  nicht authentisierter Angreifer kann die Schwachstellen mit Hilfe einer
+  manipulierten Webseite ausnutzen, welche ein Benutzer =C3=B6ffnen muss, um
+  beliebigen Programmcode zur Ausf=C3=BChrung zu bringen.
+
+
+CVE-2018-6057 CVE-2018-6063: Schwachstellen in Google Chrome und Chromium
+  erm=C3=B6glichen vermutlich Ausf=C3=BChrung beliebigen Programmcodes
+
+  In Google Chrome und Chromium vor Version 65.0.3325.146 existieren zwei
+  Schwachstellen aufgrund fehlerhafter Zugriffsbeschr=C3=A4nkungen f=C3=BCr=
+ geteilte
+  Speicherbereiche (Shared Memory). Ein vermutlich entfernter, nicht
+  authentisierter Angreifer kann die Schwachstellen mit Hilfe einer
+  manipulierten Webseite, welche ein Benutzer besuchen muss, ausnutzen, um =
+auf
+  Shared Memory zuzugreifen und dadurch m=C3=B6glicherweise beliebigen Prog=
+rammcode
+  zur Ausf=C3=BChrung zu bringen.
+
+
+Referenzen:
+
+Dieses Advisory finden Sie auch im DFN-CERT Portal unter:
+  <https://portal.cert.dfn.de/adv/DFN-CERT-2018-0437/>
+
+Chrome Stable Channel Update 65.0.3325.146, 6. M=C3=A4rz 2018:
+  <https://chromereleases.googleblog.com/2018/03/stable-channel-update-for-=
+desktop.html>
+
+Chrome / Chromium Guidelines for Security Issues:
+  <https://chromium.googlesource.com/chromium/src/+/master/docs/security/se=
+verity-guidelines.md>
+
+Schwachstelle CVE-2018-6057 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6057>
+
+Schwachstelle CVE-2018-6058 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6058>
+
+Schwachstelle CVE-2018-6059 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6059>
+
+Schwachstelle CVE-2018-6060 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6060>
+
+Schwachstelle CVE-2018-6061 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6061>
+
+Schwachstelle CVE-2018-6062 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6062>
+
+Schwachstelle CVE-2018-6063 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6063>
+
+Schwachstelle CVE-2018-6064 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6064>
+
+Schwachstelle CVE-2018-6065 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6065>
+
+Schwachstelle CVE-2018-6066 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6066>
+
+Schwachstelle CVE-2018-6067 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6067>
+
+Schwachstelle CVE-2018-6068 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6068>
+
+Schwachstelle CVE-2018-6069 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6069>
+
+Schwachstelle CVE-2018-6070 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6070>
+
+Schwachstelle CVE-2018-6071 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6071>
+
+Schwachstelle CVE-2018-6072 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6072>
+
+Schwachstelle CVE-2018-6073 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6073>
+
+Schwachstelle CVE-2018-6074 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6074>
+
+Schwachstelle CVE-2018-6075 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6075>
+
+Schwachstelle CVE-2018-6076 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6076>
+
+Schwachstelle CVE-2018-6077 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6077>
+
+Schwachstelle CVE-2018-6078 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6078>
+
+Schwachstelle CVE-2018-6079 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6079>
+
+Schwachstelle CVE-2018-6080 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6080>
+
+Schwachstelle CVE-2018-6081 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6081>
+
+Schwachstelle CVE-2018-6082 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6082>
+
+Schwachstelle CVE-2018-6083 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-6083>
+
+
+(c) DFN-CERT Services GmbH, all rights reserved!
+Die Weiterverbreitung ist mit Hinweis auf den Copyrightinhaber innerhalb der
+eigenen Einrichtung erlaubt. Eine dar=C3=BCber hinausgehende Verbreitung be=
+darf
+des schriftlichen Einverst=C3=A4ndnisses des Rechteinhabers.
+
+--===============7647865029962207114==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExDzANBglghkgBZQMEAgEFADCABgkqhkiG9w0BBwEAAKCCEMYw
+ggUSMIID+qADAgECAgkA4wvV+K8l2YEwDQYJKoZIhvcNAQELBQAwgYIxCzAJBgNVBAYTAkRFMSsw
+KQYDVQQKDCJULVN5c3RlbXMgRW50ZXJwcmlzZSBTZXJ2aWNlcyBHbWJIMR8wHQYDVQQLDBZULVN5
+c3RlbXMgVHJ1c3QgQ2VudGVyMSUwIwYDVQQDDBxULVRlbGVTZWMgR2xvYmFsUm9vdCBDbGFzcyAy
+MB4XDTE2MDIyMjEzMzgyMloXDTMxMDIyMjIzNTk1OVowgZUxCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+EzxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsTB0RGTi1QS0kxLTArBgNVBAMTJERGTi1WZXJlaW4gQ2VydGlmaWNhdGlv
+biBBdXRob3JpdHkgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMtg1/9moUHN0vqH
+l4pzq5lN6mc5WqFggEcVToyVsuXPztNXS43O+FZsFVV2B+pG/cgDRWM+cNSrVICxI5y+NyipCf8F
+XRgPxJiZN7Mg9mZ4F4fCnQ7MSjLnFp2uDo0peQcAIFTcFV9Kltd4tjTTwXS1nem/wHdN6r1ZB+Ba
+L2w8pQDcNb1lDY9/Mm3yWmpLYgHurDg0WUU2SQXaeMpqbVvAgWsRzNI8qIv4cRrKO+KA3Ra0Z3qL
+NupOkSk9s1FcragMvp0049ENF4N1xDkesJQLEvHVaY4l9Lg9K7/AjsMeO6W/VRCrKq4Xl14zzsjz
+9AkH4wKGMUZrAcUQDBHHWekCAwEAAaOCAXQwggFwMA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQU
+k+PYMiba1fFKpZFK4OpL4qIMz+EwHwYDVR0jBBgwFoAUv1kgNgB5oKAia4zV8mHSuCzLgkowEgYD
+VR0TAQH/BAgwBgEB/wIBAjAzBgNVHSAELDAqMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGC
+LB4wCAYGZ4EMAQICMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6Ly9wa2kwMzM2LnRlbGVzZWMuZGUv
+cmwvVGVsZVNlY19HbG9iYWxSb290X0NsYXNzXzIuY3JsMIGGBggrBgEFBQcBAQR6MHgwLAYIKwYB
+BQUHMAGGIGh0dHA6Ly9vY3NwMDMzNi50ZWxlc2VjLmRlL29jc3ByMEgGCCsGAQUFBzAChjxodHRw
+Oi8vcGtpMDMzNi50ZWxlc2VjLmRlL2NydC9UZWxlU2VjX0dsb2JhbFJvb3RfQ2xhc3NfMi5jZXIw
+DQYJKoZIhvcNAQELBQADggEBAIcL/z4Cm2XIVi3WO5qYi3FP2ropqiH5Ri71sqQPrhE4eTizDnS6
+dl2e6BiClmLbTDPo3flq3zK9LExHYFV/53RrtCyD2HlrtrdNUAtmB7Xts5et6u5/MOaZ/SLick0+
+hFvu+c+Z6n/XUjkurJgARH5pO7917tALOxrN5fcPImxHhPalR6D90Bo0fa3SPXez7vTXTf/D6OWS
+T1k+kEcQSrCFWMBvf/iu7QhCnh7U3xQuTY+8npTD5+32GPg8SecmqKc22CzeIs2LgtjZeOJVEqM7
+h0S2EQvVDFKvaYwPBt/QolOLV5h7z/0HJPT8vcP9SpIClxvyt7bPZYoaorVyGTkwggWsMIIElKAD
+AgECAgcbY7rQHiw9MA0GCSqGSIb3DQEBCwUAMIGVMQswCQYDVQQGEwJERTFFMEMGA1UEChM8VmVy
+ZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYu
+MRAwDgYDVQQLEwdERk4tUEtJMS0wKwYDVQQDEyRERk4tVmVyZWluIENlcnRpZmljYXRpb24gQXV0
+aG9yaXR5IDIwHhcNMTYwNTI0MTEzODQwWhcNMzEwMjIyMjM1OTU5WjCBjTELMAkGA1UEBhMCREUx
+RTBDBgNVBAoMPFZlcmVpbiB6dXIgRm9lcmRlcnVuZyBlaW5lcyBEZXV0c2NoZW4gRm9yc2NodW5n
+c25ldHplcyBlLiBWLjEQMA4GA1UECwwHREZOLVBLSTElMCMGA1UEAwwcREZOLVZlcmVpbiBHbG9i
+YWwgSXNzdWluZyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ07eRxH3h+Gy8Zp
+1xCeOdfZojDbchwFfylfS2jxrRnWTOFrG7ELf6Gr4HuLi9gtzm6IOhDuV+UefwRRNuu6cG1joL6W
+LkDh0YNMZj0cZGnlm6Stcq5oOVGHecwX064vXWNxSzl660Knl5BpBb+Q/6RAcL0D57+eGIgfn5mI
+TQ5HjUhfZZkQ0tkqSe3BuS0dnxLLFdM/fx5ULzquk1enfnjK1UriGuXtQX1TX8izKvWKMKztFwUk
+P7agCwf9TRqaA1KgNpzeJIdl5Of6x5ZzJBTN0OgbaJ4YWa52fvfRCng8h0uwN89Tyjo4EPPLR22M
+ZD08WkVKusqAfLjz56dMTM0CAwEAAaOCAgUwggIBMBIGA1UdEwEB/wQIMAYBAf8CAQEwDgYDVR0P
+AQH/BAQDAgEGMCkGA1UdIAQiMCAwDQYLKwYBBAGBrSGCLB4wDwYNKwYBBAGBrSGCLAEBBDAdBgNV
+HQ4EFgQUazqYi/nyU4na4K2yMh4JH+iqO3QwHwYDVR0jBBgwFoAUk+PYMiba1fFKpZFK4OpL4qIM
+z+EwgY8GA1UdHwSBhzCBhDBAoD6gPIY6aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9v
+dC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDBAoD6gPIY6aHR0cDovL2NkcDIucGNhLmRmbi5kZS9n
+bG9iYWwtcm9vdC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB3QYIKwYBBQUHAQEEgdAwgc0wMwYI
+KwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBKBggrBgEF
+BQcwAoY+aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9vdC1nMi1jYS9wdWIvY2FjZXJ0
+L2NhY2VydC5jcnQwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXJv
+b3QtZzItY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCBeEWkTqR/
+DlXwCbFqPnjMaDWpHPOVnj/z+N9rOHeJLI21rT7H8pTNoAauusyosa0zCLYkhmI2THhuUPDVbmCN
+T1IxQ5dGdfBi5G5mUcFCMWdQ5UnnOR7Ln8qGSN4IFP8VSytmm6A4nwDO/afr0X9XLchMX9wQEZc+
+lgQCXISoKTlslPwQkgZ7nu7YRrQbtQMMONncsKk/cQYLsgMHM8KNSGMlJTx6e1du94oFOO+4oK4v
+9NsH1VuEGMGpuEvObJAaguS5Pfp38dIfMwK/U+d2+dwmJUFvL6Yb+qQTkPp8ftkLYF3sv8pBoGH7
+EUkp2KgtdRXYShjqFu9VNCIaE40GMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3
+DQEBCwUAMIGNMQswCQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVp
+bmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUw
+IwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIw
+MTIwNDExNDExN1owgaIxCzAJBgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdI
+YW1idXJnMR8wHQYDVQQKDBZERk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAb
+BgNVBAMMFEdSUDogREZOLUNFUlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNl
+cnQuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0
+Yw0ZS9sOZLRfN6nFe6HOj8AzNO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZP
+juBRtsi+hKSvncR7oCNPDigsGbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVm
+W27fs5I61rP66DkqgrRXZh0wAZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvt
+sAJ2VXFhNNbtRY9XTDXi/Yar5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoG
+eUKrwG5TQM9FAgMBAAGjggJDMIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYB
+BAGBrSGCLAEBBAMGMBEGDysGAQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIG
+wDATBgNVHSUEDDAKBggrBgEFBQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYD
+VR0jBBgwFoAUazqYi/nyU4na4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0
+LmRlMIGNBgNVHR8EgYUwgYIwP6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWds
+b2JhbC1nMi9wdWIvY3JsL2NhY3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9k
+Zm4tY2EtZ2xvYmFsLWcyL3B1Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggr
+BgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9i
+YWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsX
+u7Gk4M32/Rs2jdf9rTw3/AagmeXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JH
+hwv5JSdyzM2/pG63uRi/WJ7zVYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB
+8Qb+p3YVTa9vcnmNpci1SYtM9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqoo
+GuMgkeB5hi2xUcxKhR8uUYhNftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYF
+S2sAbrrt2PhOtTHm5o51SbfIMYICYDCCAlwCAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+DDxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsMB0RGTi1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3Vp
+bmcgQ0ECDB5GA2zY8pjckgclSzANBglghkgBZQMEAgEFAKCBkzAYBgkqhkiG9w0BCQMxCwYJKoZI
+hvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xODAzMDcxNDA1MjlaMCgGCSqGSIb3DQEJDzEbMBkwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMC8GCSqGSIb3DQEJBDEiBCAa/C/XDKAxAa5kPfOkPqzcExGj
+j1LE3DwapYElEZFI2DANBgkqhkiG9w0BAQEFAASCAQARKuIqAYOa3fl5kUTQmYt8O5WuN+vSZ2Ry
+S8AN51FICYnfBPpb0q0rQcdaIbJQNF1jTwgYVTralWIN5w8kvrlrkLynbGrg/bDwTWmjJVb37iVl
+BeJ3qXEMYkjTB5kH4A0/qAflXm1rHDzglL56SLA10BqM34Wx5KQUu1njb66eHWET6UKrfjhVm8Az
+Dwh9lu2bZ55ijcXIfCPvofoPdxojbAl+JqC46cv+EUjPE7To9FO5p/MPC4O+N5rHC/H7mCp3E/7R
+8s8/HDtmiP+FcPZysOkakc3Ur60XEowPJ0mMdZWkPY8Q16VoyvSEtUoklu7CWKUR9Mj4JnTtVwww
++uNfAAAAAAAA
+
+--===============7647865029962207114==--

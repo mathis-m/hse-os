@@ -1,0 +1,429 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Thu, 1 Mar
+ 2018 17:20:39 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id 3542125A1D; Thu,  1 Mar 2018
+ 17:20:39 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id 2A35125A1C	for
+ <rz+certapple@hs-esslingen.de>; Thu,  1 Mar 2018 17:20:39 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.011
+X-Spam-Level:
+X-Spam-Status: No, score=-4.011 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, ENGLISH_UCE_SUBJECT=2.899, RCVD_IN_DNSWL_HI=-5,
+	T_RP_MATCHES_RCVD=-0.01] autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ oa3q2IFiAzC9 for <rz+certapple@hs-esslingen.de>;	Thu,  1 Mar 2018 17:20:37
+ +0100 (CET)
+Received: from irt-mx.dfn-cert.de (irt-mx.dfn-cert.de [193.174.13.208])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Thu,  1 Mar 2018 17:20:36 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=sha-256; boundary="===============0336025339866306230=="
+Subject: =?utf-8?q?=5BADV=5D_DFN-CERT-2018-0409_PostgreSQL=3A_Eine_Schwachs?=
+ =?utf-8?q?telle_erm=C3=B6glicht_die_Eskalation_von_Privilegien?=
+To: <rz+certapple@hs-esslingen.de>
+From: =?utf-8?q?DFN-CERT_Portal?= <portal@dfn-cert.de>
+Message-ID: <e1180dbd-c7b4-4834-8ab1-d8c97390546d@dfn-cert.de>
+Date: Thu, 1 Mar 2018 16:20:06 +0000
+Return-Path: portal@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;-1017342;0;PM
+MIME-Version: 1.0
+
+--===============0336025339866306230==
+Content-Type: multipart/mixed; boundary="===============1202434118027239402=="
+
+--===============1202434118027239402==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+TGllYmUgS29sbGVnaW5uZW4gdW5kIEtvbGxlZ2VuLAoKYml0dGUgYmVhY2h0ZW4gU2llIGRpZSBJ
+bmZvcm1hdGlvbmVuIHp1IGRlbiB2ZXJmw7xnYmFyZW4gU2ljaGVyaGVpdHN1cGRhdGVzCm9kZXIg
+V29ya2Fyb3VuZHMgaW4gZGVyIGZvbGdlbmRlbiBTaWNoZXJoZWl0c21lbGR1bmcuCgpIaXN0b3Jp
+ZToKClZlcnNpb24gMSAoMDEuMDMuMTgpOgogICAgTmV1ZXMgQWR2aXNvcnkKCgpCZXRyb2ZmZW5l
+IFNvZnR3YXJlOgoKICBQb3N0Z3JlU1FMIDwgMTAuMwogIFBvc3RncmVTUUwgPCA5LjYuOAogIFBv
+c3RncmVTUUwgPCA5LjUuMTIKICBQb3N0Z3JlU1FMIDwgOS40LjE3CiAgUG9zdGdyZVNRTCA8IDku
+My4yMgoKCkJldHJvZmZlbmUgUGxhdHRmb3JtZW46CgogIFJlZCBIYXQgRmVkb3JhIDI3CiAgUmVk
+IEhhdCBGZWRvcmEgMjYKICBPcmFjbGUgU29sYXJpcwogIE9wZW5CU0QKICBHTlUvTGludXgKICBG
+cmVlQlNECiAgQXBwbGUgbWFjT1MKCgoKQmV3ZXJ0dW5nOgoKR2VzYW10cmlzaWtvIChEQUYpOiAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBIb2NoCgpCZXdlcnR1bmcgZ2Vt
+w6TDnyBDVlNTIHYyOgpCYXNpc3Jpc2lrbyAoQ1ZTUyBCYXNlIFNjb3JlKTogICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICA5LjAKQWt0dWVsbGVzIFNjaGFkZW5zcG90ZW56aWFsIChUZW1wb3Jh
+bCBTY29yZSk6ICAgICAgICAgICAgICAgNy4wCgpBbmdyaWZmc3Zla3RvciAoQVYpOiAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgTmV0endlcmsKQW5ncmlmZnNrb21wbGV4aXTDpHQg
+KEFDKTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTmllZHJpZwpBdXRoZW50aWZpemll
+cnVuZyAoQXUpOiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEVpbmZhY2gKCkF1c3dp
+cmt1bmc6ClZlcnRyYXVsaWNoa2VpdCAoQyk6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICBLb21wbGV0dApJbnRlZ3JpdMOkdCAoSSk6ICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgIEtvbXBsZXR0ClZlcmbDvGdiYXJrZWl0IChBKTogICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgS29tcGxldHQKCkF1c251dHpiYXJrZWl0IChFKTogICAgICAg
+ICAgICAgICAgICBQcm9vZi1vZi1Db25jZXB0IGV4aXN0aWVydApWZXJmw7xnYmFyZSBHZWdlbm1h
+w59uYWhtZSAoUkwpOiAgICAgICAgICAgICAgICAgIE9mZml6aWVsbGVyIEZpeApCZXJpY2h0c3p1
+dmVybMOkc3NpZ2tlaXQgKFJDKTogICAgICAgICAgICAgICAgICAgICAgICAgQmVzdMOkdGlndAoK
+VmVrdG9yOiAgICAgICAgICAgICBBVjpOL0FDOkwvQXU6Uy9DOkMvSTpDL0E6Qy9FOlBPQy9STDpP
+Ri9SQzpDCgoKRWluIGVudGZlcm50ZXIsIGVpbmZhY2ggYXV0aGVudGlmaXppZXJ0ZXIgQW5ncmVp
+ZmVyIGthbm4gZWluZSBTY2h3YWNoc3RlbGxlCmluIFBvc3RncmVTUUwgYXVzbnV0emVuLCB1bSBk
+aWUgYmVhYnNpY2h0aWd0ZW4gRnVua3Rpb25lbiB2b24gUG9zdGdyZVNRTCB6dQrDpG5kZXJuLiBE
+ZXIgQW5ncmVpZmVyIG11c3MgZGF6dSBlaW4gT2JqZWt0IGltIFNjaGVtYSAncHVibGljJyBlcnN0
+ZWxsZW4gdW5kCmVpbmVuIEJlbnV0emVyIGRlciBTb2Z0d2FyZSB6dW0gWnVncmlmZiBhdWYgZWlu
+IGdsZWljaG5hbWlnZXMgT2JqZWt0IGF1cwplaW5lbSBhbmRlcmVuIE5hbWVuc3JhdW0gdmVybGVp
+dGVuIG9kZXIgYXVmIGRpZSBWZXJ3ZW5kdW5nIGVpbmVzIHNvbGNoZW4KT2JqZWt0cyB3YXJ0ZW4u
+IElzdCBkZXIgQmVudXR6ZXIgQWRtaW5pc3RyYXRvciwga2FubiBkZXIgQW5ncmVpZmVyIHNvCmJl
+aXNwaWVsc3dlaXNlIHNlaW5lIFByaXZpbGVnaWVuIGltIEtvbnRleHQgdm9uIFBvc3RncmVTUUwg
+YmVsaWViaWcKZXNrYWxpZXJlbi4KCkRpZSBQb3N0Z3JlU1FMIEdsb2JhbCBEZXZlbG9wbWVudCBH
+cm91cCBpbmZvcm1pZXJ0IMO8YmVyIGRpZSBTY2h3YWNoc3RlbGxlIGluCmFsbGVuIGFrdHVlbGxl
+biBWZXJzaW9uZW4gdm9uIFBvc3RncmVTUUwgdW5kIHN0ZWxsdCBkaWUgVmVyc2lvbmVuIDEwLjMs
+CjkuNi44LCA5LjUuMTIsIDkuNC4xNyB1bmQgOS4zLjIyIGFscyBTaWNoZXJoZWl0c3VwZGF0ZXMg
+YmVyZWl0LgoKRsO8ciBGZWRvcmEgMjYgdW5kIDI3IHN0ZWhlbiBTaWNoZXJoZWl0c3VwZGF0ZXMg
+YXVmIGRpZSBWZXJzaW9uIDkuNi44IGltClN0YXR1cyAncGVuZGluZycgenVyIFZlcmbDvGd1bmcu
+CgpXb3JrYXJvdW5kOgoKICBEZXIgSGVyc3RlbGxlciBnaWJ0IHZlcnNjaGllZGVuZSBMw7ZzdW5n
+c2Fuc8OkdHplIHp1bSBTY2h1dHogdm9uIFBvc3RncmVTUUwtCiAgRGF0ZW5iYW5rZW4gYW4sIGRp
+ZSBhbHRlcm5hdGl2IHp1IFNpY2hlcmhlaXRzdXBkYXRlcyBhbmdld2VuZGV0IHdlcmRlbgogIGvD
+tm5uZW4uIFp1bSBlaW5lbiBrYW5uIEJlbnV0emVybiBkZXIgWnVncmlmZiBhdWYgZGFzIFNjaGVt
+YSAncHVibGljJwogIHZlcndlaWdlcnQgd2VyZGVuLCB6dW0gYW5kZXJlbiBrYW5uIGRlciBQb3N0
+Z3JlU1FMLVN1Y2hwZmFkIGF1ZiB6d2VpIEFydGVuCiAgYW5nZXBhc3N0IHdlcmRlbi4gV2VpdGVy
+ZSBJbmZvcm1hdGlvbmVuIGRhenUgZmluZGVuIHNpY2ggaW4gZGVyIFJlZmVyZW56ICdBCiAgR3Vp
+ZGUgdG8gQ1ZFLTIwMTgtMTA1ODogUHJvdGVjdCBZb3VyIFNlYXJjaCBQYXRoJy4KQ1ZFLTIwMTgt
+MTA1OCBTY2h3YWNoc3RlbGxlIGluIFBvc3RncmVTUUwgZXJtw7ZnbGljaHQgUHJpdmlsZWdpZW5l
+c2thbGF0aW9uCgogIEluIFBvc3RncmVTUUwgd3VyZGVuIGJlZ2lubmVuZCBtaXQgVmVyc2lvbiA3
+LjMgJ3NjaGVtYXMnIGVpbmdlZsO8aHJ0LCB3ZWxjaGUKICBlcyBCZW51dHplcm4gZXJsYXViZW4g
+T2JqZWt0ZSB3aWUgVGFiZWxsZW4gb2RlciBGdW5rdGlvbmVuIGluCiAgdW50ZXJzY2hpZWRsaWNo
+ZW4gTmFtZW5zcsOkdW1lbiB6dSBlcnN0ZWxsZW4uIEJlaSBFaW5yaWNodHVuZyB2b24gUG9zdGdy
+ZVNRTAogIHdpcmQgc3RhbmRhcmRtw6TDn2lnIGRhcyBTY2hlbWEgJ3B1YmxpYycgYW5nZWxlZ3Qs
+IGluIGRlbSBhbHMgVm9yZWluc3RlbGx1bmcKICBhbGxlIG5ldWVuIE9iamVrdGUgYW5nZWxlZ3Qg
+d2VyZGVuLiBKZWRlciBCZW51dHplciBoYXQgaW4gdW52ZXLDpG5kZXJ0ZW4KICBLb25maWd1cmF0
+aW9uZW4gWnVncmlmZiBhdWYgZGllc2VzIFNjaGVtYS4gRHVyY2ggZWluIFByb2JsZW0gbWl0IGRl
+ciBBcnQgdW5kCiAgV2Vpc2UsIHdpZSBQb3N0Z3JlU1FMIGRlbiBTdWNocGZhZCB2ZXJ3ZW5kZXQs
+IHVtIE9iamVrdGUgenUgZmluZGVuLCBrYW5uIGVzCiAgYmVpIGdsZWljaG5hbWlnZW4gT2JqZWt0
+ZW4gaW4gdmVyc2NoaWVkZW5lbiBOYW1lbnNyw6R1bWVuIHp1IGVpbmVyIGZhbHNjaGVuCiAgUHJp
+b3Jpc2llcnVuZyBrb21tZW4sIHNvIGRhc3MgZWluIG5pY2h0IGRhZsO8ciB2b3JnZXNlaGVuZXMg
+T2JqZWt0IGbDvHIgZGllCiAgQXVzZsO8aHJ1bmcgZWluZXIgYmVzdGltbXRlbiBBa3Rpb24gdmVy
+d2VuZGV0IHdpcmQuCgoKTGlzdGUgZGVyIFNjaHdhY2hzdGVsbGVuOgogIENWRS0yMDE4LTEwNTgK
+CgpSZWZlcmVuemVuOgoKRGllc2VzIEFkdmlzb3J5IGZpbmRlbiBTaWUgYXVjaCBpbSBERk4tQ0VS
+VCBQb3J0YWwgdW50ZXI6CltodHRwczovL3BvcnRhbC1uZXUuY2VydC5kZm4uZGUvYWR2aXNvcmll
+cy9kZXRhaWxzLzIwMTgtMDQwOV0KCgpadXPDpHR6bGljaGUgSW5mb3JtYXRpb25lbjoKCiAgQSBH
+dWlkZSB0byBDVkUtMjAxOC0xMDU4OiBQcm90ZWN0IFlvdXIgU2VhcmNoIFBhdGgKICAgIGh0dHBz
+Oi8vd2lraS5wb3N0Z3Jlc3FsLm9yZy93aWtpL0FfR3VpZGVfdG9fQ1ZFLTIwMTgtMTA1ODpfUHJv
+dGVjdF9Zb3VyX1NlYXJjaF9QYXRoCgogIFBvc2dyZVNRTCAyMDE4LTAzLTAxIFNlY3VyaXR5IFVw
+ZGF0ZSBSZWxlYXNlCiAgICBodHRwczovL3d3dy5wb3N0Z3Jlc3FsLm9yZy9hYm91dC9uZXdzLzE4
+MzQvCgogIFNjaHdhY2hzdGVsbGUgQ1ZFLTIwMTgtMTA1OCAoTlZEKQogICAgaHR0cDovL3dlYi5u
+dmQubmlzdC5nb3Yvdmlldy92dWxuL2RldGFpbD92dWxuSWQ9Q1ZFLTIwMTgtMTA1OAoKUGF0Y2hl
+czoKCiAgRmVkb3JhIFNlY3VyaXR5IFVwZGF0ZSBGRURPUkEtMjAxOC0yOTk5Y2Y2NDI2IChGZWRv
+cmEgMjYsCiAgcG9zdGdyZXNxbC05LjYuOC0xLmZjMjYpCiAgICBodHRwczovL2JvZGhpLmZlZG9y
+YXByb2plY3Qub3JnL3VwZGF0ZXMvRkVET1JBLTIwMTgtMjk5OWNmNjQyNgoKICBGZWRvcmEgU2Vj
+dXJpdHkgVXBkYXRlIEZFRE9SQS0yMDE4LWEzMjA4MmRmNTEgKEZlZG9yYSAyNywKICBwb3N0Z3Jl
+c3FsLTkuNi44LTEuZmMyNykKICAgIGh0dHBzOi8vYm9kaGkuZmVkb3JhcHJvamVjdC5vcmcvdXBk
+YXRlcy9GRURPUkEtMjAxOC1hMzIwODJkZjUxCgogIFBvc3RncmVTUUwgMTAuMyBSZWxlYXNlIE5v
+dGVzCiAgICBodHRwczovL3d3dy5wb3N0Z3Jlc3FsLm9yZy9kb2NzLzEwL3N0YXRpYy9yZWxlYXNl
+LTEwLTMuaHRtbAoKICBQb3N0Z3JlU1FMIDkuNC4xNyBSZWxlYXNlIE5vdGVzCiAgICBodHRwczov
+L3d3dy5wb3N0Z3Jlc3FsLm9yZy9kb2NzLzkuNC9zdGF0aWMvcmVsZWFzZS05LTQtMTcuaHRtbAoK
+ICBQb3N0Z3JlU1FMIDkuNS4xMiBSZWxlYXNlIE5vdGVzCiAgICBodHRwczovL3d3dy5wb3N0Z3Jl
+c3FsLm9yZy9kb2NzLzkuNS9zdGF0aWMvcmVsZWFzZS05LTUtMTIuaHRtbAoKICBQb3N0Z3JlU1FM
+IDkuNi44IFJlbGVhc2UgTm90ZXMKICAgIGh0dHBzOi8vd3d3LnBvc3RncmVzcWwub3JnL2RvY3Mv
+OS42L3N0YXRpYy9yZWxlYXNlLTktNi04Lmh0bWwKCiAgUG9zdGdyZVNRTCBSZWxlYXNlIE5vdGVz
+IDkuMy4yMgogICAgaHR0cHM6Ly93d3cucG9zdGdyZXNxbC5vcmcvZG9jcy85LjMvc3RhdGljL3Jl
+bGVhc2UtOS0zLTIyLmh0bWwKCgpNaXQgZnJldW5kbGljaGVuIEdyw7zDn2VuLApJaHIgREZOLUNF
+UlQgSW5jaWRlbnQgUmVzcG9uc2UgVGVhbQoKCi0tIAooYykgREZOLUNFUlQgU2VydmljZXMgR21i
+SCwgYWxsIHJpZ2h0cyByZXNlcnZlZCEKRGllIFdlaXRlcnZlcmJyZWl0dW5nIGlzdCBtaXQgSGlu
+d2VpcyBhdWYgZGVuIENvcHlyaWdodGluaGFiZXIgaW5uZXJoYWxiIGRlcgplaWdlbmVuIEVpbnJp
+Y2h0dW5nIGVybGF1YnQuIEVpbmUgZGFyw7xiZXIgaGluYXVzZ2VoZW5kZSBWZXJicmVpdHVuZyBi
+ZWRhcmYKZGVzIHNjaHJpZnRsaWNoZW4gRWludmVyc3TDpG5kbmlzc2VzIGRlcyBSZWNodGVpbmhh
+YmVycy4=
+
+--===============1202434118027239402==
+Content-Type: application/json; charset="UTF-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment; filename="2018-0409.json"
+
+{
+=20=20"version":=20"1",=20
+=20=20"ref_num":=20"2018-0409",=20
+=20=20"fieldsets":=20{
+=20=20=20=20"scoring":=20{
+=20=20=20=20=20=20"daf":=20{
+=20=20=20=20=20=20=20=20"risk":=20"high"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cvss":=20{
+=20=20=20=20=20=20=20=20"temporal_score":=20"7.0",=20
+=20=20=20=20=20=20=20=20"vector":=20"AV:N/AC:L/Au:S/C:C/I:C/A:C/E:POC/RL:OF=
+/RC:C",=20
+=20=20=20=20=20=20=20=20"base_score":=20"9.0",=20
+=20=20=20=20=20=20=20=20"exploitability_score":=20"8.0",=20
+=20=20=20=20=20=20=20=20"impact_score":=20"10.0"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cpes":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Red=20Hat=20Fedora=2027\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:redhat:fedora:27",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Red=20Hat=20Fedora=2026\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:redhat:fedora:26",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Oracle=20Solaris",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:oracle:solaris",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"OpenBSD",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:openbsd:openbsd",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"GNU/Linux",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:gnu:linux",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"FreeBSD",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:freebsd:freebsd",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Apple=20macOS",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:apple:macos",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"PostgreSQL=20<=2010.3\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:postgresql:postgresql:10.3",=
+=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"PostgreSQL=20<=209.6.8\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:postgresql:postgresql:9.6.8"=
+,=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"PostgreSQL=20<=209.5.12\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:postgresql:postgresql:9.5.12=
+",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"PostgreSQL=20<=209.4.17\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:postgresql:postgresql:9.4.17=
+",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"PostgreSQL=20<=209.3.22\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:postgresql:postgresql:9.3.22=
+",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20},=20
+=20=20=20=20"basic":=20{
+=20=20=20=20=20=20"description":=20"Ein=20entfernter,=20einfach=20authentif=
+izierter=20Angreifer=20kann=20eine=20Schwachstelle=20in=20PostgreSQL=20ausn=
+utzen,=20um=20die=20beabsichtigten=20Funktionen=20von=20PostgreSQL=20zu=20\=
+u00e4ndern.=20Der=20Angreifer=20muss=20dazu=20ein=20Objekt=20im=20Schema=20=
+'public'=20erstellen=20und=20einen=20Benutzer=20der=20Software=20zum=20Zugr=
+iff=20auf=20ein=20gleichnamiges=20Objekt=20aus=20einem=20anderen=20Namensra=
+um=20verleiten=20oder=20auf=20die=20Verwendung=20eines=20solchen=20Objekts=
+=20warten.=20Ist=20der=20Benutzer=20Administrator,=20kann=20der=20Angreifer=
+=20so=20beispielsweise=20seine=20Privilegien=20im=20Kontext=20von=20Postgre=
+SQL=20beliebig=20eskalieren.\n\nDie=20PostgreSQL=20Global=20Development=20G=
+roup=20informiert=20\u00fcber=20die=20Schwachstelle=20in=20allen=20aktuelle=
+n=20Versionen=20von=20PostgreSQL=20und=20stellt=20die=20Versionen=2010.3,=
+=209.6.8,=209.5.12,=209.4.17=20und=209.3.22=20als=20Sicherheitsupdates=20be=
+reit.\n\nF\u00fcr=20Fedora=2026=20und=2027=20stehen=20Sicherheitsupdates=20=
+auf=20die=20Version=209.6.8=20im=20Status=20'pending'=20zur=20Verf\u00fcgun=
+g.",=20
+=20=20=20=20=20=20"workaround":=20"Der=20Hersteller=20gibt=20verschiedene=
+=20L\u00f6sungsans\u00e4tze=20zum=20Schutz=20von=20PostgreSQL-Datenbanken=
+=20an,=20die=20alternativ=20zu=20Sicherheitsupdates=20angewendet=20werden=
+=20k\u00f6nnen.=20Zum=20einen=20kann=20Benutzern=20der=20Zugriff=20auf=20da=
+s=20Schema=20'public'=20verweigert=20werden,=20zum=20anderen=20kann=20der=
+=20PostgreSQL-Suchpfad=20auf=20zwei=20Arten=20angepasst=20werden.=20Weitere=
+=20Informationen=20dazu=20finden=20sich=20in=20der=20Referenz=20'A=20Guide=
+=20to=20CVE-2018-1058:=20Protect=20Your=20Search=20Path'.",=20
+=20=20=20=20=20=20"created":=20"20180301T16:03:23",=20
+=20=20=20=20=20=20"vulnerabilities":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"title":=20"Schwachstelle=20in=20PostgreSQL=
+=20erm\u00f6glicht=20Privilegieneskalation",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"In=20PostgreSQL=20wurden=20=
+beginnend=20mit=20Version=207.3=20'schemas'=20eingef\u00fchrt,=20welche=20e=
+s=20Benutzern=20erlauben=20Objekte=20wie=20Tabellen=20oder=20Funktionen=20i=
+n=20unterschiedlichen=20Namensr\u00e4umen=20zu=20erstellen.=20Bei=20Einrich=
+tung=20von=20PostgreSQL=20wird=20standardm\u00e4\u00dfig=20das=20Schema=20'=
+public'=20angelegt,=20in=20dem=20als=20Voreinstellung=20alle=20neuen=20Obje=
+kte=20angelegt=20werden.=20Jeder=20Benutzer=20hat=20in=20unver\u00e4nderten=
+=20Konfigurationen=20Zugriff=20auf=20dieses=20Schema.=20Durch=20ein=20Probl=
+em=20mit=20der=20Art=20und=20Weise,=20wie=20PostgreSQL=20den=20Suchpfad=20v=
+erwendet,=20um=20Objekte=20zu=20finden,=20kann=20es=20bei=20gleichnamigen=
+=20Objekten=20in=20verschiedenen=20Namensr\u00e4umen=20zu=20einer=20falsche=
+n=20Priorisierung=20kommen,=20so=20dass=20ein=20nicht=20daf\u00fcr=20vorges=
+ehenes=20Objekt=20f\u00fcr=20die=20Ausf\u00fchrung=20einer=20bestimmten=20A=
+ktion=20verwendet=20wird.",=20
+=20=20=20=20=20=20=20=20=20=20"name":=20"CVE-2018-1058"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"title":=20"PostgreSQL:=20Eine=20Schwachstelle=20erm\u00f=
+6glicht=20die=20Eskalation=20von=20Privilegien",=20
+=20=20=20=20=20=20"references":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://bodhi.fedoraproject.org/upd=
+ates/FEDORA-2018-2999cf6426",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Fedora=20Security=20Update=
+=20FEDORA-2018-2999cf6426=20(Fedora=2026,=20postgresql-9.6.8-1.fc26)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://bodhi.fedoraproject.org/upd=
+ates/FEDORA-2018-a32082df51",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Fedora=20Security=20Update=
+=20FEDORA-2018-a32082df51=20(Fedora=2027,=20postgresql-9.6.8-1.fc27)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://www.postgresql.org/docs/10/=
+static/release-10-3.html",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"PostgreSQL=2010.3=20Release=
+=20Notes"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://www.postgresql.org/docs/9.4=
+/static/release-9-4-17.html",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"PostgreSQL=209.4.17=20Relea=
+se=20Notes"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://www.postgresql.org/docs/9.5=
+/static/release-9-5-12.html",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"PostgreSQL=209.5.12=20Relea=
+se=20Notes"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://www.postgresql.org/docs/9.6=
+/static/release-9-6-8.html",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"PostgreSQL=209.6.8=20Releas=
+e=20Notes"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://www.postgresql.org/docs/9.3=
+/static/release-9-3-22.html",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"PostgreSQL=20Release=20Note=
+s=209.3.22"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://wiki.postgresql.org/wiki/A_=
+Guide_to_CVE-2018-1058:_Protect_Your_Search_Path",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"A=20Guide=20to=20CVE-2018-1=
+058:=20Protect=20Your=20Search=20Path"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://www.postgresql.org/about/ne=
+ws/1834/",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"PosgreSQL=202018-03-01=20Se=
+curity=20Update=20Release"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"http://web.nvd.nist.gov/view/vuln/d=
+etail?vulnId=3DCVE-2018-1058",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Schwachstelle=20CVE-2018-10=
+58=20(NVD)"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"history":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"timestamp":=20"20180301T17:15:31",=20
+=20=20=20=20=20=20=20=20=20=20"version":=20"1",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Neues=20Advisory"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20}
+=20=20}
+}
+--===============1202434118027239402==--
+
+--===============0336025339866306230==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIII7QYJKoZIhvcNAQcCoIII3jCCCNoCAQExDzANBglghkgBZQMEAgEFADALBgkqhkiG9w0BBwGg
+ggYAMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3DQEBCwUAMIGNMQswCQYDVQQG
+EwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3Jz
+Y2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUwIwYDVQQDDBxERk4tVmVyZWlu
+IEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIwMTIwNDExNDExN1owgaIxCzAJ
+BgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdIYW1idXJnMR8wHQYDVQQKDBZE
+Rk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAbBgNVBAMMFEdSUDogREZOLUNF
+UlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNlcnQuZGUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0Yw0ZS9sOZLRfN6nFe6HOj8Az
+NO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZPjuBRtsi+hKSvncR7oCNPDigs
+GbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVmW27fs5I61rP66DkqgrRXZh0w
+AZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvtsAJ2VXFhNNbtRY9XTDXi/Yar
+5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoGeUKrwG5TQM9FAgMBAAGjggJD
+MIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYBBAGBrSGCLAEBBAMGMBEGDysG
+AQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIGwDATBgNVHSUEDDAKBggrBgEF
+BQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYDVR0jBBgwFoAUazqYi/nyU4na
+4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0LmRlMIGNBgNVHR8EgYUwgYIw
+P6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWdsb2JhbC1nMi9wdWIvY3JsL2Nh
+Y3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9kZm4tY2EtZ2xvYmFsLWcyL3B1
+Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggrBgEFBQcwAYYnaHR0cDovL29j
+c3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMS5w
+Y2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsXu7Gk4M32/Rs2jdf9rTw3/Aag
+meXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JHhwv5JSdyzM2/pG63uRi/WJ7z
+VYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB8Qb+p3YVTa9vcnmNpci1SYtM
+9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqooGuMgkeB5hi2xUcxKhR8uUYhN
+ftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYFS2sAbrrt2PhOtTHm5o51SbfI
+MYICsTCCAq0CAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQKDDxWZXJlaW4genVyIEZvZXJk
+ZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMgZS4gVi4xEDAOBgNVBAsMB0RG
+Ti1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3VpbmcgQ0ECDB5GA2zY8pjckgcl
+SzANBglghkgBZQMEAgEFAKCB5DAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJ
+BTEPFw0xODAzMDExNjIwMzZaMC8GCSqGSIb3DQEJBDEiBCAt0XVNIIM6gg3kxrJcyhOb9XUhlPHc
+rsE8C4AZYsy5mjB5BgkqhkiG9w0BCQ8xbDBqMAsGCWCGSAFlAwQBKjALBglghkgBZQMEARYwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMA4GCCqGSIb3DQMCAgIAgDANBggqhkiG9w0DAgIBQDAHBgUr
+DgMCBzANBggqhkiG9w0DAgIBKDANBgkqhkiG9w0BAQEFAASCAQA9H+auLQcAEWGdADMDLo2NUHso
+WsdN/RLLTAt+CiaBylMVQscq2ChUPZygX4rFIT3UiR/L9Pjncp/vtPfojEENMW9mtYlzx4fXdpw1
+DQG/jX13BTomhKuroeA65/kBMr0ZRew67SyYkoZbA7hhc5fVfaGJsHUpCuRQxfULWX3yCR+vUYx5
+s0M6w7g+fOhOwglbV2P3wZY/aqzBu4OCRGQH8hxYV/ZXxVECLWF8s6pu6Yuhp94iIamdEiHATJrZ
+qhtUl38qmOlMNtLZ2V49o4RnaN1q0MkYn9zIbFfQIE97pDGTyp8e4f6v6ojvq8vKBfXDyBuQpH6s
+oRCsTsfT2/+3
+
+--===============0336025339866306230==--

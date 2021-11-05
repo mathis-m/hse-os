@@ -1,0 +1,1936 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Fri, 2 Mar
+ 2018 12:45:48 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id 59C9925A1D; Fri,  2 Mar 2018
+ 12:45:48 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id 4E2BD25A1A	for
+ <rz+certapple@hs-esslingen.de>; Fri,  2 Mar 2018 12:45:48 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.21
+X-Spam-Level:
+X-Spam-Status: No, score=-4.21 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, T_RP_MATCHES_RCVD=-0.01]
+	autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ 1XKURD4eN8rW for <rz+certapple@hs-esslingen.de>;	Fri,  2 Mar 2018 12:45:44
+ +0100 (CET)
+Received: from mail2.dfn-cert.de (mail2.dfn-cert.de [193.174.13.207])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Fri,  2 Mar 2018 12:45:44 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=SHA256; boundary="===============5655606584120752878=="
+From: DFN-CERT <portal@dfn-cert.de>
+Subject: =?utf-8?q?UPDATE=3A_DFN-CERT-2018-0020_Mikroprozessoren=2C_Spectre=2C_Meltdown=3A_Drei_Schwachstellen_erm=C3=B6glichen_Umgehen_von_Sicherheitsvorkehrungen_u=2E_Aussp=C3=A4hen_von_Informationen_=5BLinux=5D=5BDebian=5D=5BFedora=5D=5BRedHat=5D=5BSuSE=5D=5BUnix=5D=5BAIX=5D=5BFreeBSD=5D=5BApple=5D=5BSolaris=5D=5BWindows=5D=5BNetzwerk=5D?=
+Date: Fri, 2 Mar 2018 11:45:03 +0000
+To: <rz+certapple@hs-esslingen.de>
+Message-ID: <20180302114544.12F2E2E05A0@mail2.dfn-cert.de>
+Return-Path: dfn-adv-bounces@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;-975614;0;PM
+MIME-Version: 1.0
+
+--===============5655606584120752878==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Liebe Kolleginnen und Kollegen,
+
+bitte beachten Sie die folgende Sicherheitsmeldung.
+
+Historie:
+  Version 31 (02.03.2018):
+    Microsoft hatte seinen Sicherheitshinweis ADV180002 anl=C3=A4sslich des
+    Patchdays im February 2018 aktualisiert, um =C3=BCber die Verf=C3=BCgba=
+rkeit von
+    Sicherheitsupdates zu informieren, durch die weitere Schutzma=C3=9Fnahm=
+en f=C3=BCr
+    folgende 32-bit (x86) Versionen von Windows 10 zur Verf=C3=BCgung geste=
+llt
+    wurden: 4074596 f=C3=BCr Windows 10, 4074591 f=C3=BCr Windows 10 Versio=
+n 1511,
+    4074590 f=C3=BCr Windows 10 Version 1607 und 4074592 f=C3=BCr Windows 1=
+0 Version
+    1703. Ferner wurden FAQ#12 and FAQ#13 f=C3=BCr weitere Informationen er=
+g=C3=A4nzt.
+    Mit der neuesten Aktualisierung informiert Microsoft nun in der erg=C3=
+=A4nzten
+    FAQ#14 =C3=BCber ein Stand-alone Update f=C3=BCr Windows 10 Version 170=
+9, welches
+    =C3=BCber den Microsoft Update Catalog verf=C3=BCgbar ist. Dieses Updat=
+e beinhaltet
+    Microcode Updates von Intel, welche Spectre Variant 2 (CVE 2017-5715
+    ('Branch Target Injection') adressieren (siehe hierzu: Microsoft Knowle=
+dge
+    Base Article 4090007).
+  Version 30 (28.02.2018):
+    F=C3=BCr den SUSE Manager Server 3.1 steht ein Sicherheitsupdate bereit,
+    mittels dem Mitigationen f=C3=BCr die Meltdown und Spectre Schwachstell=
+en
+    umgesetzt und insgesamt 51 nicht sicherheitsrelevante Fehler behoben
+    werden.
+  Version 29 (23.02.2018):
+    F=C3=BCr Oracle Linux 5 (i386, x86_64) stehen jetzt auch Sicherheitsupd=
+ates f=C3=BCr
+    den Kernel 2.6.18 zur Verf=C3=BCgung.
+  Version 28 (22.02.2018):
+    Canonical stellt f=C3=BCr Ubuntu Linux 12.04 LTS (ESM) ein Sicherheitsu=
+pdate
+    bereit, das die beiden Spectre-Schwachstellen adressiert. Der Distribut=
+or
+    weist darauf hin, dass zur vollst=C3=A4ndigen Mitigation von Spectre
+    Microcode-Updates notwendig sind. Canonical arbeitet dahingehend mit den
+    Herstellern Intel und AMD zusammen. Anwender, die Chips anderer Herstel=
+ler
+    verwenden, werden gebeten, sich direkt an diese zu wenden.
+  Version 27 (12.02.2018):
+    Red Hat stellt f=C3=BCr Red Hat Enterprise Linux 5 Extended Lifecycle S=
+upport
+    f=C3=BCr verschiedene Architekturen Sicherheitsupdates zur Mitigation d=
+er
+    Schwachstellen zur Verf=C3=BCgung.
+  Version 26 (31.01.2018):
+    F=C3=BCr Oracle VM 3.3 stehen Sicherheitsupdates f=C3=BCr den Unbreakab=
+le Enterprise
+    Kernel in der Version 3.8.13-118.20.2 bereit, um die Schwachstellen zu
+    adressieren. Die Sicherheitsupdates adressieren au=C3=9Ferdem die Schwa=
+chstelle
+    CVE-2015-5157, welche einem lokalen, nicht authentisierten Angreifer
+    erm=C3=B6glicht seine Privilegien zu eskalieren und damit das System zu
+    =C3=BCbernehmen oder einen Denial-of-Service (DoS)-Angriff durchzuf=C3=
+=BChren.
+  Version 25 (30.01.2018):
+    F=C3=BCr das 'pxe-default-image' (Preboot Execution Environment, PXE) i=
+n SUSE
+    Manager Server 3.0 steht ein Sicherheitsupdate bereit, mit dem nicht n=
+=C3=A4her
+    definierte Mitigationen gegen Spectre und Meltdown umgesetzt werden.
+  Version 24 (30.01.2018):
+    Canonical informiert dar=C3=BCber, dass als Teil der Mitigation 'Retpol=
+ine'
+    gegen Spectre Variant 2 (CVE-2017-5715) ein Logic-Fehler in der
+    Implementierung des x86-64-Systemaufrufeintrages (Syscall Entry)
+    eingef=C3=BChrt wurde. Ein lokaler Angreifer kann dies ausnutzen, um ei=
+nen
+    Denial-of-Service (DoS)-Zustand zu verursachen oder m=C3=B6glicherweise
+    beliebigen Programmcode zur Ausf=C3=BChrung zu bringen. Es stehen
+    Sicherheitsupdates f=C3=BCr Ubuntu 16.04 LTS f=C3=BCr den Linux-Kernel =
+for Microsoft
+    Azure Cloud Systems, Linux-Kernel for Google Cloud Platform (GCP) Syste=
+ms,
+    Linux Hardware Enablement (HWE) Kernel und Linux-Kernel for OEM Process=
+ors
+    sowie f=C3=BCr den Linux-Kernel in Ubuntu 17.10 zur Verf=C3=BCgung, um =
+dieses
+    Problem zu beheben. Canonical weist darauf hin, dass aufgrund der
+    unvermeidbaren ABI-=C3=84nderungen diese Kernel Updates eine neue
+    Versionsnummer erhalten haben, weshalb alle Third Party Kernel-Module n=
+eu
+    kompiliert und installiert werden m=C3=BCssen, soweit dies nicht bei ei=
+nem
+    Standard-System-Upgrade automatisch erfolgt.
+  Version 23 (30.01.2018):
+    F=C3=BCr Oracle Linux 6 (x86_64) und Oracle Linux 7 (x86_64) stehen
+    Sicherheitsupdates f=C3=BCr den Unbreakable Enterprise Kernel in der Ve=
+rsion
+    3.8.13-118.20.2 bereit, um die Schwachstellen zu adressieren. Die
+    Sicherheitsupdates adressieren au=C3=9Ferdem die Schwachstelle CVE-2015=
+-5157,
+    welche einem lokalen, nicht authentisierten Angreifer erm=C3=B6glicht s=
+eine
+    Privilegien zu eskalieren und damit das System zu =C3=BCbernehmen oder =
+einen
+    Denial-of-Service (DoS)-Angriff durchzuf=C3=BChren. Canonical stellt f=
+=C3=BCr Ubuntu
+    16.04 LTS ein Sicherheitsupdate f=C3=BCr den Linux-Kernel for Cloud
+    Environments (linux-kvm) bereit, um die Spectre-Schwachstellen
+    (CVE-2017-5715, CVE-2017-5753) zu adressieren. Ferner weist Canonical
+    darauf hin, dass f=C3=BCr eine vollst=C3=A4ndige Mitigation von CVE-201=
+7-5715
+    (Spectre Variant 2) die korrespondierenden Prozessor Microcode / Firmwa=
+re
+    Updates bzw. in virtuellen Umgebungen die Hypervisor Updates installiert
+    werden m=C3=BCssen. Weiterhin k=C3=BCndigt Canonical an, zuk=C3=BCnftig=
+ f=C3=BCr Benutzer
+    selbst-gehosteter virtueller Umgebungen die entsprechenden QEMU Updates=
+ in
+    Verbindung mit Upstream QEMU Versionen zur Verf=C3=BCgung zu stellen.
+  Version 22 (29.01.2018):
+    F5 Networks hat seinen Sicherheitshinweis K91229003 'Side-channel
+    processor vulnerabilities CVE-2017-5715, CVE-2017-5753, and CVE-2017-57=
+54'
+    aktualisiert und informiert =C3=BCber von den 'Spectre'- und
+    'Meltdown'-Schwachstellen betroffene Produkte. Unter anderem sind BIG-IP
+    Produkte Advanced Firewall Manager (AFM) und Application Security Manag=
+er
+    (ASM) in den Versionen 11.2.1, 11.5.1 - 11.5.5, 11.6.1 - 11.6.2, 12.1.0=
+ -
+    12.1.3, 13.0.0 und 13.1.0 verwundbar. Es existieren derzeit keine Fixes.
+    Der Hersteller Intel hat eine Microcode Revision Guidance (PDF) mit
+    Empfehlungen f=C3=BCr zahlreiche Prozessoren zur Verf=C3=BCgung gestell=
+t.
+  Version 21 (29.01.2018):
+    Microsoft hat aufgrund der bekannt gewordenen Probleme mit dem Intel
+    Microcode mittlerweile ein au=C3=9Ferplanm=C3=A4=C3=9Figes Sicherheitsu=
+pdate bereit
+    gestellt, mit dem die Mitigationen gegen Spectre v2 (CVE-2017-5715) wie=
+der
+    r=C3=BCckg=C3=A4ngig gemacht werden (siehe 'Microsoft Update to Disable=
+ Mitigation
+    against Spectre, Variant 2'). IBM hat Sicherheitsupdates f=C3=BCr AIX 5=
+.3
+    (64-bit Kernel), 6.1, 7.1 und 7.2 sowie VIOS 2.2.x bereitgestellt, um
+    Ma=C3=9Fnahmen gegen CVE-2017-5715, CVE-2017-5753 und CVE-2017-5754 umz=
+usetzen.
+  Version 20 (26.01.2018):
+    Red Hat stellt f=C3=BCr die Red Hat Enterprise Linux 7 Produktvarianten=
+ Server,
+    Workstation, Desktop und Linux for Scientific Computing sowie f=C3=BCr =
+Compute
+    Node 7.4 Extended Update Support (EUS) und die Server 7.4 Produktversio=
+nen
+    Advanced Update Support (AUS), Extended Update Support (EUS), 4 Year
+    Extended Update Support und Telco Update Support (TUS) Sicherheitsupdat=
+es
+    f=C3=BCr den 'kernel' bereit, durch die erste Mitigationen f=C3=BCr IBM=
+ Power
+    (PowerPC) und IBM zSeries (S390) Architekturen f=C3=BCr die Schwachstel=
+len
+    CVE-2017-5715, CVE-2017-5753 und CVE-2017-5754 zur Verf=C3=BCgung geste=
+llt
+    werden. Die unten referenzierten Schwachstellen (CVE) werden dagegen in
+    der Beschreibung nicht erw=C3=A4hnt. F=C3=BCr Oracle Linux 7 (x86_64) s=
+tehen die
+    entsprechenden Sicherheitsupdates f=C3=BCr den 'kernel' in Version
+    3.10.0-693.17.1 bereit, wobei Oracle die Referenzierung der Schwachstel=
+len
+    anscheinend von Red Hat =C3=BCbernommen hat, jedoch im Versionslog eben=
+falls
+    nur Mitigationen f=C3=BCr die 'Spectre'- und 'Meltdown'-Schwachstellen
+    auff=C3=BChrt.
+  Version 19 (24.01.2018):
+    F=C3=BCr Oracle Linux 5 (i386 und x86_64) und Oracle Linux 6 (i386 und =
+x86_64)
+    stehen Sicherheitsupdates f=C3=BCr den Unbreakable Enterprise Kernel in=
+ Version
+    2.6.39-400.298.2 bereit, um die aktuellen Entwicklungen der Schwachstel=
+len
+    Spectre und Meltdown zu ber=C3=BCcksichtigen. Zus=C3=A4tzlich wird mit =
+dem Update
+    auch die Schwachstelle CVE-2015-5157 adressiert, welche es einem lokale=
+n,
+    nicht authentisierten Angreifer erm=C3=B6glicht seine Privilegien zu es=
+kalieren
+    und damit das System zu =C3=BCbernehmen oder einen Denial-of-Service
+    (DoS)-Angriff durchzuf=C3=BChren.
+  Version 18 (23.01.2018):
+    Canonical stellt verschiedene Sicherheitsupdates bereit, um die aktuell=
+en
+    Entwicklungen bei den Schwachstellen Spectre und Meltdown seit den erst=
+en
+    Sicherheitsupdates f=C3=BCr Meltdown in Ubuntu Linux vom 10.01.2018 (si=
+ehe
+    gesondertes Advisory) zu ber=C3=BCcksichtigen. F=C3=BCr Ubuntu 17.10 (K=
+ernel), 16.04
+    LTS und 14.04 LTS stehen Sicherheitsupdates f=C3=BCr i386-Architekturen=
+ (nur
+    CVE-2017-5753) sowie amd64-, ppc64el- und s390x-Architekturen (beide
+    Spectre-Schwachstellen) zur Verf=C3=BCgung. Zus=C3=A4tzlich werden die =
+ersten
+    Mitigationen gegen Meltdown auch f=C3=BCr die ppc64el-Architektur verte=
+ilt. Die
+    unterschiedlichen Sicherheitsupdates stehen f=C3=BCr Linux-Kernel (inkl=
+usive
+    Hardware Enablement Kernel), Amazon Web Services, Intel Euclid, Microso=
+ft
+    Azure, Google Cloud Platform und OEM Prozessoren zur Verf=C3=BCgung. Zw=
+ei
+    weitere Sicherheitsupdates zur Mitigation der beiden
+    Spectre-Schwachstellen stehen f=C3=BCr den Linux-Kernel in Ubuntu 14.04=
+ LTS und
+    12.04 LTS auf i386-Architekturen (nur CVE-2017-5753) und
+    amd64-Architekturen zur Verf=C3=BCgung. Canonical weist darauf hin, das=
+s die
+    Mitigation der Schwachstelle CVE-2017-5715 (Spectre  2) korrespondieren=
+de
+    Microcode- oder Firmware-Updates erfordert. Der Distributor arbeitet la=
+ut
+    Eigenaussage dahingehend mit Intel und AMD zusammen. F=C3=BCr davon nic=
+ht
+    abgedeckte Prozessoren wird auf die jeweiligen Hersteller verwiesen.
+  Version 17 (19.01.2018):
+    F=C3=BCr Oracle Linux 6 (x86_64) und Oracle Linux 7 (x86_64) stehen
+    Sicherheitsupdates f=C3=BCr den Unbreakable Enterprise Kernel in Version
+    4.1.12-94.7.8 bereit.
+  Version 16 (19.01.2018):
+    Microsoft hat seinen Sicherheitshinweis ADV180002 erneut aktualisiert, =
+um
+    =C3=BCber die Verf=C3=BCgbarkeit des neuen Sicherheitsupdates 4073291 f=
+=C3=BCr die 32-bit
+    (x86) Version von Windows 10 Version 1709 zur Mitigation der Schwachste=
+lle
+    CVE 2017-5754 ('Meltdown') zu informieren, welches zeitnah installiert
+    werden sollte. Microsoft arbeitet an Updates f=C3=BCr weitere unterst=
+=C3=BCtzte
+    32-bit (x86) Windows Versionen. Mit Update 4073290 wurde ein Fix f=C3=
+=BCr
+    Ger=C3=A4te mit AMD-Prozessoren f=C3=BCr Windows 10 Version 1709 bereit=
+gestellt, um
+    das nach Installation des Updates vom 3. Januar 2018 - KB4056892 (OS Bu=
+ild
+    16299.192) f=C3=BCr diese aufgetretene Problem eines nicht-bootf=C3=A4h=
+igen
+    Zustandes zu beheben (siehe Referenz). Mit Update 4073578 wurde das
+    entsprechende Problem nach Installation des Updates vom 3. Januar 2018 -
+    KB4056897 (Security-only update) bzw. 4. Januar 2018 - KB4056894 (Month=
+ly
+    Rollup) f=C3=BCr Windows 7 SP1 und Windows Server 2008 R2 SP1 behoben (=
+siehe
+    Referenz). Weiterhin informiert Microsoft dar=C3=BCber, dass am 5. Janu=
+ar 2018
+    das Sicherheitsupdate KB4056898 (Security Only) f=C3=BCr Windows 8.1 und
+    Windows Server 2012 R2 erneut ver=C3=B6ffentlicht wurde, um ein Problem=
+ zu
+    beheben. Kunden, die das urspr=C3=BCngliche Paket vom 3. Januar install=
+iert
+    haben, sollten das Update erneut installieren. Das Xen Security Advisory
+    XSA-254 wurde ebenfalls aktualisiert (Version 10), um eine Aussage der
+    vorherigen Version zu berichtigen.
+  Version 15 (18.01.2018):
+    Meinberg stellt in einem Sicherheitshinweis Informationen zu betroffenen
+    Produkten der eigenen Zeit- und Frequenzsynchronisationsl=C3=B6sungen z=
+ur
+    Verf=C3=BCgung. Der Hersteller listet einzelne Produktserien auf und be=
+wertet
+    die Verwundbarkeit anhand der jeweils eingesetzten Prozessoren. Produkte
+    der LANTIME M- und IMS-Serie verwenden AMD-CPUs, die nach Aussage von A=
+MD
+    von CVE-2017-5753 (Spectre) betroffen sind. Die technische Analyse des
+    dort eingesetzten AMD Geode LX Prozessors durch einen Zulieferer
+    widerspricht allerdings dieser Aussage. Die Produkte TSU-GBit und HPS-1=
+00
+    verwenden Cortex A9 ARM-Cores, die theoretisch von den Schwachstellen
+    betroffen sind. Weiterhin setzen alle Produkte der SyncFire-Produktserie
+    eine oder mehrere Intel Xeon-CPUs ein und sind demnach betroffen. Intel
+    hat f=C3=BCr diese Ger=C3=A4te ein Microcode-Update ver=C3=B6ffentlicht=
+, welches zusammen
+    mit den verf=C3=BCgbaren Linux-Kernel Sicherheitsupdates, die sich auf =
+Meltdown
+    und Spectre beziehen, die in der n=C3=A4chsten Meinberg Firmware-Version
+    enthalten sein werden.
+  Version 14 (18.01.2018):
+    Oracle stellt f=C3=BCr Oracle VM 3.4 erneut Sicherheitsupdates f=C3=BCr=
+ den
+    Unbreakable Enterprise Kernel zur Verf=C3=BCgung. =C3=9Cber das Paket
+    '4.1.12-112.14.11.el6uek' werden die Schwachstellen CVE-2017-5715 und
+    CVE-2017-5754 adressiert. Das Xen Security Advisory XSA-254 wurde
+    ebenfalls aktualisiert (Version 9), um =C3=BCber die Verf=C3=BCgbarkeit=
+ von 'Stage
+    1' Pagetable Isolation (PTI) Meltdown Fixes f=C3=BCr Xen zu informieren=
+. Ferner
+    werden 'Comet' Updates f=C3=BCr den Shim Code (Branch 4.10) bereitgeste=
+llt.
+  Version 13 (17.01.2018):
+    Microsoft hat seinen Sicherheitshinweis ADV180002 hinsichtlich der Tabe=
+lle
+    betroffener Produkte erneut aktualisiert. Es werden nun auch f=C3=BCr d=
+ie
+    unterst=C3=BCtzten Editionen von Microsoft SQL Server 2012 Sicherheitsu=
+pdates
+    zur Verf=C3=BCgung gestellt. Das Xen Security Advisory XSA-254 wurde eb=
+enfalls
+    aktualisiert (Version 8), um =C3=BCber die Verf=C3=BCgbarkeit von PVH S=
+him ('Comet')
+    f=C3=BCr Xen 4.8 zu informieren. Dies beinhaltet Fehlerbehebungen f=C3=
+=BCr zwei
+    Probleme im Zusammenhang mit der Initialisierung von Shim sowie der
+    Unterst=C3=BCtzung des PVH Modus f=C3=BCr qemu PV Backends.
+  Version 12 (17.01.2018):
+    Red Hat stellt jetzt ebenfalls ein Sicherheitsupdate f=C3=BCr den Linux=
+-Kernel
+    in Red Hat CloudForms 4.0 zur Verf=C3=BCgung. F=C3=BCr die SUSE Linux E=
+nterprise
+    Produkte Software Development Kit 12 SP3, High Availability 12 SP3, Ser=
+ver
+    12 SP3 sowie 12 SP1 LTSS stehen Sicherheitsupdates f=C3=BCr den Linux-K=
+ernel
+    bereit, welche die Korrekturen f=C3=BCr die Schwachstelle CVE-2017-5753
+    aktivieren, die bereits mittels fr=C3=BCherer Updates verteilt wurden. =
+Die
+    Sicherheitsupdates f=C3=BCr die Schwachstelle CVE-2017-5715 wurden eben=
+falls
+    bereits distribuiert, diese neuen Pakete enthalten allerdings eine
+    zus=C3=A4tzliche Fehlerbehebung im Kontext der Schwachstelle. Die
+    Sicherheitsupdates sind nur f=C3=BCr die IBM Z Plattform verf=C3=BCgbar=
+, welche von
+    der Schwachstelle 'Meltdown' CVE-2017-5754 nicht betroffen ist.
+  Version 11 (16.01.2018):
+    Red Hat stellt Sicherheitsupdates f=C3=BCr den Linux-Kernel in Red Hat
+    CloudForms 4.1, 4.2 und 4.5 bereit, um die drei Schwachstellen zu beheb=
+en.
+    IBM informiert im IBM PSIRT Blog dar=C3=BCber, dass diese Schwachstelle=
+n in
+    vielen Mikroprozessoren vorhanden sind, wie auch jenen, die in IBM Stor=
+age
+    Appliances und von der IBM Storage Spectrum Software auf Servern verwen=
+det
+    werden. Allerdings gelten IBM Storage Appliances als nicht angreifbar, =
+da
+    die Ausf=C3=BChrung fremden Programmcodes auf derartigen geschlossenen =
+Systemen
+    nicht erlaubt ist. F=C3=BCr IBM Storage Spectrum Software wird empfohle=
+n, die
+    Firmware Updates von Server- und Betriebssystemsanbietern in =C3=9Cbers=
+timmung
+    mit den normalen Prozeduren zu implementieren.
+  Version 10 (15.01.2018):
+    Microsoft hat seinen Sicherheitshinweis ADV180002 hinsichtlich der Tabe=
+lle
+    betroffener Produkte aktualisiert. Es werden nun auch Microsoft SQL Ser=
+ver
+    2008, Microsoft SQL Server 2008 R2, Microsoft SQL Server 2014 und
+    Microsoft SQL Server 2016 aufgef=C3=BChrt und Sicherheitsupdates f=C3=
+=BCr diese zur
+    Verf=C3=BCgung gestellt.
+  Version 9 (12.01.2018):
+    F=C3=BCr die SUSE Linux Enterprise Produktvarianten Software Developmen=
+t Kit,
+    High Availability und Server in der Version 12 SP2 wurden
+    Sicherheitsupdates f=C3=BCr den Linux-Kernel ver=C3=B6ffentlicht, die a=
+llerdings nur
+    f=C3=BCr IBM Z Plattformen zur Verf=C3=BCgung stehen. Die Korrekturen f=
+=C3=BCr IBM Z
+    waren bereits in dem vorhergehenden Update integriert, sie werden aber
+    jetzt erst aktiviert. Die Schwachstelle CVE-2017-5754 betrifft die IBM Z
+    Architektur nicht. Oracle stellt f=C3=BCr Oracle VM 3.4 Sicherheitsupda=
+tes f=C3=BCr
+    den Unbreakable Enterprise Kernel zur Verf=C3=BCgung. =C3=9Cber das Pak=
+et
+    '4.1.12-112.14.5.el6uek' werden die Schwachstellen CVE-2017-5715 und
+    CVE-2017-5753 und =C3=BCber das Paket '4.1.12-112.14.10.el6uek' die
+    Schwachstellen CVE-2017-5715 und CVE-2017-5754 adressiert. Citrix
+    informiert mittels der Meldung Citrix Security Advisory CTX231399 =C3=
+=BCber die
+    Betroffenheit der Citrix Produkte. Neben dem XenServer f=C3=BCr den ein=
+e eigene
+    Meldung, Citrix Security Advisory CTX231390, erstellt wurde, kann eine
+    Verwundbarkeit von Citrix NetScaler SDX nicht ausgeschlossen werden. Die
+    XenServer Versionen 6.0.2, 6.2.0, 6.5, 7.0, 7.1 LTSR Cumulative Update =
+1,
+    7.2 und 7.3 sind von den Schwachstellen CVE-2017-5715 und CVE-2017-5754
+    betroffen. F=C3=BCr die Schwachstelle CVE-2017-5753 ist dem Hersteller =
+kein Weg
+    der Ausnutzung im XenServer bekannt. Zur Behebung der Schwachstelle
+    CVE-2017-5715 stehen f=C3=BCr die Versionen 7.1 LTSR Cumulative Update =
+1, 7.2
+    und 7.3 erste Hotfixes bereit, die zus=C3=A4tzliche eine Reihe von
+    Denial-of-Service-Schwachstellen adressieren. An weiteren
+    Sicherheitsupdates wird, auch zusammen mit Hardware Herstellern,
+    gearbeitet. AMD aktualisiert die Informationen zu der Betroffenheit der
+    AMD Prozessoren, um dar=C3=BCber zu informieren, dass Microsoft einen g=
+ro=C3=9Fen
+    Teil der zuvor zur=C3=BCckgehaltenen Sicherheitsupdates f=C3=BCr AMD Pr=
+ozessoren
+    jetzt verteilt. An Problemen die =C3=A4ltere Prozessoren betreffen (AMD
+    Opteron, Athlon und AMD Turion X2 Ultra Familie) wird gearbeitet und AMD
+    geht davon aus, dass die Verteilung der Microsoft Updates n=C3=A4chste =
+Woche
+    (KW 3) erfolgen kann. Intel ver=C3=B6ffentlicht einen Blog-Artikel 'Int=
+el
+    Security Issue Update: Addressing Reboot Issues' und berichtet =C3=BCbe=
+r einige
+    Kundenmeldungen nach denen gepatchte Systeme h=C3=A4ufiger Neustarts (R=
+eboots)
+    durchf=C3=BChren. Intel analysiert das Problem aktuell und k=C3=BCndigt=
+ an,
+    =C3=BCberarbeitete Patches zur Verf=C3=BCgung zu stellen, sollten die A=
+nalysen die
+    Notwendigkeit daf=C3=BCr aufzeigen. Dieses Problem scheint insbesondere=
+ Intel
+    Broadwell und Haswell CPUs zu betreffen.
+  Version 8 (11.01.2018):
+    Canonical stellt f=C3=BCr die Distributionen Ubuntu 17.10, Ubuntu 17.04=
+ und
+    Ubuntu 16.04 LTS Sicherheitsupdates f=C3=BCr 'webkit2gtk' auf das WebKi=
+tGTK+
+    Release 2.18.5 zur Behebung der Schwachstellen CVE-2017-5715 und
+    CVE-2017-5753 (Spectre) bereit. Nach Installation der Sicherheitsupdates
+    m=C3=BCssen alle Anwendungen, welche WebKitGTK+ verwenden, wie etwa Epi=
+phany,
+    neu gestartet werden.
+  Version 7 (11.01.2018):
+    Mit WebKitGTK+ Security Advisory WSA-2018-0001 wird =C3=BCber das WebKi=
+tGTK+
+    Release 2.18.5 zur Behebung der Schwachstellen CVE-2017-5715 und
+    CVE-2017-5753 (Spectre) informiert. F=C3=BCr Fedora 26 und 27 stehen
+    Sicherheitsupdates auf diese Version in Form der Pakete
+    'webkitgtk4-2.18.5-1.fc26' und 'webkitgtk4-2.18.5-1.fc27' im Status
+    'pending' bereit. F=C3=BCr Fedora 26 und 27 stehen dar=C3=BCber hinaus
+    Sicherheitsupdates f=C3=BCr den Linux-Kernel auf Version 4.14.13 im Sta=
+tus
+    'pending' zur Verf=C3=BCgung. Hiermit werden einige Mitigationen f=C3=
+=BCr Spectre
+    (beide Varianten) eingef=C3=BChrt. Die Installation dieser Sicherheitsu=
+pdates
+    erfordert den anschlie=C3=9Fenden Neustart betroffener Systeme.
+  Version 6 (10.01.2018):
+    NVIDIA ver=C3=B6ffentlicht neue Hinweise und weitere Sicherheitsupdates=
+ zu den
+    Schwachstellen =C3=BCber die NVIDIA Driver Download-Webseite. F=C3=BCr =
+Windows
+    stehen jetzt die Treiberversionen 390.65 (GeForce, Quadro, NVS) und 386=
+.07
+    (Quadro, NVS, Tesla) zur Verf=C3=BCgung. F=C3=BCr Linux, FreeBSD und So=
+laris stehen
+    die Versionen 390.12 und 384.111 f=C3=BCr GeForce, Quadro, NVS und Tesl=
+a (nur
+    384.111) bereit. F=C3=BCr den Versionszweig R390 f=C3=BCr Tesla wird ein
+    Sicherheitsupdate in KW 4 f=C3=BCr Windows und Linux angek=C3=BCndigt. =
+Dar=C3=BCber
+    hinaus stehen =C3=BCber das NVIDIA Licensing Center Informationen zu Up=
+dates
+    f=C3=BCr NVIDIA GRID Produkte zur Verf=C3=BCgung. Die NVIDIA GRID betre=
+ffenden
+    Updates f=C3=BCr Windows, Windows Server mit Hyper-V, Linux, Citrix Xen=
+Server,
+    VMware vSphere und Red Hat KVM werden vor Ende Januar erwartet. Canonic=
+al
+    stellt f=C3=BCr Ubuntu 17.10, Ubuntu 17.04, Ubuntu 16.04 LTS und Ubuntu=
+ 14.04
+    LTS ein Sicherheitsupdate f=C3=BCr 'nvidia-graphics-drivers-384' auf Ve=
+rsion
+    384.111 zur Verf=C3=BCgung, mit dem laut zugeh=C3=B6rigem Sicherheitshi=
+nweis
+    zun=C3=A4chst eine der 'Spectre'-Schwachstellen (CVE-2017-5753) adressi=
+ert
+    wird. Oracle ver=C3=B6ffentlicht die Oracle VM Security Advisories
+    OVMSA-2018-0005 und OVMSA-2018-0006, um =C3=BCber die Bereitstellung von
+    verschiedenen Xen-Sicherheitsupdates f=C3=BCr Oracle VM 3.4 zu informie=
+ren. Das
+    erstgenannte Update referenziert zus=C3=A4tzlich auch die Schwachstellen
+    CVE-2017-15592, CVE-2017-15595, CVE-2017-17044 und CVE-2017-17045, die
+    Denial-of-Service-Angriffe und eine Privilegieneskalation erm=C3=B6glic=
+hen und
+    bereits im Dezember (OVMSA-2017-0176) behoben wurden.
+  Version 5 (09.01.2018):
+    Red Hat ver=C3=B6ffentlicht f=C3=BCr Red Hat Virtualization 3.X und 4 f=
+=C3=BCr Red Hat
+    Enterprise Linux 7 Sicherheitsupdates in Form aktualisierter
+    'redhat-virtualization-host'-Pakete. F=C3=BCr Red Hat Virtualization 3.=
+x auf
+    RHEL 6 und 7 steht au=C3=9Ferdem das Paket 'rhev-hypervisor7' und f=C3=
+=BCr Red Hat
+    Virtualization 4 auf  RHEL 7 das Paket 'rhvm-appliance' als
+    Sicherheitsupdate bereit.
+  Version 4 (08.01.2018):
+    Microsoft aktualisiert seinen Sicherheitshinweis und weist darauf hin,
+    dass Sicherheitsupdates f=C3=BCr Microsoft Server 2008 und 2012 bis auf
+    weiteres nicht zur Verf=C3=BCgung stehen werden, da hier tiefe Eingriff=
+e in die
+    Architektur notwendig sind. Weiterhin erkl=C3=A4rt der Hersteller, dass=
+ die im
+    Sicherheitshinweis genannten 32-Bit-Pakete nur die
+    'Spectre'-Schwachstellen adressieren. Sophos informiert dar=C3=BCber, d=
+ass die
+    eigenen Endpoint-Produkte mit dem aktuellen Update von Microsoft
+    kompatibel sind und die f=C3=BCr dieses notwendigen Eintr=C3=A4ge in die
+    Windows-Registry zeitnah durch Updates f=C3=BCr Sophos Endpoint/Server
+    vorgenommen werden. F=C3=BCr Netzwerkkunden k=C3=BCndigt Sophos an, das=
+s die
+    Untersuchungen zu den jeweiligen Kernel-Updates f=C3=BCr das unterliege=
+nde
+    Linux und andere Betriebssysteme noch andauern. Dies betrifft unter
+    anderem Sophos UTM und Sophos Firewall OS. Juniper informiert =C3=BCber=
+ den
+    aktuellen Stand der Untersuchungen zu den eigenen Produkten. Unter ande=
+rem
+    werden Junos OS, Junos Space und Qfabric Director noch untersucht. Der
+    Hersteller geht aktuell davon aus, dass Junos OS nur durch lokale
+    Angreifer mit Administratorrechten angreifbar ist. Die Produkte ScreenOS
+    und JUNOSe sind den Angaben von Juniper zufolge nicht verwundbar gegen=
+=C3=BCber
+    den Schwachstellen. Im Xen Security Advisory 254 gibt das Xen.org Secur=
+ity
+    Team neue Informationen zu den Schwachstellen bekannt und pr=C3=A4zisie=
+rt die
+    m=C3=B6glichen Auswirkungen der Schwachstellen. Insbesondere weisen die=
+ Autoren
+    darauf hin, dass die M=C3=B6glichkeit zu Angriffen von Gastbenutzer auf=
+ den
+    Gastkernel unabh=C3=A4ngig von den in Xen umgesetzten Mitigationen best=
+eht und
+    nur durch Aktualisierung des eingesetzten Betriebssystems adressiert
+    werden k=C3=B6nnen. Dar=C3=BCber hinaus hat der Chiphersteller ARM Info=
+rmationen zu
+    betroffenen Prozessoren ver=C3=B6ffentlicht, die neben Xen auch den Ein=
+satz von
+    Google Android betreffen. Google stellt auf seinen Supportseiten weitere
+    Hinweise zu eigenen Produkten zur Verf=C3=BCgung.
+  Version 3 (05.01.2018):
+    Canonical informiert dar=C3=BCber, dass die Patches f=C3=BCr Ubuntu Lin=
+ux sp=C3=A4testens
+    zum urspr=C3=BCnglich geplanten Release am 09.01.2018 zur Verf=C3=BCgun=
+g stehen
+    werden. Aufgrund der Komplexit=C3=A4t der Patches wird ein Live-Update
+    ausgeschlossen, betroffene Systeme m=C3=BCssen nach Installation neu ge=
+startet
+    werden. Apple weist darauf hin, dass die Produkte iOS 11.2 und macOS
+    10.13.2 bereits gegen die Schwachstelle 'Meltdown' geh=C3=A4rtet wurden=
+. Die
+    'Spectre'-Schwachstellen werden in k=C3=BCnftigen Updates adressiert. A=
+uch
+    NVIDIA hat mit den Untersuchungen der eigenen Produkte begonnen und
+    bereits erste Updates f=C3=BCr Quadro, NVS (Windows, Linux, FreeBSD, So=
+laris)
+    und GeForce (Linux, FreeBSD, Solaris) ver=C3=B6ffentlicht.
+  Version 2 (05.01.2018):
+    F=C3=BCr Oracle Linux 7 (x86_64) stehen Sicherheitsupdates bereit, mit =
+denen
+    die Schwachstellen adressiert werden. Weitere Sicherheitsupdates stehen=
+ in
+    der f=C3=BCr die Red Hat Enterprise Linux Server Advanced Update Suppor=
+t (AUS)
+    Versionen AUS 6.2, AUS 6.4 und AUS 6.5 sowie f=C3=BCr Red Hat Enterpris=
+e MRG 2
+    zur Verf=C3=BCgung. Debian ver=C3=B6ffentlicht ein Sicherheitsupdate f=
+=C3=BCr Debian
+    Stretch (stable) zur Behebung der Schwachstelle 'Meltdown'
+    (CVE-2017-5754), mit dem zus=C3=A4tzlich eine alte Regression behoben w=
+ird. Die
+    beiden 'Spectre'-Schwachstellen werden in einem gesonderten Update
+    adressiert. F=C3=BCr die vormalige stabile Distribution Jessie wird ebe=
+nfalls
+    ein eigenes Sicherheitsupdate angek=C3=BCndigt. Die Hersteller Fortinet=
+, F5
+    Networks und IBM informieren dar=C3=BCber, dass die Untersuchungen der =
+jeweils
+    eigenen Produkte in Bezug auf die Schwachstellen begonnen haben. Die
+    Informationen zu Produkten des Herstellers Cisco Systems verarbeiten wir
+    in einem gesonderten Sicherheitshinweis, auch hier haben die
+    Untersuchungen der eigenen Produktpalette begonnen.
+  Version 1 (04.01.2018):
+    Neues Advisory
+
+Betroffene Software:
+
+  F5 Networks BIG-IP Advanced Firewall Manager (AFM) 11.2.1
+  F5 Networks BIG-IP Advanced Firewall Manager (AFM) >=3D 11.5.1
+  F5 Networks BIG-IP Advanced Firewall Manager (AFM) <=3D 11.5.5
+  F5 Networks BIG-IP Advanced Firewall Manager (AFM) >=3D 11.6.1
+  F5 Networks BIG-IP Advanced Firewall Manager (AFM) <=3D 11.6.2
+  F5 Networks BIG-IP Advanced Firewall Manager (AFM) >=3D 12.1.0
+  F5 Networks BIG-IP Advanced Firewall Manager (AFM) <=3D 12.1.3
+  F5 Networks BIG-IP Advanced Firewall Manager (AFM) 13.0.0
+  F5 Networks BIG-IP Advanced Firewall Manager (AFM) 13.1.0
+  F5 Networks BIG-IP Application Security Manager (ASM) 11.2.1
+  F5 Networks BIG-IP Application Security Manager (ASM) >=3D 11.5.1
+  F5 Networks BIG-IP Application Security Manager (ASM) <=3D 11.5.5
+  F5 Networks BIG-IP Application Security Manager (ASM) >=3D 11.6.1
+  F5 Networks BIG-IP Application Security Manager (ASM) <=3D 11.6.2
+  F5 Networks BIG-IP Application Security Manager (ASM) >=3D 12.1.0
+  F5 Networks BIG-IP Application Security Manager (ASM) <=3D 12.1.3
+  F5 Networks BIG-IP Application Security Manager (ASM) 13.0.0
+  F5 Networks BIG-IP Application Security Manager (ASM) 13.1.0
+  Microsoft SQL Server 2008 R2 SP3 x64
+  Microsoft SQL Server 2008 R2 SP3 x86
+  Microsoft SQL Server 2008 SP4 x64
+  Microsoft SQL Server 2008 SP4 x86
+  Microsoft SQL Server 2012 SP3 x64
+  Microsoft SQL Server 2012 SP3 x86
+  Microsoft SQL Server 2012 SP4 x64
+  Microsoft SQL Server 2012 SP4 x86
+  Microsoft SQL Server 2014 SP2 x64
+  Microsoft SQL Server 2014 SP2 x86
+  Microsoft SQL Server 2016 x64
+  Microsoft SQL Server 2016 SP1 x64
+  Microsoft SQL Server 2017 x64
+  NVIDIA GPU Driver
+  NVIDIA GPU Driver < 384.111
+  NVIDIA GPU Driver < 386.07
+  NVIDIA GPU Driver < 390.12
+  NVIDIA GPU Driver < 390.65
+  WebKitGTK+ < 2.18.5
+  Apple iOS
+  Apple macOS
+  Linux-Kernel
+  Microsoft Windows =
+
+  Microsoft Windows Server
+  Xen
+  =
+
+
+Betroffene Plattformen:
+
+  SUSE Linux Enterprise High Availability 12 SP2
+  SUSE Linux Enterprise High Availability 12 SP3
+  SUSE Linux Enterprise Software Development Kit  12 SP2
+  SUSE Linux Enterprise Software Development Kit  12 SP3
+  SUSE Manager Server 3.0
+  SUSE Manager Server 3.1
+  Red Hat CloudForms 4.0
+  Red Hat CloudForms 4.1
+  Red Hat CloudForms 4.2
+  Red Hat CloudForms 4.5
+  Red Hat Enterprise MRG 2
+  Red Hat Enterprise Virtualization 3.X Hypervisor and Agents for RHEL-7
+  Red Hat Enterprise Virtualization 4
+  Red Hat Enterprise Virtualization 4 Host
+  F5 Networks BIG-IP Systeme  =
+
+  Meinberg SyncFire
+  Sophos UTM
+  Apple iOS
+  Apple macOS
+  Canonical Ubuntu Linux 12.04 LTS (ESM)
+  Canonical Ubuntu Linux 14.04 LTS
+  Canonical Ubuntu Linux 16.04 LTS
+  Canonical Ubuntu Linux 16.10
+  Canonical Ubuntu Linux 17.04
+  Canonical Ubuntu Linux 17.10
+  Citrix NetScaler SDX
+  Citrix XenServer 6.0.2
+  Citrix XenServer 6.2.0
+  Citrix XenServer 6.5
+  Citrix XenServer 7.0
+  Citrix XenServer 7.1 LTSR Cumulative Update 1
+  Citrix XenServer 7.2
+  Citrix XenServer 7.3
+  Debian Linux 9.3 Stretch
+  FreeBSD
+  IBM AIX 5.3
+  IBM AIX 6.1
+  IBM AIX 7.1
+  IBM AIX 7.2
+  IBM VIOS 2.2.x
+  Juniper Junos OS
+  Microsoft Windows 7 SP1 x64
+  Microsoft Windows 7 SP1 x86
+  Microsoft Windows 8.1 x64
+  Microsoft Windows 8.1 x86
+  Microsoft Windows 10
+  Microsoft Windows 10 x86
+  Microsoft Windows 10 x64 v1511
+  Microsoft Windows 10 x86 v1511
+  Microsoft Windows 10 x64 v1607
+  Microsoft Windows 10 x86 v1607
+  Microsoft Windows 10 x64 v1703
+  Microsoft Windows 10 x86 v1703
+  Microsoft Windows 10 x64 v1709
+  Microsoft Windows 10 x86 v1709
+  Microsoft Windows Server v1709 (Server Core Installation)
+  Microsoft Windows Server 2008 SP2 x64 Server Core Installation =
+
+  Microsoft Windows Server 2008 SP2 x86 Server Core Installation =
+
+  Microsoft Windows Server 2008 SP2 Itanium
+  Microsoft Windows Server 2008 SP2 x64
+  Microsoft Windows Server 2008 SP2 x86
+  Microsoft Windows Server 2008  R2 SP1 x64 Server Core Installation
+  Microsoft Windows Server 2008 R2 SP1 Itanium
+  Microsoft Windows Server 2008 R2 SP1 x64
+  Microsoft Windows Server 2012
+  Microsoft Windows Server 2012 Server Core Installation
+  Microsoft Windows Server 2012 R2
+  Microsoft Windows Server 2012 R2 Server Core Installation
+  Microsoft Windows Server 2016
+  SUSE Linux Enterprise Server 12 SP1 LTSS
+  SUSE Linux Enterprise Server 12 SP2
+  SUSE Linux Enterprise Server 12 SP3
+  Oracle Linux 5
+  Oracle Linux 6
+  Oracle Linux 7
+  Oracle Solaris
+  Oracle VM Server 3.3
+  Oracle VM Server 3.4
+  Red Hat Enterprise Linux for Scientific Computing 6
+  Red Hat Enterprise Linux 6.7 EUS Compute Node
+  Red Hat Enterprise Linux 7
+  Red Hat Enterprise Linux for Real Time 7 =
+
+  Red Hat Enterprise Linux for Scientific Computing 7
+  Red Hat Enterprise Linux 7.3 EUS Compute Node
+  Red Hat Enterprise Linux 7.4 EUS Compute Node
+  Red Hat Enterprise Linux Desktop 6
+  Red Hat Enterprise Linux Desktop 7
+  Red Hat Enterprise Linux Server 5 Extended Lifecycle Support
+  Red Hat Enterprise Linux Server 6
+  Red Hat Enterprise Linux Server 6.2 AUS
+  Red Hat Enterprise Linux Server 6.4 AUS
+  Red Hat Enterprise Linux Server 6.5 AUS
+  Red Hat Enterprise Linux Server 6.6 AUS
+  Red Hat Enterprise Linux Server 6.6 TUS
+  Red Hat Enterprise Linux Server 6.7 EUS
+  Red Hat Enterprise Linux Server 7
+  Red Hat Enterprise Linux Server 4 Year Extended Update Support 7.2
+  Red Hat Enterprise Linux Server 7.2 AUS
+  Red Hat Enterprise Linux Server 7.2 TUS
+  Red Hat Enterprise Linux Server 4 Year Extended Update Support 7.3
+  Red Hat Enterprise Linux Server 7.3 AUS
+  Red Hat Enterprise Linux Server 7.3 EUS
+  Red Hat Enterprise Linux Server 7.3 TUS
+  Red Hat Enterprise Linux Server 4 Year Extended Update Support 7.4
+  Red Hat Enterprise Linux Server 7.4 AUS
+  Red Hat Enterprise Linux Server 7.4 EUS
+  Red Hat Enterprise Linux Server 7.4 TUS
+  Red Hat Enterprise Linux Workstation 6
+  Red Hat Enterprise Linux Workstation 7
+  Red Hat Fedora 26
+  Red Hat Fedora 27
+  Xen
+  =
+
+
+
+Die Implementierung f=C3=BCr die leistungssteigernde Technik 'speculative
+Execution of Instructions' f=C3=BCr verschiedene Mikroprozessordesigns ist
+fehlerhaft. Daraus resultieren mehrere Schwachstellen, die abh=C3=A4ngig vom
+eingesetzten Prozessortyp von einem Angreifer ausgenutzt werden k=C3=B6nnen=
+: Die
+Schwachstelle CVE-2017-5715 (Spectre) betrifft Intel und AMD
+Mikroprozessoren und erm=C3=B6glicht vermutlich einem Angreifer im benachba=
+rten
+Netzwerk, Kernel-Programmcode an einer von ihm selbst kontrollierten
+Speicheradresse zur Ausf=C3=BChrung zu bringen und dadurch privilegierten
+Speicher zu lesen. Die Schwachstelle CVE-2017-5753 (Spectre) betrifft Intel
+und AMD Mikroprozessoren und erm=C3=B6glicht vermutlich einem Angreifer im
+benachbarten Netzwerk die Ausf=C3=BChrung spekulativer Instruktionen des
+Betriebssystems oder Hypervisors hinter Speicher- und Sicherheitsgrenzen und
+dar=C3=BCber den Zugriff auf privilegierten Speicher. Die Schwachstelle
+CVE-2017-5754 (Meltdown) betrifft nach derzeitigem Kenntnisstand nur Intel
+Mikroprozessoren und erm=C3=B6glicht einem lokalen, nicht authentisierten
+Angreifer das Auslesen von Kernelspeicher vom Userspace aus und dadurch die
+Ausf=C3=BChrung beliebigen Programmcodes mit den h=C3=B6chsten Privilegien.
+
+=C3=9Cber die genauen Auswirkungen der Schwachstellen wird noch im Einzelfa=
+ll
+diskutiert, da diese auf unterschiedlichen Plattformen verschieden sein
+k=C3=B6nnen. Die Bewertung der Schwachstellen basiert an dieser Stelle dahe=
+r auf
+der Arbeit der Schwachstellenentdecker selbst (Project Zero) und den bisher
+bekannten Einsch=C3=A4tzungen der betroffenen Softwarehersteller. Sicher is=
+t,
+dass die zur Behebung der Schwachstellen notwendigen Patches
+Performanceeinbu=C3=9Fen f=C3=BCr die betroffenen Systeme mit sich bringen =
+werden, da
+die Sicherheitsupdates prim=C3=A4r auf einer Deaktivierung der
+leistungssteigernden Technik beruhen, und dass die Behebung der
+Schwachstellen sowohl Software- als auch Firmware-seitige Updates erfordert.
+
+Im von Intel ver=C3=B6ffentlichten Sicherheitshinweis verweist der
+Prozessorhersteller f=C3=BCr Firmwareupdates auf die Hersteller und Distrib=
+utoren
+der Systeme, die die hauseigenen Prozessoren einsetzen. Gleiches gilt auch
+f=C3=BCr Systeme mit Mikroprozessoren anderer Chiphersteller, von denen bis=
+her
+mit Ausnahme von AMD noch keine Stellungnahmen vorliegen. AMD weist darauf
+hin, dass die Schwachstelle CVE-2017-5754 (Meltdown) AMD-Prozessoren nicht
+betrifft, da diese eine andere Architektur verwenden. F=C3=BCr die Ausnutzu=
+ng der
+Schwachstelle CVE-2017-5715 (Spectre) besteht auf AMD-Systemen aus demselben
+Grund nur ein geringes Risiko. Die Schwachstelle CVE-2017-5753 (Spectre)
+wird laut Aussage von AMD Software-seitig von Betriebssystemherstellern
+behoben. Da so gut wie alle aktuellen Betriebssysteme von den Schwachstellen
+betroffen sind, sollten die Hinweise der jeweiligen Softwarehersteller in
+den kommenden Tagen genau beachtet werden.
+
+Der Xen Hypervisor ist laut Aussage des Herstellers von allen Schwachstellen
+betroffen. Als m=C3=B6gliche Auswirkung wird das Aussp=C3=A4hen aller Infor=
+mationen
+aus dem Speicher eines geteilten Hosts genannt. Die Informationen k=C3=B6nn=
+en
+durch Ausf=C3=BChrung spekulativer Instruktionen erhalten werden, die vom
+Angreifer kontrollierbar sind. Die Schwachstelle CVE-2017-5754 kann hier
+umgangen werden, indem Gastsysteme im HVM- oder PVH-Modus betrieben werden.
+Es stehen noch keine Sicherheitsupdates f=C3=BCr Xen zur Verf=C3=BCgung.
+
+Microsoft empfiehlt allen Nutzern, alle verf=C3=BCgbaren Betriebssystemupda=
+tes -
+insbesondere die bisherigen Windows Sicherheitsupdates vom Januar 2018 - zu
+installieren. F=C3=BCr Microsoft Surface Produkte k=C3=BCndigt der Herstell=
+er ein
+Firmware Update an. Um die Schlie=C3=9Fung der Sicherheitsl=C3=BCcken zu ve=
+rifizieren
+stellt Microsoft ein PowerShell Script zur Verf=C3=BCgung und weist darauf =
+hin,
+dass einige Antivirusprogramme nicht mit den Sicherheitsupdates kompatibel
+sind. Microsoft weist darauf hin, dass die aktuellen Updates auch
+Mitigationen f=C3=BCr Internet Explorer und Edge im Kontext der Schwachstel=
+len
+beinhalten. Die Auswirkungen auf diese Produkte sind bisher unklar. Im
+aktuellen Sicherheitsupdate f=C3=BCr die Microsoft Browser werden vor allem
+Speicherkorruptionsschwachstellen in der Scripting Engine behandelt.
+
+F=C3=BCr verschiedene Versionen von Microsoft Windows Server stehen ebenfal=
+ls
+Sicherheitsupdates zur Verf=C3=BCgung. Microsoft weist darauf hin, dass ein
+erh=C3=B6htes Risiko besteht, wenn die Server als Hyper-V Hosts oder Remote
+Desktop Services Hosts (RDSH) betrieben werden und wenn nicht
+vertrauensw=C3=BCrdiger Programmcode, beispielsweise =C3=BCber Container, a=
+uf den
+Ger=C3=A4ten verwendet werden kann. Hier werden zus=C3=A4tzlich Registry-Ei=
+ntr=C3=A4ge
+angegeben, um die Mitigationen auf dem Server zu aktivieren und es steht
+ebenfalls ein PowerShell Skript zur Pr=C3=BCfung zur Verf=C3=BCgung. Weiter=
+hin stehen
+Sicherheitsupdates f=C3=BCr verschiedene Versionen von Microsoft SQL Server=
+ und
+verschiedene Hinweise zu unterschiedlichen Einsatzszenarien zur Verf=C3=BCg=
+ung.
+
+In Linux-Systemen werden aktuell Patches unter der Abk=C3=BCrzung KPTI (Ker=
+nel
+Page Table Isolation) ver=C3=B6ffentlicht, die Kernel- und Userland-Speicher
+besser trennen sollen. Einige Softwarehersteller stellen gesonderte
+Firmware-Sicherheitsupdates zur Verf=C3=BCgung, die nur CVE-2017-5715 (Spec=
+tre)
+adressieren. Dazu existiert ein gesonderter Sicherheitshinweis.
+
+F=C3=BCr das gesamte Red Hat Portfolio stehen bereits Sicherheitsupdates f=
+=C3=BCr den
+Linux-Kernel oder den Echtzeitkernel zur Verf=C3=BCgung. Hier werden die
+Schwachstellen f=C3=BCr die aktuellen Red Hat Enterprise Linux 6 und 7 Edit=
+ionen
+sowie die Editionen mit erweitertem Support (Advanced Update Support,
+Extended Update Support, Telco Update Support) behoben.
+
+F=C3=BCr Fedora 26 und 27 stehen Kernel-Sicherheitsupdates im Status 'stabl=
+e'
+(Fedora 27) beziehungsweise 'pending' (Fedora 26) bereit. In den
+Sicherheitsupdates wird die Schwachstelle 'Meltdown' erw=C3=A4hnt, m=C3=B6g=
+licherweise
+wird hier also nur CVE-2017-5754 adressiert.
+
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-22d5fa8a90 (Fedora 27,
+  kernel-4.14.11-300.fc27)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-22d5fa8a90>
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-8ed5eff2c0 (Fedora 26,
+  kernel-4.14.11-200.fc26)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-8ed5eff2c0>
+
+Patch:
+
+  Microsoft Security Advisory ADV180002: Guidance to mitigate speculative
+  execution side-channel vulnerabilities
+
+  <https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV18=
+0002>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0007 (RHEL 7, kernel)
+
+  <https://access.redhat.com/errata/RHSA-2018:0007>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0008 (RHEL 6, kernel)
+
+  <https://access.redhat.com/errata/RHSA-2018:0008>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0009 (RHEL 7.3, kernel)
+
+  <https://access.redhat.com/errata/RHSA-2018:0009>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0010 (RHEL 7.2, kernel)
+
+  <https://access.redhat.com/errata/RHSA-2018:0010>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0011 (RHEL 6.7 EUS, kernel)
+
+  <https://access.redhat.com/errata/RHSA-2018:0011>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0017 (RHEL 6.6, kernel)
+
+  <https://access.redhat.com/errata/RHSA-2018:0017>
+
+Patch:
+
+  Red Hat Security Update RHSA-2018:0016 (RHEL 7, kernel-rt)
+
+  <https://access.redhat.com/errata/RHSA-2018:0016>
+
+Patch:
+
+  Debian Security Advisory DSA-4078-1 (Debian 'Stretch' 9.3, linux)
+
+  <https://www.debian.org/security/2018/dsa-4078>
+
+Patch:
+
+  NVIDIA Security Bulletin: NVIDIA GPU Display Driver Security Updates for
+  Speculative Side Channels
+
+  <http://nvidia.custhelp.com/app/answers/detail/a_id/4611>
+
+Patch:
+
+  Oracle Linux Security Advisory ELSA-2018-0007 (Oracle Linux 7, kernel)
+
+  <https://linux.oracle.com/errata/ELSA-2018-0007.html>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0018 (RHEL 6.4, kernel)
+
+  <https://access.redhat.com/errata/RHSA-2018:0018>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0020 (RHEL 6.2, kernel)
+
+  <https://access.redhat.com/errata/RHSA-2018:0020>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0021 (MRG 2, kernel-rt)
+
+  <https://access.redhat.com/errata/RHSA-2018:0021>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0022 (RHEL 6.5, kernel)
+
+  <https://access.redhat.com/errata/RHSA-2018:0022>
+
+Patch:
+
+  Xen Security Advisory XSA-254
+
+  <http://xenbits.xen.org/xsa/advisory-254.html>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0044 (RHEV 3.X for RHEL-7,
+  redhat-virtualization-host)
+
+  <https://access.redhat.com/errata/RHSA-2018:0044>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0045 (RHEV 4.X, RHEV-H for RHEL 7,
+  rhvm-appliance)
+
+  <https://access.redhat.com/errata/RHSA-2018:0045>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0046 (RHEV 3.X for RHEL-6 and RHEL-7,
+  rhev-hypervisor7)
+
+  <https://access.redhat.com/errata/RHSA-2018:0046>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0047 (RHEV 4.X, RHEV-H for RHEL 7,
+  redhat-virtualization-host)
+
+  <https://access.redhat.com/errata/RHSA-2018:0047>
+
+Patch:
+
+  NVIDIA Driver Download Seite
+
+  <http://www.nvidia.com/Download/index.aspx>
+
+Patch:
+
+  Oracle VM Security Advisory OVMSA-2018-0005 (Oracle VM 3.4, xen
+  4.4.4-105.0.30.el6)
+
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000817.htm=
+l>
+
+Patch:
+
+  Oracle VM Security Advisory OVMSA-2018-0006 (Oracle VM 3.4, xen
+  4.4.4-155.0.12.el6)
+
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000816.htm=
+l>
+
+Patch:
+
+  Ubuntu Security Notice USN-3521-1 (nvidia-graphics-drivers-384)
+
+  <https://usn.ubuntu.com/usn/usn-3521-1/>
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-0590e4af13 (Fedora 27,
+  webkitgtk4-2.18.5-1.fc27)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-0590e4af13>
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-21a7ad920c (Fedora 27,
+  kernel-4.14.13-300.fc27)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-21a7ad920c>
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-690989736a (Fedora 26,
+  webkitgtk4-2.18.5-1.fc26)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-690989736a>
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-e6fe35524d (Fedora 26,
+  kernel-4.14.13-200.fc26)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-e6fe35524d>
+
+Patch:
+
+  Ubuntu Security Notice USN-3530-1
+
+  <http://www.ubuntu.com/usn/usn-3530-1/>
+
+Patch:
+
+  WebKitGTK+ Security Advisory WSA-2018-0001
+
+  <https://webkitgtk.org/security/WSA-2018-0001.html>
+
+Patch:
+
+  Citrix Security Advisory CTX231390
+
+  <https://support.citrix.com/article/CTX231390>
+
+Patch:
+
+  Oracle VM Security Advisory OVMSA-2018-0007 (Oracle VM 3.4, Kernel
+  4.1.12-112.14.5)
+
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000818.htm=
+l>
+
+Patch:
+
+  Oracle VM Security Advisory OVMSA-2018-0008 (Oracle VM 3.4, Kernel
+  4.1.12-112.14.10)
+
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000819.htm=
+l>
+
+Patch:
+
+  SUSE Security Update SUSE-SU-2018:0069-1 (Linux-Kernel)
+
+  <http://lists.suse.com/pipermail/sle-security-updates/2018-January/003588=
+.html>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0090 (CloudForms 4.2)
+
+  <https://access.redhat.com/errata/RHSA-2018:0090>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0091 (CloudForms 4.5)
+
+  <https://access.redhat.com/errata/RHSA-2018:0091>
+
+Patch:
+
+  Red Hat Security Update RHSA-2018:0089 (CloudForms 4.1)
+
+  <https://access.redhat.com/errata/RHSA-2018:0089>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0092 (CloudForms 4.0)
+
+  <https://access.redhat.com/errata/RHSA-2018:0092>
+
+Patch:
+
+  SUSE Security Update SUSE-SU-2018:0113-1 (Linux-Kernel)
+
+  <http://lists.suse.com/pipermail/sle-security-updates/2018-January/003600=
+.html>
+
+Patch:
+
+  SUSE Security Update SUSE-SU-2018:0114-1 (Linux-Kernel)
+
+  <http://lists.suse.com/pipermail/sle-security-updates/2018-January/003601=
+.html>
+
+Patch:
+
+  Meinberg Security Advisory [MBGSA-1801]: Spectre und Meltdown
+
+  <https://www.meinberg.de/german/news/meinberg-security-advisory-mbgsa-180=
+1-spectre-und-meltdown.htm>
+
+Patch:
+
+  Oracle VM Security Advisory OVMSA-2018-0010 (Oracle VM 3.4, Kernel
+  4.1.12-112.14.11)
+
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000820.htm=
+l>
+
+Patch:
+
+  Oracle Linux Security Advisory ELSA-2018-4012 (Oracle Linux 6 und 7, Kern=
+el
+  4.1.12-94.7.8)
+
+  <https://linux.oracle.com/errata/ELSA-2018-4012.html>
+
+Patch:
+
+  Ubuntu Security Notice USN-3540-1 (Ubuntu 16.04 LTS, Linux-Kernel, Amazon
+  Web Services, Intel Euclid)
+
+  <http://www.ubuntu.com/usn/usn-3540-1/>
+
+Patch:
+
+  Ubuntu Security Notice USN-3540-2 (Ubuntu 14.04 LTS, Linux-Kernel, Amazon
+  Web Services, HWE)
+
+  <http://www.ubuntu.com/usn/usn-3540-2/>
+
+Patch:
+
+  Ubuntu Security Notice USN-3541-1 (Ubuntu 17.10, Linux-Kernel)
+
+  <http://www.ubuntu.com/usn/usn-3541-1/>
+
+Patch:
+
+  Ubuntu Security Notice USN-3541-2 (Ubuntu 16.04 LTS, Linux-Kernel, Micros=
+oft
+  Azure, Google Cloud Platform, HWE, OEM Processors)
+
+  <http://www.ubuntu.com/usn/usn-3541-2/>
+
+Patch:
+
+  Ubuntu Security Notice USN-3542-1 (Ubuntu 14.04 LTS, Linux-Kernel)
+
+  <http://www.ubuntu.com/usn/usn-3542-1/>
+
+Patch:
+
+  Ubuntu Security Notice USN-3542-2 (Ubuntu 12.04 LTS, Linux-Kernel, HWE)
+
+  <http://www.ubuntu.com/usn/usn-3542-2/>
+
+Patch:
+
+  Oracle Linux Security Advisory ELSA-2018-4020 (Oracle Linux 5 und 6, Kern=
+el
+  2.6.39-400.298.2)
+
+  <https://linux.oracle.com/errata/ELSA-2018-4020.html>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0151
+
+  <https://access.redhat.com/errata/RHSA-2018:0151>
+
+Patch:
+
+  Oracle Linux Security Advisory ELSA-2018-0151 (Oracle Linux 7, Kernel
+  3.10.0-693.17.1)
+
+  <https://linux.oracle.com/errata/ELSA-2018-0151.html>
+
+Patch:
+
+  IBM Security Advisory spectre_meltdown_advisory.asc
+
+  <http://aix.software.ibm.com/aix/efixes/security/spectre_meltdown_advisor=
+y.asc>
+
+Patch:
+
+  Oracle Linux Security Advisory ELSA-2018-4022 (Oracle Linux 6 und 7, Kern=
+el
+  3.8.13-118.20.2)
+
+  <https://linux.oracle.com/errata/ELSA-2018-4022.html>
+
+Patch:
+
+  SUSE Security Update SUSE-SU-2018:0285-1
+
+  <http://lists.suse.com/pipermail/sle-security-updates/2018-January/003679=
+.html>
+
+Patch:
+
+  Ubuntu Security Notice USN-3548-1 (Ubuntu 17.10, Linux-Kernel)
+
+  <https://usn.ubuntu.com/usn/usn-3548-1/>
+
+Patch:
+
+  Ubuntu Security Notice USN-3548-2 (Ubuntu 16.04 LTS, Linux-Kernel for
+  Microsoft Azure Cloud,  Google Cloud Platform (GCP), HWE, OEM Processors)
+
+  <https://usn.ubuntu.com/usn/usn-3548-2/>
+
+Patch:
+
+  Ubuntu Security Notice USN-3549-1 (Ubuntu 16.04 LTS, Linux-Kernel (KVM))
+
+  <http://www.ubuntu.com/usn/usn-3549-1/>
+
+Patch:
+
+  Oracle VM Security Advisory OVMSA-2018-0016
+
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000827.htm=
+l>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0292 (RHEL 5, kernel)
+
+  <https://access.redhat.com/errata/RHSA-2018:0292>
+
+Patch:
+
+  Ubuntu Security Notice USN-3580-1 (Ubuntu 12.04 LTS, Linux-Kernel)
+
+  <http://www.ubuntu.com/usn/usn-3580-1/>
+
+Patch:
+
+  Oracle Linux Security Advisory ELSA-2018-0292 (Oracle Linux 5, Kernel
+  2.6.18-419.0.0.8)
+
+  <https://linux.oracle.com/errata/ELSA-2018-0292.html>
+
+Patch:
+
+  SUSE Security Update SUSE-SU-2018:0552-1
+
+  <http://lists.suse.com/pipermail/sle-security-updates/2018-February/00375=
+5.html>
+
+
+CVE-2017-5754: Schwachstelle in Implementierung der spekulativen
+  Instruktionsausf=C3=BChrung f=C3=BCr Mikroprozessoren erm=C3=B6glicht Aus=
+sp=C3=A4hen von
+  Informationen
+
+  Die Implementierung f=C3=BCr die leistungssteigernde Technik 'speculative
+  Execution of Instructions' f=C3=BCr verschiedene Mikroprozessordesigns ist
+  fehlerhaft. Bei der 'speculative Execution of Instructions' werden Annahm=
+en
+  =C3=BCber das Ergebnis einer anderen Operation getroffen und zur Ausf=C3=
+=BChrung der
+  Instruktion verwendet. Treffen die Annahmen zu, ist das Ergebnis eine
+  Beschleunigung der Verarbeitung. Treffen die Annahmen nicht zu, muss die
+  Instruktion zur=C3=BCckgesetzt werden. Der Fehler in der Implementierung =
+besteht
+  darin, dass Seiteneffekte der Ausf=C3=BChrung der Instruktion bestehen bl=
+eiben.
+  U.a. werden =C3=84nderungen am TLB (Translation Lookaside Buffer) nicht
+  zur=C3=BCckgesetzt.
+  =
+
+  Diese Schwachstelle deckt den Fall des 'Rogue Data Cache Load' ab und wird
+  im Kontext der Ver=C3=B6ffentlichung 'Meltdown' genannt. Die Schwachstell=
+e liegt
+  darin begr=C3=BCndet, dass Pagetable-Berechtigungspr=C3=BCfungen nur ausg=
+ef=C3=BChrt
+  werden, wenn die jeweilige Instruktion 'retired' wird, die Ergebnisse ein=
+er
+  Instruktion also dem Rest des Systems zur Verf=C3=BCgung gestellt werden.=
+ Das ist
+  f=C3=BCr spekulative Instruktionen generell nicht der Fall, da ein 'retir=
+e' erst
+  erfolgen kann, wenn die f=C3=BCr die Ausf=C3=BChrung gemachte Annahme bes=
+t=C3=A4tigt wurde.
+  =
+
+  Ein lokaler, nicht authentisierter Angreife kann diese Schwachstelle
+  ausnutzen, um Kernelspeicher vom Userspace aus zu lesen, ohne den
+  Kontrollfluss des Kernelcodes umzuleiten.
+
+
+CVE-2017-5753: Schwachstelle in Implementierung der spekulativen
+  Instruktionsausf=C3=BChrung f=C3=BCr Mikroprozessoren erm=C3=B6glicht Aus=
+sp=C3=A4hen von
+  Informationen
+
+  Die Implementierung f=C3=BCr die leistungssteigernde Technik 'speculative
+  Execution of Instructions' f=C3=BCr verschiedene Mikroprozessordesigns ist
+  fehlerhaft. Bei der 'speculative Execution of Instructions' werden Annahm=
+en
+  =C3=BCber das Ergebnis einer anderen Operation getroffen und zur Ausf=C3=
+=BChrung der
+  Instruktion verwendet. Treffen die Annahmen zu, ist das Ergebnis eine
+  Beschleunigung der Verarbeitung. Treffen die Annahmen nicht zu, muss die
+  Instruktion zur=C3=BCckgesetzt werden. Der Fehler in der Implementierung =
+besteht
+  darin, dass Seiteneffekte der Ausf=C3=BChrung der Instruktion bestehen bl=
+eiben.
+  U.a. werden =C3=84nderungen am TLB (Translation Lookaside Buffer) nicht
+  zur=C3=BCckgesetzt.
+  =
+
+  Diese Schwachstelle deckt den Fall des 'Bounds Check Bypass' ab und wird =
+im
+  Kontext der Ver=C3=B6ffentlichung 'Spectre' genannt. Die Schwachstelle tr=
+itt auf,
+  wenn der Branch Predictor, der dem Prozessor die wahrscheinlichsten
+  zuk=C3=BCnftigen Intruktionszweige zuspielt, manipuliert wird. Sie erford=
+ert die
+  Existenz eines bestimmten Programmcodepatterns in der jeweiligen
+  Implementierung der spekulativen Instruktionsausf=C3=BChrung oder die Gen=
+erierung
+  eines entsprechenden Patterns =C3=BCber einen Interpreter oder eine
+  Just-in-Time-Engine. Ein vermutlich nicht authentisierter Angreifer im
+  benachbarten Netzwerk kann diese Schwachstelle ausnutzen, um spekulative
+  Instruktionen vom Betriebssystem oder Hypervisor hinter Speicher- und
+  Sicherheitsgrenzen zur Ausf=C3=BChrung zu bringen und auf privilegierten =
+Speicher
+  zuzugreifen.
+
+
+CVE-2017-5715: Schwachstelle in Implementierung der spekulativen
+  Instruktionsausf=C3=BChrung f=C3=BCr Mikroprozessoren erm=C3=B6glicht Aus=
+sp=C3=A4hen von
+  Informationen
+
+  Die Implementierung f=C3=BCr die leistungssteigernde Technik 'speculative
+  Execution of Instructions' f=C3=BCr verschiedene Mikroprozessordesigns ist
+  fehlerhaft. Bei der 'speculative Execution of Instructions' werden Annahm=
+en
+  =C3=BCber das Ergebnis einer anderen Operation getroffen und zur Ausf=C3=
+=BChrung der
+  Instruktion verwendet. Treffen die Annahmen zu, ist das Ergebnis eine
+  Beschleunigung der Verarbeitung. Treffen die Annahmen nicht zu, muss die
+  Instruktion zur=C3=BCckgesetzt werden. Der Fehler in der Implementierung =
+besteht
+  darin, dass Seiteneffekte der Ausf=C3=BChrung der Instruktion bestehen bl=
+eiben.
+  U.a. werden =C3=84nderungen am TLB (Translation Lookaside Buffer) nicht
+  zur=C3=BCckgesetzt.
+  =
+
+  Diese Schwachstelle deckt den Fall der 'Branch Target Injection' ab und w=
+ird
+  im Kontext der Ver=C3=B6ffentlichung 'Spectre' genannt. Die Schwachstelle=
+ tritt
+  auf, wenn durch den betroffenen Programmcode ein indirekter Zweig (Branch)
+  vorliegt, dessen Zieladresse aus dem Speicher geladen wird. Durch Sp=C3=
+=BClen
+  (flushing) der Cache-Zeile mit der entsprechenden Adresse aus dem Speicher
+  fehlt der CPU bei Erreichen des Zweigs das Sprungziel, so dass bis zur
+  notwendigen erneuten Berechnung der Adresse spekulativ Anweisungen
+  ausgef=C3=BChrt werden. Die dabei erfolgenden Speicherzugriffe allozieren=
+ auch
+  dann Speicher im Level 1 Data Cache des Mikroprozessors, wenn die
+  spekulativen Instruktionen sp=C3=A4ter verworfen werden.
+  =
+
+  Ein vermutlich nicht authentisierter Angreifer im benachbarten Netzwerk k=
+ann
+  diese Schwachstelle ausnutzen, um Kernel-Programmcode an einer von ihm
+  selbst kontrollierten Speicheradresse zur Ausf=C3=BChrung zu bringen und
+  privilegierten Speicher unter Umgehung der Syscall-Grenzen zu lesen. Die
+  ausgesp=C3=A4hten Informationen k=C3=B6nnen f=C3=BCr weitere Angriffe ver=
+wendet werden.
+
+
+Referenzen:
+
+Dieses Advisory finden Sie auch im DFN-CERT Portal unter:
+  <https://portal.cert.dfn.de/adv/DFN-CERT-2018-0020/>
+
+Fedora Security Update FEDORA-2018-22d5fa8a90 (Fedora 27,
+kernel-4.14.11-300.fc27):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-22d5fa8a90>
+
+Fedora Security Update FEDORA-2018-8ed5eff2c0 (Fedora 26,
+kernel-4.14.11-200.fc26):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-8ed5eff2c0>
+
+Microsoft Security Advisory ADV180002: Guidance to mitigate speculative
+execution side-channel vulnerabilities:
+  <https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV18=
+0002>
+
+Red Hat Security Advisory RHSA-2018:0007 (RHEL 7, kernel):
+  <https://access.redhat.com/errata/RHSA-2018:0007>
+
+Red Hat Security Advisory RHSA-2018:0008 (RHEL 6, kernel):
+  <https://access.redhat.com/errata/RHSA-2018:0008>
+
+Red Hat Security Advisory RHSA-2018:0009 (RHEL 7.3, kernel):
+  <https://access.redhat.com/errata/RHSA-2018:0009>
+
+Red Hat Security Advisory RHSA-2018:0010 (RHEL 7.2, kernel):
+  <https://access.redhat.com/errata/RHSA-2018:0010>
+
+Red Hat Security Advisory RHSA-2018:0011 (RHEL 6.7 EUS, kernel):
+  <https://access.redhat.com/errata/RHSA-2018:0011>
+
+Red Hat Security Advisory RHSA-2018:0017 (RHEL 6.6, kernel):
+  <https://access.redhat.com/errata/RHSA-2018:0017>
+
+Red Hat Security Update RHSA-2018:0016 (RHEL 7, kernel-rt):
+  <https://access.redhat.com/errata/RHSA-2018:0016>
+
+An Update on AMD Processor Security:
+  <https://www.amd.com/en/corporate/speculative-execution>
+
+Intel Security Advisory INTEL-SA-00088: Speculative Execution and Indirect
+Branch Prediction Side Channel Analysis Method:
+  <https://security-center.intel.com/advisory.aspx?intelid=3DINTEL-SA-00088=
+&languageid=3Den-fr>
+
+Microsoft Support: Important information regarding the Windows security
+updates released on January 3, 2018 and anti-virus software:
+  <https://support.microsoft.com/en-us/help/4072699/important-information-r=
+egarding-the-windows-security-updates-released>
+
+Microsoft Support: SQL Server Guidance to protect against speculative
+execution side-channel vulnerabilities:
+  <https://support.microsoft.com/en-us/help/4073225/guidance-for-sql-server>
+
+Microsoft Support: Windows Client Guidance for IT Pros to protect against
+speculative execution side-channel vulnerabilities:
+  <https://support.microsoft.com/de-de/help/4073119/windows-client-guidance=
+-for-it-pros-to-protect-against-speculative-exe>
+
+Microsoft Support: Windows Server Guidance to protect against the speculati=
+ve
+execution side-channel vulnerabilities:
+  <https://support.microsoft.com/en-us/help/4072698/windows-server-guidance=
+-to-protect-against-the-speculative-execution-s>
+
+Project Zero: Reading privileged memory with a side-channel (technische
+Informationen zu den Schwachstellen):
+  <https://googleprojectzero.blogspot.de/2018/01/reading-privileged-memory-=
+with-side.html>
+
+Schwachstelle CVE-2017-5715 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-5715>
+
+Schwachstelle CVE-2017-5753 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-5753>
+
+Schwachstelle CVE-2017-5754 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-5754>
+
+Xen Security Advisory XSA-254: Information leak via side effects of
+speculative execution:
+  <http://xenbits.xen.org/xsa/advisory-254.html>
+
+Debian Security Advisory DSA-4078-1 (Debian 'Stretch' 9.3, linux):
+  <https://www.debian.org/security/2018/dsa-4078>
+
+NVIDIA Security Bulletin: NVIDIA GPU Display Driver Security Updates for
+Speculative Side Channels:
+  <http://nvidia.custhelp.com/app/answers/detail/a_id/4611>
+
+Oracle Linux Security Advisory ELSA-2018-0007 (Oracle Linux 7, kernel):
+  <https://linux.oracle.com/errata/ELSA-2018-0007.html>
+
+Red Hat Security Advisory RHSA-2018:0018 (RHEL 6.4, kernel):
+  <https://access.redhat.com/errata/RHSA-2018:0018>
+
+Red Hat Security Advisory RHSA-2018:0020 (RHEL 6.2, kernel):
+  <https://access.redhat.com/errata/RHSA-2018:0020>
+
+Red Hat Security Advisory RHSA-2018:0021 (MRG 2, kernel-rt):
+  <https://access.redhat.com/errata/RHSA-2018:0021>
+
+Red Hat Security Advisory RHSA-2018:0022 (RHEL 6.5, kernel):
+  <https://access.redhat.com/errata/RHSA-2018:0022>
+
+Apple: About speculative execution vulnerabilities in ARM-based and Intel C=
+PUs:
+  <https://support.apple.com/en-us/HT208394>
+
+F5 Networks Security Advisory K91229003: Side-channel processor
+vulnerabilities CVE-2017-5715, CVE-2017-5753, and CVE-2017-5754:
+  <https://support.f5.com/csp/article/K91229003>
+
+FortiGuard Labs PSIRT Advisory FG-IR-18-002:
+  <https://fortiguard.com/psirt/FG-IR-18-002>
+
+IBM PSIRT Blog: Potential CPU Security Issue:
+  <https://www.ibm.com/blogs/psirt/potential-cpu-security-issue/>
+
+NVIDIA Security Notice: Speculative Side Channels:
+  <http://nvidia.custhelp.com/app/answers/detail/a_id/4609>
+
+Ubuntu Updates for the Meltdown / Spectre Vulnerabilitie:
+  <https://insights.ubuntu.com/2018/01/04/ubuntu-updates-for-the-meltdown-s=
+pectre-vulnerabilities/>
+
+Xen Security Advisory XSA-254:
+  <http://xenbits.xen.org/xsa/advisory-254.html>
+
+Arm Processor Security Update: Vulnerability of Speculative Processors to
+Cache Timing Side-Channel Mechanism:
+  <https://developer.arm.com/support/security-update>
+
+Google Product Status: Google's Mitigations Against CPU Speculative Executi=
+on
+Attack Methods:
+  <https://support.google.com/faqs/answer/7622138#overview>
+
+Juniper Security Bulletin JSA10842:
+  <http://kb.juniper.net/InfoCenter/index?page=3Dcontent&id=3DJSA10842&actp=
+=3DRSS>
+
+Sophos Advisory: Kernel memory issue affecting multiple OS (aka F**CKWIT,
+KAISER, KPTI, Meltdown & Spectre):
+  <https://community.sophos.com/kb/en-us/128053>
+
+Red Hat Security Advisory RHSA-2018:0044 (RHEV 3.X for RHEL-7,
+redhat-virtualization-host):
+  <https://access.redhat.com/errata/RHSA-2018:0044>
+
+Red Hat Security Advisory RHSA-2018:0045 (RHEV 4.X, RHEV-H for RHEL 7,
+rhvm-appliance):
+  <https://access.redhat.com/errata/RHSA-2018:0045>
+
+Red Hat Security Advisory RHSA-2018:0046 (RHEV 3.X for RHEL-6 and RHEL-7,
+rhev-hypervisor7):
+  <https://access.redhat.com/errata/RHSA-2018:0046>
+
+Red Hat Security Advisory RHSA-2018:0047 (RHEV 4.X, RHEV-H for RHEL 7,
+redhat-virtualization-host):
+  <https://access.redhat.com/errata/RHSA-2018:0047>
+
+NVIDIA Driver Download Seite:
+  <http://www.nvidia.com/Download/index.aspx>
+
+Oracle VM Security Advisory OVMSA-2018-0005 (Oracle VM 3.4, xen
+4.4.4-105.0.30.el6):
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000817.htm=
+l>
+
+Oracle VM Security Advisory OVMSA-2018-0006 (Oracle VM 3.4, xen
+4.4.4-155.0.12.el6):
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000816.htm=
+l>
+
+Ubuntu Security Notice USN-3521-1 (nvidia-graphics-drivers-384):
+  <https://usn.ubuntu.com/usn/usn-3521-1/>
+
+Fedora Security Update FEDORA-2018-0590e4af13 (Fedora 27,
+webkitgtk4-2.18.5-1.fc27):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-0590e4af13>
+
+Fedora Security Update FEDORA-2018-21a7ad920c (Fedora 27,
+kernel-4.14.13-300.fc27):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-21a7ad920c>
+
+Fedora Security Update FEDORA-2018-690989736a (Fedora 26,
+webkitgtk4-2.18.5-1.fc26):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-690989736a>
+
+Fedora Security Update FEDORA-2018-e6fe35524d (Fedora 26,
+kernel-4.14.13-200.fc26):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-e6fe35524d>
+
+Ubuntu Security Notice USN-3530-1:
+  <http://www.ubuntu.com/usn/usn-3530-1/>
+
+WebKitGTK+ Security Advisory WSA-2018-0001:
+  <https://webkitgtk.org/security/WSA-2018-0001.html>
+
+Citrix Security Advisory CTX231390:
+  <https://support.citrix.com/article/CTX231390>
+
+Oracle VM Security Advisory OVMSA-2018-0007 (Oracle VM 3.4, Kernel
+4.1.12-112.14.5):
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000818.htm=
+l>
+
+Oracle VM Security Advisory OVMSA-2018-0008 (Oracle VM 3.4, Kernel
+4.1.12-112.14.10):
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000819.htm=
+l>
+
+SUSE Security Update SUSE-SU-2018:0069-1 (Linux-Kernel):
+  <http://lists.suse.com/pipermail/sle-security-updates/2018-January/003588=
+.html>
+
+Citrix Security Advisory CTX231399:
+  <https://support.citrix.com/article/CTX231399>
+
+Intel Security Issue Update: Addressing Reboot Issues:
+  <https://newsroom.intel.com/news/intel-security-issue-update-addressing-r=
+eboot-issues/>
+
+Red Hat Security Advisory RHSA-2018:0090 (CloudForms 4.2):
+  <https://access.redhat.com/errata/RHSA-2018:0090>
+
+Red Hat Security Advisory RHSA-2018:0091 (CloudForms 4.5):
+  <https://access.redhat.com/errata/RHSA-2018:0091>
+
+Red Hat Security Update RHSA-2018:0089 (CloudForms 4.1):
+  <https://access.redhat.com/errata/RHSA-2018:0089>
+
+IBM PSIRT Blog: IBM Storage =E2=80=94 Meltdown/Spectre:
+  <https://www.ibm.com/blogs/psirt/ibm-storage-meltdownspectre/>
+
+Red Hat Security Advisory RHSA-2018:0092 (CloudForms 4.0):
+  <https://access.redhat.com/errata/RHSA-2018:0092>
+
+SUSE Security Update SUSE-SU-2018:0113-1 (Linux-Kernel):
+  <http://lists.suse.com/pipermail/sle-security-updates/2018-January/003600=
+.html>
+
+SUSE Security Update SUSE-SU-2018:0114-1 (Linux-Kernel):
+  <http://lists.suse.com/pipermail/sle-security-updates/2018-January/003601=
+.html>
+
+Meinberg Security Advisory [MBGSA-1801]: Spectre und Meltdown:
+  <https://www.meinberg.de/german/news/meinberg-security-advisory-mbgsa-180=
+1-spectre-und-meltdown.htm>
+
+Oracle VM Security Advisory OVMSA-2018-0010 (Oracle VM 3.4, Kernel
+4.1.12-112.14.11):
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000820.htm=
+l>
+
+Oracle Linux Security Advisory ELSA-2018-4012 (Oracle Linux 6 und 7, Kernel
+4.1.12-94.7.8):
+  <https://linux.oracle.com/errata/ELSA-2018-4012.html>
+
+Microsoft Support: Unbootable state for AMD devices in Windows 10 Version 1=
+709:
+  <https://support.microsoft.com/en-us/help/4073290/unbootable-state-for-am=
+d-devices-in-windows-10-version-1709>
+
+Microsoft Support: Unbootable state for AMD devices in Windows 7 SP1 and
+Windows Server 2008 R2 SP1:
+  <https://support.microsoft.com/en-us/help/4073578/unbootable-state-for-am=
+d-devices-in-windows-7-sp1-windows-server-2008>
+
+Ubuntu Security Notice USN-3540-1 (Ubuntu 16.04 LTS, Linux-Kernel, Amazon W=
+eb
+Services, Intel Euclid):
+  <http://www.ubuntu.com/usn/usn-3540-1/>
+
+Ubuntu Security Notice USN-3540-2 (Ubuntu 14.04 LTS, Linux-Kernel, Amazon W=
+eb
+Services, HWE):
+  <http://www.ubuntu.com/usn/usn-3540-2/>
+
+Ubuntu Security Notice USN-3541-1 (Ubuntu 17.10, Linux-Kernel):
+  <http://www.ubuntu.com/usn/usn-3541-1/>
+
+Ubuntu Security Notice USN-3541-2 (Ubuntu 16.04 LTS, Linux-Kernel, Microsoft
+Azure, Google Cloud Platform, HWE, OEM Processors):
+  <http://www.ubuntu.com/usn/usn-3541-2/>
+
+Ubuntu Security Notice USN-3542-1 (Ubuntu 14.04 LTS, Linux-Kernel):
+  <http://www.ubuntu.com/usn/usn-3542-1/>
+
+Ubuntu Security Notice USN-3542-2 (Ubuntu 12.04 LTS, Linux-Kernel, HWE):
+  <http://www.ubuntu.com/usn/usn-3542-2/>
+
+Oracle Linux Security Advisory ELSA-2018-4020 (Oracle Linux 5 und 6, Kernel
+2.6.39-400.298.2):
+  <https://linux.oracle.com/errata/ELSA-2018-4020.html>
+
+Red Hat Security Advisory RHSA-2018:0151:
+  <https://access.redhat.com/errata/RHSA-2018:0151>
+
+Oracle Linux Security Advisory ELSA-2018-0151 (Oracle Linux 7, Kernel
+3.10.0-693.17.1):
+  <https://linux.oracle.com/errata/ELSA-2018-0151.html>
+
+IBM Security Advisory spectre_meltdown_advisory.asc:
+  <http://aix.software.ibm.com/aix/efixes/security/spectre_meltdown_advisor=
+y.asc>
+
+IBM PSIRT Blog: IBM has released AIX and VIOS iFixes in response to the
+vulnerabilities known as Spectre and Meltdown:
+  <https://www.ibm.com/blogs/psirt/ibm-security-bulletin-ibm-released-aix-v=
+ios-ifixes-response-vulnerabilities-known-spectre-meltdown/>
+
+Intel Microcode Revision Guidance, January 24, 2018:
+  <https://newsroom.intel.com/wp-content/uploads/sites/11/2018/01/microcode=
+-update-guidance.pdf>
+
+Microsoft Update to Disable Mitigation against Spectre, Variant 2:
+  <https://support.microsoft.com/en-us/help/4078130/update-to-disable-mitig=
+ation-against-spectre-variant-2>
+
+Oracle Linux Security Advisory ELSA-2018-4022 (Oracle Linux 6 und 7, Kernel
+3.8.13-118.20.2):
+  <https://linux.oracle.com/errata/ELSA-2018-4022.html>
+
+SUSE Security Update SUSE-SU-2018:0285-1:
+  <http://lists.suse.com/pipermail/sle-security-updates/2018-January/003679=
+.html>
+
+Ubuntu Security Notice USN-3548-1 (Ubuntu 17.10, Linux-Kernel):
+  <https://usn.ubuntu.com/usn/usn-3548-1/>
+
+Ubuntu Security Notice USN-3548-2 (Ubuntu 16.04 LTS, Linux-Kernel for
+Microsoft Azure Cloud,  Google Cloud Platform (GCP), HWE, OEM Processors):
+  <https://usn.ubuntu.com/usn/usn-3548-2/>
+
+Ubuntu Security Notice USN-3549-1 (Ubuntu 16.04 LTS, Linux-Kernel (KVM)):
+  <http://www.ubuntu.com/usn/usn-3549-1/>
+
+Oracle VM Security Advisory OVMSA-2018-0016:
+  <https://oss.oracle.com/pipermail/oraclevm-errata/2018-January/000827.htm=
+l>
+
+Red Hat Security Advisory RHSA-2018:0292 (RHEL 5, kernel):
+  <https://access.redhat.com/errata/RHSA-2018:0292>
+
+Ubuntu Security Notice USN-3580-1 (Ubuntu 12.04 LTS, Linux-Kernel):
+  <http://www.ubuntu.com/usn/usn-3580-1/>
+
+Oracle Linux Security Advisory ELSA-2018-0292 (Oracle Linux 5, Kernel
+2.6.18-419.0.0.8):
+  <https://linux.oracle.com/errata/ELSA-2018-0292.html>
+
+SUSE Security Update SUSE-SU-2018:0552-1:
+  <http://lists.suse.com/pipermail/sle-security-updates/2018-February/00375=
+5.html>
+
+Microsoft Support: Intel microcode updates for Windows 10 version 1709,
+Windows Server, version 1709 (Datacenter, Standard):
+  <https://support.microsoft.com/en-us/help/4090007/intel-microcode-updates>
+
+
+(c) DFN-CERT Services GmbH, all rights reserved!
+Die Weiterverbreitung ist mit Hinweis auf den Copyrightinhaber innerhalb der
+eigenen Einrichtung erlaubt. Eine dar=C3=BCber hinausgehende Verbreitung be=
+darf
+des schriftlichen Einverst=C3=A4ndnisses des Rechteinhabers.
+
+--===============5655606584120752878==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExDzANBglghkgBZQMEAgEFADCABgkqhkiG9w0BBwEAAKCCEMYw
+ggUSMIID+qADAgECAgkA4wvV+K8l2YEwDQYJKoZIhvcNAQELBQAwgYIxCzAJBgNVBAYTAkRFMSsw
+KQYDVQQKDCJULVN5c3RlbXMgRW50ZXJwcmlzZSBTZXJ2aWNlcyBHbWJIMR8wHQYDVQQLDBZULVN5
+c3RlbXMgVHJ1c3QgQ2VudGVyMSUwIwYDVQQDDBxULVRlbGVTZWMgR2xvYmFsUm9vdCBDbGFzcyAy
+MB4XDTE2MDIyMjEzMzgyMloXDTMxMDIyMjIzNTk1OVowgZUxCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+EzxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsTB0RGTi1QS0kxLTArBgNVBAMTJERGTi1WZXJlaW4gQ2VydGlmaWNhdGlv
+biBBdXRob3JpdHkgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMtg1/9moUHN0vqH
+l4pzq5lN6mc5WqFggEcVToyVsuXPztNXS43O+FZsFVV2B+pG/cgDRWM+cNSrVICxI5y+NyipCf8F
+XRgPxJiZN7Mg9mZ4F4fCnQ7MSjLnFp2uDo0peQcAIFTcFV9Kltd4tjTTwXS1nem/wHdN6r1ZB+Ba
+L2w8pQDcNb1lDY9/Mm3yWmpLYgHurDg0WUU2SQXaeMpqbVvAgWsRzNI8qIv4cRrKO+KA3Ra0Z3qL
+NupOkSk9s1FcragMvp0049ENF4N1xDkesJQLEvHVaY4l9Lg9K7/AjsMeO6W/VRCrKq4Xl14zzsjz
+9AkH4wKGMUZrAcUQDBHHWekCAwEAAaOCAXQwggFwMA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQU
+k+PYMiba1fFKpZFK4OpL4qIMz+EwHwYDVR0jBBgwFoAUv1kgNgB5oKAia4zV8mHSuCzLgkowEgYD
+VR0TAQH/BAgwBgEB/wIBAjAzBgNVHSAELDAqMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGC
+LB4wCAYGZ4EMAQICMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6Ly9wa2kwMzM2LnRlbGVzZWMuZGUv
+cmwvVGVsZVNlY19HbG9iYWxSb290X0NsYXNzXzIuY3JsMIGGBggrBgEFBQcBAQR6MHgwLAYIKwYB
+BQUHMAGGIGh0dHA6Ly9vY3NwMDMzNi50ZWxlc2VjLmRlL29jc3ByMEgGCCsGAQUFBzAChjxodHRw
+Oi8vcGtpMDMzNi50ZWxlc2VjLmRlL2NydC9UZWxlU2VjX0dsb2JhbFJvb3RfQ2xhc3NfMi5jZXIw
+DQYJKoZIhvcNAQELBQADggEBAIcL/z4Cm2XIVi3WO5qYi3FP2ropqiH5Ri71sqQPrhE4eTizDnS6
+dl2e6BiClmLbTDPo3flq3zK9LExHYFV/53RrtCyD2HlrtrdNUAtmB7Xts5et6u5/MOaZ/SLick0+
+hFvu+c+Z6n/XUjkurJgARH5pO7917tALOxrN5fcPImxHhPalR6D90Bo0fa3SPXez7vTXTf/D6OWS
+T1k+kEcQSrCFWMBvf/iu7QhCnh7U3xQuTY+8npTD5+32GPg8SecmqKc22CzeIs2LgtjZeOJVEqM7
+h0S2EQvVDFKvaYwPBt/QolOLV5h7z/0HJPT8vcP9SpIClxvyt7bPZYoaorVyGTkwggWsMIIElKAD
+AgECAgcbY7rQHiw9MA0GCSqGSIb3DQEBCwUAMIGVMQswCQYDVQQGEwJERTFFMEMGA1UEChM8VmVy
+ZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYu
+MRAwDgYDVQQLEwdERk4tUEtJMS0wKwYDVQQDEyRERk4tVmVyZWluIENlcnRpZmljYXRpb24gQXV0
+aG9yaXR5IDIwHhcNMTYwNTI0MTEzODQwWhcNMzEwMjIyMjM1OTU5WjCBjTELMAkGA1UEBhMCREUx
+RTBDBgNVBAoMPFZlcmVpbiB6dXIgRm9lcmRlcnVuZyBlaW5lcyBEZXV0c2NoZW4gRm9yc2NodW5n
+c25ldHplcyBlLiBWLjEQMA4GA1UECwwHREZOLVBLSTElMCMGA1UEAwwcREZOLVZlcmVpbiBHbG9i
+YWwgSXNzdWluZyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ07eRxH3h+Gy8Zp
+1xCeOdfZojDbchwFfylfS2jxrRnWTOFrG7ELf6Gr4HuLi9gtzm6IOhDuV+UefwRRNuu6cG1joL6W
+LkDh0YNMZj0cZGnlm6Stcq5oOVGHecwX064vXWNxSzl660Knl5BpBb+Q/6RAcL0D57+eGIgfn5mI
+TQ5HjUhfZZkQ0tkqSe3BuS0dnxLLFdM/fx5ULzquk1enfnjK1UriGuXtQX1TX8izKvWKMKztFwUk
+P7agCwf9TRqaA1KgNpzeJIdl5Of6x5ZzJBTN0OgbaJ4YWa52fvfRCng8h0uwN89Tyjo4EPPLR22M
+ZD08WkVKusqAfLjz56dMTM0CAwEAAaOCAgUwggIBMBIGA1UdEwEB/wQIMAYBAf8CAQEwDgYDVR0P
+AQH/BAQDAgEGMCkGA1UdIAQiMCAwDQYLKwYBBAGBrSGCLB4wDwYNKwYBBAGBrSGCLAEBBDAdBgNV
+HQ4EFgQUazqYi/nyU4na4K2yMh4JH+iqO3QwHwYDVR0jBBgwFoAUk+PYMiba1fFKpZFK4OpL4qIM
+z+EwgY8GA1UdHwSBhzCBhDBAoD6gPIY6aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9v
+dC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDBAoD6gPIY6aHR0cDovL2NkcDIucGNhLmRmbi5kZS9n
+bG9iYWwtcm9vdC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB3QYIKwYBBQUHAQEEgdAwgc0wMwYI
+KwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBKBggrBgEF
+BQcwAoY+aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9vdC1nMi1jYS9wdWIvY2FjZXJ0
+L2NhY2VydC5jcnQwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXJv
+b3QtZzItY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCBeEWkTqR/
+DlXwCbFqPnjMaDWpHPOVnj/z+N9rOHeJLI21rT7H8pTNoAauusyosa0zCLYkhmI2THhuUPDVbmCN
+T1IxQ5dGdfBi5G5mUcFCMWdQ5UnnOR7Ln8qGSN4IFP8VSytmm6A4nwDO/afr0X9XLchMX9wQEZc+
+lgQCXISoKTlslPwQkgZ7nu7YRrQbtQMMONncsKk/cQYLsgMHM8KNSGMlJTx6e1du94oFOO+4oK4v
+9NsH1VuEGMGpuEvObJAaguS5Pfp38dIfMwK/U+d2+dwmJUFvL6Yb+qQTkPp8ftkLYF3sv8pBoGH7
+EUkp2KgtdRXYShjqFu9VNCIaE40GMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3
+DQEBCwUAMIGNMQswCQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVp
+bmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUw
+IwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIw
+MTIwNDExNDExN1owgaIxCzAJBgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdI
+YW1idXJnMR8wHQYDVQQKDBZERk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAb
+BgNVBAMMFEdSUDogREZOLUNFUlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNl
+cnQuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0
+Yw0ZS9sOZLRfN6nFe6HOj8AzNO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZP
+juBRtsi+hKSvncR7oCNPDigsGbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVm
+W27fs5I61rP66DkqgrRXZh0wAZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvt
+sAJ2VXFhNNbtRY9XTDXi/Yar5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoG
+eUKrwG5TQM9FAgMBAAGjggJDMIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYB
+BAGBrSGCLAEBBAMGMBEGDysGAQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIG
+wDATBgNVHSUEDDAKBggrBgEFBQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYD
+VR0jBBgwFoAUazqYi/nyU4na4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0
+LmRlMIGNBgNVHR8EgYUwgYIwP6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWds
+b2JhbC1nMi9wdWIvY3JsL2NhY3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9k
+Zm4tY2EtZ2xvYmFsLWcyL3B1Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggr
+BgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9i
+YWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsX
+u7Gk4M32/Rs2jdf9rTw3/AagmeXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JH
+hwv5JSdyzM2/pG63uRi/WJ7zVYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB
+8Qb+p3YVTa9vcnmNpci1SYtM9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqoo
+GuMgkeB5hi2xUcxKhR8uUYhNftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYF
+S2sAbrrt2PhOtTHm5o51SbfIMYICYDCCAlwCAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+DDxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsMB0RGTi1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3Vp
+bmcgQ0ECDB5GA2zY8pjckgclSzANBglghkgBZQMEAgEFAKCBkzAYBgkqhkiG9w0BCQMxCwYJKoZI
+hvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xODAzMDIxMTQ1MThaMCgGCSqGSIb3DQEJDzEbMBkwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMC8GCSqGSIb3DQEJBDEiBCA9otFPfbvH0YqYYvV1eAe0kUSJ
+CC3NxorSp5OHvKWMTDANBgkqhkiG9w0BAQEFAASCAQA1vRa1LYaeKPptEQLWgvp1SG5sELw7NfSc
+CmCv6SOzCmhjLByAafzl/HKL6ry21VxoCdtDRo9WfO0d1vbciBk4HDWwKWl/xB3p5oSqswfAhDd3
+xmycPpsEfLzZN+MyOdcoEvYysCbPnnYbaBU+F/dmUsltU7WjbwAarub1fFVIBP/J0fhP7wWZ2eYC
+JtMX1NNyfAnpXyQrAqlVHreTouLu+QQM3WQkrnezNx2wIzZOBr5qLAVUZMyD/0I3HXMT8lYRROjN
+19uDHEO0NYUMtWOZBv3+9oNA5ilIXPk7et1Ph64WsQBrwrdqAmrOCT8FqEWzGmaHLrTu07ABHIhq
+X51RAAAAAAAA
+
+--===============5655606584120752878==--

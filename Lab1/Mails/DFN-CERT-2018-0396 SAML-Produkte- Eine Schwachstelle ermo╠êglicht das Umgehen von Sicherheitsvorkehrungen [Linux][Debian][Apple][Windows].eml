@@ -1,0 +1,316 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Wed, 28 Feb
+ 2018 14:20:39 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id DF2B925A16; Wed, 28 Feb 2018
+ 14:20:39 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id D46E725A12	for
+ <rz+certapple@hs-esslingen.de>; Wed, 28 Feb 2018 14:20:39 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.21
+X-Spam-Level:
+X-Spam-Status: No, score=-4.21 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, T_RP_MATCHES_RCVD=-0.01]
+	autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ YefYvdgFiX8q for <rz+certapple@hs-esslingen.de>;	Wed, 28 Feb 2018 14:20:37
+ +0100 (CET)
+Received: from mail2.dfn-cert.de (mail2.dfn-cert.de [193.174.13.207])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Wed, 28 Feb 2018 14:20:37 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=SHA256; boundary="===============5810538175011476547=="
+From: DFN-CERT <portal@dfn-cert.de>
+Subject: =?utf-8?q?DFN-CERT-2018-0396_SAML-Produkte=3A_Eine_Schwachstelle_erm=C3=B6glicht_das_Umgehen_von_Sicherheitsvorkehrungen_=5BLinux=5D=5BDebian=5D=5BApple=5D=5BWindows=5D?=
+Date: Wed, 28 Feb 2018 13:20:01 +0000
+To: <rz+certapple@hs-esslingen.de>
+Message-ID: <20180228132034.1A0B02E0540@mail2.dfn-cert.de>
+Return-Path: dfn-adv-bounces@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;-1035518;0;PM
+MIME-Version: 1.0
+
+--===============5810538175011476547==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Liebe Kolleginnen und Kollegen,
+
+bitte beachten Sie die folgende Sicherheitsmeldung.
+
+Betroffene Software:
+
+  SAML2-js < 2.0.2
+  Duo Network Gateway < 1.2.10
+  OmniAuth SAML <=3D 1.9.0
+  OneLogins SAML Python Toolkit < 2.4.0
+  OneLogins Ruby SAML < 1.7.0
+  OpenSAML-C++ 2.6.1
+  =
+
+
+Betroffene Plattformen:
+
+  Apple macOS
+  Debian Linux 8.10 Jessie
+  Debian Linux 9.3 Stretch
+  GNU/Linux
+  Microsoft Windows =
+
+  =
+
+
+
+Eine Schwachstelle in den Produkten OneLogins SAML Python Toolkit, OneLogins
+Ruby SAML, SAML2-js, OmniAuth SAML, Shibboleth OpenSAML und Duo Network
+Gateway erm=C3=B6glicht das Umgehen von Sicherheitsvorkehrungen und Aussp=
+=C3=A4hen von
+Informationen. F=C3=BCr die unterschiedlichen Produkte wurden verschiedene
+Schwachstellenidentifier (CVEs) erstellt, die sich allerdings auf das
+gleiche Problem zur=C3=BCckf=C3=BChren lassen.
+
+Die Hersteller haben die Schwachstelle behoben und stellen
+Sicherheitsupdates bereit: Die OneLogins SAML Python Toolkit Version 2.4.0
+behebt die Schwachstelle CVE-2017-11427. Mittels der OneLogins Ruby SAML
+Version 1.7.0 wird die Schwachstelle CVE-2017-11428 adressiert. Und f=C3=BC=
+r das
+Duo Network Gateway wird =C3=BCber die Version 1.2.10 die Schwachstelle
+CVE-2018-7340 behoben. Um Shibboleth OpenSAML von der Schwachstelle
+CVE-2018-0489 zu befreien, muss Shibboleth XMLTooling-C in der Version 1.6.4
+eingespielt werden. SAML2-js wurde im Quellcode bereits auf Version 2.0.2
+angehoben, um die Schwachstelle CVE-2017-11429 zu fixen, allerdings
+existiert noch kein 'Tag', so dass die Software von der momentanen
+'Master'-Version bezogen werden muss. Ebenfalls behoben wurde die
+Schwachstelle CVE-2017-11430 im Quellcode-Repository von OmniAuth SAML durch
+einen Patch vom 27.02.2018 (Commit 2d50dba) gegen die Version 1.9.0,
+allerdings fehlt auch hier noch die neue Release-Version.
+
+F=C3=BCr die Debian Distributionen Jessie (old stable) und Stretch (stable)
+stehen Sicherheitsupdates f=C3=BCr 'xmltooling' bereit, um die Schwachstelle
+CVE-2018-0489 zu beheben.
+
+
+Patch:
+
+  Debian Security Advisory DSA-4126-1
+
+  <https://www.debian.org/security/2018/dsa-4126>
+
+Patch:
+
+  Duo Product Security Advisory DUO-PSA-2017-003
+
+  <https://duo.com/labs/psa/duo-psa-2017-003>
+
+Patch:
+
+  OmniAuth SAML Commit 2d50dba
+
+  <https://github.com/omniauth/omniauth-saml/commit/2d50dbae7fc2d19c4550c5d=
+dadb0377bb3a71874>
+
+Patch:
+
+  OneLogins Ruby SAML Release 1.7.0
+
+  <https://github.com/onelogin/ruby-saml/blob/v1.7.0/README.md>
+
+Patch:
+
+  OneLogins SAML Python Toolkit Release 2.4.0
+
+  <https://github.com/onelogin/python-saml/blob/v2.4.0/README.md>
+
+Patch:
+
+  SAML2-js Commit 3546cb6 - 'Release 2.0.2'
+
+  <https://github.com/Clever/saml2/commit/3546cb61fd541f219abda364c5b919633=
+609ef3d>
+
+Patch:
+
+  Shibboleth Service Provider Security Advisory 27. Februar 2018
+
+  <https://shibboleth.net/community/advisories/secadv_20180227.txt>
+
+
+CVE-2017-11427 CVE-2017-11428 CVE-2017-11429 CVE-2017-11430 CVE-2018-0489
+  CVE-2018-7340: Schwachstelle in SAML-Produkten erm=C3=B6glicht Umgehen von
+  Sicherheitsvorkehrungen
+
+  In OneLogins SAML Python Toolkit vor Version 2.4.0, OneLogins Ruby SAML v=
+or
+  Version 1.7.0, SAML2-js vor Version 2.0.2, OmniAuth SAML bis Version 1.9.=
+0,
+  Duo Network Gateway vor Version 1.2.10 und Shibboleth XMLTooling-C vor
+  Version 1.6.4 k=C3=B6nnen XML-Daten ver=C3=A4ndert werden, ohne die digit=
+ale Signatur
+  zu brechen.
+
+
+Referenzen:
+
+Dieses Advisory finden Sie auch im DFN-CERT Portal unter:
+  <https://portal.cert.dfn.de/adv/DFN-CERT-2018-0396/>
+
+Debian Security Advisory DSA-4126-1:
+  <https://www.debian.org/security/2018/dsa-4126>
+
+Duo Product Security Advisory DUO-PSA-2017-003:
+  <https://duo.com/labs/psa/duo-psa-2017-003>
+
+OmniAuth SAML Commit 2d50dba:
+  <https://github.com/omniauth/omniauth-saml/commit/2d50dbae7fc2d19c4550c5d=
+dadb0377bb3a71874>
+
+OneLogins Ruby SAML Release 1.7.0:
+  <https://github.com/onelogin/ruby-saml/blob/v1.7.0/README.md>
+
+OneLogins SAML Python Toolkit Release 2.4.0:
+  <https://github.com/onelogin/python-saml/blob/v2.4.0/README.md>
+
+SAML2-js Commit 3546cb6 - 'Release 2.0.2':
+  <https://github.com/Clever/saml2/commit/3546cb61fd541f219abda364c5b919633=
+609ef3d>
+
+Shibboleth Service Provider Security Advisory 27. Februar 2018:
+  <https://shibboleth.net/community/advisories/secadv_20180227.txt>
+
+Duo Labs - 'Duo Finds SAML Vulnerabilities Affecting Multiple Implementatio=
+ns':
+  <https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-i=
+mplementations>
+
+OmniAuth SAML Issue 157 - 'Fix CVE-2017-11430':
+  <https://github.com/omniauth/omniauth-saml/pull/157>
+
+SAML2-js Issue 127 - 'CVE-2017-11429 -- get_name_id omits values after a
+comment':
+  <https://github.com/Clever/saml2/issues/127>
+
+Schwachstelle CVE-2017-11427 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-11427>
+
+Schwachstelle CVE-2017-11428 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-11428>
+
+Schwachstelle CVE-2017-11429 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-11429>
+
+Schwachstelle CVE-2017-11430 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-11430>
+
+Schwachstelle CVE-2018-0489 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-0489>
+
+Schwachstelle CVE-2018-7340 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-7340>
+
+
+(c) DFN-CERT Services GmbH, all rights reserved!
+Die Weiterverbreitung ist mit Hinweis auf den Copyrightinhaber innerhalb der
+eigenen Einrichtung erlaubt. Eine dar=C3=BCber hinausgehende Verbreitung be=
+darf
+des schriftlichen Einverst=C3=A4ndnisses des Rechteinhabers.
+
+--===============5810538175011476547==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExDzANBglghkgBZQMEAgEFADCABgkqhkiG9w0BBwEAAKCCEMYw
+ggUSMIID+qADAgECAgkA4wvV+K8l2YEwDQYJKoZIhvcNAQELBQAwgYIxCzAJBgNVBAYTAkRFMSsw
+KQYDVQQKDCJULVN5c3RlbXMgRW50ZXJwcmlzZSBTZXJ2aWNlcyBHbWJIMR8wHQYDVQQLDBZULVN5
+c3RlbXMgVHJ1c3QgQ2VudGVyMSUwIwYDVQQDDBxULVRlbGVTZWMgR2xvYmFsUm9vdCBDbGFzcyAy
+MB4XDTE2MDIyMjEzMzgyMloXDTMxMDIyMjIzNTk1OVowgZUxCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+EzxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsTB0RGTi1QS0kxLTArBgNVBAMTJERGTi1WZXJlaW4gQ2VydGlmaWNhdGlv
+biBBdXRob3JpdHkgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMtg1/9moUHN0vqH
+l4pzq5lN6mc5WqFggEcVToyVsuXPztNXS43O+FZsFVV2B+pG/cgDRWM+cNSrVICxI5y+NyipCf8F
+XRgPxJiZN7Mg9mZ4F4fCnQ7MSjLnFp2uDo0peQcAIFTcFV9Kltd4tjTTwXS1nem/wHdN6r1ZB+Ba
+L2w8pQDcNb1lDY9/Mm3yWmpLYgHurDg0WUU2SQXaeMpqbVvAgWsRzNI8qIv4cRrKO+KA3Ra0Z3qL
+NupOkSk9s1FcragMvp0049ENF4N1xDkesJQLEvHVaY4l9Lg9K7/AjsMeO6W/VRCrKq4Xl14zzsjz
+9AkH4wKGMUZrAcUQDBHHWekCAwEAAaOCAXQwggFwMA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQU
+k+PYMiba1fFKpZFK4OpL4qIMz+EwHwYDVR0jBBgwFoAUv1kgNgB5oKAia4zV8mHSuCzLgkowEgYD
+VR0TAQH/BAgwBgEB/wIBAjAzBgNVHSAELDAqMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGC
+LB4wCAYGZ4EMAQICMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6Ly9wa2kwMzM2LnRlbGVzZWMuZGUv
+cmwvVGVsZVNlY19HbG9iYWxSb290X0NsYXNzXzIuY3JsMIGGBggrBgEFBQcBAQR6MHgwLAYIKwYB
+BQUHMAGGIGh0dHA6Ly9vY3NwMDMzNi50ZWxlc2VjLmRlL29jc3ByMEgGCCsGAQUFBzAChjxodHRw
+Oi8vcGtpMDMzNi50ZWxlc2VjLmRlL2NydC9UZWxlU2VjX0dsb2JhbFJvb3RfQ2xhc3NfMi5jZXIw
+DQYJKoZIhvcNAQELBQADggEBAIcL/z4Cm2XIVi3WO5qYi3FP2ropqiH5Ri71sqQPrhE4eTizDnS6
+dl2e6BiClmLbTDPo3flq3zK9LExHYFV/53RrtCyD2HlrtrdNUAtmB7Xts5et6u5/MOaZ/SLick0+
+hFvu+c+Z6n/XUjkurJgARH5pO7917tALOxrN5fcPImxHhPalR6D90Bo0fa3SPXez7vTXTf/D6OWS
+T1k+kEcQSrCFWMBvf/iu7QhCnh7U3xQuTY+8npTD5+32GPg8SecmqKc22CzeIs2LgtjZeOJVEqM7
+h0S2EQvVDFKvaYwPBt/QolOLV5h7z/0HJPT8vcP9SpIClxvyt7bPZYoaorVyGTkwggWsMIIElKAD
+AgECAgcbY7rQHiw9MA0GCSqGSIb3DQEBCwUAMIGVMQswCQYDVQQGEwJERTFFMEMGA1UEChM8VmVy
+ZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYu
+MRAwDgYDVQQLEwdERk4tUEtJMS0wKwYDVQQDEyRERk4tVmVyZWluIENlcnRpZmljYXRpb24gQXV0
+aG9yaXR5IDIwHhcNMTYwNTI0MTEzODQwWhcNMzEwMjIyMjM1OTU5WjCBjTELMAkGA1UEBhMCREUx
+RTBDBgNVBAoMPFZlcmVpbiB6dXIgRm9lcmRlcnVuZyBlaW5lcyBEZXV0c2NoZW4gRm9yc2NodW5n
+c25ldHplcyBlLiBWLjEQMA4GA1UECwwHREZOLVBLSTElMCMGA1UEAwwcREZOLVZlcmVpbiBHbG9i
+YWwgSXNzdWluZyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ07eRxH3h+Gy8Zp
+1xCeOdfZojDbchwFfylfS2jxrRnWTOFrG7ELf6Gr4HuLi9gtzm6IOhDuV+UefwRRNuu6cG1joL6W
+LkDh0YNMZj0cZGnlm6Stcq5oOVGHecwX064vXWNxSzl660Knl5BpBb+Q/6RAcL0D57+eGIgfn5mI
+TQ5HjUhfZZkQ0tkqSe3BuS0dnxLLFdM/fx5ULzquk1enfnjK1UriGuXtQX1TX8izKvWKMKztFwUk
+P7agCwf9TRqaA1KgNpzeJIdl5Of6x5ZzJBTN0OgbaJ4YWa52fvfRCng8h0uwN89Tyjo4EPPLR22M
+ZD08WkVKusqAfLjz56dMTM0CAwEAAaOCAgUwggIBMBIGA1UdEwEB/wQIMAYBAf8CAQEwDgYDVR0P
+AQH/BAQDAgEGMCkGA1UdIAQiMCAwDQYLKwYBBAGBrSGCLB4wDwYNKwYBBAGBrSGCLAEBBDAdBgNV
+HQ4EFgQUazqYi/nyU4na4K2yMh4JH+iqO3QwHwYDVR0jBBgwFoAUk+PYMiba1fFKpZFK4OpL4qIM
+z+EwgY8GA1UdHwSBhzCBhDBAoD6gPIY6aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9v
+dC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDBAoD6gPIY6aHR0cDovL2NkcDIucGNhLmRmbi5kZS9n
+bG9iYWwtcm9vdC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB3QYIKwYBBQUHAQEEgdAwgc0wMwYI
+KwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBKBggrBgEF
+BQcwAoY+aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9vdC1nMi1jYS9wdWIvY2FjZXJ0
+L2NhY2VydC5jcnQwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXJv
+b3QtZzItY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCBeEWkTqR/
+DlXwCbFqPnjMaDWpHPOVnj/z+N9rOHeJLI21rT7H8pTNoAauusyosa0zCLYkhmI2THhuUPDVbmCN
+T1IxQ5dGdfBi5G5mUcFCMWdQ5UnnOR7Ln8qGSN4IFP8VSytmm6A4nwDO/afr0X9XLchMX9wQEZc+
+lgQCXISoKTlslPwQkgZ7nu7YRrQbtQMMONncsKk/cQYLsgMHM8KNSGMlJTx6e1du94oFOO+4oK4v
+9NsH1VuEGMGpuEvObJAaguS5Pfp38dIfMwK/U+d2+dwmJUFvL6Yb+qQTkPp8ftkLYF3sv8pBoGH7
+EUkp2KgtdRXYShjqFu9VNCIaE40GMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3
+DQEBCwUAMIGNMQswCQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVp
+bmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUw
+IwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIw
+MTIwNDExNDExN1owgaIxCzAJBgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdI
+YW1idXJnMR8wHQYDVQQKDBZERk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAb
+BgNVBAMMFEdSUDogREZOLUNFUlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNl
+cnQuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0
+Yw0ZS9sOZLRfN6nFe6HOj8AzNO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZP
+juBRtsi+hKSvncR7oCNPDigsGbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVm
+W27fs5I61rP66DkqgrRXZh0wAZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvt
+sAJ2VXFhNNbtRY9XTDXi/Yar5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoG
+eUKrwG5TQM9FAgMBAAGjggJDMIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYB
+BAGBrSGCLAEBBAMGMBEGDysGAQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIG
+wDATBgNVHSUEDDAKBggrBgEFBQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYD
+VR0jBBgwFoAUazqYi/nyU4na4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0
+LmRlMIGNBgNVHR8EgYUwgYIwP6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWds
+b2JhbC1nMi9wdWIvY3JsL2NhY3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9k
+Zm4tY2EtZ2xvYmFsLWcyL3B1Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggr
+BgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9i
+YWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsX
+u7Gk4M32/Rs2jdf9rTw3/AagmeXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JH
+hwv5JSdyzM2/pG63uRi/WJ7zVYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB
+8Qb+p3YVTa9vcnmNpci1SYtM9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqoo
+GuMgkeB5hi2xUcxKhR8uUYhNftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYF
+S2sAbrrt2PhOtTHm5o51SbfIMYICYDCCAlwCAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+DDxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsMB0RGTi1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3Vp
+bmcgQ0ECDB5GA2zY8pjckgclSzANBglghkgBZQMEAgEFAKCBkzAYBgkqhkiG9w0BCQMxCwYJKoZI
+hvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xODAyMjgxMzIwMTJaMCgGCSqGSIb3DQEJDzEbMBkwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMC8GCSqGSIb3DQEJBDEiBCCG9mid21HWW2J9mEMcPFQ+bN9m
+O9Umc7Bo806ZHDm1JzANBgkqhkiG9w0BAQEFAASCAQAIimmOse8MSQJ7QM44A67OToq9nWB34qmd
+D4/meAw5F6yRaM9UAfa7FL3wLXTToqANLDUImC0BSEobrdI2wsHy8Wh5t3VQfOF1gV4j5bUdz+Xs
+551bOHrT0BwbPq89yIkLG4ZsTcY3OqrXuoU3TE5TrULrW0jm6DAb4gO/4I0hLYsdcX7pP3ZiPvuF
+JtrzPWDV1dcarFV2P8oksKwDNPZZ7PAkp3ssubFo8uPPvm/R2phtSpisixaufNiSxLWmP5oTExLm
+f1m53bPHiIGF8nq5iufw1n9bI1nm8TbwW1Lhe76xO8wczuqebi7NThr7mYoGBPWlXU2aUPyDZXh1
+0PGvAAAAAAAA
+
+--===============5810538175011476547==--

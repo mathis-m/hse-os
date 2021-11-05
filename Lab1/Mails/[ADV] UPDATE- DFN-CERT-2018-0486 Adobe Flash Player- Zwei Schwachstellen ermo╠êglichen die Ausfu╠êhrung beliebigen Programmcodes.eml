@@ -1,0 +1,393 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Thu, 15 Mar
+ 2018 09:51:43 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id CD16825A1E; Thu, 15 Mar 2018
+ 09:51:43 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id C14AD25A1B	for
+ <rz+certapple@hs-esslingen.de>; Thu, 15 Mar 2018 09:51:43 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.011
+X-Spam-Level:
+X-Spam-Status: No, score=-4.011 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, ENGLISH_UCE_SUBJECT=2.899, RCVD_IN_DNSWL_HI=-5,
+	T_RP_MATCHES_RCVD=-0.01] autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ PstFARaXMQeF for <rz+certapple@hs-esslingen.de>;	Thu, 15 Mar 2018 09:51:42
+ +0100 (CET)
+Received: from irt-mx.dfn-cert.de (irt-mx.dfn-cert.de [193.174.13.208])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Thu, 15 Mar 2018 09:51:41 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=sha-256; boundary="===============7062302411423500365=="
+Subject: =?utf-8?q?=5BADV=5D_UPDATE=3A_DFN-CERT-2018-0486_Adobe_Flash_Playe?=
+ =?utf-8?q?r=3A_Zwei_Schwachstellen_erm=C3=B6glichen_die_Ausf=C3=BChrung_bel?=
+ =?utf-8?q?iebigen_Programmcodes?=
+To: <rz+certapple@hs-esslingen.de>
+From: =?utf-8?q?DFN-CERT_Portal?= <portal@dfn-cert.de>
+Message-ID: <98a842b0-be6a-48ca-b6fe-a3a016835d82@dfn-cert.de>
+Date: Thu, 15 Mar 2018 08:50:09 +0000
+Return-Path: portal@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;297704194;0;PM
+MIME-Version: 1.0
+
+--===============7062302411423500365==
+Content-Type: multipart/mixed; boundary="===============0986821565397607444=="
+
+--===============0986821565397607444==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+TGllYmUgS29sbGVnaW5uZW4gdW5kIEtvbGxlZ2VuLAoKYml0dGUgYmVhY2h0ZW4gU2llIGRpZSBJ
+bmZvcm1hdGlvbmVuIHp1IGRlbiB2ZXJmw7xnYmFyZW4gU2ljaGVyaGVpdHN1cGRhdGVzCm9kZXIg
+V29ya2Fyb3VuZHMgaW4gZGVyIGZvbGdlbmRlbiBTaWNoZXJoZWl0c21lbGR1bmcuCgpIaXN0b3Jp
+ZToKClZlcnNpb24gMiAoMTUuMDMuMTgpOgogICAgUmVkIEhhdCBzdGVsbHQgZsO8ciBkaWUgUmVk
+IEhhdCBFbnRlcnByaXNlIExpbnV4IDYgUHJvZHVrdHZhcmlhbnRlbgogICAgRGVza3RvcCwgU2Vy
+dmVyIHVuZCBXb3Jrc3RhdGlvbiBTaWNoZXJoZWl0c3VwZGF0ZXMgZsO8ciAnZmxhc2gtcGx1Z2lu
+JyBhdWYKICAgIGRpZSBGbGFzaCBQbGF5ZXIgVmVyc2lvbiAyOS4wLjAuMTEzIHp1ciBWZXJmw7xn
+dW5nLgpWZXJzaW9uIDEgKDE0LjAzLjE4KToKICAgIE5ldWVzIEFkdmlzb3J5CgoKQmV0cm9mZmVu
+ZSBTb2Z0d2FyZToKCiAgQWRvYmUgRmxhc2ggUGxheWVyIDwgMjkuMC4wLjExMyBmb3IgTWljcm9z
+b2Z0IEVkZ2UgYW5kIEludGVybmV0IEV4cGxvcmVyIDExCiAgQWRvYmUgRmxhc2ggUGxheWVyIDwg
+MjkuMC4wLjExMyBmb3IgR29vZ2xlIENocm9tZQogIEFkb2JlIEZsYXNoIFBsYXllciA8IDI5LjAu
+MC4xMTMKCgpCZXRyb2ZmZW5lIFBsYXR0Zm9ybWVuOgoKICBSZWQgSGF0IEVudGVycHJpc2UgTGlu
+dXggV29ya3N0YXRpb24gNgogIFJlZCBIYXQgRW50ZXJwcmlzZSBMaW51eCBTZXJ2ZXIgNgogIFJl
+ZCBIYXQgRW50ZXJwcmlzZSBMaW51eCBEZXNrdG9wIDYKICBNaWNyb3NvZnQgV2luZG93cwogIENo
+cm9tZSBPUwogIEdOVS9MaW51eAogIEFwcGxlIG1hY09TCgoKCkJld2VydHVuZzoKCkdlc2FtdHJp
+c2lrbyAoREFGKTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNlaHIgaG9jaAoK
+QmV3ZXJ0dW5nIGdlbcOkw58gQ1ZTUyB2MjoKQmFzaXNyaXNpa28gKENWU1MgQmFzZSBTY29yZSk6
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgOS4zCkFrdHVlbGxlcyBTY2hhZGVuc3BvdGVu
+emlhbCAoVGVtcG9yYWwgU2NvcmUpOiAgICAgICAgICAgICAgIDcuMwoKQW5ncmlmZnN2ZWt0b3Ig
+KEFWKTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5ldHp3ZXJrCkFuZ3JpZmZz
+a29tcGxleGl0w6R0IChBQyk6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBNaXR0ZWwK
+QXV0aGVudGlmaXppZXJ1bmcgKEF1KTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+IEtlaW5lCgpBdXN3aXJrdW5nOgpWZXJ0cmF1bGljaGtlaXQgKEMpOiAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgS29tcGxldHQKSW50ZWdyaXTDpHQgKEkpOiAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICBLb21wbGV0dApWZXJmw7xnYmFya2VpdCAoQSk6ICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEtvbXBsZXR0CgpBdXNudXR6YmFya2Vp
+dCAoRSk6ICAgICAgICAgICAgICAgICAgUHJvb2Ytb2YtQ29uY2VwdCBleGlzdGllcnQKVmVyZsO8
+Z2JhcmUgR2VnZW5tYcOfbmFobWUgKFJMKTogICAgICAgICAgICAgICAgICBPZmZpemllbGxlciBG
+aXgKQmVyaWNodHN6dXZlcmzDpHNzaWdrZWl0IChSQyk6ICAgICAgICAgICAgICAgICAgICAgICAg
+IEJlc3TDpHRpZ3QKClZla3RvcjogICAgICAgICAgICAgQVY6Ti9BQzpNL0F1Ok4vQzpDL0k6Qy9B
+OkMvRTpQT0MvUkw6T0YvUkM6QwoKCkVpbiBlbnRmZXJudGVyLCBuaWNodCBhdXRoZW50aXNpZXJ0
+ZXIgQW5ncmVpZmVyIGthbm4gendlaSBTY2h3YWNoc3RlbGxlbiBpbgpBZG9iZSBGbGFzaCBQbGF5
+ZXIgYXVzbnV0emVuLCB1bSBiZWxpZWJpZ2VuIFByb2dyYW1tY29kZSBtaXQgZGVuIFJlY2h0ZW4g
+ZGVzCmFrdGl2ZW4gQmVudXR6ZXJzIHp1ciBBdXNmw7xocnVuZyB6dSBicmluZ2VuIHVuZCBkYWR1
+cmNoIHVudGVyIFVtc3TDpG5kZW4KYmV0cm9mZmVuZSBTeXN0ZW1lIHp1IMO8YmVybmVobWVuLgoK
+QWRvYmUgaW5mb3JtaWVydCDDvGJlciBkaWUgU2Nod2FjaHN0ZWxsZW4gdW5kIHN0ZWxsdCBha3R1
+YWxpc2llcnRlClByb2dyYW1tdmVyc2lvbmVuIGRlcyBGbGFzaCBQbGF5ZXJzIHp1ciBWZXJmw7xn
+dW5nLCB1bSBkaWVzZSB6dSBiZWhlYmVuLgpCZW51dHplciB2b24gQWRvYmUgRmxhc2ggUGxheWVy
+IERlc2t0b3AgZsO8ciBXaW5kb3dzLCBBcHBsZS1TeXN0ZW1lIHVuZCBMaW51eAp3ZXJkZW4gZ2Vi
+ZXRlbiwgZGVuIEZsYXNoIFBsYXllciDDvGJlciBkZW4gVXBkYXRlLU1lY2hhbmlzbXVzIGlubmVy
+aGFsYiBkZXMKUHJvZHVrdGVzIGF1ZiBWZXJzaW9uIDI5LjAuMC4xMTMgenUgYWt0dWFsaXNpZXJl
+biBvZGVyIGRpZSBha3R1YWxpc2llcnRlClZlcnNpb24gYXVzIGRlbSBBZG9iZSBGbGFzaCBQbGF5
+ZXIgRG93bmxvYWQgQ2VudGVyIHp1IGJlemllaGVuLiBCZW51dHplcm4Kdm9uIEdvb2dsZSBDaHJv
+bWUgc293aWUgTWljcm9zb2Z0IEludGVybmV0IEV4cGxvcmVyIDExIHVuZCBFZGdlIHdlcmRlbiBk
+aWUKU2ljaGVyaGVpdHN1cGRhdGVzIGF1ZiBWZXJzaW9uIDI5LjAuMC4xMTMgYXV0b21hdGlzY2gg
+enVyIFZlcmbDvGd1bmcKZ2VzdGVsbHQuCgoKQ1ZFLTIwMTgtNDkxOSBTY2h3YWNoc3RlbGxlIGlu
+IEFkb2JlIEZsYXNoIFBsYXllciBlcm3DtmdsaWNodCBBdXNmw7xocnVuZyBiZWxpZWJpZ2VuCiAg
+UHJvZ3JhbW1jb2RlcwoKICBJbiBBZG9iZSBGbGFzaCBQbGF5ZXIgMjguMC4wLjE2MSB1bmQgZnLD
+vGhlciAocGxhdHRmb3JtdW5hYmjDpG5naWcpIGV4aXN0aWVydAogIGVpbmUga3JpdGlzY2hlIFNj
+aHdhY2hzdGVsbGUsIGRpZSB6dW0gWnVncmlmZiBhdWYgYmVyZWl0cyBmcmVpZ2VnZWJlbmUKICBT
+cGVpY2hlcmJlcmVpY2hlIGF1c2dlbnV0enQgd2VyZGVuIGthbm4gKFVzZS1hZnRlci1GcmVlKS4g
+RWluIGVudGZlcm50ZXIsCiAgbmljaHQgYXV0aGVudGlzaWVydGVyIEFuZ3JlaWZlciBrYW5uIGRp
+ZSBTY2h3YWNoc3RlbGxlIGF1c251dHplbiwgdW0KICBiZWxpZWJpZ2VuIFByb2dyYW1tY29kZSBt
+aXQgZGVuIFJlY2h0ZW4gZGVzIGFrdHVlbGxlbiBCZW51dHplcnMgenVyCiAgQXVzZsO8aHJ1bmcg
+enUgYnJpbmdlbi4gRmFsbHMgZGVyIEJlbnV0emVyIEFkbWluaXN0cmF0b3JyZWNodGUgaGF0LCBr
+w7ZubmVuCiAgZGFkdXJjaCB1bnRlciBVbXN0w6RuZGVuIGJldHJvZmZlbmUgU3lzdGVtZSBrb21w
+bGV0dCDDvGJlcm5vbW1lbiB3ZXJkZW4uIERpZQogIFNjaHdhY2hzdGVsbGUgd2lyZCB2b20gSGVy
+c3RlbGxlciBhbHMga3JpdGlzY2ggKCdDcml0aWNhbCcpIGVpbmdlc3R1ZnQuCgpDVkUtMjAxOC00
+OTIwIFNjaHdhY2hzdGVsbGUgaW4gQWRvYmUgRmxhc2ggUGxheWVyIGVybcO2Z2xpY2h0IEF1c2bD
+vGhydW5nIGJlbGllYmlnZW4KICBQcm9ncmFtbWNvZGVzCgogIER1cmNoIGVpbmUgbcO2Z2xpY2hl
+IFR5cGVudmVyd2VjaHNsdW5nIChUeXBlIENvbmZ1c2lvbikgaW4gQWRvYmUgRmxhc2ggUGxheWVy
+CiAgYmlzIGlua2x1c2l2ZSBWZXJzaW9uIDI4LjAuMC4xNjEgKHBsYXR0Zm9ybXVuYWJow6RuZ2ln
+KSBrYW5uIGVpbiBlbnRmZXJudGVyLAogIG5pY2h0IGF1dGhlbnRpc2llcnRlciBBbmdyZWlmZXIg
+bWl0IEhpbGZlIGVpbmVyIHNwZXppZWxsIHByw6RwYXJpZXJ0ZW4gRGF0ZWkKICBiZWxpZWJpZ2Vu
+IFByb2dyYW1tY29kZSB6dXIgQXVzZsO8aHJ1bmcgYnJpbmdlbi4gRGllIFNjaHdhY2hzdGVsbGUg
+d2lyZCB2b20KICBIZXJzdGVsbGVyIGFscyBrcml0aXNjaCAoJ0NyaXRpY2FsJykgZWluZ2VzdHVm
+dC4KCgpMaXN0ZSBkZXIgU2Nod2FjaHN0ZWxsZW46CiAgQ1ZFLTIwMTgtNDkxOQogIENWRS0yMDE4
+LTQ5MjAKCgpSZWZlcmVuemVuOgoKRGllc2VzIEFkdmlzb3J5IGZpbmRlbiBTaWUgYXVjaCBpbSBE
+Rk4tQ0VSVCBQb3J0YWwgdW50ZXI6CltodHRwczovL3BvcnRhbC1uZXUuY2VydC5kZm4uZGUvYWR2
+aXNvcmllcy9kZXRhaWxzLzIwMTgtMDQ4Nl0KCgpadXPDpHR6bGljaGUgSW5mb3JtYXRpb25lbjoK
+CiAgU2Nod2FjaHN0ZWxsZSBDVkUtMjAxOC00OTE5IChOVkQpCiAgICBodHRwOi8vd2ViLm52ZC5u
+aXN0Lmdvdi92aWV3L3Z1bG4vZGV0YWlsP3Z1bG5JZD1DVkUtMjAxOC00OTE5CgogIFNjaHdhY2hz
+dGVsbGUgQ1ZFLTIwMTgtNDkyMCAoTlZEKQogICAgaHR0cDovL3dlYi5udmQubmlzdC5nb3Yvdmll
+dy92dWxuL2RldGFpbD92dWxuSWQ9Q1ZFLTIwMTgtNDkyMAoKUGF0Y2hlczoKCiAgQWRvYmUgU2Vj
+dXJpdHkgQnVsbGV0aW4gQVBTQjE4LTA1IChGbGFzaCBQbGF5ZXIpCiAgICBodHRwczovL2hlbHB4
+LmFkb2JlLmNvbS9zZWN1cml0eS9wcm9kdWN0cy9mbGFzaC1wbGF5ZXIvYXBzYjE4LTA1Lmh0bWwK
+CiAgTWljcm9zb2Z0IFNpY2hlcmhlaXRzdXBkYXRlcyBmw7xyIEFkb2JlIEZsYXNoIFBsYXllciwg
+TcOkcnogMjAxOAogICAgaHR0cHM6Ly9wb3J0YWwubXNyYy5taWNyb3NvZnQuY29tL2RlLURFL3Nl
+Y3VyaXR5LWd1aWRhbmNlL2Fkdmlzb3J5L0FEVjE4MDAwNgoKICBSZWQgSGF0IFNlY3VyaXR5IEFk
+dmlzb3J5IFJIU0EtMjAxODowNTIwCiAgICBodHRwczovL2FjY2Vzcy5yZWRoYXQuY29tL2VycmF0
+YS9SSFNBLTIwMTg6MDUyMAoKCk1pdCBmcmV1bmRsaWNoZW4gR3LDvMOfZW4sCklociBERk4tQ0VS
+VCBJbmNpZGVudCBSZXNwb25zZSBUZWFtCgoKLS0gCihjKSBERk4tQ0VSVCBTZXJ2aWNlcyBHbWJI
+LCBhbGwgcmlnaHRzIHJlc2VydmVkIQpEaWUgV2VpdGVydmVyYnJlaXR1bmcgaXN0IG1pdCBIaW53
+ZWlzIGF1ZiBkZW4gQ29weXJpZ2h0aW5oYWJlciBpbm5lcmhhbGIgZGVyCmVpZ2VuZW4gRWlucmlj
+aHR1bmcgZXJsYXVidC4gRWluZSBkYXLDvGJlciBoaW5hdXNnZWhlbmRlIFZlcmJyZWl0dW5nIGJl
+ZGFyZgpkZXMgc2NocmlmdGxpY2hlbiBFaW52ZXJzdMOkbmRuaXNzZXMgZGVzIFJlY2h0ZWluaGFi
+ZXJzLg==
+
+--===============0986821565397607444==
+Content-Type: application/json; charset="UTF-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment; filename="2018-0486.json"
+
+{
+=20=20"version":=20"2",=20
+=20=20"ref_num":=20"2018-0486",=20
+=20=20"fieldsets":=20{
+=20=20=20=20"scoring":=20{
+=20=20=20=20=20=20"daf":=20{
+=20=20=20=20=20=20=20=20"risk":=20"very_high"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cvss":=20{
+=20=20=20=20=20=20=20=20"temporal_score":=20"7.3",=20
+=20=20=20=20=20=20=20=20"vector":=20"AV:N/AC:M/Au:N/C:C/I:C/A:C/E:POC/RL:OF=
+/RC:C",=20
+=20=20=20=20=20=20=20=20"base_score":=20"9.3",=20
+=20=20=20=20=20=20=20=20"exploitability_score":=20"8.6",=20
+=20=20=20=20=20=20=20=20"impact_score":=20"10.0"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cpes":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Red=20Hat=20Enterprise=20Li=
+nux=20Workstation=206\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:redhat:enterprise_linux_work=
+station:6",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Red=20Hat=20Enterprise=20Li=
+nux=20Server=206\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:redhat:enterprise_linux_serv=
+er:6",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Red=20Hat=20Enterprise=20Li=
+nux=20Desktop=206\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:redhat:enterprise_linux_desk=
+top:6",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Microsoft=20Windows=20",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:microsoft:windows",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Chrome=20OS",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:google:chrome_os",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"GNU/Linux",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:gnu:linux",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Apple=20macOS",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:apple:macos",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Adobe=20Flash=20Player=20<=
+=2029.0.0.113=20for=20Microsoft=20Edge=20and=20Internet=20Explorer=2011\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:adobe:flash_player:29.0.0.11=
+3::%7E-%7Emicrosoft_edge_internet_explorer%7E-%7E-%7E-",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Adobe=20Flash=20Player=20<=
+=2029.0.0.113=20for=20Google=20Chrome\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:adobe:flash_player:29.0.0.11=
+3::%7E-%7Echrome%7E-%7E-%7E-",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Adobe=20Flash=20Player=20<=
+=2029.0.0.113\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:adobe:flash_player:29.0.0.11=
+3",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20},=20
+=20=20=20=20"basic":=20{
+=20=20=20=20=20=20"description":=20"Ein=20entfernter,=20nicht=20authentisie=
+rter=20Angreifer=20kann=20zwei=20Schwachstellen=20in=20Adobe=20Flash=20Play=
+er=20ausnutzen,=20um=20beliebigen=20Programmcode=20mit=20den=20Rechten=20de=
+s=20aktiven=20Benutzers=20zur=20Ausf\u00fchrung=20zu=20bringen=20und=20dadu=
+rch=20unter=20Umst\u00e4nden=20betroffene=20Systeme=20zu=20\u00fcbernehmen.=
+\n\nAdobe=20informiert=20\u00fcber=20die=20Schwachstellen=20und=20stellt=20=
+aktualisierte=20Programmversionen=20des=20Flash=20Players=20zur=20Verf\u00f=
+cgung,=20um=20diese=20zu=20beheben.=20Benutzer=20von=20Adobe=20Flash=20Play=
+er=20Desktop=20f\u00fcr=20Windows,=20Apple-Systeme=20und=20Linux=20werden=
+=20gebeten,=20den=20Flash=20Player=20\u00fcber=20den=20Update-Mechanismus=
+=20innerhalb=20des=20Produktes=20auf=20Version=2029.0.0.113=20zu=20aktualis=
+ieren=20oder=20die=20aktualisierte=20Version=20aus=20dem=20Adobe=20Flash=20=
+Player=20Download=20Center=20zu=20beziehen.=20Benutzern=20von=20Google=20Ch=
+rome=20sowie=20Microsoft=20Internet=20Explorer=2011=20und=20Edge=20werden=
+=20die=20Sicherheitsupdates=20auf=20Version=2029.0.0.113=20automatisch=20zu=
+r=20Verf\u00fcgung=20gestellt.",=20
+=20=20=20=20=20=20"workaround":=20null,=20
+=20=20=20=20=20=20"created":=20"20180314T08:52:22",=20
+=20=20=20=20=20=20"vulnerabilities":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"title":=20"Schwachstelle=20in=20Adobe=20Flas=
+h=20Player=20erm\u00f6glicht=20Ausf\u00fchrung=20beliebigen=20Programmcodes=
+",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"In=20Adobe=20Flash=20Player=
+=2028.0.0.161=20und=20fr\u00fcher=20(plattformunabh\u00e4ngig)=20existiert=
+=20eine=20kritische=20Schwachstelle,=20die=20zum=20Zugriff=20auf=20bereits=
+=20freigegebene=20Speicherbereiche=20ausgenutzt=20werden=20kann=20(Use-afte=
+r-Free).=20Ein=20entfernter,=20nicht=20authentisierter=20Angreifer=20kann=
+=20die=20Schwachstelle=20ausnutzen,=20um=20beliebigen=20Programmcode=20mit=
+=20den=20Rechten=20des=20aktuellen=20Benutzers=20zur=20Ausf\u00fchrung=20zu=
+=20bringen.=20Falls=20der=20Benutzer=20Administratorrechte=20hat,=20k\u00f6=
+nnen=20dadurch=20unter=20Umst\u00e4nden=20betroffene=20Systeme=20komplett=
+=20\u00fcbernommen=20werden.=20Die=20Schwachstelle=20wird=20vom=20Herstelle=
+r=20als=20kritisch=20('Critical')=20eingestuft.",=20
+=20=20=20=20=20=20=20=20=20=20"name":=20"CVE-2018-4919"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"title":=20"Schwachstelle=20in=20Adobe=20Flas=
+h=20Player=20erm\u00f6glicht=20Ausf\u00fchrung=20beliebigen=20Programmcodes=
+",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Durch=20eine=20m\u00f6glich=
+e=20Typenverwechslung=20(Type=20Confusion)=20in=20Adobe=20Flash=20Player=20=
+bis=20inklusive=20Version=2028.0.0.161=20(plattformunabh\u00e4ngig)=20kann=
+=20ein=20entfernter,=20nicht=20authentisierter=20Angreifer=20mit=20Hilfe=20=
+einer=20speziell=20pr\u00e4parierten=20Datei=20beliebigen=20Programmcode=20=
+zur=20Ausf\u00fchrung=20bringen.=20Die=20Schwachstelle=20wird=20vom=20Herst=
+eller=20als=20kritisch=20('Critical')=20eingestuft.",=20
+=20=20=20=20=20=20=20=20=20=20"name":=20"CVE-2018-4920"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"title":=20"Adobe=20Flash=20Player:=20Zwei=20Schwachstell=
+en=20erm\u00f6glichen=20die=20Ausf\u00fchrung=20beliebigen=20Programmcodes"=
+,=20
+=20=20=20=20=20=20"references":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://helpx.adobe.com/security/pr=
+oducts/flash-player/apsb18-05.html",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Adobe=20Security=20Bulletin=
+=20APSB18-05=20(Flash=20Player)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://portal.msrc.microsoft.com/d=
+e-DE/security-guidance/advisory/ADV180006",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Microsoft=20Sicherheitsupda=
+tes=20f\u00fcr=20Adobe=20Flash=20Player,=20M\u00e4rz=202018"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"http://web.nvd.nist.gov/view/vuln/d=
+etail?vulnId=3DCVE-2018-4919",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Schwachstelle=20CVE-2018-49=
+19=20(NVD)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"http://web.nvd.nist.gov/view/vuln/d=
+etail?vulnId=3DCVE-2018-4920",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Schwachstelle=20CVE-2018-49=
+20=20(NVD)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://access.redhat.com/errata/RH=
+SA-2018:0520",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Red=20Hat=20Security=20Advi=
+sory=20RHSA-2018:0520"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"history":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"timestamp":=20"20180315T09:45:34",=20
+=20=20=20=20=20=20=20=20=20=20"version":=20"2",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Red=20Hat=20stellt=20f\u00f=
+cr=20die=20Red=20Hat=20Enterprise=20Linux=206=20Produktvarianten=20Desktop,=
+=20Server=20und=20Workstation=20Sicherheitsupdates=20f\u00fcr=20'flash-plug=
+in'=20auf=20die=20Flash=20Player=20Version=2029.0.0.113=20zur=20Verf\u00fcg=
+ung."
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"timestamp":=20"20180314T10:23:52",=20
+=20=20=20=20=20=20=20=20=20=20"version":=20"1",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Neues=20Advisory"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20}
+=20=20}
+}
+--===============0986821565397607444==--
+
+--===============7062302411423500365==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIII7QYJKoZIhvcNAQcCoIII3jCCCNoCAQExDzANBglghkgBZQMEAgEFADALBgkqhkiG9w0BBwGg
+ggYAMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3DQEBCwUAMIGNMQswCQYDVQQG
+EwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3Jz
+Y2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUwIwYDVQQDDBxERk4tVmVyZWlu
+IEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIwMTIwNDExNDExN1owgaIxCzAJ
+BgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdIYW1idXJnMR8wHQYDVQQKDBZE
+Rk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAbBgNVBAMMFEdSUDogREZOLUNF
+UlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNlcnQuZGUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0Yw0ZS9sOZLRfN6nFe6HOj8Az
+NO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZPjuBRtsi+hKSvncR7oCNPDigs
+GbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVmW27fs5I61rP66DkqgrRXZh0w
+AZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvtsAJ2VXFhNNbtRY9XTDXi/Yar
+5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoGeUKrwG5TQM9FAgMBAAGjggJD
+MIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYBBAGBrSGCLAEBBAMGMBEGDysG
+AQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIGwDATBgNVHSUEDDAKBggrBgEF
+BQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYDVR0jBBgwFoAUazqYi/nyU4na
+4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0LmRlMIGNBgNVHR8EgYUwgYIw
+P6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWdsb2JhbC1nMi9wdWIvY3JsL2Nh
+Y3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9kZm4tY2EtZ2xvYmFsLWcyL3B1
+Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggrBgEFBQcwAYYnaHR0cDovL29j
+c3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMS5w
+Y2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsXu7Gk4M32/Rs2jdf9rTw3/Aag
+meXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JHhwv5JSdyzM2/pG63uRi/WJ7z
+VYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB8Qb+p3YVTa9vcnmNpci1SYtM
+9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqooGuMgkeB5hi2xUcxKhR8uUYhN
+ftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYFS2sAbrrt2PhOtTHm5o51SbfI
+MYICsTCCAq0CAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQKDDxWZXJlaW4genVyIEZvZXJk
+ZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMgZS4gVi4xEDAOBgNVBAsMB0RG
+Ti1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3VpbmcgQ0ECDB5GA2zY8pjckgcl
+SzANBglghkgBZQMEAgEFAKCB5DAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJ
+BTEPFw0xODAzMTUwODUxNDFaMC8GCSqGSIb3DQEJBDEiBCDRtsLhVQpWi6bFZs1kW1pn0yNZETrH
+wKLGweDnb0yayDB5BgkqhkiG9w0BCQ8xbDBqMAsGCWCGSAFlAwQBKjALBglghkgBZQMEARYwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMA4GCCqGSIb3DQMCAgIAgDANBggqhkiG9w0DAgIBQDAHBgUr
+DgMCBzANBggqhkiG9w0DAgIBKDANBgkqhkiG9w0BAQEFAASCAQA4me4iBS75Uu+Im3zewODd4mSz
+V4sG4f4AdIy0NsALvOvJOmdqx5AqWaWT38ma3k76rmplWSrAkXxcjM7A0wBq+Eh43NiAIBOEORsF
+s/Y0mPfvZEABcHU6ei34OMEHU552avMZs4AzapnjYiWAYPGmzxVZfDrV2oeU5VAz/reUOu123tXS
+YtbZo2dpOZUsOaOoQn0ZQSsbKQm79HIXDXrlRBbSnt8P26TIbYbMZzCEH9HCTpdLqnTdR0S8xXQ5
+/677RIcO06B9Aq/uX3cuK6pETwtT2nxDIImsUuT8wdp/uAZi21oX7OD4pilMndfP4p4Aqquzd+KE
+KX7IHFIrxMq4
+
+--===============7062302411423500365==--

@@ -1,0 +1,914 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Wed, 7 Mar
+ 2018 14:20:49 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id 7315125A13; Wed,  7 Mar 2018
+ 14:20:49 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id 682FF25A15	for
+ <rz+certapple@hs-esslingen.de>; Wed,  7 Mar 2018 14:20:49 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.21
+X-Spam-Level:
+X-Spam-Status: No, score=-4.21 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, T_RP_MATCHES_RCVD=-0.01]
+	autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ cq-PB-8Ia+kk for <rz+certapple@hs-esslingen.de>;	Wed,  7 Mar 2018 14:20:47
+ +0100 (CET)
+Received: from mail2.dfn-cert.de (mail2.dfn-cert.de [193.174.13.207])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Wed,  7 Mar 2018 14:20:47 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=SHA256; boundary="===============4167920872250518547=="
+From: DFN-CERT <portal@dfn-cert.de>
+Subject: =?utf-8?q?UPDATE=3A_DFN-CERT-2018-0102_Oracle_Java_SE=2C_OpenJDK=2C_IBM_Java=3A_Mehrere_Schwachstellen_erm=C3=B6glichen_u=2Ea=2E_die_komplette_Kompromittierung_der_Software_=5BLinux=5D=5BFedora=5D=5BRedHat=5D=5BUnix=5D=5BApple=5D=5BSolaris=5D=5BWindows=5D=5BNetzwerk=5D?=
+Date: Wed, 7 Mar 2018 13:20:02 +0000
+To: <rz+certapple@hs-esslingen.de>
+Message-ID: <20180307132045.0B7462E05BB@mail2.dfn-cert.de>
+Return-Path: dfn-adv-bounces@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;-900606;0;PM
+MIME-Version: 1.0
+
+--===============4167920872250518547==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Liebe Kolleginnen und Kollegen,
+
+bitte beachten Sie die folgende Sicherheitsmeldung.
+
+Historie:
+  Version 10 (07.03.2018):
+    Red Hat ver=C3=B6ffentlicht f=C3=BCr die Red Hat Enterprise Linux 7 Pro=
+duktvarianten
+    Server, Workstation, Desktop und Scientific Computing Sicherheitsupdates
+    auf die IBM Java SE 7 Version 7R1 SR4-FP20, um insgesamt 15 der
+    aufgef=C3=BChrten Schwachstellen zu beheben.
+  Version 9 (27.02.2018):
+    F=C3=BCr das Paket 'java-1.7.0-openjdk' stellen Oracle f=C3=BCr Oracle =
+Linux 6 (i386
+    und x86_64) und Oracle Linux 7 (x86_64) sowie Red Hat f=C3=BCr die
+    Produktvarianten Red Hat Enterprise Linux for ARM 64 7, for Scientific
+    Computing 6 und 7 (x86_64), Desktop, Workstation und Server in den
+    Versionen 7 (x86_64) und 6 (i386 und x86_64) sowie die Servervarianten =
+AUS
+    7.4, EUS 7.4, 4 Year EUS 7.4 und TUS 7.4 Sicherheitsupdates bereit, wel=
+che
+    die Schwachstellen CVE-2018-2579, CVE-2018-2588, CVE-2018-2599,
+    CVE-2018-2602, CVE-2018-2603, CVE-2018-2618, CVE-2018-2629, CVE-2018-26=
+33,
+    CVE-2018-2634, CVE-2018-2637, CVE-2018-2641, CVE-2018-2663, CVE-2018-26=
+77
+    und CVE-2018-2678 adressieren. Oracle und Red Hat stufen dieses
+    Sicherheitsupdate als wichtig ein. Weiterhin stellt Red Hat f=C3=BCr die
+    Produktvarianten Red Hat Enterprise Linux for Scientific Computing 6 un=
+d 7
+    (x86_64), Desktop, Workstation und Server in den Versionen 6 (i386 und
+    x86_64) und 7 (x86_64) Sicherheitsupdates f=C3=BCr das Paket 'java-1.8.=
+0-ibm'
+    auf IBM Java SE 8 Version 8 SR5-FP10 bereit, welche die Schwachstellen
+    CVE-2018-2579, CVE-2018-2582, CVE-2018-2588, CVE-2018-2599, CVE-2018-26=
+02,
+    CVE-2018-2603, CVE-2018-2618, CVE-2018-2633, CVE-2018-2634, CVE-2018-26=
+37,
+    CVE-2018-2638, CVE-2018-2639, CVE-2018-2641, CVE-2018-2663, CVE-2018-26=
+77
+    und CVE-2018-2678 adressieren. Red Hat stuft dieses Sicherheitsupdate a=
+ls
+    kritisch ein.
+  Version 8 (22.02.2018):
+    IBM informiert dar=C3=BCber, dass die mit dem Oracle January 2018 Criti=
+cal
+    Patch Update ver=C3=B6ffentlichten Java SE Schwachstellen auch das IBM =
+SDK,
+    Java Technology Edition, in den Versionen 6, 6R1, 7, 7R1 und 8 betreffe=
+n,
+    und stellt Version 6 Service Refresh 16 Fix Pack 60, Version 6R1 Service
+    Refresh 8 Fix Pack 60, Version 7 Service Refresh 10 Fix Pack 20, Version
+    7R1 Service Refresh 4 Fix Pack 20 sowie die Version 8 Service Refresh 5
+    Fix Pack 10 als Sicherheitsupdates bereit, welche zus=C3=A4tzlich die
+    Schwachstelle CVE-2018-1417 adressieren.
+  Version 7 (29.01.2018):
+    F=C3=BCr Fedora 26 und 27 steht nun das Paket
+    'java-1.8.0-openjdk-1.8.0.161-0.b14.fc27' als Sicherheitsupdate im Stat=
+us
+    'testing' zur Verf=C3=BCgung, mit dem OpenJDK auf Version 8u161 aktuali=
+siert
+    wird. F=C3=BCr Fedora 26 steht zus=C3=A4tzlich das aktuelle Paket
+    'java-9-openjdk-9.0.4.11-3.fc26' zur Verf=C3=BCgung, mit dem OpenJDK auf
+    Version 9.0.4+11 aktualisiert wird.
+  Version 6 (25.01.2018):
+    F=C3=BCr Fedora 27 steht das aktuelle Paket 'java-9-openjdk-9.0.4.11-3.=
+fc27'
+    als Sicherheitsupdate im Status 'testing' zur Verf=C3=BCgung, mit dem O=
+penJDK
+    auf Version 9.0.4+11 aktualisiert und kleinere, mit dieser Version
+    aufgetretene Probleme behoben werden.
+  Version 5 (23.01.2018):
+    F=C3=BCr Red Hat Enterprise Linux (RHEL) 6 und 7 stehen Sicherheitsupda=
+tes f=C3=BCr
+    Oracle Java SE 6 auf Version 6 Update 181 f=C3=BCr 'java-1.6.0-sun' ber=
+eit. Mit
+    diesen Updates werden das Oracle Java Runtime Environment und das Oracle
+    Java Software Development Kit ausgeliefert. Die Updates f=C3=BCr Oracle=
+ Java
+    (Restricted Maintenance) stehen f=C3=BCr RHEL Server, Desktop (Client),=
+ Compute
+    Node und Workstation 6 und 7 sowie f=C3=BCr RHEL Server EUS 7.4 zur Ver=
+f=C3=BCgung.
+  Version 4 (19.01.2018):
+    F=C3=BCr Red Hat Enterprise Linux (RHEL) 6 und 7 stehen Sicherheitsupda=
+tes f=C3=BCr
+    Oracle Java SE 7 auf Version 7 Update 171 und Oracle Java SE 8 auf Vers=
+ion
+    8 Update 161 bereit. Mit diesen Updates werden das Oracle Java Runtime
+    Environment und das Oracle Java Software Development Kit ausgeliefert. =
+Die
+    Updates f=C3=BCr Oracle Java (Restricted Maintenance) stehen f=C3=BCr R=
+HEL Server,
+    Desktop (Client), Compute Node und Workstation 6 und 7 sowie f=C3=BCr R=
+HEL
+    Server EUS 7.4 zur Verf=C3=BCgung.
+  Version 3 (18.01.2018):
+    F=C3=BCr Oracle Linux 6 (i386, x86_64) und Oracle Linux 7 (x86_64) steh=
+en
+    Sicherheitsupdates f=C3=BCr OpenJDK 8 bereit.
+  Version 2 (17.01.2018):
+    Red Hat stellt Sicherheitsupdates f=C3=BCr Red Hat Enterprise Linux 6 u=
+nd 7 in
+    den Auspr=C3=A4gungen Desktop, Server und Workstation, Red Hat Enterpri=
+se Linux
+    for Scientific Computing 6 und 7, Red Hat Enterprise Linux EUS Compute
+    Node 7.4 sowie Red Hat Enterprise Linux Server 7.4 in den Versionen
+    Advanced Update Support (AUS), Extented Update Support (EUS) und Telecom
+    Update Support (TUS) in Form aktualisierter 'java-1.8.0-openjdk'-Pakete
+    zur Verf=C3=BCgung. Diese beinhalten OpenJDK 8 Java Runtime Environment=
+ und the
+    OpenJDK 8 Java Software Development Kit.
+  Version 1 (17.01.2018):
+    Neues Advisory
+
+Betroffene Software:
+
+  IBM Java 1.6.0
+  IBM Java 1.6.1
+  IBM Java 1.7.0
+  IBM Java 1.7.1
+  IBM Java 1.8.0
+  IBM Java SDK < 6.0.16.60 Technology
+  IBM Java SDK < 6.1.8.60 Technology
+  IBM Java SDK < 7.0.10.20 Technology
+  IBM Java SDK < 7.1.4.20 Technology
+  IBM Java SDK < 8.0.5.10 Technology
+  Java Advanced Management Console < 2.9
+  Oracle Java SE 6u171
+  Oracle Java SE < 6u181
+  Oracle Java SE 7u161
+  Oracle Java SE < 7u171
+  Oracle Java SE < 8u162
+  Oracle Java SE < 9.0.4
+  Oracle Java SE Embedded < 8u161
+  Oracle JRockit R28.3.16
+  OpenJDK 1.7.0
+  OpenJDK 1.8.0
+  OpenJDK < 9.0.4+11
+  =
+
+
+Betroffene Plattformen:
+
+  Apple macOS
+  GNU/Linux
+  HP-UX
+  Microsoft Windows =
+
+  Oracle Linux 6
+  Oracle Linux 7
+  Oracle Solaris
+  Red Hat Enterprise Linux for Scientific Computing 6
+  Red Hat Enterprise Linux 6 Server
+  Red Hat Enterprise Linux 6 Workstation
+  Red Hat Enterprise Linux for Scientific Computing 7
+  Red Hat Enterprise Linux 7.4 EUS Compute Node
+  Red Hat Enterprise Linux Desktop 6
+  Red Hat Enterprise Linux Desktop 7
+  Red Hat Enterprise Linux Server 6
+  Red Hat Enterprise Linux Server 7
+  Red Hat Enterprise Linux Server for ARM 7
+  Red Hat Enterprise Linux Server 4 Year Extended Update Support 7.4
+  Red Hat Enterprise Linux Server 7.4 AUS
+  Red Hat Enterprise Linux Server 7.4 EUS
+  Red Hat Enterprise Linux Server 7.4 TUS
+  Red Hat Enterprise Linux Workstation 6
+  Red Hat Enterprise Linux Workstation 7
+  Red Hat Fedora 26
+  Red Hat Fedora 27
+  =
+
+
+
+Mehrere Schwachstellen in unterschiedlichen Komponenten von Oracle Java SE,
+Java SE Embedded, JRockit und der Java Advanced Management Console
+erm=C3=B6glichen einem zumeist entfernten, nicht authentisierten Angreifer =
+die
+Kompromittierung der Software und, abh=C3=A4ngig von den Rechten des aktiven
+Benutzers, m=C3=B6glicherweise auch die Kompromittierung des gesamten Syste=
+ms.
+Dar=C3=BCber hinaus sind verschiedene Denial-of-Service (DoS)-Angriffe sowi=
+e das
+Aussp=C3=A4hen und die Manipulation von durch die Software erreichbarer und
+weiterer kritischer Daten m=C3=B6glich. Eine der Schwachstellen betrifft das
+Installationswerkzeug von Java SE auf Windows-Systemen, die Ausnutzung
+zweier weiterer Schwachstellen erfordert bestimmte Privilegien.
+
+Oracle empfiehlt Benutzern von Java SE, die unver=C3=A4nderten Versionen des
+Java-Plugins und von Java Web Start aus dem aktuellen Java SE Development
+Kit (JDK) oder Java SE Runtime Environment (JRE) zu verwenden. Es stehen
+aktuelle Versionen von Java SE 9 (Version 9.0.4), Java SE 8 (Version 8u162)
+und Java SE Embedded 8 (Version 8u161) zum Download zur Verf=C3=BCgung. Die=
+ Java
+Advanced Management Console wird auf Version 2.9 aktualisiert, um die
+entsprechende Schwachstelle zu beheben.
+
+Aktuelle Versionen von Java SE 6 nach April 2013, Java SE 7 nach April 2015
+und JRockit sind nur noch auf Anfrage verf=C3=BCgbar. Oracle k=C3=BCndigt d=
+ar=C3=BCber
+hinaus das Ende der =C3=B6ffentlichen Updates f=C3=BCr Oracle Java SE 8 f=
+=C3=BCr September
+2018 an. Java SE 9.0.4 ist nach Aussage des Herstellers die letzte f=C3=BCr
+diesen Versionszweig geplante Version.
+
+
+Patch:
+
+  Oracle Critical Patch Update Advisory Januar 2018 - CPUJan2018 (Oracle Ja=
+va
+  SE)
+
+  <http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.h=
+tml#AppendixJAVA>
+
+Patch:
+
+  Oracle Java Advanced Management Console 2.9 Release Notes
+
+  <http://www.oracle.com/technetwork/java/javase/amc29releasenotes-4105172.=
+html>
+
+Patch:
+
+  Oracle Java SE Development Kit 8, Update 162 (JDK 8u162) Release Notes
+
+  <http://www.oracle.com/technetwork/java/javase/8u162-relnotes-4021436.htm=
+l>
+
+Patch:
+
+  Oracle Java SE Development Kit 9.0.4 (JDK 9.0.4) Release Notes
+
+  <http://www.oracle.com/technetwork/java/javase/9-0-4-relnotes-4021191.htm=
+l>
+
+Patch:
+
+  Oracle Java SE Embedded 8u161 Release Notes
+
+  <http://www.oracle.com/technetwork/java/javase/emb8u161-relnotes-4021470.=
+html>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0095
+
+  <https://access.redhat.com/errata/RHSA-2018:0095>
+
+Patch:
+
+  Oracle Linux Security Advisory ELSA-2018-0095
+
+  <https://linux.oracle.com/errata/ELSA-2018-0095.html>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0099
+
+  <https://access.redhat.com/errata/RHSA-2018:0099>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0100
+
+  <https://access.redhat.com/errata/RHSA-2018:0100>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0115
+
+  <https://access.redhat.com/errata/RHSA-2018:0115>
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-e2e52fb0bf (Fedora 27,
+  java-9-openjdk-9.0.4.11-3.fc27)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-e2e52fb0bf>
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-9e6e636c60 (Fedora 26,
+  java-9-openjdk-9.0.4.11-3.fc26)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-9e6e636c60>
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-a82015aa02 (Fedora 27,
+  java-1.8.0-openjdk-1.8.0.161-0.b14.fc27)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-a82015aa02>
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-d50769efa0 (Fedora 26,
+  java-1.8.0-openjdk-1.8.0.161-0.b14.fc26)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-d50769efa0>
+
+Patch:
+
+  IBM Security Bulletin 2012965
+
+  <https://www.ibm.com/support/docview.wss?uid=3Dswg22012965>
+
+Patch:
+
+  Oracle Linux Security Advisory ELSA-2018-0349
+
+  <https://linux.oracle.com/errata/ELSA-2018-0349.html>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0349
+
+  <https://access.redhat.com/errata/RHSA-2018:0349>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0351
+
+  <https://access.redhat.com/errata/RHSA-2018:0351>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0352
+
+  <https://access.redhat.com/errata/RHSA-2018:0352>
+
+Patch:
+
+  Red Hat Security Advisory RHSA-2018:0458
+
+  <https://access.redhat.com/errata/RHSA-2018:0458>
+
+
+CVE-2018-1417: Schwachstelle in Oracle Java Virtual Machine erm=C3=B6glicht
+  Privilegieneskalation
+
+  Unter bestimmen Umst=C3=A4nden erm=C3=B6glicht eine Schwachstelle in der =
+J9 Java
+  Virtual Machine (JVM) nicht vertrauensw=C3=BCrdigem Programmcode, welcher=
+ unter
+  einem Sicherheitsmanager l=C3=A4uft, die Erweiterung seiner Privilegien. =
+Ein
+  entfernter, nicht authentisierter Angreifer kann diese Schwachstelle
+  ausnutzen, um erh=C3=B6hte Privilegien zu erlangen.
+
+
+CVE-2018-2677: Schwachstelle in Oracle Java SE und Java SE Embedded
+  erm=C3=B6glicht Denial-of-Service-Angriff
+
+  In der Subkomponente AWT von Java SE und Java SE Embedded besteht eine
+  leicht auszunutzende Schwachstelle, durch die ein entfernter, nicht
+  authentisierter Angreifer die Software =C3=BCber verschiedene Netzwerkpro=
+tokolle
+  kompromittieren kann. Die erfolgreiche Ausnutzung der Schwachstelle
+  erm=C3=B6glicht dem Angreifer einen Denial-of-Service-Angriff. Die Schwac=
+hstelle
+  betrifft Client- und Server-Installationen von Java.
+
+
+CVE-2018-2675: Schwachstelle in Java Advanced Management Console erm=C3=B6g=
+licht
+  Aussp=C3=A4hen von Informationen
+
+  In der Subkomponente Server der Java Advanced Management Console besteht
+  eine schwer auszunutzende Schwachstelle, durch die ein entfernter, nicht
+  authentisierter Angreifer Lesezugriff auf eine Untermenge der von der
+  betroffenen Software erreichbaren Daten erhalten kann.
+
+
+CVE-2018-2663 CVE-2018-2678: Schwachstellen in Oracle Java SE, Java SE
+  Embedded und JRockit erm=C3=B6glichen Denial-of-Service-Angriff
+
+  In den Subkomponenten Libraries und JNDI von Java SE, Java SE Embedded und
+  JRockit besteht je eine leicht auszunutzende Schwachstelle, durch die ein
+  entfernter, nicht authentisierter Angreifer die Software =C3=BCber versch=
+iedene
+  Netzwerkprotokolle kompromittieren kann. Die erfolgreiche Ausnutzung der
+  Schwachstellen erfordert die Interaktion eines Benutzers der Software und
+  erm=C3=B6glicht dem Angreifer einen Denial-of-Service-Angriff. Die Schwac=
+hstellen
+  betreffen Client- und Server-Installationen von Java.
+
+
+CVE-2018-2657: Schwachstelle in Oracle Java SE und JRockit erm=C3=B6glicht
+  Denial-of-Service-Angriff
+
+  In der Subkomponente Serialization von Java SE und JRockit besteht eine
+  leicht auszunutzende Schwachstelle, durch die ein entfernter, nicht
+  authentisierter Angreifer die Software =C3=BCber verschiedene Netzwerkpro=
+tokolle
+  kompromittieren kann. Die erfolgreiche Ausnutzung der Schwachstelle
+  erm=C3=B6glicht dem Angreifer einen Denial-of-Service-Angriff. Die Schwac=
+hstelle
+  kann durch API-Zugriff auf die betroffene Komponente ausgenutzt werden.
+
+
+CVE-2018-2641: Schwachstelle in Oracle Java SE und Java SE Embedded
+  erm=C3=B6glicht Manipulation von Daten
+
+  =C3=9Cber die Subkomponente AWT von Java SE und Java SE Embedded kann ein
+  entfernter, nicht authentisierter Angreifer die betroffene Software
+  kompromittieren. Die erfolgreiche Ausnutzung der schwer auszunutzenden
+  Schwachstelle erfordert die Interaktion eines Benutzers und erm=C3=B6glic=
+ht dem
+  Angreifer die Manipulation aller von der betroffenen Software erreichbaren
+  und weiterer kritischer Daten. Die Schwachstelle betrifft
+  Client-Installationen von Java und erm=C3=B6glicht die Einflussnahme auf =
+weitere
+  Produkte.
+
+
+CVE-2018-2638 CVE-2018-2639: Schwachstellen in Oracle Java SE erm=C3=B6glic=
+hen
+  Kompromittierung der Software
+
+  In der Subkomponente Deployment von Java SE bestehen zwei schwer
+  auszunutzende Schwachstellen, durch die ein entfernter, nicht
+  authentisierter Angreifer Java SE =C3=BCber verschiedene Netzwerkprotokol=
+le
+  komplett kompromittieren kann. Die erfolgreiche Ausnutzung der
+  Schwachstellen erfordert die Interaktion eines Benutzers der Software und
+  erm=C3=B6glicht dem Angreifer auch, Einfluss auf andere Produkte zu nehme=
+n. Die
+  Schwachstellen betreffen Client-Installationen von Java.
+
+
+CVE-2018-2637: Schwachstelle in Oracle Java SE, Java SE Embedded und JRockit
+  erm=C3=B6glicht Manipulation von Daten und Aussp=C3=A4hen von Information=
+en
+
+  =C3=9Cber die Subkomponente JMX von Java SE, Java SE Embedded und JRockit=
+ kann
+  ein entfernter, nicht authentisierter Angreifer die betroffene Software
+  kompromittieren. Die erfolgreiche Ausnutzung der schwer auszunutzenden
+  Schwachstelle erm=C3=B6glicht dem Angreifer den Lesezugriff auf und die
+  Manipulation von allen von der betroffenen Software erreichbaren und
+  weiterer kritischer Daten. Die Schwachstelle kann =C3=BCber den API-Zugri=
+ff auf
+  JMX ausgenutzt werden.
+
+
+CVE-2018-2634: Schwachstelle in Oracle Java SE und Java SE Embedded
+  erm=C3=B6glicht Aussp=C3=A4hen von Informationen
+
+  In der Subkomponente JGSS von Java SE und Java SE Embedded besteht eine
+  schwer auszunutzende Schwachstelle, durch die ein entfernter, nicht
+  authentisierter Angreife =C3=BCber verschiedene Netzwerkprotokolle Lesezu=
+griff
+  auf alle von der Software erreichbaren und weitere kritische Daten erhalt=
+en
+  kann. Die Schwachstelle betrifft Client-Installationen von Java. Eine
+  erfolgreiche Ausnutzung der Schwachstelle erm=C3=B6glicht die Einflussnah=
+me auf
+  weitere Produkte.
+
+
+CVE-2018-2633: Schwachstelle in Oracle Java SE, Java SE Embedded und JRockit
+  erm=C3=B6glicht Kompromittierung der Software
+
+  In der Subkomponente JNDI von Java SE, Java SE Embedded und JRockit beste=
+ht
+  eine schwer auszunutzende Schwachstelle, durch die ein entfernter, nicht
+  authentisierter Angreifer Java SE =C3=BCber verschiedene Netzwerkprotokol=
+le
+  komplett kompromittieren kann. Die erfolgreiche Ausnutzung der Schwachste=
+lle
+  erfordert die Interaktion eines Benutzers der Software und erm=C3=B6glich=
+t dem
+  Angreifer auch, Einfluss auf andere Produkte zu nehmen. Die Schwachstelle
+  betrifft Client- und Server-Installationen von Java.
+
+
+CVE-2018-2629: Schwachstelle in Oracle Java SE, Java SE Embedded und JRockit
+  erm=C3=B6glicht Manipulation von Daten
+
+  =C3=9Cber die Subkomponente JGSS von Java SE, Java SE Embedded und JRocki=
+t kann
+  ein entfernter, nicht authentisierter Angreifer die betroffene Software
+  kompromittieren. Die erfolgreiche Ausnutzung der schwer auszunutzenden
+  Schwachstelle erfordert die Interaktion eines Benutzers und erm=C3=B6glic=
+ht dem
+  Angreifer die Manipulation aller von der betroffenen Software erreichbaren
+  und weiterer kritischer Daten. Die Schwachstelle betrifft Client- und
+  Server-Installationen von Java.
+
+
+CVE-2018-2627: Schwachstelle in Oracle Java SE erm=C3=B6glicht Kompromittie=
+rung
+  der Software
+
+  Es besteht eine schwer auszunutzende Schwachstelle im Installationswerkze=
+ug
+  von Oracle Java SE auf Windows-Systemen. Die erfolgreiche Ausnutzung der
+  Schwachstelle erfordert die Interaktion eines vom Angreifer verschiedenen
+  Benutzers der Software. Ein lokaler, einfach authentifizierter Angreifer
+  kann die Schwachstelle ausnutzen, um die Anwendung komplett zu
+  kompromittieren und dadurch Einfluss auf andere Produkte zu nehmen.
+
+
+CVE-2018-2618: Schwachstelle in Oracle Java SE, Java SE Embedded und JRockit
+  erm=C3=B6glicht Aussp=C3=A4hen von Informationen
+
+  In der Subkomponente JCE von Java SE, Java SE Embedded und JRockit besteht
+  eine schwer auszunutzende Schwachstelle, durch die ein entfernter, nicht
+  authentisierter Angreifer =C3=BCber verschiedene Netzwerkprotokolle Lesez=
+ugriff
+  auf alle von der Software erreichbaren und weitere kritische Daten erhalt=
+en
+  kann. Die Schwachstelle betrifft Client- und Server-Installationen von Ja=
+va.
+
+
+CVE-2018-2603: Schwachstelle in Oracle Java SE, Java SE Embedded und JRockit
+  erm=C3=B6glicht Denial-of-Service-Angriff
+
+  In der Subkomponente Libraries von Java SE, Java SE Embedded und JRockit
+  besteht eine leicht auszunutzende Schwachstelle, durch die ein entfernter,
+  nicht authentisierter Angreifer die Software =C3=BCber verschiedene
+  Netzwerkprotokolle kompromittieren kann. Die erfolgreiche Ausnutzung der
+  Schwachstelle erm=C3=B6glicht dem Angreifer einen Denial-of-Service-Angri=
+ff. Die
+  Schwachstelle betrifft Client- und Server-Installationen von Java.
+
+
+CVE-2018-2602: Schwachstelle in Oracle Java SE und Java SE Embedded
+  erm=C3=B6glicht Kompromittierung der Software
+
+  =C3=9Cber die Subkomponente I18n von Java SE und Java SE Embedded kann ein
+  lokaler, nicht authentisierter Angreifer die betroffene Software
+  kompromittieren. Die erfolgreiche Ausnutzung der schwer auszunutzenden
+  Schwachstelle erfordert die Interaktion eines Benutzers und den Zugriff a=
+uf
+  die Infrastruktur, auf der Java SE oder Java SE Embedded betrieben werden.
+  Der Angreifer kann dann einige der von Java SE und Java SE Embedded
+  erreichbaren Daten manipulieren, weitere Daten aussp=C3=A4hen und dar=C3=
+=BCber hinaus
+  einen Denial-of-Service-Angriff (DoS) ausf=C3=BChren. Die Schwachstelle b=
+etrifft
+  typischerweise Client-Installationen von Java.
+
+
+CVE-2018-2599: Schwachstelle in Oracle Java SE, Java SE Embedded und JRockit
+  erm=C3=B6glicht Manipulation von Daten und Denial-of-Service-Angriff
+
+  =C3=9Cber die Subkomponente JNDI von Java SE, Java SE Embedded und JRocki=
+t kann
+  ein entfernter, nicht authentisierter Angreifer die betroffene Software
+  kompromittieren. Die erfolgreiche Ausnutzung der schwer auszunutzenden
+  Schwachstelle erm=C3=B6glicht dem Angreifer die Manipulation einiger der =
+von der
+  Software erreichbaren Daten und zus=C3=A4tzlich einen Denial-of-Service-A=
+ngriff.
+  Die Schwachstelle betrifft Client- und Server-Installationen von Java.
+
+
+CVE-2018-2588: Schwachstelle in Oracle Java SE, Java SE Embedded und JRockit
+  erm=C3=B6glicht Aussp=C3=A4hen von Informationen
+
+  In der Subkomponente LDAP von Java SE, Java SE Embedded und JRockit beste=
+ht
+  eine leicht auszunutzende Schwachstelle, durch die ein entfernter Angreif=
+er
+  mit niedrigen Privilegien die Software =C3=BCber verschiedene Netzwerkpro=
+tokolle
+  kompromittieren kann. Die erfolgreiche Ausnutzung der Schwachstelle
+  erm=C3=B6glicht dem Angreifer den Lesezugriff auf eine Untermenge der von=
+ der
+  betroffenen Software erreichbaren Daten. Die Schwachstelle betrifft Clien=
+t-
+  und Server-Installationen von Java.
+
+
+CVE-2018-2582: Schwachstelle in Oracle Java SE und Java SE Embedded
+  erm=C3=B6glicht Manipulation von Daten
+
+  =C3=9Cber die Subkomponente Hotspot von Java SE und Java SE Embedded kann=
+ ein
+  entfernter, nicht authentisierter Angreifer die betroffene Software
+  kompromittieren. Die erfolgreiche Ausnutzung der einfach auszunutzenden
+  Schwachstelle erfordert die Interaktion eines Benutzers und erm=C3=B6glic=
+ht dem
+  Angreifer die Manipulation einiger der von Java SE und Java SE Embedded
+  erreichbaren Daten. Die Schwachstelle betrifft Client- und
+  Server-Installationen von Java.
+
+
+CVE-2018-2581: Schwachstelle in Oracle Java SE erm=C3=B6glicht Aussp=C3=A4h=
+en von
+  Informationen
+
+  Eine leicht auszunutzende Schwachstelle in der Subkomponente JavaFX von J=
+ava
+  SE erm=C3=B6glicht einem entfernten, nicht authentisierten Angreifer das
+  Aussp=C3=A4hen einiger der der betroffenen Software zug=C3=A4nglichen Inf=
+ormationen
+  =C3=BCber verschiedene Netzwerkprotokolle. Ein erfolgreicher Angriff erfo=
+rdert
+  die Interaktion eines Benutzers der Software und kann tiefgreifende
+  Auswirkungen auf andere Produkte haben. Die Schwachstelle betrifft
+  Client-Installationen von Java.
+
+
+CVE-2018-2579: Schwachstelle in Oracle Java SE, Java SE Embedded und JRockit
+  erm=C3=B6glicht Aussp=C3=A4hen von Informationen
+
+  In der Subkomponente Libraries von Java SE, Java SE Embedded und JRockit
+  besteht eine schwer auszunutzende Schwachstelle, durch die ein entfernter,
+  nicht authentisierter Angreifer die Software =C3=BCber verschiedene
+  Netzwerkprotokolle kompromittieren kann. Die erfolgreiche Ausnutzung der
+  Schwachstelle erm=C3=B6glicht dem Angreifer den Lesezugriff auf eine Unte=
+rmenge
+  der von der betroffenen Software erreichbaren Daten. Die Schwachstelle
+  betrifft Client-Installationen von Java.
+
+
+Referenzen:
+
+Dieses Advisory finden Sie auch im DFN-CERT Portal unter:
+  <https://portal.cert.dfn.de/adv/DFN-CERT-2018-0102/>
+
+Oracle Critical Patch Update Advisory Januar 2018 - CPUJan2018 (Oracle Java
+SE):
+  <http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.h=
+tml#AppendixJAVA>
+
+Oracle Java Advanced Management Console 2.9 Release Notes:
+  <http://www.oracle.com/technetwork/java/javase/amc29releasenotes-4105172.=
+html>
+
+Oracle Java SE Development Kit 8, Update 162 (JDK 8u162) Release Notes:
+  <http://www.oracle.com/technetwork/java/javase/8u162-relnotes-4021436.htm=
+l>
+
+Oracle Java SE Development Kit 9.0.4 (JDK 9.0.4) Release Notes:
+  <http://www.oracle.com/technetwork/java/javase/9-0-4-relnotes-4021191.htm=
+l>
+
+Oracle Java SE Embedded 8u161 Release Notes:
+  <http://www.oracle.com/technetwork/java/javase/emb8u161-relnotes-4021470.=
+html>
+
+Red Hat Security Advisory RHSA-2018:0095:
+  <https://access.redhat.com/errata/RHSA-2018:0095>
+
+Oracle CPUJan2018 Risk Matrix - Oracle Java SE:
+  <http://www.oracle.com/technetwork/security-advisory/cpujan2018verbose-32=
+36630.html#JAVA>
+
+Schwachstelle CVE-2018-2579 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2579>
+
+Schwachstelle CVE-2018-2581 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2581>
+
+Schwachstelle CVE-2018-2582 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2582>
+
+Schwachstelle CVE-2018-2588 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2588>
+
+Schwachstelle CVE-2018-2599 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2599>
+
+Schwachstelle CVE-2018-2602 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2602>
+
+Schwachstelle CVE-2018-2603 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2603>
+
+Schwachstelle CVE-2018-2618 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2618>
+
+Schwachstelle CVE-2018-2627 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2627>
+
+Schwachstelle CVE-2018-2629 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2629>
+
+Schwachstelle CVE-2018-2633 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2633>
+
+Schwachstelle CVE-2018-2634 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2634>
+
+Schwachstelle CVE-2018-2637 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2637>
+
+Schwachstelle CVE-2018-2638 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2638>
+
+Schwachstelle CVE-2018-2639 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2639>
+
+Schwachstelle CVE-2018-2641 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2641>
+
+Schwachstelle CVE-2018-2657 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2657>
+
+Schwachstelle CVE-2018-2663 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2663>
+
+Schwachstelle CVE-2018-2675 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2675>
+
+Schwachstelle CVE-2018-2677 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2677>
+
+Schwachstelle CVE-2018-2678 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2678>
+
+Oracle Linux Security Advisory ELSA-2018-0095:
+  <https://linux.oracle.com/errata/ELSA-2018-0095.html>
+
+Red Hat Security Advisory RHSA-2018:0099:
+  <https://access.redhat.com/errata/RHSA-2018:0099>
+
+Red Hat Security Advisory RHSA-2018:0100:
+  <https://access.redhat.com/errata/RHSA-2018:0100>
+
+Red Hat Security Advisory RHSA-2018:0115:
+  <https://access.redhat.com/errata/RHSA-2018:0115>
+
+Fedora Security Update FEDORA-2018-e2e52fb0bf (Fedora 27,
+java-9-openjdk-9.0.4.11-3.fc27):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-e2e52fb0bf>
+
+Fedora Security Update FEDORA-2018-9e6e636c60 (Fedora 26,
+java-9-openjdk-9.0.4.11-3.fc26):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-9e6e636c60>
+
+Fedora Security Update FEDORA-2018-a82015aa02 (Fedora 27,
+java-1.8.0-openjdk-1.8.0.161-0.b14.fc27):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-a82015aa02>
+
+Fedora Security Update FEDORA-2018-d50769efa0 (Fedora 26,
+java-1.8.0-openjdk-1.8.0.161-0.b14.fc26):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-d50769efa0>
+
+IBM Security Bulletin 2012965:
+  <https://www.ibm.com/support/docview.wss?uid=3Dswg22012965>
+
+IBM PSIRT Blog: Multiple vulnerabilities may affect IBM=C2=AE SDK, Java=E2=
+=84=A2 Technology
+Edition:
+  <https://www.ibm.com/blogs/psirt/ibm-security-bulletin-multiple-vulnerabi=
+lities-may-affect-ibm-sdk-java-technology-edition-6/>
+
+Schwachstelle CVE-2018-1417 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-1417>
+
+Oracle Linux Security Advisory ELSA-2018-0349:
+  <https://linux.oracle.com/errata/ELSA-2018-0349.html>
+
+Red Hat Security Advisory RHSA-2018:0349:
+  <https://access.redhat.com/errata/RHSA-2018:0349>
+
+Red Hat Security Advisory RHSA-2018:0351:
+  <https://access.redhat.com/errata/RHSA-2018:0351>
+
+Red Hat Security Advisory RHSA-2018:0352:
+  <https://access.redhat.com/errata/RHSA-2018:0352>
+
+Red Hat Security Advisory RHSA-2018:0458:
+  <https://access.redhat.com/errata/RHSA-2018:0458>
+
+
+(c) DFN-CERT Services GmbH, all rights reserved!
+Die Weiterverbreitung ist mit Hinweis auf den Copyrightinhaber innerhalb der
+eigenen Einrichtung erlaubt. Eine dar=C3=BCber hinausgehende Verbreitung be=
+darf
+des schriftlichen Einverst=C3=A4ndnisses des Rechteinhabers.
+
+--===============4167920872250518547==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExDzANBglghkgBZQMEAgEFADCABgkqhkiG9w0BBwEAAKCCEMYw
+ggUSMIID+qADAgECAgkA4wvV+K8l2YEwDQYJKoZIhvcNAQELBQAwgYIxCzAJBgNVBAYTAkRFMSsw
+KQYDVQQKDCJULVN5c3RlbXMgRW50ZXJwcmlzZSBTZXJ2aWNlcyBHbWJIMR8wHQYDVQQLDBZULVN5
+c3RlbXMgVHJ1c3QgQ2VudGVyMSUwIwYDVQQDDBxULVRlbGVTZWMgR2xvYmFsUm9vdCBDbGFzcyAy
+MB4XDTE2MDIyMjEzMzgyMloXDTMxMDIyMjIzNTk1OVowgZUxCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+EzxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsTB0RGTi1QS0kxLTArBgNVBAMTJERGTi1WZXJlaW4gQ2VydGlmaWNhdGlv
+biBBdXRob3JpdHkgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMtg1/9moUHN0vqH
+l4pzq5lN6mc5WqFggEcVToyVsuXPztNXS43O+FZsFVV2B+pG/cgDRWM+cNSrVICxI5y+NyipCf8F
+XRgPxJiZN7Mg9mZ4F4fCnQ7MSjLnFp2uDo0peQcAIFTcFV9Kltd4tjTTwXS1nem/wHdN6r1ZB+Ba
+L2w8pQDcNb1lDY9/Mm3yWmpLYgHurDg0WUU2SQXaeMpqbVvAgWsRzNI8qIv4cRrKO+KA3Ra0Z3qL
+NupOkSk9s1FcragMvp0049ENF4N1xDkesJQLEvHVaY4l9Lg9K7/AjsMeO6W/VRCrKq4Xl14zzsjz
+9AkH4wKGMUZrAcUQDBHHWekCAwEAAaOCAXQwggFwMA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQU
+k+PYMiba1fFKpZFK4OpL4qIMz+EwHwYDVR0jBBgwFoAUv1kgNgB5oKAia4zV8mHSuCzLgkowEgYD
+VR0TAQH/BAgwBgEB/wIBAjAzBgNVHSAELDAqMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGC
+LB4wCAYGZ4EMAQICMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6Ly9wa2kwMzM2LnRlbGVzZWMuZGUv
+cmwvVGVsZVNlY19HbG9iYWxSb290X0NsYXNzXzIuY3JsMIGGBggrBgEFBQcBAQR6MHgwLAYIKwYB
+BQUHMAGGIGh0dHA6Ly9vY3NwMDMzNi50ZWxlc2VjLmRlL29jc3ByMEgGCCsGAQUFBzAChjxodHRw
+Oi8vcGtpMDMzNi50ZWxlc2VjLmRlL2NydC9UZWxlU2VjX0dsb2JhbFJvb3RfQ2xhc3NfMi5jZXIw
+DQYJKoZIhvcNAQELBQADggEBAIcL/z4Cm2XIVi3WO5qYi3FP2ropqiH5Ri71sqQPrhE4eTizDnS6
+dl2e6BiClmLbTDPo3flq3zK9LExHYFV/53RrtCyD2HlrtrdNUAtmB7Xts5et6u5/MOaZ/SLick0+
+hFvu+c+Z6n/XUjkurJgARH5pO7917tALOxrN5fcPImxHhPalR6D90Bo0fa3SPXez7vTXTf/D6OWS
+T1k+kEcQSrCFWMBvf/iu7QhCnh7U3xQuTY+8npTD5+32GPg8SecmqKc22CzeIs2LgtjZeOJVEqM7
+h0S2EQvVDFKvaYwPBt/QolOLV5h7z/0HJPT8vcP9SpIClxvyt7bPZYoaorVyGTkwggWsMIIElKAD
+AgECAgcbY7rQHiw9MA0GCSqGSIb3DQEBCwUAMIGVMQswCQYDVQQGEwJERTFFMEMGA1UEChM8VmVy
+ZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYu
+MRAwDgYDVQQLEwdERk4tUEtJMS0wKwYDVQQDEyRERk4tVmVyZWluIENlcnRpZmljYXRpb24gQXV0
+aG9yaXR5IDIwHhcNMTYwNTI0MTEzODQwWhcNMzEwMjIyMjM1OTU5WjCBjTELMAkGA1UEBhMCREUx
+RTBDBgNVBAoMPFZlcmVpbiB6dXIgRm9lcmRlcnVuZyBlaW5lcyBEZXV0c2NoZW4gRm9yc2NodW5n
+c25ldHplcyBlLiBWLjEQMA4GA1UECwwHREZOLVBLSTElMCMGA1UEAwwcREZOLVZlcmVpbiBHbG9i
+YWwgSXNzdWluZyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ07eRxH3h+Gy8Zp
+1xCeOdfZojDbchwFfylfS2jxrRnWTOFrG7ELf6Gr4HuLi9gtzm6IOhDuV+UefwRRNuu6cG1joL6W
+LkDh0YNMZj0cZGnlm6Stcq5oOVGHecwX064vXWNxSzl660Knl5BpBb+Q/6RAcL0D57+eGIgfn5mI
+TQ5HjUhfZZkQ0tkqSe3BuS0dnxLLFdM/fx5ULzquk1enfnjK1UriGuXtQX1TX8izKvWKMKztFwUk
+P7agCwf9TRqaA1KgNpzeJIdl5Of6x5ZzJBTN0OgbaJ4YWa52fvfRCng8h0uwN89Tyjo4EPPLR22M
+ZD08WkVKusqAfLjz56dMTM0CAwEAAaOCAgUwggIBMBIGA1UdEwEB/wQIMAYBAf8CAQEwDgYDVR0P
+AQH/BAQDAgEGMCkGA1UdIAQiMCAwDQYLKwYBBAGBrSGCLB4wDwYNKwYBBAGBrSGCLAEBBDAdBgNV
+HQ4EFgQUazqYi/nyU4na4K2yMh4JH+iqO3QwHwYDVR0jBBgwFoAUk+PYMiba1fFKpZFK4OpL4qIM
+z+EwgY8GA1UdHwSBhzCBhDBAoD6gPIY6aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9v
+dC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDBAoD6gPIY6aHR0cDovL2NkcDIucGNhLmRmbi5kZS9n
+bG9iYWwtcm9vdC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB3QYIKwYBBQUHAQEEgdAwgc0wMwYI
+KwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBKBggrBgEF
+BQcwAoY+aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9vdC1nMi1jYS9wdWIvY2FjZXJ0
+L2NhY2VydC5jcnQwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXJv
+b3QtZzItY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCBeEWkTqR/
+DlXwCbFqPnjMaDWpHPOVnj/z+N9rOHeJLI21rT7H8pTNoAauusyosa0zCLYkhmI2THhuUPDVbmCN
+T1IxQ5dGdfBi5G5mUcFCMWdQ5UnnOR7Ln8qGSN4IFP8VSytmm6A4nwDO/afr0X9XLchMX9wQEZc+
+lgQCXISoKTlslPwQkgZ7nu7YRrQbtQMMONncsKk/cQYLsgMHM8KNSGMlJTx6e1du94oFOO+4oK4v
+9NsH1VuEGMGpuEvObJAaguS5Pfp38dIfMwK/U+d2+dwmJUFvL6Yb+qQTkPp8ftkLYF3sv8pBoGH7
+EUkp2KgtdRXYShjqFu9VNCIaE40GMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3
+DQEBCwUAMIGNMQswCQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVp
+bmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUw
+IwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIw
+MTIwNDExNDExN1owgaIxCzAJBgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdI
+YW1idXJnMR8wHQYDVQQKDBZERk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAb
+BgNVBAMMFEdSUDogREZOLUNFUlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNl
+cnQuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0
+Yw0ZS9sOZLRfN6nFe6HOj8AzNO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZP
+juBRtsi+hKSvncR7oCNPDigsGbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVm
+W27fs5I61rP66DkqgrRXZh0wAZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvt
+sAJ2VXFhNNbtRY9XTDXi/Yar5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoG
+eUKrwG5TQM9FAgMBAAGjggJDMIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYB
+BAGBrSGCLAEBBAMGMBEGDysGAQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIG
+wDATBgNVHSUEDDAKBggrBgEFBQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYD
+VR0jBBgwFoAUazqYi/nyU4na4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0
+LmRlMIGNBgNVHR8EgYUwgYIwP6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWds
+b2JhbC1nMi9wdWIvY3JsL2NhY3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9k
+Zm4tY2EtZ2xvYmFsLWcyL3B1Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggr
+BgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9i
+YWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsX
+u7Gk4M32/Rs2jdf9rTw3/AagmeXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JH
+hwv5JSdyzM2/pG63uRi/WJ7zVYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB
+8Qb+p3YVTa9vcnmNpci1SYtM9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqoo
+GuMgkeB5hi2xUcxKhR8uUYhNftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYF
+S2sAbrrt2PhOtTHm5o51SbfIMYICYDCCAlwCAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+DDxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsMB0RGTi1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3Vp
+bmcgQ0ECDB5GA2zY8pjckgclSzANBglghkgBZQMEAgEFAKCBkzAYBgkqhkiG9w0BCQMxCwYJKoZI
+hvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xODAzMDcxMzIwMjBaMCgGCSqGSIb3DQEJDzEbMBkwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMC8GCSqGSIb3DQEJBDEiBCBB53XoqoHW8D7WoMf4VAza6GrW
++utHEA/50rHLZC0lqzANBgkqhkiG9w0BAQEFAASCAQADpDMROC/ocgxApM3XFq1cJnZOsBaRaLPU
+SIFMfD2/ONjaZfTvVfVByCAzJpODI/yy4+xQfG2HvBVhIs5ZcrfQ0Pxo85yCC2YxvrygPrbI9weC
+HNKRaQSuGvxhecdPaEZs6hNoTTnwgZVKl11NcOZsBZLfEmPhMQQYjaSkFkRkRX6+khg6e/ePgbRB
+ZGz+fEnuVdxQlBWFZMQP9Nv9oBOCPxtZMctGFa5EqNF4zkVYwkQ62fwidHd/LdducNkbT9RsbQXl
+E5Ha1F4LXDnxQvfBGxjAHVfJTp1NuYaZAgJ8xGeq6htww6MwAKtEYG7/HVO0p5LhCEogac73yCXp
+IOrQAAAAAAAA
+
+--===============4167920872250518547==--

@@ -1,0 +1,328 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Mon, 5 Mar
+ 2018 13:10:53 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id 973B025A21; Mon,  5 Mar 2018
+ 13:10:53 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id 8CC8325A17	for
+ <rz+certapple@hs-esslingen.de>; Mon,  5 Mar 2018 13:10:53 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.21
+X-Spam-Level:
+X-Spam-Status: No, score=-4.21 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, T_RP_MATCHES_RCVD=-0.01]
+	autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ 7ZNGnHF09Q7z for <rz+certapple@hs-esslingen.de>;	Mon,  5 Mar 2018 13:10:52
+ +0100 (CET)
+Received: from mail2.dfn-cert.de (mail2.dfn-cert.de [193.174.13.207])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Mon,  5 Mar 2018 13:10:52 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=SHA256; boundary="===============0290862207383061843=="
+From: DFN-CERT <portal@dfn-cert.de>
+Subject: =?utf-8?q?DFN-CERT-2018-0424_MariaDB=3A_Mehrere_Schwachstellen_erm=C3=B6glichen_Denial-of-Service-Angriffe_und_die_Manipulation_von_Daten_=5BLinux=5D=5BFedora=5D=5BApple=5D=5BWindows=5D?=
+Date: Mon, 5 Mar 2018 12:10:02 +0000
+To: <rz+certapple@hs-esslingen.de>
+Message-ID: <20180305121049.4844F2E0514@mail2.dfn-cert.de>
+Return-Path: dfn-adv-bounces@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;-951806;0;PM
+MIME-Version: 1.0
+
+--===============0290862207383061843==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Liebe Kolleginnen und Kollegen,
+
+bitte beachten Sie die folgende Sicherheitsmeldung.
+
+Betroffene Software:
+
+  MariaDB < 10.2.13
+  =
+
+
+Betroffene Plattformen:
+
+  Apple macOS
+  GNU/Linux
+  Microsoft Windows =
+
+  Red Hat Fedora 27
+  =
+
+
+
+Mehrere Schwachstellen in der MariaDB vor Version 10.2.13 erm=C3=B6glichen =
+einem
+entfernten, einfach authentisierten und zum Teil niedrig privilegierten
+Angreifer die Durchf=C3=BChrung verschiedener Denial-of-Service (DoS)-Angri=
+ffe
+und die Manipulation von Daten.
+
+Der Hersteller hat die MariaDB Version 10.2.13 ver=C3=B6ffentlicht und
+reimplementiert bzw. portiert mehrere Features der MySQL 5.6 und 5.7
+Versionen damit zur=C3=BCck in den aktuell stabilen Versionszweig der Maria=
+DB.
+
+F=C3=BCr die Distribution Fedora 27 steht ein Sicherheitsupdate auf diese M=
+ariaDB
+Version in Form des Paketes 'mariadb-10.2.13-1.fc27' im Status 'testing' zur
+Verf=C3=BCgung.
+
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-4a4dc47afe (Fedora 27, mariadb-10.2.13=
+-1)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-4a4dc47afe>
+
+Patch:
+
+  MariaDB 10.2.13 Release Notes
+
+  <https://mariadb.com/kb/en/library/mariadb-10213-release-notes/>
+
+
+CVE-2018-2668: Schwachstelle in Oracle MySQL Server / MariaDB erm=C3=B6glic=
+ht
+  Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Server:
+  Optimizer) in den unterst=C3=BCtzten Versionen 5.5.58 und fr=C3=BCheren, =
+5.6.38 und
+  fr=C3=BCheren sowie 5.7.20 und fr=C3=BCheren und MariaDB vor Version 10.2=
+.13 existiert
+  eine leicht auszunutzende Schwachstelle, die einem entfernten, einfach
+  authentisierten und niedrig privilegierten Angreifer mit Netzwerkzugriff
+  =C3=BCber verschiedene Protokolle erm=C3=B6glicht, MySQL Server zum H=C3=
+=A4ngen oder
+  wiederholten Absturz zu bringen (kompletter Denial-of-Service, DoS).
+
+
+CVE-2018-2665: Schwachstelle in Oracle MySQL Server / MariaDB erm=C3=B6glic=
+ht
+  Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Server:
+  Optimizer) in den unterst=C3=BCtzten Versionen 5.5.58 und fr=C3=BCheren, =
+5.6.38 und
+  fr=C3=BCheren sowie 5.7.20 und fr=C3=BCheren und MariaDB vor Version 10.2=
+.13 existiert
+  eine leicht auszunutzende Schwachstelle, die einem entfernten, einfach
+  authentisierten und niedrig privilegierten Angreifer mit Netzwerkzugriff
+  =C3=BCber verschiedene Protokolle erm=C3=B6glicht, MySQL Server zum H=C3=
+=A4ngen oder
+  wiederholten Absturz zu bringen (kompletter Denial-of-Service, DoS).
+
+
+CVE-2018-2640: Schwachstelle in Oracle MySQL Server / MariaDB erm=C3=B6glic=
+ht
+  Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Server:
+  Optimizer) in den unterst=C3=BCtzten Versionen 5.5.58 und fr=C3=BCheren, =
+5.6.38 und
+  fr=C3=BCheren sowie 5.7.20 und fr=C3=BCheren und MariaDB vor Version 10.2=
+.13 existiert
+  eine leicht auszunutzende Schwachstelle, die einem entfernten, einfach
+  authentisierten und niedrig privilegierten Angreifer mit Netzwerkzugriff
+  =C3=BCber verschiedene Protokolle erm=C3=B6glicht, MySQL Server zum H=C3=
+=A4ngen oder
+  wiederholten Absturz zu bringen (kompletter Denial-of-Service, DoS).
+
+
+CVE-2018-2622: Schwachstelle in Oracle MySQL Server / MariaDB erm=C3=B6glic=
+ht
+  Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Server: D=
+DL)
+  in den unterst=C3=BCtzten Versionen 5.5.58 und fr=C3=BCheren, 5.6.38 und =
+fr=C3=BCheren
+  sowie 5.7.20 und fr=C3=BCheren und MariaDB vor Version 10.2.13 existiert =
+eine
+  leicht auszunutzende Schwachstelle, die einem entfernten, einfach
+  authentisierten und niedrig privilegierten Angreifer mit Netzwerkzugriff
+  =C3=BCber verschiedene Protokolle erm=C3=B6glicht, MySQL Server zum H=C3=
+=A4ngen oder
+  wiederholten Absturz zu bringen (kompletter Denial-of-Service, DoS).
+
+
+CVE-2018-2612: Schwachstelle in Oracle MySQL Server / MariaDB erm=C3=B6glic=
+ht
+  Denial-of-Service-Angriff und Manipulation von Daten
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: InnoDB) in
+  den unterst=C3=BCtzten Versionen 5.6.38 und 5.7.20 sowie den jeweils fr=
+=C3=BCheren und
+  MariaDB vor Version 10.2.13 existiert eine leicht auszunutzende
+  Schwachstelle, die es einem entfernten, einfach authentisierten und hoch
+  privilegierten Angreifer mit Netzwerkzugriff =C3=BCber verschiedene Proto=
+kolle
+  erm=C3=B6glicht, unautorisiert kritische oder alle =C3=BCber MySQL Server=
+ zug=C3=A4nglichen
+  Daten zu erzeugen, zu ver=C3=A4ndern oder zu l=C3=B6schen oder MySQL Serv=
+er zum H=C3=A4ngen
+  oder wiederholten Absturz zu bringen (kompletter Denial-of-Service, DoS).
+
+
+CVE-2018-2562: Schwachstelle in Oracle MySQL Server / MariaDB erm=C3=B6glic=
+ht
+  u.a. Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Server :
+  Partition) in den unterst=C3=BCtzten Versionen 5.5.58, 5.6.38 und 5.7.19 =
+sowie
+  den jeweils fr=C3=BCheren und MariaDB vor Version 10.2.13 existiert eine =
+leicht
+  auszunutzende Schwachstelle, die es einem entfernten, einfach
+  authentisierten und niedrig privilegierten Angreifer mit Netzwerkzugriff
+  =C3=BCber verschiedene Protokolle erm=C3=B6glicht, MySQL Server zum H=C3=
+=A4ngen oder
+  wiederholten Absturz zu bringen (kompletter Denial-of-Service, DoS) oder
+  unautorisiert einige der =C3=BCber MySQL Server zug=C3=A4nglichen Daten z=
+u ver=C3=A4ndern,
+  einzuf=C3=BCgen und zu l=C3=B6schen.
+
+
+Referenzen:
+
+Dieses Advisory finden Sie auch im DFN-CERT Portal unter:
+  <https://portal.cert.dfn.de/adv/DFN-CERT-2018-0424/>
+
+Schwachstelle CVE-2018-2562 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2562>
+
+Schwachstelle CVE-2018-2612 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2612>
+
+Schwachstelle CVE-2018-2622 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2622>
+
+Schwachstelle CVE-2018-2640 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2640>
+
+Schwachstelle CVE-2018-2665 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2665>
+
+Schwachstelle CVE-2018-2668 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2668>
+
+Fedora Security Update FEDORA-2018-4a4dc47afe (Fedora 27, mariadb-10.2.13-1=
+):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-4a4dc47afe>
+
+MariaDB 10.2.13 Release Notes:
+  <https://mariadb.com/kb/en/library/mariadb-10213-release-notes/>
+
+
+(c) DFN-CERT Services GmbH, all rights reserved!
+Die Weiterverbreitung ist mit Hinweis auf den Copyrightinhaber innerhalb der
+eigenen Einrichtung erlaubt. Eine dar=C3=BCber hinausgehende Verbreitung be=
+darf
+des schriftlichen Einverst=C3=A4ndnisses des Rechteinhabers.
+
+--===============0290862207383061843==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExDzANBglghkgBZQMEAgEFADCABgkqhkiG9w0BBwEAAKCCEMYw
+ggUSMIID+qADAgECAgkA4wvV+K8l2YEwDQYJKoZIhvcNAQELBQAwgYIxCzAJBgNVBAYTAkRFMSsw
+KQYDVQQKDCJULVN5c3RlbXMgRW50ZXJwcmlzZSBTZXJ2aWNlcyBHbWJIMR8wHQYDVQQLDBZULVN5
+c3RlbXMgVHJ1c3QgQ2VudGVyMSUwIwYDVQQDDBxULVRlbGVTZWMgR2xvYmFsUm9vdCBDbGFzcyAy
+MB4XDTE2MDIyMjEzMzgyMloXDTMxMDIyMjIzNTk1OVowgZUxCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+EzxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsTB0RGTi1QS0kxLTArBgNVBAMTJERGTi1WZXJlaW4gQ2VydGlmaWNhdGlv
+biBBdXRob3JpdHkgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMtg1/9moUHN0vqH
+l4pzq5lN6mc5WqFggEcVToyVsuXPztNXS43O+FZsFVV2B+pG/cgDRWM+cNSrVICxI5y+NyipCf8F
+XRgPxJiZN7Mg9mZ4F4fCnQ7MSjLnFp2uDo0peQcAIFTcFV9Kltd4tjTTwXS1nem/wHdN6r1ZB+Ba
+L2w8pQDcNb1lDY9/Mm3yWmpLYgHurDg0WUU2SQXaeMpqbVvAgWsRzNI8qIv4cRrKO+KA3Ra0Z3qL
+NupOkSk9s1FcragMvp0049ENF4N1xDkesJQLEvHVaY4l9Lg9K7/AjsMeO6W/VRCrKq4Xl14zzsjz
+9AkH4wKGMUZrAcUQDBHHWekCAwEAAaOCAXQwggFwMA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQU
+k+PYMiba1fFKpZFK4OpL4qIMz+EwHwYDVR0jBBgwFoAUv1kgNgB5oKAia4zV8mHSuCzLgkowEgYD
+VR0TAQH/BAgwBgEB/wIBAjAzBgNVHSAELDAqMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGC
+LB4wCAYGZ4EMAQICMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6Ly9wa2kwMzM2LnRlbGVzZWMuZGUv
+cmwvVGVsZVNlY19HbG9iYWxSb290X0NsYXNzXzIuY3JsMIGGBggrBgEFBQcBAQR6MHgwLAYIKwYB
+BQUHMAGGIGh0dHA6Ly9vY3NwMDMzNi50ZWxlc2VjLmRlL29jc3ByMEgGCCsGAQUFBzAChjxodHRw
+Oi8vcGtpMDMzNi50ZWxlc2VjLmRlL2NydC9UZWxlU2VjX0dsb2JhbFJvb3RfQ2xhc3NfMi5jZXIw
+DQYJKoZIhvcNAQELBQADggEBAIcL/z4Cm2XIVi3WO5qYi3FP2ropqiH5Ri71sqQPrhE4eTizDnS6
+dl2e6BiClmLbTDPo3flq3zK9LExHYFV/53RrtCyD2HlrtrdNUAtmB7Xts5et6u5/MOaZ/SLick0+
+hFvu+c+Z6n/XUjkurJgARH5pO7917tALOxrN5fcPImxHhPalR6D90Bo0fa3SPXez7vTXTf/D6OWS
+T1k+kEcQSrCFWMBvf/iu7QhCnh7U3xQuTY+8npTD5+32GPg8SecmqKc22CzeIs2LgtjZeOJVEqM7
+h0S2EQvVDFKvaYwPBt/QolOLV5h7z/0HJPT8vcP9SpIClxvyt7bPZYoaorVyGTkwggWsMIIElKAD
+AgECAgcbY7rQHiw9MA0GCSqGSIb3DQEBCwUAMIGVMQswCQYDVQQGEwJERTFFMEMGA1UEChM8VmVy
+ZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYu
+MRAwDgYDVQQLEwdERk4tUEtJMS0wKwYDVQQDEyRERk4tVmVyZWluIENlcnRpZmljYXRpb24gQXV0
+aG9yaXR5IDIwHhcNMTYwNTI0MTEzODQwWhcNMzEwMjIyMjM1OTU5WjCBjTELMAkGA1UEBhMCREUx
+RTBDBgNVBAoMPFZlcmVpbiB6dXIgRm9lcmRlcnVuZyBlaW5lcyBEZXV0c2NoZW4gRm9yc2NodW5n
+c25ldHplcyBlLiBWLjEQMA4GA1UECwwHREZOLVBLSTElMCMGA1UEAwwcREZOLVZlcmVpbiBHbG9i
+YWwgSXNzdWluZyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ07eRxH3h+Gy8Zp
+1xCeOdfZojDbchwFfylfS2jxrRnWTOFrG7ELf6Gr4HuLi9gtzm6IOhDuV+UefwRRNuu6cG1joL6W
+LkDh0YNMZj0cZGnlm6Stcq5oOVGHecwX064vXWNxSzl660Knl5BpBb+Q/6RAcL0D57+eGIgfn5mI
+TQ5HjUhfZZkQ0tkqSe3BuS0dnxLLFdM/fx5ULzquk1enfnjK1UriGuXtQX1TX8izKvWKMKztFwUk
+P7agCwf9TRqaA1KgNpzeJIdl5Of6x5ZzJBTN0OgbaJ4YWa52fvfRCng8h0uwN89Tyjo4EPPLR22M
+ZD08WkVKusqAfLjz56dMTM0CAwEAAaOCAgUwggIBMBIGA1UdEwEB/wQIMAYBAf8CAQEwDgYDVR0P
+AQH/BAQDAgEGMCkGA1UdIAQiMCAwDQYLKwYBBAGBrSGCLB4wDwYNKwYBBAGBrSGCLAEBBDAdBgNV
+HQ4EFgQUazqYi/nyU4na4K2yMh4JH+iqO3QwHwYDVR0jBBgwFoAUk+PYMiba1fFKpZFK4OpL4qIM
+z+EwgY8GA1UdHwSBhzCBhDBAoD6gPIY6aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9v
+dC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDBAoD6gPIY6aHR0cDovL2NkcDIucGNhLmRmbi5kZS9n
+bG9iYWwtcm9vdC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB3QYIKwYBBQUHAQEEgdAwgc0wMwYI
+KwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBKBggrBgEF
+BQcwAoY+aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9vdC1nMi1jYS9wdWIvY2FjZXJ0
+L2NhY2VydC5jcnQwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXJv
+b3QtZzItY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCBeEWkTqR/
+DlXwCbFqPnjMaDWpHPOVnj/z+N9rOHeJLI21rT7H8pTNoAauusyosa0zCLYkhmI2THhuUPDVbmCN
+T1IxQ5dGdfBi5G5mUcFCMWdQ5UnnOR7Ln8qGSN4IFP8VSytmm6A4nwDO/afr0X9XLchMX9wQEZc+
+lgQCXISoKTlslPwQkgZ7nu7YRrQbtQMMONncsKk/cQYLsgMHM8KNSGMlJTx6e1du94oFOO+4oK4v
+9NsH1VuEGMGpuEvObJAaguS5Pfp38dIfMwK/U+d2+dwmJUFvL6Yb+qQTkPp8ftkLYF3sv8pBoGH7
+EUkp2KgtdRXYShjqFu9VNCIaE40GMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3
+DQEBCwUAMIGNMQswCQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVp
+bmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUw
+IwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIw
+MTIwNDExNDExN1owgaIxCzAJBgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdI
+YW1idXJnMR8wHQYDVQQKDBZERk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAb
+BgNVBAMMFEdSUDogREZOLUNFUlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNl
+cnQuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0
+Yw0ZS9sOZLRfN6nFe6HOj8AzNO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZP
+juBRtsi+hKSvncR7oCNPDigsGbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVm
+W27fs5I61rP66DkqgrRXZh0wAZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvt
+sAJ2VXFhNNbtRY9XTDXi/Yar5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoG
+eUKrwG5TQM9FAgMBAAGjggJDMIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYB
+BAGBrSGCLAEBBAMGMBEGDysGAQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIG
+wDATBgNVHSUEDDAKBggrBgEFBQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYD
+VR0jBBgwFoAUazqYi/nyU4na4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0
+LmRlMIGNBgNVHR8EgYUwgYIwP6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWds
+b2JhbC1nMi9wdWIvY3JsL2NhY3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9k
+Zm4tY2EtZ2xvYmFsLWcyL3B1Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggr
+BgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9i
+YWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsX
+u7Gk4M32/Rs2jdf9rTw3/AagmeXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JH
+hwv5JSdyzM2/pG63uRi/WJ7zVYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB
+8Qb+p3YVTa9vcnmNpci1SYtM9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqoo
+GuMgkeB5hi2xUcxKhR8uUYhNftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYF
+S2sAbrrt2PhOtTHm5o51SbfIMYICYDCCAlwCAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+DDxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsMB0RGTi1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3Vp
+bmcgQ0ECDB5GA2zY8pjckgclSzANBglghkgBZQMEAgEFAKCBkzAYBgkqhkiG9w0BCQMxCwYJKoZI
+hvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xODAzMDUxMjEwMjhaMCgGCSqGSIb3DQEJDzEbMBkwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMC8GCSqGSIb3DQEJBDEiBCB94oAbpzDffpnlunHWeTJ6bzTg
+nBp+GUe3eNNZPBBdgDANBgkqhkiG9w0BAQEFAASCAQBRjSb5NHqqGmuhLTNGULYhPQ2UGlpLBgXd
+DB/MnsAVAHtYOrFEe10lH4wnp4gLBNl9CaQaq37fxvZZXhw7bb0RNrvrgKvHR1XVvxUaD7NRtxp7
+0Aud9B+8d3RQEN8/GxIpK1GMPoF2tFM020mvG0p2NXVj2JLpZ4ZAwtYeufuFDunWcSUHDf0H5/zu
+2jtFwUAMrQFlC1N6Gvhbpsqmcoh/PWVPqr7rzCvYnUJPnE9OiNgNRbO7pw+4EoqLs31gPtZqC7NO
+ed81LLNPtGRDKkulb0mn+54rznmlXdxBIUGuNi5S1E+TBLIOBWy4/HPMPtmBI7TJwJCfgNlIMrx8
+a8wCAAAAAAAA
+
+--===============0290862207383061843==--

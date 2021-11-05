@@ -1,0 +1,303 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.389.1; Thu, 22 Mar
+ 2018 15:31:01 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id 50CF525A1D; Thu, 22 Mar 2018
+ 15:31:01 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id 4401925A1A	for
+ <rz+certapple@hs-esslingen.de>; Thu, 22 Mar 2018 15:31:01 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.011
+X-Spam-Level:
+X-Spam-Status: No, score=-4.011 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, ENGLISH_UCE_SUBJECT=2.899, RCVD_IN_DNSWL_HI=-5,
+	T_RP_MATCHES_RCVD=-0.01] autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ m3ZEgAYwL6cy for <rz+certapple@hs-esslingen.de>;	Thu, 22 Mar 2018 15:31:00
+ +0100 (CET)
+Received: from irt-mx.dfn-cert.de (irt-mx.dfn-cert.de [193.174.13.208])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Thu, 22 Mar 2018 15:30:59 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=sha-256; boundary="===============9181154667886746987=="
+Subject: =?utf-8?q?=5BADV=5D_UPDATE=3A_DFN-CERT-2018-0547_Google_Chrome=2C_?=
+ =?utf-8?q?Chromium=3A_Mehrere_Schwachstellen_erm=C3=B6glichen_nicht_weiter_?=
+ =?utf-8?q?spezifizierte_Angriffe?=
+To: <rz+certapple@hs-esslingen.de>
+From: =?utf-8?q?DFN-CERT_Portal?= <portal@dfn-cert.de>
+Message-ID: <80ccd2d6-788c-49ef-8ce3-79ac92cade9a@dfn-cert.de>
+Date: Thu, 22 Mar 2018 14:30:03 +0000
+Return-Path: portal@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;297869570;0;PM
+MIME-Version: 1.0
+
+--===============9181154667886746987==
+Content-Type: multipart/mixed; boundary="===============5330217368425575863=="
+
+--===============5330217368425575863==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+TGllYmUgS29sbGVnaW5uZW4gdW5kIEtvbGxlZ2VuLAoKYml0dGUgYmVhY2h0ZW4gU2llIGRpZSBJ
+bmZvcm1hdGlvbmVuIHp1IGRlbiB2ZXJmw7xnYmFyZW4gU2ljaGVyaGVpdHN1cGRhdGVzCm9kZXIg
+V29ya2Fyb3VuZHMgaW4gZGVyIGZvbGdlbmRlbiBTaWNoZXJoZWl0c21lbGR1bmcuCgpIaXN0b3Jp
+ZToKClZlcnNpb24gMiAoMjIuMDMuMTgpOgogICAgRsO8ciBvcGVuU1VTRSBMZWFwIDQyLjMgc3Rl
+aHQgZWluIFNpY2hlcmhlaXRzdXBkYXRlIGbDvHIgQ2hyb21pdW0gYXVmCiAgICBWZXJzaW9uIDY1
+LjAuMzMyNS4xODEgenVyIFZlcmbDvGd1bmcuClZlcnNpb24gMSAoMjEuMDMuMTgpOgogICAgTmV1
+ZXMgQWR2aXNvcnkKCgpCZXRyb2ZmZW5lIFNvZnR3YXJlOgoKICBHb29nbGUgQ2hyb21lIDwgNjUu
+MC4zMzI1LjE4MQogIENocm9taXVtIDwgNjUuMC4zMzI1LjE4MQoKCkJldHJvZmZlbmUgUGxhdHRm
+b3JtZW46CgogIG9wZW5TVVNFIExlYXAgNDIuMwogIE1pY3Jvc29mdCBXaW5kb3dzCiAgR05VL0xp
+bnV4CiAgQXBwbGUgbWFjT1MKCgoKQmV3ZXJ0dW5nOgoKR2VzYW10cmlzaWtvIChEQUYpOiAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBIb2NoCgpCZXdlcnR1bmcgZ2Vtw6TD
+nyBDVlNTIHYyOgpCYXNpc3Jpc2lrbyAoQ1ZTUyBCYXNlIFNjb3JlKTogICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICA2LjgKQWt0dWVsbGVzIFNjaGFkZW5zcG90ZW56aWFsIChUZW1wb3JhbCBT
+Y29yZSk6ICAgICAgICAgICAgICAgNS4zCgpBbmdyaWZmc3Zla3RvciAoQVYpOiAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgTmV0endlcmsKQW5ncmlmZnNrb21wbGV4aXTDpHQgKEFD
+KTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1pdHRlbApBdXRoZW50aWZpemllcnVu
+ZyAoQXUpOiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgS2VpbmUKCkF1c3dpcmt1
+bmc6ClZlcnRyYXVsaWNoa2VpdCAoQyk6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+IFRlaWx3ZWlzZQpJbnRlZ3JpdMOkdCAoSSk6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgVGVpbHdlaXNlClZlcmbDvGdiYXJrZWl0IChBKTogICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICBUZWlsd2Vpc2UKCkF1c251dHpiYXJrZWl0IChFKTogICAgICAgICAg
+ICAgICAgICBQcm9vZi1vZi1Db25jZXB0IGV4aXN0aWVydApWZXJmw7xnYmFyZSBHZWdlbm1hw59u
+YWhtZSAoUkwpOiAgICAgICAgICAgICAgICAgIE9mZml6aWVsbGVyIEZpeApCZXJpY2h0c3p1dmVy
+bMOkc3NpZ2tlaXQgKFJDKTogICAgICAgICAgICAgICAgICAgICAgICAgQmVzdMOkdGlndAoKVmVr
+dG9yOiAgICAgICAgICAgICBBVjpOL0FDOk0vQXU6Ti9DOlAvSTpQL0E6UC9FOlBPQy9STDpPRi9S
+QzpDCgoKRWluIEFuZ3JlaWZlciBrYW5uIGF1ZmdydW5kIG1laHJlcmVyIFNjaHdhY2hzdGVsbGVu
+IGluIEdvb2dsZSBDaHJvbWUgdW5kCkNocm9taXVtIHZlcnNjaGllZGVuZSwgbmljaHQgd2VpdGVy
+IHNwZXppZml6aWVydGUgQW5ncmlmZmUgYXVzZsO8aHJlbi4gSW4gZGVyClZlcmdhbmdlbmhlaXQg
+a29ubnRlbiBkZXJhcnRpZ2UgU2Nod2FjaHN0ZWxsZW4genVtZWlzdCB2b24gZWluZW0gZW50ZmVy
+bnRlbgp1bmQgbmljaHQgYXV0aGVudGlzaWVydGVuIEFuZ3JlaWZlciBhdXNnZW51dHp0IHdlcmRl
+bi4KCkdvb2dsZSBzdGVsbHQgQ2hyb21lIDY1LjAuMzMyNS4xODEgZsO8ciBXaW5kb3dzLCBtYWNP
+UyB1bmQgTGludXggYWxzClNpY2hlcmhlaXRzdXBkYXRlIHp1ciBWZXJmw7xndW5nLiBXZWl0ZXJl
+IEluZm9ybWF0aW9uZW4genUgZGVuIFNjaHdhY2hzdGVsbGVuCndlcmRlbiBlcnN0IHZlcsO2ZmZl
+bnRsaWNodCwgd2VubiBlaW5lIHNpZ25pZmlrYW50ZSBBbnphaGwgdm9uIEJlbnV0emVybiBkYXMK
+U2ljaGVyaGVpdHN1cGRhdGUgaW5zdGFsbGllcnQgaGF0LiBEaWUgU2Nod2FjaHN0ZWxsZW4gd2Vy
+ZGVuIHZvbSBIZXJzdGVsbGVyCmFscyBzY2h3ZXJ3aWVnZW5kIChTZXZlcml0eSAnaGlnaCcpIGVp
+bmdlc3R1ZnQuCgoKR09PR0xFLUJVRy1JRC04MjM1NTMgU2Nod2FjaHN0ZWxsZW4gaW4gR29vZ2xl
+IENocm9tZSB1bmQgQ2hyb21pdW0gZXJtw7ZnbGljaGVuIHVuc3BlemlmaXNjaGUKICBBbmdyaWZm
+ZQoKICBJbiBHb29nbGUgQ2hyb21lIHVuZCBDaHJvbWl1bSBleGlzdGllcmVuIG1laHJlcmUgbmlj
+aHQgd2VpdGVyIHNwZXppZml6aWVydGUKICBTY2h3YWNoc3RlbGxlbiwgZGllIGluIGludGVybmVu
+IEF1ZGl0cywgw7xiZXIgRnV6emluZyBvZGVyIGF1ZiB2ZXJnbGVpY2hiYXJlCiAgQXJ0IHVuZCBX
+ZWlzZSBnZWZ1bmRlbiB3dXJkZW4uCgoKTGlzdGUgZGVyIFNjaHdhY2hzdGVsbGVuOgogIEdPT0dM
+RS1CVUctSUQtODIzNTUzCgoKUmVmZXJlbnplbjoKCkRpZXNlcyBBZHZpc29yeSBmaW5kZW4gU2ll
+IGF1Y2ggaW0gREZOLUNFUlQgUG9ydGFsIHVudGVyOgpbaHR0cHM6Ly9wb3J0YWwtbmV1LmNlcnQu
+ZGZuLmRlL2Fkdmlzb3JpZXMvZGV0YWlscy8yMDE4LTA1NDddCgoKWnVzw6R0emxpY2hlIEluZm9y
+bWF0aW9uZW46CgogIENocm9tZSAvIENocm9taXVtIEd1aWRlbGluZXMgZm9yIFNlY3VyaXR5IElz
+c3VlcwogICAgaHR0cHM6Ly9jaHJvbWl1bS5nb29nbGVzb3VyY2UuY29tL2Nocm9taXVtL3NyYy8r
+L21hc3Rlci9kb2NzL3NlY3VyaXR5L3NldmVyaXR5LWd1aWRlbGluZXMubWQKCiAgQ2hyb21pdW0g
+SXNzdWUgIzgyMzU1MyAtIFRyYWNraW5nIGJ1ZyBmb3IgaW50ZXJuYWwgZml4ZXM6IFJlbGVhc2Ut
+Mi1NNjUKICAgIGh0dHBzOi8vYnVncy5jaHJvbWl1bS5vcmcvcC9jaHJvbWl1bS9pc3N1ZXMvZGV0
+YWlsP2lkPTgyMzU1MwoKUGF0Y2hlczoKCiAgQ2hyb21lIFN0YWJsZSBDaGFubmVsIFVwZGF0ZSA2
+NS4wLjMzMjUuMTgxLCAyMC4gTcOkcnogMjAxOAogICAgaHR0cHM6Ly9jaHJvbWVyZWxlYXNlcy5n
+b29nbGVibG9nLmNvbS8yMDE4LzAzL3N0YWJsZS1jaGFubmVsLXVwZGF0ZS1mb3ItZGVza3RvcF8y
+MC5odG1sCgogIG9wZW5TVVNFIFNlY3VyaXR5IFVwZGF0ZSBvcGVuU1VTRS1TVS0yMDE4OjA3NzMt
+MQogICAgaHR0cHM6Ly9saXN0cy5vcGVuc3VzZS5vcmcvb3BlbnN1c2UtdXBkYXRlcy8yMDE4LTAz
+L21zZzAwMDc3Lmh0bWwKCgpNaXQgZnJldW5kbGljaGVuIEdyw7zDn2VuLApJaHIgREZOLUNFUlQg
+SW5jaWRlbnQgUmVzcG9uc2UgVGVhbQoKCi0tIAooYykgREZOLUNFUlQgU2VydmljZXMgR21iSCwg
+YWxsIHJpZ2h0cyByZXNlcnZlZCEKRGllIFdlaXRlcnZlcmJyZWl0dW5nIGlzdCBtaXQgSGlud2Vp
+cyBhdWYgZGVuIENvcHlyaWdodGluaGFiZXIgaW5uZXJoYWxiIGRlcgplaWdlbmVuIEVpbnJpY2h0
+dW5nIGVybGF1YnQuIEVpbmUgZGFyw7xiZXIgaGluYXVzZ2VoZW5kZSBWZXJicmVpdHVuZyBiZWRh
+cmYKZGVzIHNjaHJpZnRsaWNoZW4gRWludmVyc3TDpG5kbmlzc2VzIGRlcyBSZWNodGVpbmhhYmVy
+cy4=
+
+--===============5330217368425575863==
+Content-Type: application/json; charset="UTF-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment; filename="2018-0547.json"
+
+{
+=20=20"version":=20"2",=20
+=20=20"ref_num":=20"2018-0547",=20
+=20=20"fieldsets":=20{
+=20=20=20=20"scoring":=20{
+=20=20=20=20=20=20"daf":=20{
+=20=20=20=20=20=20=20=20"risk":=20"high"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cvss":=20{
+=20=20=20=20=20=20=20=20"temporal_score":=20"5.3",=20
+=20=20=20=20=20=20=20=20"vector":=20"AV:N/AC:M/Au:N/C:P/I:P/A:P/E:POC/RL:OF=
+/RC:C",=20
+=20=20=20=20=20=20=20=20"base_score":=20"6.8",=20
+=20=20=20=20=20=20=20=20"exploitability_score":=20"8.6",=20
+=20=20=20=20=20=20=20=20"impact_score":=20"6.4"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cpes":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"openSUSE=20Leap=2042.3\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:novell:opensuse_leap:42.3",=
+=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Microsoft=20Windows=20",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:microsoft:windows",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"GNU/Linux",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:gnu:linux",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Apple=20macOS",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:apple:macos",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Google=20Chrome=20<=2065.0.=
+3325.181\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:google:chrome:65.0.3325.181"=
+,=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Chromium=20<=2065.0.3325.18=
+1\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:chromium_project:chromium:65=
+.0.3325.181",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20},=20
+=20=20=20=20"basic":=20{
+=20=20=20=20=20=20"description":=20"Ein=20Angreifer=20kann=20aufgrund=20meh=
+rerer=20Schwachstellen=20in=20Google=20Chrome=20und=20Chromium=20verschiede=
+ne,=20nicht=20weiter=20spezifizierte=20Angriffe=20ausf\u00fchren.=20In=20de=
+r=20Vergangenheit=20konnten=20derartige=20Schwachstellen=20zumeist=20von=20=
+einem=20entfernten=20und=20nicht=20authentisierten=20Angreifer=20ausgenutzt=
+=20werden.\n\nGoogle=20stellt=20Chrome=2065.0.3325.181=20f\u00fcr=20Windows=
+,=20macOS=20und=20Linux=20als=20Sicherheitsupdate=20zur=20Verf\u00fcgung.=
+=20Weitere=20Informationen=20zu=20den=20Schwachstellen=20werden=20erst=20ve=
+r\u00f6ffentlicht,=20wenn=20eine=20signifikante=20Anzahl=20von=20Benutzern=
+=20das=20Sicherheitsupdate=20installiert=20hat.=20Die=20Schwachstellen=20we=
+rden=20vom=20Hersteller=20als=20schwerwiegend=20(Severity=20'high')=20einge=
+stuft.",=20
+=20=20=20=20=20=20"workaround":=20null,=20
+=20=20=20=20=20=20"created":=20"20180321T11:30:26",=20
+=20=20=20=20=20=20"vulnerabilities":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"title":=20"Schwachstellen=20in=20Google=20Ch=
+rome=20und=20Chromium=20erm\u00f6glichen=20unspezifische=20Angriffe",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"In=20Google=20Chrome=20und=
+=20Chromium=20existieren=20mehrere=20nicht=20weiter=20spezifizierte=20Schwa=
+chstellen,=20die=20in=20internen=20Audits,=20\u00fcber=20Fuzzing=20oder=20a=
+uf=20vergleichbare=20Art=20und=20Weise=20gefunden=20wurden.",=20
+=20=20=20=20=20=20=20=20=20=20"name":=20"GOOGLE-BUG-ID-823553"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"title":=20"Google=20Chrome,=20Chromium:=20Mehrere=20Schw=
+achstellen=20erm\u00f6glichen=20nicht=20weiter=20spezifizierte=20Angriffe",=
+=20
+=20=20=20=20=20=20"references":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://chromium.googlesource.com/c=
+hromium/src/+/master/docs/security/severity-guidelines.md",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Chrome=20/=20Chromium=20Gui=
+delines=20for=20Security=20Issues"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://chromereleases.googleblog.c=
+om/2018/03/stable-channel-update-for-desktop_20.html",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Chrome=20Stable=20Channel=
+=20Update=2065.0.3325.181,=2020.=20M\u00e4rz=202018"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://bugs.chromium.org/p/chromiu=
+m/issues/detail?id=3D823553",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Chromium=20Issue=20#823553=
+=20-=20Tracking=20bug=20for=20internal=20fixes:=20Release-2-M65"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://lists.opensuse.org/opensuse=
+-updates/2018-03/msg00077.html",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"openSUSE=20Security=20Updat=
+e=20openSUSE-SU-2018:0773-1"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"history":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"timestamp":=20"20180322T15:26:11",=20
+=20=20=20=20=20=20=20=20=20=20"version":=20"2",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"F\u00fcr=20openSUSE=20Leap=
+=2042.3=20steht=20ein=20Sicherheitsupdate=20f\u00fcr=20Chromium=20auf=20Ver=
+sion=2065.0.3325.181=20zur=20Verf\u00fcgung."
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"timestamp":=20"20180321T14:42:31",=20
+=20=20=20=20=20=20=20=20=20=20"version":=20"1",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Neues=20Advisory"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20}
+=20=20}
+}
+--===============5330217368425575863==--
+
+--===============9181154667886746987==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIII7QYJKoZIhvcNAQcCoIII3jCCCNoCAQExDzANBglghkgBZQMEAgEFADALBgkqhkiG9w0BBwGg
+ggYAMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3DQEBCwUAMIGNMQswCQYDVQQG
+EwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3Jz
+Y2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUwIwYDVQQDDBxERk4tVmVyZWlu
+IEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIwMTIwNDExNDExN1owgaIxCzAJ
+BgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdIYW1idXJnMR8wHQYDVQQKDBZE
+Rk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAbBgNVBAMMFEdSUDogREZOLUNF
+UlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNlcnQuZGUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0Yw0ZS9sOZLRfN6nFe6HOj8Az
+NO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZPjuBRtsi+hKSvncR7oCNPDigs
+GbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVmW27fs5I61rP66DkqgrRXZh0w
+AZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvtsAJ2VXFhNNbtRY9XTDXi/Yar
+5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoGeUKrwG5TQM9FAgMBAAGjggJD
+MIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYBBAGBrSGCLAEBBAMGMBEGDysG
+AQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIGwDATBgNVHSUEDDAKBggrBgEF
+BQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYDVR0jBBgwFoAUazqYi/nyU4na
+4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0LmRlMIGNBgNVHR8EgYUwgYIw
+P6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWdsb2JhbC1nMi9wdWIvY3JsL2Nh
+Y3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9kZm4tY2EtZ2xvYmFsLWcyL3B1
+Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggrBgEFBQcwAYYnaHR0cDovL29j
+c3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMS5w
+Y2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsXu7Gk4M32/Rs2jdf9rTw3/Aag
+meXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JHhwv5JSdyzM2/pG63uRi/WJ7z
+VYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB8Qb+p3YVTa9vcnmNpci1SYtM
+9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqooGuMgkeB5hi2xUcxKhR8uUYhN
+ftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYFS2sAbrrt2PhOtTHm5o51SbfI
+MYICsTCCAq0CAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQKDDxWZXJlaW4genVyIEZvZXJk
+ZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMgZS4gVi4xEDAOBgNVBAsMB0RG
+Ti1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3VpbmcgQ0ECDB5GA2zY8pjckgcl
+SzANBglghkgBZQMEAgEFAKCB5DAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJ
+BTEPFw0xODAzMjIxNDMwNThaMC8GCSqGSIb3DQEJBDEiBCCkrMD2QhpFBbtP7/qjeYzvEdOTNqZT
+RFqSKLWRAyk5ETB5BgkqhkiG9w0BCQ8xbDBqMAsGCWCGSAFlAwQBKjALBglghkgBZQMEARYwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMA4GCCqGSIb3DQMCAgIAgDANBggqhkiG9w0DAgIBQDAHBgUr
+DgMCBzANBggqhkiG9w0DAgIBKDANBgkqhkiG9w0BAQEFAASCAQB0zTGoUVKqHuFd/EnGRsLrq+3o
+PaH0YkOdDjaim2eyJyxJ4p3xdCLNa5hIewZFof2d+uvFEKb9RhS2EgTAH9ing6dXy5HZOuVHbsYF
+aY0FVEkGu4GfdCUjqSXs8evWRl0DBKbr2C809Gu0fip6w2TBKvwgE/lLQ0jwt+wBc2FtZqM4qer6
+2RNAP1ucDThVE/HRhcktUk+iomaOUxIFOMBNpcpO+zBczbZRpd8/S+m92GB1RsRRnl1ZyVUggXpm
+ovNPlXkih78xOnbA4B2wOz+bO45qY9fVjNIsmzkYMyvijceZ0k6URCBc/BfFAESNoXu861KWwF0u
+KUjwOxAKS/Ll
+
+--===============9181154667886746987==--

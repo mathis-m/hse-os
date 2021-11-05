@@ -1,0 +1,364 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Fri, 16 Mar
+ 2018 12:41:38 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id 50A9D25A15; Fri, 16 Mar 2018
+ 12:41:38 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id 450C325A12	for
+ <rz+certapple@hs-esslingen.de>; Fri, 16 Mar 2018 12:41:38 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.011
+X-Spam-Level:
+X-Spam-Status: No, score=-4.011 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, ENGLISH_UCE_SUBJECT=2.899, RCVD_IN_DNSWL_HI=-5,
+	T_RP_MATCHES_RCVD=-0.01] autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ 6wqnx162Fr5G for <rz+certapple@hs-esslingen.de>;	Fri, 16 Mar 2018 12:41:37
+ +0100 (CET)
+Received: from irt-mx.dfn-cert.de (irt-mx.dfn-cert.de [193.174.13.208])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Fri, 16 Mar 2018 12:41:36 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=sha-256; boundary="===============4977047242565073786=="
+Subject: =?utf-8?q?=5BADV=5D_DFN-CERT-2018-0514_VMware_Workstation=2C_Fusio?=
+ =?utf-8?q?n=3A_Schwachstelle_erm=C3=B6glicht_Denial-of-Service-Angriff?=
+To: <rz+certapple@hs-esslingen.de>
+From: =?utf-8?q?DFN-CERT_Portal?= <portal@dfn-cert.de>
+Message-ID: <1e2f5ece-7cc7-4fdf-9a25-66806710e2f5@dfn-cert.de>
+Date: Fri, 16 Mar 2018 11:40:09 +0000
+Return-Path: portal@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;297729026;0;PM
+MIME-Version: 1.0
+
+--===============4977047242565073786==
+Content-Type: multipart/mixed; boundary="===============6601699845134843691=="
+
+--===============6601699845134843691==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+TGllYmUgS29sbGVnaW5uZW4gdW5kIEtvbGxlZ2VuLAoKYml0dGUgYmVhY2h0ZW4gU2llIGRpZSBJ
+bmZvcm1hdGlvbmVuIHp1IGRlbiB2ZXJmw7xnYmFyZW4gU2ljaGVyaGVpdHN1cGRhdGVzCm9kZXIg
+V29ya2Fyb3VuZHMgaW4gZGVyIGZvbGdlbmRlbiBTaWNoZXJoZWl0c21lbGR1bmcuCgpIaXN0b3Jp
+ZToKClZlcnNpb24gMSAoMTYuMDMuMTgpOgogICAgTmV1ZXMgQWR2aXNvcnkKCgpCZXRyb2ZmZW5l
+IFNvZnR3YXJlOgoKICBWTXdhcmUgV29ya3N0YXRpb24gUHJvIDE0LngKICBWTXdhcmUgV29ya3N0
+YXRpb24gUGxheWVyIDE0LngKICBWTXdhcmUgV29ya3N0YXRpb24gPCBQcm8gMTQuMS4xCiAgVk13
+YXJlIFdvcmtzdGF0aW9uIDwgUGxheWVyIDE0LjEuMQogIFZNd2FyZSBXb3Jrc3RhdGlvbiBQcm8g
+MTIueAogIFZNd2FyZSBXb3Jrc3RhdGlvbiBQbGF5ZXIgMTIueAogIFZNd2FyZSBGdXNpb24gUHJv
+IDEwLngKICBWTXdhcmUgRnVzaW9uIDEwLngKICBWTXdhcmUgRnVzaW9uIDwgUHJvIDEwLjEuMQog
+IFZNd2FyZSBGdXNpb24gPCAxMC4xLjEKICBWTXdhcmUgRnVzaW9uIFBybyA4LngKICBWTXdhcmUg
+RnVzaW9uIDgueAoKCkJldHJvZmZlbmUgUGxhdHRmb3JtZW46CgogIE1pY3Jvc29mdCBXaW5kb3dz
+CiAgR05VL0xpbnV4CiAgQXBwbGUgbWFjT1MKCgoKQmV3ZXJ0dW5nOgoKR2VzYW10cmlzaWtvIChE
+QUYpOiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTWl0dGVsCgpCZXdlcnR1
+bmcgZ2Vtw6TDnyBDVlNTIHYyOgpCYXNpc3Jpc2lrbyAoQ1ZTUyBCYXNlIFNjb3JlKTogICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICA3LjgKQWt0dWVsbGVzIFNjaGFkZW5zcG90ZW56aWFsIChU
+ZW1wb3JhbCBTY29yZSk6ICAgICAgICAgICAgICAgNi4xCgpBbmdyaWZmc3Zla3RvciAoQVYpOiAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTmV0endlcmsKQW5ncmlmZnNrb21wbGV4
+aXTDpHQgKEFDKTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTmllZHJpZwpBdXRoZW50
+aWZpemllcnVuZyAoQXUpOiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgS2VpbmUK
+CkF1c3dpcmt1bmc6ClZlcnRyYXVsaWNoa2VpdCAoQyk6ICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICBLZWluZQpJbnRlZ3JpdMOkdCAoSSk6ICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgIEtlaW5lClZlcmbDvGdiYXJrZWl0IChBKTogICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgS29tcGxldHQKCkF1c251dHpiYXJrZWl0IChFKTog
+ICAgICAgICAgICAgICAgICBQcm9vZi1vZi1Db25jZXB0IGV4aXN0aWVydApWZXJmw7xnYmFyZSBH
+ZWdlbm1hw59uYWhtZSAoUkwpOiAgICAgICAgICAgICAgICAgIE9mZml6aWVsbGVyIEZpeApCZXJp
+Y2h0c3p1dmVybMOkc3NpZ2tlaXQgKFJDKTogICAgICAgICAgICAgICAgICAgICAgICAgQmVzdMOk
+dGlndAoKVmVrdG9yOiAgICAgICAgICAgICBBVjpOL0FDOkwvQXU6Ti9DOk4vSTpOL0E6Qy9FOlBP
+Qy9STDpPRi9SQzpDCgoKRWluZSBTY2h3YWNoc3RlbGxlIGluIFZNd2FyZSBXb3Jrc3RhdGlvbiBz
+b3dpZSBGdXNpb24gZXJtw7ZnbGljaHQgZXMgZWluZW0KZW50ZmVybnRlbiwgbmljaHQgYXV0aGVu
+dGlzaWVydGVuIEFuZ3JlaWZlciBlaW5lbiBEZW5pYWwtb2YtU2VydmljZS1BbmdyaWZmCmF1c3p1
+ZsO8aHJlbi4KCkRlciBIZXJzdGVsbGVyIHN0ZWxsdCBmw7xyIFdvcmtzdGF0aW9uIDE0LnggZGll
+IFZlcnNpb24gMTQuMS4xIHNvd2llIGbDvHIKRnVzaW9uIDEwLnggZGllIFZlcnNpb24gMTAuMS4x
+IHp1ciBCZWhlYnVuZyBkZXIgU2Nod2FjaHN0ZWxsZSB6dXIgVmVyZsO8Z3VuZy4KWnVyIE1pdGln
+YXRpb24gZGllc2VyIFNjaHdhY2hzdGVsbGUgZsO8ciBkaWUgVmVyc2lvbnN6d2VpZ2UgV29ya3N0
+YXRpb24gMTIueAp1bmQgRnVzaW9uIDgueCB3aXJkIGF1ZiBkZW4gV29ya2Fyb3VuZCBkZXMgSGVy
+c3RlbGxlcnMgdmVyd2llc2VuIChzaWVoZQpWTXdhcmUgQXJ0aWtlbCA1MjkzNCkuCgoKQ1ZFLTIw
+MTgtNjk1NyBTY2h3YWNoc3RlbGxlIGluIFZNd2FyZSBXb3Jrc3RhdGlvbiB1bmQgRnVzaW9uIGVy
+bcO2Z2xpY2h0IERlbmlhbC1vZi1TZXJ2aWNlLQogIEFuZ3JpZmYKCiAgSW4gVk13YXJlIFdvcmtz
+dGF0aW9uIGltIGtvbXBsZXR0ZW4gVmVyc2lvbnN6d2VpZyAxMi54IHNvd2llIGltCiAgVmVyc2lv
+bnN6d2VpZyAxNC54IGJpcyBpbmtsdXNpdmUgMTQuMS4wIHVuZCBWTXdhcmUgRnVzaW9uIGltIGtv
+bXBsZXR0ZW4KICBWZXJzaW9uc3p3ZWlnIDgueCBzb3dpZSBpbSBWZXJzaW9uc3p3ZWlnIDEwLngg
+YmlzIGlua2x1c2l2ZSAxMC4xLjAgZXhpc3RpZXJ0CiAgZWluZSBTY2h3YWNoc3RlbGxlLiBFaW4g
+ZW50ZmVybnRlciwgbmljaHQgYXV0aGVudGlzaWVydGVyIEFuZ3JlaWZlciBrYW5uCiAgZHVyY2gg
+w5ZmZm5lbiBlaW5lciBncm/Dn2VuIEFuemFobCB2b24gVk5DIChWaXJ0dWFsIE5ldHdvcmsKICBD
+b21wdXRpbmcpLVNpdHp1bmdlbiBlaW5lbiBEZW5pYWwtb2YtU2VydmljZSAoRG9TKS1adXN0YW5k
+IGVyemV1Z2VuLiBEaWUKICBTY2h3YWNoc3RlbGxlIGthbm4gbnVyIGF1c2dlbnV0enQgd2VyZGVu
+LCB3ZW5uIFZOQyBtYW51ZWxsIGVpbmdlc2NoYWx0ZXQKICB3aXJkOyBkYXMgZ2lsdCBmw7xyIFZN
+d2FyZSBXb3Jrc3RhdGlvbiB1bmQgVk13YXJlIEZ1c2lvbi4KCgpMaXN0ZSBkZXIgU2Nod2FjaHN0
+ZWxsZW46CiAgQ1ZFLTIwMTgtNjk1NwoKClJlZmVyZW56ZW46CgpEaWVzZXMgQWR2aXNvcnkgZmlu
+ZGVuIFNpZSBhdWNoIGltIERGTi1DRVJUIFBvcnRhbCB1bnRlcjoKW2h0dHBzOi8vcG9ydGFsLW5l
+dS5jZXJ0LmRmbi5kZS9hZHZpc29yaWVzL2RldGFpbHMvMjAxOC0wNTE0XQoKClp1c8OkdHpsaWNo
+ZSBJbmZvcm1hdGlvbmVuOgoKICBTY2h3YWNoc3RlbGxlIENWRS0yMDE4LTY5NTcgKE5WRCkKICAg
+IGh0dHA6Ly93ZWIubnZkLm5pc3QuZ292L3ZpZXcvdnVsbi9kZXRhaWw/dnVsbklkPUNWRS0yMDE4
+LTY5NTcKCiAgVk13YXJlIEFydGlrZWw6IE1pdGlnYXRpbmcgdGhlIFRBTE9TLTIwMTctMDM3NiB2
+dWxuZXJhYmlsaXR5IGZvciBWTkMgZW5hYmxlZAogIHZpcnR1YWwgbWFjaGluZXMgb24gVk13YXJl
+IFdvcmtzdGF0aW9uIDEyLnggYW5kIEZ1c2lvbiA4LnggKDUyOTM0KQogICAgaHR0cHM6Ly9rYi52
+bXdhcmUuY29tL3MvYXJ0aWNsZS81MjkzNAoKUGF0Y2hlczoKCiAgVk13YXJlIFNlY3VyaXR5IEFk
+dmlzb3J5IFZNU0EtMjAxOC0wMDA4CiAgICBodHRwczovL3d3dy52bXdhcmUuY29tL3NlY3VyaXR5
+L2Fkdmlzb3JpZXMvVk1TQS0yMDE4LTAwMDguaHRtbAoKCk1pdCBmcmV1bmRsaWNoZW4gR3LDvMOf
+ZW4sCklociBERk4tQ0VSVCBJbmNpZGVudCBSZXNwb25zZSBUZWFtCgoKLS0gCihjKSBERk4tQ0VS
+VCBTZXJ2aWNlcyBHbWJILCBhbGwgcmlnaHRzIHJlc2VydmVkIQpEaWUgV2VpdGVydmVyYnJlaXR1
+bmcgaXN0IG1pdCBIaW53ZWlzIGF1ZiBkZW4gQ29weXJpZ2h0aW5oYWJlciBpbm5lcmhhbGIgZGVy
+CmVpZ2VuZW4gRWlucmljaHR1bmcgZXJsYXVidC4gRWluZSBkYXLDvGJlciBoaW5hdXNnZWhlbmRl
+IFZlcmJyZWl0dW5nIGJlZGFyZgpkZXMgc2NocmlmdGxpY2hlbiBFaW52ZXJzdMOkbmRuaXNzZXMg
+ZGVzIFJlY2h0ZWluaGFiZXJzLg==
+
+--===============6601699845134843691==
+Content-Type: application/json; charset="UTF-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment; filename="2018-0514.json"
+
+{
+=20=20"version":=20"1",=20
+=20=20"ref_num":=20"2018-0514",=20
+=20=20"fieldsets":=20{
+=20=20=20=20"scoring":=20{
+=20=20=20=20=20=20"daf":=20{
+=20=20=20=20=20=20=20=20"risk":=20"medium"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cvss":=20{
+=20=20=20=20=20=20=20=20"temporal_score":=20"6.1",=20
+=20=20=20=20=20=20=20=20"vector":=20"AV:N/AC:L/Au:N/C:N/I:N/A:C/E:POC/RL:OF=
+/RC:C",=20
+=20=20=20=20=20=20=20=20"base_score":=20"7.8",=20
+=20=20=20=20=20=20=20=20"exploitability_score":=20"10.0",=20
+=20=20=20=20=20=20=20=20"impact_score":=20"6.9"
+=20=20=20=20=20=20},=20
+=20=20=20=20=20=20"cpes":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Microsoft=20Windows=20",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:microsoft:windows",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"GNU/Linux",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:gnu:linux",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"platform",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"Apple=20macOS",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/o:apple:macos",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Workstation=20Pro=
+=2014.x\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:workstation:14.x::pro=
+",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Workstation=20Play=
+er=2014.x\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:workstation:14.x::pla=
+yer",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Workstation=20<=20=
+Pro=2014.1.1\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:workstation:14.1.1::p=
+ro",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Workstation=20<=20=
+Player=2014.1.1\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:workstation:14.1.1::p=
+layer",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Workstation=20Pro=
+=2012.x\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:workstation:12.x::pro=
+",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Workstation=20Play=
+er=2012.x\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:workstation:12.x::pla=
+yer",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Fusion=20Pro=2010.=
+x\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:fusion:10.x::pro",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Fusion=2010.x\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:fusion:10.x",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Fusion=20<=20Pro=
+=2010.1.1\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:fusion:10.1.1::pro",=
+=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Fusion=20<=2010.1.=
+1\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:fusion:10.1.1",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"<"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Fusion=20Pro=208.x=
+\n",=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:fusion:8.x::pro",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"type":=20"software",=20
+=20=20=20=20=20=20=20=20=20=20"displayname":=20"VMware=20Fusion=208.x\n",=
+=20
+=20=20=20=20=20=20=20=20=20=20"cpe":=20"cpe:/a:vmware:fusion:8.x",=20
+=20=20=20=20=20=20=20=20=20=20"relation":=20"=3D"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20},=20
+=20=20=20=20"basic":=20{
+=20=20=20=20=20=20"description":=20"Eine=20Schwachstelle=20in=20VMware=20Wo=
+rkstation=20sowie=20Fusion=20erm\u00f6glicht=20es=20einem=20entfernten,=20n=
+icht=20authentisierten=20Angreifer=20einen=20Denial-of-Service-Angriff=20au=
+szuf\u00fchren.\n\nDer=20Hersteller=20stellt=20f\u00fcr=20Workstation=2014.=
+x=20die=20Version=2014.1.1=20sowie=20f\u00fcr=20Fusion=2010.x=20die=20Versi=
+on=2010.1.1=20zur=20Behebung=20der=20Schwachstelle=20zur=20Verf\u00fcgung.=
+=20Zur=20Mitigation=20dieser=20Schwachstelle=20f\u00fcr=20die=20Versionszwe=
+ige=20Workstation=2012.x=20und=20Fusion=208.x=20wird=20auf=20den=20Workarou=
+nd=20des=20Herstellers=20verwiesen=20(siehe=20VMware=20Artikel=2052934).",=
+=20
+=20=20=20=20=20=20"workaround":=20"",=20
+=20=20=20=20=20=20"created":=20"20180316T08:59:55",=20
+=20=20=20=20=20=20"vulnerabilities":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"title":=20"Schwachstelle=20in=20VMware=20Wor=
+kstation=20und=20Fusion=20erm\u00f6glicht=20Denial-of-Service-Angriff",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"In=20VMware=20Workstation=
+=20im=20kompletten=20Versionszweig=2012.x=20sowie=20im=20Versionszweig=2014=
+.x=20bis=20inklusive=2014.1.0=20und=20VMware=20Fusion=20im=20kompletten=20V=
+ersionszweig=208.x=20sowie=20im=20Versionszweig=2010.x=20bis=20inklusive=20=
+10.1.0=20existiert=20eine=20Schwachstelle.=20Ein=20entfernter,=20nicht=20au=
+thentisierter=20Angreifer=20kann=20durch=20\u00d6ffnen=20einer=20gro\u00dfe=
+n=20Anzahl=20von=20VNC=20(Virtual=20Network=20Computing)-Sitzungen=20einen=
+=20Denial-of-Service=20(DoS)-Zustand=20erzeugen.=20Die=20Schwachstelle=20ka=
+nn=20nur=20ausgenutzt=20werden,=20wenn=20VNC=20manuell=20eingeschaltet=20wi=
+rd;=20das=20gilt=20f\u00fcr=20VMware=20Workstation=20und=20VMware=20Fusion.=
+",=20
+=20=20=20=20=20=20=20=20=20=20"name":=20"CVE-2018-6957"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"title":=20"VMware=20Workstation,=20Fusion:=20Schwachstel=
+le=20erm\u00f6glicht=20Denial-of-Service-Angriff",=20
+=20=20=20=20=20=20"references":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://www.vmware.com/security/adv=
+isories/VMSA-2018-0008.html",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"patch",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"VMware=20Security=20Advisor=
+y=20VMSA-2018-0008"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"http://web.nvd.nist.gov/view/vuln/d=
+etail?vulnId=3DCVE-2018-6957",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Schwachstelle=20CVE-2018-69=
+57=20(NVD)"
+=20=20=20=20=20=20=20=20},=20
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"url":=20"https://kb.vmware.com/s/article/529=
+34",=20
+=20=20=20=20=20=20=20=20=20=20"type":=20"info",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"VMware=20Artikel:=20Mitigat=
+ing=20the=20TALOS-2017-0376=20vulnerability=20for=20VNC=20enabled=20virtual=
+=20machines=20on=20VMware=20Workstation=2012.x=20and=20Fusion=208.x=20(5293=
+4)"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20],=20
+=20=20=20=20=20=20"history":=20[
+=20=20=20=20=20=20=20=20{
+=20=20=20=20=20=20=20=20=20=20"timestamp":=20"20180316T12:38:19",=20
+=20=20=20=20=20=20=20=20=20=20"version":=20"1",=20
+=20=20=20=20=20=20=20=20=20=20"description":=20"Neues=20Advisory"
+=20=20=20=20=20=20=20=20}
+=20=20=20=20=20=20]
+=20=20=20=20}
+=20=20}
+}
+--===============6601699845134843691==--
+
+--===============4977047242565073786==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIII7QYJKoZIhvcNAQcCoIII3jCCCNoCAQExDzANBglghkgBZQMEAgEFADALBgkqhkiG9w0BBwGg
+ggYAMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3DQEBCwUAMIGNMQswCQYDVQQG
+EwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3Jz
+Y2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUwIwYDVQQDDBxERk4tVmVyZWlu
+IEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIwMTIwNDExNDExN1owgaIxCzAJ
+BgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdIYW1idXJnMR8wHQYDVQQKDBZE
+Rk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAbBgNVBAMMFEdSUDogREZOLUNF
+UlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNlcnQuZGUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0Yw0ZS9sOZLRfN6nFe6HOj8Az
+NO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZPjuBRtsi+hKSvncR7oCNPDigs
+GbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVmW27fs5I61rP66DkqgrRXZh0w
+AZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvtsAJ2VXFhNNbtRY9XTDXi/Yar
+5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoGeUKrwG5TQM9FAgMBAAGjggJD
+MIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYBBAGBrSGCLAEBBAMGMBEGDysG
+AQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIGwDATBgNVHSUEDDAKBggrBgEF
+BQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYDVR0jBBgwFoAUazqYi/nyU4na
+4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0LmRlMIGNBgNVHR8EgYUwgYIw
+P6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWdsb2JhbC1nMi9wdWIvY3JsL2Nh
+Y3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9kZm4tY2EtZ2xvYmFsLWcyL3B1
+Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggrBgEFBQcwAYYnaHR0cDovL29j
+c3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMS5w
+Y2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsXu7Gk4M32/Rs2jdf9rTw3/Aag
+meXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JHhwv5JSdyzM2/pG63uRi/WJ7z
+VYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB8Qb+p3YVTa9vcnmNpci1SYtM
+9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqooGuMgkeB5hi2xUcxKhR8uUYhN
+ftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYFS2sAbrrt2PhOtTHm5o51SbfI
+MYICsTCCAq0CAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQKDDxWZXJlaW4genVyIEZvZXJk
+ZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMgZS4gVi4xEDAOBgNVBAsMB0RG
+Ti1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3VpbmcgQ0ECDB5GA2zY8pjckgcl
+SzANBglghkgBZQMEAgEFAKCB5DAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJ
+BTEPFw0xODAzMTYxMTQxMzZaMC8GCSqGSIb3DQEJBDEiBCBaVEGbuRIP5KkWkMUaEa7IaKQOck4v
+RJIXI8Wc3gzbzTB5BgkqhkiG9w0BCQ8xbDBqMAsGCWCGSAFlAwQBKjALBglghkgBZQMEARYwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMA4GCCqGSIb3DQMCAgIAgDANBggqhkiG9w0DAgIBQDAHBgUr
+DgMCBzANBggqhkiG9w0DAgIBKDANBgkqhkiG9w0BAQEFAASCAQCB1+qVV0AMs3ROE5ALHgKtVnaW
+/7YH/kFeIGtqnv7ppMu0o3gkd4tAgVVvo/5Jy0Pus4EU+LG2i6VTFWng+XXXSlsYddOrOKZzVGMk
+AsJouSd/lQP9rDxS/IHhoZu13S44sivQ93KcveYAG4qhbW8klWGpk0HqBYVp4SF6EMdie7+8yTWO
+Ur71b+Xq6J+V+osD1hDZJ1z6Q5BERtvYd3AyU65J8kgRR04krF64HGJWfsuGqTooqmxke0H4XRmC
+cSDi4UmEhIMurpWaub3aGFWe6EFRKT4OrxdjsGFMnZ2N5LA1D1UY52NVknNUAcjKdnUVsnCWd0vc
+CY0dmG9qdBf6
+
+--===============4977047242565073786==--

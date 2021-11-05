@@ -1,0 +1,414 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Tue, 27 Feb
+ 2018 10:20:30 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id A41B925A18; Tue, 27 Feb 2018
+ 10:20:30 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id 99A9825A17	for
+ <rz+certapple@hs-esslingen.de>; Tue, 27 Feb 2018 10:20:30 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.21
+X-Spam-Level:
+X-Spam-Status: No, score=-4.21 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, T_RP_MATCHES_RCVD=-0.01]
+	autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ tCTHW5TFTwDz for <rz+certapple@hs-esslingen.de>;	Tue, 27 Feb 2018 10:20:29
+ +0100 (CET)
+Received: from mail2.dfn-cert.de (mail2.dfn-cert.de [193.174.13.207])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Tue, 27 Feb 2018 10:20:29 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=SHA256; boundary="===============4723694185859945727=="
+From: DFN-CERT <portal@dfn-cert.de>
+Subject: =?utf-8?q?DFN-CERT-2018-0389_Jenkins-Plugins=3A_Mehrere_Schwachstellen_erm=C3=B6glichen_u=2Ea=2E_das_Aussp=C3=A4hen_von_Informationen_=5BLinux=5D=5BApple=5D=5BWindows=5D?=
+Date: Tue, 27 Feb 2018 09:20:02 +0000
+To: <rz+certapple@hs-esslingen.de>
+Message-ID: <20180227092028.BB7992E0557@mail2.dfn-cert.de>
+Return-Path: dfn-adv-bounces@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;-1073150;0;PM
+MIME-Version: 1.0
+
+--===============4723694185859945727==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Liebe Kolleginnen und Kollegen,
+
+bitte beachten Sie die folgende Sicherheitsmeldung.
+
+Betroffene Software:
+
+  Jenkins
+  =
+
+
+Betroffene Plattformen:
+
+  Apple macOS
+  GNU/Linux
+  Microsoft Windows =
+
+  =
+
+
+
+Ein entfernter, in der Regel einfach authentifizierter Angreifer kann
+mehrere Schwachstellen in den Plugins Azure Slave, Coverity, CppNCSS,
+Environment Injector, Gerrit Trigger, Git, Google Play Android Publisher,
+Job and Node Ownership, Mercurial, Promoted Builds, Subversion und TestLink
+ausnutzen, um sensitive Informationen auszusp=C3=A4hen, Konfigurationen zu
+manipulieren, Cross-Site-Scripting (XSS)-Angriffe oder eine
+Privilegieneskalation durchzuf=C3=BChren.
+
+Es stehen die Versionen Coverity 1.11.0, CppNCSS 1.2, Environment Injector
+1.91, Gerrit Trigger 2.27.5, Git 3.8.0, Google Play Android Publisher 1.7,
+Job and Node Ownership 0.12.0, Mercurial 2.3, Promoted Builds 3.0,
+Subversion 2.10.3 und TestLink 3.13 als Sicherheitsupdates f=C3=BCr die ein=
+zelnen
+Plugins zur Verf=C3=BCgung.
+
+F=C3=BCr das Azure Slave Plugin steht kein Sicherheitsupdate zur Verf=C3=BC=
+gung, da
+das Plugin seit 2016 als 'deprecated' angesehen wird. Alternativ kann das
+Azure VM Agents Plugin verwendet werden, das die veraltete und durch
+CVE-2015-5262 verwundbare Bibliothek 'httpclient' nicht enth=C3=A4lt. Die
+Behebung der Schwachstelle im Environment Injector Plugin erfordert
+zus=C3=A4tzliche Schritte, falls das Plugin in der Vergangenheit in einer V=
+ersion
+vor 1.91 (ver=C3=B6ffentlicht im M=C3=A4rz 2015) eingesetzt wurde. Diese ma=
+nuellen
+Schritte werden im referenzierten Sicherheitshinweis des Herstellers n=C3=
+=A4her
+ausgef=C3=BChrt.
+
+
+Patch:
+
+  Jenkins Security Advisory 2018-02-26
+
+  <https://jenkins.io/security/advisory/2018-02-26/>
+
+
+SECURITY-746: Schwachstelle in Promoted Builds Plugin erm=C3=B6glicht
+  Privilegieneskalation
+
+  Eine Schwachstelle im Promoted Builds Plugin erm=C3=B6glicht einem entfer=
+nten,
+  einfach authentisierten Angreifer mit 'Job/Read'-Zugriff Promotion-Prozes=
+se
+  freizugeben und erneut mit einer manuellen Promotion-Bedingung auszuf=C3=
+=BChren,
+  die keine Liste von Benutzern spezifiziert, welche die Promotion manuell
+  freigeben d=C3=BCrfen.
+
+
+SECURITY-731: Schwachstelle in TestLink Plugin erm=C3=B6glicht
+  Cross-Site-Scripting-Angriff
+
+  Das TestLink Plugin ist anf=C3=A4llig f=C3=BCr einen dauerhaften Cross-Si=
+te-Scripting
+  (XSS)-Angriff, wodurch ein entfernter, einfach authentisierter Angreifer =
+mit
+  der Berechtigung 'Job/Configure' Reports von TestLink so konfigurieren ka=
+nn,
+  dass beliebiges HTML ohne weitere Behandlung ('unescaped') dargestellt wi=
+rd,
+  z.B. im Namen eines Testfalls.
+
+
+SECURITY-726: Schwachstelle in Mercurial Plugin erm=C3=B6glicht Aussp=C3=A4=
+hen von
+  Informationen
+
+  Die Klasse zur Behandlung nicht authentisierter 'Mercurial post-commit ho=
+ok
+  notification requests' (Anfragen) an den Pfad '/mercurial/' erweitert
+  unn=C3=B6tigerweise einen anderen Typ, welcher Anfragen an den Unterpfad
+  '=E2=80=A6/search/' behandelt. Dies erm=C3=B6glicht die =C3=9Cbermittlung=
+ von Suchanfragen an
+  Jenkins, wodurch Benutzer mit der Berechtigung 'Overall/Read' eine Liste =
+von
+  Suchergebnissen erhalten k=C3=B6nnen. In aktuellen Jenkins Releases sind =
+dies
+  typischerweise die Namen bekannter Benutzer (sowohl tats=C3=A4chliche Ben=
+utzer
+  von Jenkins, als auch bekannte SCM Committers) und Nodes (Master und
+  Agents). Ein entfernter, einfach authentisierter Angreifer kann diese
+  Schwachstelle ausnutzen, um Informationen auszusp=C3=A4hen.
+
+
+SECURITY-724: Schwachstelle in Subversion Plugin erm=C3=B6glicht Aussp=C3=
+=A4hen von
+  Informationen
+
+  Die Klasse zur Behandlung nicht authentisierter 'Subversion post-commit h=
+ook
+  notification requests' (Anfragen) an den Pfad '/subversion/' erweitert
+  unn=C3=B6tigerweise einen anderen Typ, welcher Anfragen an den Unterpfad
+  '=E2=80=A6/search/' behandelt. Dies erm=C3=B6glicht die =C3=9Cbermittlung=
+ von Suchanfragen an
+  Jenkins, wodurch Benutzer mit der Berechtigung 'Overall/Read' eine Liste =
+von
+  Suchergebnissen erhalten k=C3=B6nnen. In aktuellen Jenkins Releases sind =
+dies
+  typischerweise die Namen bekannter Benutzer (sowohl tats=C3=A4chliche Ben=
+utzer
+  von Jenkins, als auch bekannte SCM Committers) und Nodes (Master und
+  Agents). Ein entfernter, einfach authentisierter Angreifer kann diese
+  Schwachstelle ausnutzen, um Informationen auszusp=C3=A4hen.
+
+
+SECURITY-723: Schwachstelle in Git Plugin erm=C3=B6glicht Aussp=C3=A4hen von
+  Informationen
+
+  Die Klasse zur Behandlung nicht authentisierter 'Git post-commit hook
+  notification requests' (Anfragen) an den Pfad '/git/' erweitert
+  unn=C3=B6tigerweise einen anderen Typ, welcher Anfragen an den Unterpfad
+  '=E2=80=A6/search/' behandelt. Dies erm=C3=B6glicht die =C3=9Cbermittlung=
+ von Suchanfragen an
+  Jenkins, wodurch Benutzer mit der Berechtigung 'Overall/Read' eine Liste =
+von
+  Suchergebnissen erhalten k=C3=B6nnen. In aktuellen Jenkins Releases sind =
+dies
+  typischerweise die Namen bekannter Benutzer (sowohl tats=C3=A4chliche Ben=
+utzer
+  von Jenkins, als auch bekannte SCM Committers) und Nodes (Master und
+  Agents). Ein entfernter, einfach authentisierter Angreifer kann diese
+  Schwachstelle ausnutzen, um Informationen auszusp=C3=A4hen.
+
+
+SECURITY-715: Schwachstelle in Google Play Android Publisher Plugin
+  erm=C3=B6glicht Aussp=C3=A4hen von Informationen
+
+  Das Google Play Android Publisher Plugin stellt eine Liste passender
+  Credential IDs bereit, um Benutzern, welche einen Job konfigurieren, die
+  Auswahl derjenigen zu erm=C3=B6glichen, mit welcher sie sich gegen=C3=BCb=
+er der Google
+  Play API authentisieren m=C3=B6chten. Diese Funktionalit=C3=A4t pr=C3=BCf=
+t keine
+  Berechtigungen. Ein entfernter, einfach authentisierter Angreifer mit der
+  Berechtigung 'Overall/Read' kann diese Schwachstelle ausnutzen, um eine
+  Liste g=C3=BCltiger Credential IDs zu erlangen, welche zusammen mit einer
+  weiteren Schwachstelle verwendet werden k=C3=B6nnen, um Credentials zu er=
+beuten.
+
+
+SECURITY-712: Schwachstelle in CppNCSS Plugin erm=C3=B6glicht
+  Cross-Site-Scripting-Angriff
+
+  Das CppNCSS Plugin behandelt den Report- und Graph-Namen in der Report URL
+  nicht sicher, wodurch ein entfernter, nicht authentisierter Angreifer ein=
+en
+  Reflected-Cross-Site-Scripting (XSS)-Angriff durchf=C3=BChren kann.
+
+
+SECURITY-554: Schwachstelle in Azure Slave Plugin erm=C3=B6glicht
+  Denial-of-Service-Angriff
+
+  Das Azure Slave Plugin enth=C3=A4lt eine veraltete Version der
+  'httpclient'-Bibliothek, die =C3=BCber die Schwachstelle CVE-2015-5262 ve=
+rwundbar
+  ist. Ein entfernter, nicht authentisierter Angreifer kann diese
+  Schwachstelle ausnutzen, um einen Denial-of-Service (DoS)-Angriff
+  durchzuf=C3=BChren.
+
+
+SECURITY-498: Schwachstelle in Job and Node Ownership Plugin erm=C3=B6glicht
+  Manipulation von Daten
+
+  Das Job and Node Ownership Plugin verhindert nicht das =C3=9Cberschreiben=
+ von
+  Ownership-Metadaten, wenn die Konfiguration f=C3=BCr einen Job oder Node =
+=C3=BCber die
+  Kommandozeile (CLI) oder unter Verwendung der API (HTTP-POST-Zugriff auf =
+
+  config.xml) aktualisiert wird. Dadurch ist es f=C3=BCr einen entfernten, =
+einfach
+  authentisierten Angreifer mit der Berechtigung 'Job/Configure', aber ohne
+  die Berechtigung 'ManageOwnership/Jobs' m=C3=B6glich, Job-Ownership-Metad=
+aten
+  bzw. mit der Berechtigung 'Computer/Configure', aber ohne die Berechtigung
+  'ManageOwnership/Nodes' Node-Ownership-Metadaten zu ver=C3=A4ndern.
+
+
+SECURITY-403: Schwachstelle in Gerrit Trigger Plugin erm=C3=B6glicht Manipu=
+lation
+  von Konfigurationen
+
+  Fehlende Berechtigungspr=C3=BCfungen im Gerrit Trigger Plugin erm=C3=B6gl=
+ichen einem
+  entfernten, einfach authentisierten Angreifer mit der Berechtigung
+  'Overall/Read' globale Gerrit Server Konfigurationen zu ver=C3=A4ndern un=
+d die
+  Kontrolle =C3=BCber Verbindungen zum Server zu erlangen.
+
+
+SECURITY-402: Schwachstelle in Gerrit Trigger Plugin erm=C3=B6glicht Aussp=
+=C3=A4hen
+  von Informationen
+
+  Fehlende Berechtigungspr=C3=BCfungen im Gerrit Trigger Plugin erm=C3=B6gl=
+ichen einem
+  entfernten, einfach authentisierten Angreifer mit der Berechtigung
+  'Overall/Read' auf ein Formular zuzugreifen, welches die Konfiguration des
+  Gerrit Servers in Jenkins anzeigt. Das Passwort f=C3=BCr die Schl=C3=BCss=
+el-Datei wird
+  nur in verschl=C3=BCsselter Form dargestellt, wenn derart konfiguriert, a=
+ber
+  andere Optionen sind im Klartext sichtbar.
+
+
+SECURITY-260: Schwachstelle in Coverity Plugin erm=C3=B6glicht Aussp=C3=A4h=
+en von
+  Informationen
+
+  Das Coverity Plugin speichert Passworte unverschl=C3=BCsselt als Teil der
+  Konfiguration. Ein entfernter, einfach authentisierter Angreifer mit Zugr=
+iff
+  auf das lokale Dateisystem des Jenkins Masters und Administratoren von
+  Jenkins k=C3=B6nnen die gespeicherten Passworte erlangen. Letzteres k=C3=
+=B6nnte auch
+  in einer Offenlegung von Passworten =C3=BCber Browser-Erweiterungen,
+  Cross-Site-Scripting (XSS)-Schwachstellen und in =C3=A4hnlichen Situation=
+en
+  resultieren.
+
+
+SECURITY-248: Schwachstelle in Environment Injector Plugin erm=C3=B6glicht
+  Aussp=C3=A4hen von Informationen
+
+  Das EnvInject Plugin speichert Umgebungsvariablen, um diese in der 'Injec=
+ted
+  Environment Variables'-Ansicht darzustellen. Sensitive Variablen, wie
+  Passworte, sind von diesem Verhalten ausgenommen, allerdings erst ab Plug=
+in
+  Version 1.91 (ver=C3=B6ffentlicht am 8. M=C3=A4rz 2015), w=C3=A4hrend =C3=
+=A4ltere Versionen
+  diese dauerhaft auf der Festplatte ablegen. Solche dauerhaft dort abgeleg=
+ten
+  sensitiven Variablen k=C3=B6nnen auch nachtr=C3=A4glich noch offenlegt we=
+rden. Ein
+  entfernter, nicht authentisierter Angreifer kann diese Schwachstelle
+  ausnutzen, um sensitive Informationen auszusp=C3=A4hen.
+
+
+Referenzen:
+
+Dieses Advisory finden Sie auch im DFN-CERT Portal unter:
+  <https://portal.cert.dfn.de/adv/DFN-CERT-2018-0389/>
+
+Schwachstelle CVE-2015-5262 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2015-5262>
+
+Jenkins Security Advisory 2018-02-26:
+  <https://jenkins.io/security/advisory/2018-02-26/>
+
+
+(c) DFN-CERT Services GmbH, all rights reserved!
+Die Weiterverbreitung ist mit Hinweis auf den Copyrightinhaber innerhalb der
+eigenen Einrichtung erlaubt. Eine dar=C3=BCber hinausgehende Verbreitung be=
+darf
+des schriftlichen Einverst=C3=A4ndnisses des Rechteinhabers.
+
+--===============4723694185859945727==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExDzANBglghkgBZQMEAgEFADCABgkqhkiG9w0BBwEAAKCCEMYw
+ggUSMIID+qADAgECAgkA4wvV+K8l2YEwDQYJKoZIhvcNAQELBQAwgYIxCzAJBgNVBAYTAkRFMSsw
+KQYDVQQKDCJULVN5c3RlbXMgRW50ZXJwcmlzZSBTZXJ2aWNlcyBHbWJIMR8wHQYDVQQLDBZULVN5
+c3RlbXMgVHJ1c3QgQ2VudGVyMSUwIwYDVQQDDBxULVRlbGVTZWMgR2xvYmFsUm9vdCBDbGFzcyAy
+MB4XDTE2MDIyMjEzMzgyMloXDTMxMDIyMjIzNTk1OVowgZUxCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+EzxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsTB0RGTi1QS0kxLTArBgNVBAMTJERGTi1WZXJlaW4gQ2VydGlmaWNhdGlv
+biBBdXRob3JpdHkgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMtg1/9moUHN0vqH
+l4pzq5lN6mc5WqFggEcVToyVsuXPztNXS43O+FZsFVV2B+pG/cgDRWM+cNSrVICxI5y+NyipCf8F
+XRgPxJiZN7Mg9mZ4F4fCnQ7MSjLnFp2uDo0peQcAIFTcFV9Kltd4tjTTwXS1nem/wHdN6r1ZB+Ba
+L2w8pQDcNb1lDY9/Mm3yWmpLYgHurDg0WUU2SQXaeMpqbVvAgWsRzNI8qIv4cRrKO+KA3Ra0Z3qL
+NupOkSk9s1FcragMvp0049ENF4N1xDkesJQLEvHVaY4l9Lg9K7/AjsMeO6W/VRCrKq4Xl14zzsjz
+9AkH4wKGMUZrAcUQDBHHWekCAwEAAaOCAXQwggFwMA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQU
+k+PYMiba1fFKpZFK4OpL4qIMz+EwHwYDVR0jBBgwFoAUv1kgNgB5oKAia4zV8mHSuCzLgkowEgYD
+VR0TAQH/BAgwBgEB/wIBAjAzBgNVHSAELDAqMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGC
+LB4wCAYGZ4EMAQICMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6Ly9wa2kwMzM2LnRlbGVzZWMuZGUv
+cmwvVGVsZVNlY19HbG9iYWxSb290X0NsYXNzXzIuY3JsMIGGBggrBgEFBQcBAQR6MHgwLAYIKwYB
+BQUHMAGGIGh0dHA6Ly9vY3NwMDMzNi50ZWxlc2VjLmRlL29jc3ByMEgGCCsGAQUFBzAChjxodHRw
+Oi8vcGtpMDMzNi50ZWxlc2VjLmRlL2NydC9UZWxlU2VjX0dsb2JhbFJvb3RfQ2xhc3NfMi5jZXIw
+DQYJKoZIhvcNAQELBQADggEBAIcL/z4Cm2XIVi3WO5qYi3FP2ropqiH5Ri71sqQPrhE4eTizDnS6
+dl2e6BiClmLbTDPo3flq3zK9LExHYFV/53RrtCyD2HlrtrdNUAtmB7Xts5et6u5/MOaZ/SLick0+
+hFvu+c+Z6n/XUjkurJgARH5pO7917tALOxrN5fcPImxHhPalR6D90Bo0fa3SPXez7vTXTf/D6OWS
+T1k+kEcQSrCFWMBvf/iu7QhCnh7U3xQuTY+8npTD5+32GPg8SecmqKc22CzeIs2LgtjZeOJVEqM7
+h0S2EQvVDFKvaYwPBt/QolOLV5h7z/0HJPT8vcP9SpIClxvyt7bPZYoaorVyGTkwggWsMIIElKAD
+AgECAgcbY7rQHiw9MA0GCSqGSIb3DQEBCwUAMIGVMQswCQYDVQQGEwJERTFFMEMGA1UEChM8VmVy
+ZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYu
+MRAwDgYDVQQLEwdERk4tUEtJMS0wKwYDVQQDEyRERk4tVmVyZWluIENlcnRpZmljYXRpb24gQXV0
+aG9yaXR5IDIwHhcNMTYwNTI0MTEzODQwWhcNMzEwMjIyMjM1OTU5WjCBjTELMAkGA1UEBhMCREUx
+RTBDBgNVBAoMPFZlcmVpbiB6dXIgRm9lcmRlcnVuZyBlaW5lcyBEZXV0c2NoZW4gRm9yc2NodW5n
+c25ldHplcyBlLiBWLjEQMA4GA1UECwwHREZOLVBLSTElMCMGA1UEAwwcREZOLVZlcmVpbiBHbG9i
+YWwgSXNzdWluZyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ07eRxH3h+Gy8Zp
+1xCeOdfZojDbchwFfylfS2jxrRnWTOFrG7ELf6Gr4HuLi9gtzm6IOhDuV+UefwRRNuu6cG1joL6W
+LkDh0YNMZj0cZGnlm6Stcq5oOVGHecwX064vXWNxSzl660Knl5BpBb+Q/6RAcL0D57+eGIgfn5mI
+TQ5HjUhfZZkQ0tkqSe3BuS0dnxLLFdM/fx5ULzquk1enfnjK1UriGuXtQX1TX8izKvWKMKztFwUk
+P7agCwf9TRqaA1KgNpzeJIdl5Of6x5ZzJBTN0OgbaJ4YWa52fvfRCng8h0uwN89Tyjo4EPPLR22M
+ZD08WkVKusqAfLjz56dMTM0CAwEAAaOCAgUwggIBMBIGA1UdEwEB/wQIMAYBAf8CAQEwDgYDVR0P
+AQH/BAQDAgEGMCkGA1UdIAQiMCAwDQYLKwYBBAGBrSGCLB4wDwYNKwYBBAGBrSGCLAEBBDAdBgNV
+HQ4EFgQUazqYi/nyU4na4K2yMh4JH+iqO3QwHwYDVR0jBBgwFoAUk+PYMiba1fFKpZFK4OpL4qIM
+z+EwgY8GA1UdHwSBhzCBhDBAoD6gPIY6aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9v
+dC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDBAoD6gPIY6aHR0cDovL2NkcDIucGNhLmRmbi5kZS9n
+bG9iYWwtcm9vdC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB3QYIKwYBBQUHAQEEgdAwgc0wMwYI
+KwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBKBggrBgEF
+BQcwAoY+aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9vdC1nMi1jYS9wdWIvY2FjZXJ0
+L2NhY2VydC5jcnQwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXJv
+b3QtZzItY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCBeEWkTqR/
+DlXwCbFqPnjMaDWpHPOVnj/z+N9rOHeJLI21rT7H8pTNoAauusyosa0zCLYkhmI2THhuUPDVbmCN
+T1IxQ5dGdfBi5G5mUcFCMWdQ5UnnOR7Ln8qGSN4IFP8VSytmm6A4nwDO/afr0X9XLchMX9wQEZc+
+lgQCXISoKTlslPwQkgZ7nu7YRrQbtQMMONncsKk/cQYLsgMHM8KNSGMlJTx6e1du94oFOO+4oK4v
+9NsH1VuEGMGpuEvObJAaguS5Pfp38dIfMwK/U+d2+dwmJUFvL6Yb+qQTkPp8ftkLYF3sv8pBoGH7
+EUkp2KgtdRXYShjqFu9VNCIaE40GMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3
+DQEBCwUAMIGNMQswCQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVp
+bmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUw
+IwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIw
+MTIwNDExNDExN1owgaIxCzAJBgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdI
+YW1idXJnMR8wHQYDVQQKDBZERk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAb
+BgNVBAMMFEdSUDogREZOLUNFUlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNl
+cnQuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0
+Yw0ZS9sOZLRfN6nFe6HOj8AzNO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZP
+juBRtsi+hKSvncR7oCNPDigsGbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVm
+W27fs5I61rP66DkqgrRXZh0wAZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvt
+sAJ2VXFhNNbtRY9XTDXi/Yar5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoG
+eUKrwG5TQM9FAgMBAAGjggJDMIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYB
+BAGBrSGCLAEBBAMGMBEGDysGAQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIG
+wDATBgNVHSUEDDAKBggrBgEFBQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYD
+VR0jBBgwFoAUazqYi/nyU4na4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0
+LmRlMIGNBgNVHR8EgYUwgYIwP6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWds
+b2JhbC1nMi9wdWIvY3JsL2NhY3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9k
+Zm4tY2EtZ2xvYmFsLWcyL3B1Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggr
+BgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9i
+YWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsX
+u7Gk4M32/Rs2jdf9rTw3/AagmeXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JH
+hwv5JSdyzM2/pG63uRi/WJ7zVYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB
+8Qb+p3YVTa9vcnmNpci1SYtM9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqoo
+GuMgkeB5hi2xUcxKhR8uUYhNftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYF
+S2sAbrrt2PhOtTHm5o51SbfIMYICYDCCAlwCAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+DDxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsMB0RGTi1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3Vp
+bmcgQ0ECDB5GA2zY8pjckgclSzANBglghkgBZQMEAgEFAKCBkzAYBgkqhkiG9w0BCQMxCwYJKoZI
+hvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xODAyMjcwOTIwMDhaMCgGCSqGSIb3DQEJDzEbMBkwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMC8GCSqGSIb3DQEJBDEiBCDbw0oqapJDlooaMK+Hayugrban
+o75oTrWnxQ5h5NpWzTANBgkqhkiG9w0BAQEFAASCAQAsPvHcoUAQj2q9jfR1+u/vgWuMS7VUC0z/
+yMxS8j5HMhaRAGepaScVzMXTxzpD7npFOsF8YYYHC1BT9Zy+679GRW7SiDoaOQbteLMC4S/dKkVb
+D6ojsM0LfuxtzOcoolNn3RU2TNLo0y5P6ZgXZL2NHSHQBMTxF9dR2tgSnOshhq5OdssSsnCl3AnK
+HvMoCwdwoNbsh8zqEtbNi7hs1JhZhwgwX78cocX3uHm5eYgF2njEMVsR9LoYokydbGZNJX908F2I
+/K+A/pPTE+B7rgFTznHqDg2T529Ece3KEU0WX3tuXJA+wynmGivXqO7wNRDA9Qkg8PP56N2yA2wm
+jLwlAAAAAAAA
+
+--===============4723694185859945727==--

@@ -1,0 +1,754 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Wed, 28 Feb
+ 2018 18:50:51 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id 94B6925A1B; Wed, 28 Feb 2018
+ 18:50:51 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id 894D025A1A	for
+ <rz+certapple@hs-esslingen.de>; Wed, 28 Feb 2018 18:50:51 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.21
+X-Spam-Level:
+X-Spam-Status: No, score=-4.21 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, T_RP_MATCHES_RCVD=-0.01]
+	autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ MtUz5G-4xBzR for <rz+certapple@hs-esslingen.de>;	Wed, 28 Feb 2018 18:50:49
+ +0100 (CET)
+Received: from mail2.dfn-cert.de (mail2.dfn-cert.de [193.174.13.207])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Wed, 28 Feb 2018 18:50:49 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=SHA256; boundary="===============0439729992124526319=="
+From: DFN-CERT <portal@dfn-cert.de>
+Subject: =?utf-8?q?UPDATE=3A_DFN-CERT-2018-0101_Oracle_MySQL=2C_MySQL_Community_Server=3A_Mehrere_Schwachstellen_erm=C3=B6glichen_u=2Ea=2E_Denial-of-Service-Angriffe_=5BLinux=5D=5BDebian=5D=5BFedora=5D=5BSuSE=5D=5BUnix=5D=5BApple=5D=5BSolaris=5D=5BWindows=5D?=
+Date: Wed, 28 Feb 2018 17:50:03 +0000
+To: <rz+certapple@hs-esslingen.de>
+Message-ID: <20180228175049.542302E051D@mail2.dfn-cert.de>
+Return-Path: dfn-adv-bounces@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;-1030654;0;PM
+MIME-Version: 1.0
+
+--===============0439729992124526319==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Liebe Kolleginnen und Kollegen,
+
+bitte beachten Sie die folgende Sicherheitsmeldung.
+
+Historie:
+  Version 6 (28.02.2018):
+    F=C3=BCr Fedora 26 steht ein Sicherheitsupdate auf die MySQL Community =
+Server
+    Version 5.7.21 bereit, um die in der Version 5.7.20 existierenden
+    Schwachstellen zu adressieren.
+  Version 5 (26.01.2018):
+    F=C3=BCr openSUSE Leap 42.2 und openSUSE Leap 42.3 stehen Sicherheitsup=
+dates
+    auf die MySQL Community Server Version 5.6.39 zur Verf=C3=BCgung, mit d=
+enen 15
+    der aufgef=C3=BChrten Schwachstellen behoben werden.
+  Version 4 (25.01.2018):
+    Canonical stellt f=C3=BCr die Distribution Ubuntu 12.04 LTS das
+    korrespondierende Sicherheitsupdate f=C3=BCr das Paket 'mysql-5.5' auf =
+MySQL
+    5.5.59 zur Behebung der betreffenden Schwachstellen bereit.
+  Version 3 (23.01.2018):
+    Canonical stellt f=C3=BCr die Distribution Ubuntu 14.04 LTS ein
+    Sicherheitsupdate f=C3=BCr das Paket 'mysql-5.5' auf MySQL 5.5.59 und f=
+=C3=BCr
+    Ubuntu 16.04 LTS und Ubuntu 17.10 f=C3=BCr das Paket 'mysql-5.7' auf My=
+SQL
+    5.7.21 zur Behebung der entsprechenden Schwachstellen bereit. F=C3=BCr =
+Fedora
+    27 steht ebenfalls ein Sicherheitsupdate auf MySQL 5.7.21 in Form des
+    Paketes 'community-mysql-5.7.21-1.fc27' bereit, welches sich derzeit no=
+ch
+    im Status 'pending' befindet.
+  Version 2 (19.01.2018):
+    F=C3=BCr Debian Jessie (oldstable) steht ein Sicherheitsupdate f=C3=BCr=
+ MySQL auf
+    Version 5.5.59 zur Verf=C3=BCgung, mit dem die Schwachstellen CVE-2018-=
+2562,
+    CVE-2018-2622, CVE-2018-2640, CVE-2018-2665 und CVE-2018-2668 behoben
+    werden.
+  Version 1 (17.01.2018):
+    Neues Advisory
+
+Betroffene Software:
+
+  MySQL Community Server < 5.5.59
+  MySQL Community Server < 5.6.39
+  MySQL Community Server < 5.7.21
+  MySQL Connectors <=3D 5.3.9
+  MySQL Connectors <=3D 6.9.9
+  MySQL Connectors <=3D 6.10.4
+  MySQL Enterprise Monitor <=3D 3.3.6.3293
+  MySQL Enterprise Monitor <=3D 3.4.4.4226
+  MySQL Enterprise Monitor <=3D 4.0.0.5135
+  =
+
+
+Betroffene Plattformen:
+
+  Apple macOS
+  Canonical Ubuntu Linux 12.04 LTS (ESM)
+  Canonical Ubuntu Linux 14.04 LTS
+  Canonical Ubuntu Linux 16.04 LTS
+  Canonical Ubuntu Linux 17.10
+  Debian Linux 8.10 Jessie
+  GNU/Linux
+  Microsoft Windows =
+
+  openSUSE Leap 42.2
+  openSUSE Leap 42.3
+  Oracle Solaris
+  Red Hat Fedora 26
+  Red Hat Fedora 27
+  =
+
+
+
+In den Komponenten MySQL Server und MySQL Connectors (Connector/Net) von
+Oracle MySQL existieren verschiedene Schwachstellen, die von einem
+entfernten, auch nicht authentifizierten Angreifer ausgenutzt werden k=C3=
+=B6nnen,
+um den MySQL Server und MySQL Connectors zum Absturz zu bringen
+(Denial-of-Service, DoS), Daten zu manipulieren und Informationen
+auszusp=C3=A4hen. Zwei dieser Schwachstellen k=C3=B6nnen aus der Ferne (=C3=
+=BCber eine
+Netzwerkverbindung) und ohne Authentisierung ausgenutzt werden.
+
+Der Hersteller Oracle ver=C3=B6ffentlicht Informationen zu diesen Schwachst=
+ellen
+und stellt Sicherheitsupdates zur Verf=C3=BCgung. Der MySQL Community Server
+steht in den Versionen 5.5.59, 5.6.39 und 5.7.21 bereit. Die aktuellen
+Versionen von MySQL Connector/Net sind 6.9.10 und 6.10.5.
+
+Neben den Schwachstellen in der Software selbst werden auch mehrere
+Schwachstellen in den verwendeten Produkten Apache Tomcat (eingesetzt in
+MySQL Enterprise Monitor) und OpenSSL (MySQL Server, MySQL Enterprise
+Monitor und Connector/ODBC) behoben, die einem entfernten, nicht
+authentisierten Angreifer das Ausf=C3=BChren beliebigen Programmcodes und d=
+as
+Umgehen von Sicherheitsvorkehrungen bzw. das Aussp=C3=A4hen von Information=
+en
+erm=C3=B6glichen. Connector/ODBC ist in der aktuellen Version 5.3.9 von zwe=
+i der
+Schwachstellen in OpenSSL betroffen. MySQL Enterprise Monitor ist in den
+Versionen bis einschlie=C3=9Flich 3.3.6.3293, 3.4.4.4226 und 4.0.0.5135 von=
+ den
+Schwachstellen betroffen. Die aktuellen Versionen von MySQL Enterprise
+Monitor sind 3.3.7, 3.4.5 und 4.0.2.
+
+
+Patch:
+
+  MySQL 5.5.59 Changelog
+
+  <https://dev.mysql.com/doc/relnotes/mysql/5.5/en/news-5-5-59.html>
+
+Patch:
+
+  MySQL 5.6.39 Changelog
+
+  <https://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-39.html>
+
+Patch:
+
+  MySQL 5.7.21 Changelog
+
+  <https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-21.html>
+
+Patch:
+
+  Oracle Critical Patch Update Advisory Januar 2018 - CPUJan2018 (Oracle
+  MySQL)
+
+  <http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.h=
+tml#AppendixMSQL>
+
+Patch:
+
+  Debian Security Advisory DSA-4091-1
+
+  <https://www.debian.org/security/2018/dsa-4091>
+
+Patch:
+
+  Fedora Security Udpate FEDORA-2018-d553b29a30 (Fedora 27,
+  community-mysql-5.7.21-1.fc27)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-d553b29a30>
+
+Patch:
+
+  Ubuntu Security Notice USN-3537-1
+
+  <https://usn.ubuntu.com/usn/usn-3537-1/>
+
+Patch:
+
+  Ubuntu Security Notice USN-3537-2
+
+  <http://www.ubuntu.com/usn/usn-3537-2/>
+
+Patch:
+
+  openSUSE Security Update openSUSE-SU-2018:0223-1
+
+  <http://lists.opensuse.org/opensuse-updates/2018-01/msg00094.html>
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-394bf4fb5a (Fedora 26,
+  community-mysql-5.7.21-6.fc26)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-394bf4fb5a>
+
+
+CVE-2018-2696: Schwachstelle in Oracle MySQL Server erm=C3=B6glicht
+  Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Server :
+  Security : Privileges) in den unterst=C3=BCtzten Versionen 5.6.38 und 5.7=
+.20
+  sowie den jeweils fr=C3=BCheren existiert eine leicht auszunutzende
+  Schwachstelle, die es einem entfernten, nicht authentisierten Angreifer m=
+it
+  Netzwerkzugriff =C3=BCber verschiedene Protokolle erm=C3=B6glicht, MySQL =
+Server zum
+  H=C3=A4ngen oder wiederholten Absturz zu bringen (kompletter Denial-of-Se=
+rvice,
+  DoS).
+
+
+CVE-2018-2647: Schwachstelle in Oracle MySQL Server erm=C3=B6glicht
+  Denial-of-Service-Angriff und Manipulation von Daten
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Replicati=
+on)
+  in den unterst=C3=BCtzten Versionen 5.6.38 und 5.7.20 sowie den jeweils f=
+r=C3=BCheren
+  existiert eine leicht auszunutzende Schwachstelle, die es einem entfernte=
+n,
+  einfach authentisierten und hoch privilegierten Angreifer mit
+  Netzwerkzugriff =C3=BCber verschiedene Protokolle erm=C3=B6glicht, MySQL =
+Server zum
+  H=C3=A4ngen oder wiederholten Absturz zu bringen (kompletter Denial-of-Se=
+rvice,
+  DoS) oder unautorisiert einige der =C3=BCber MySQL Server zug=C3=A4nglich=
+en Daten zu
+  ver=C3=A4ndern, einzuf=C3=BCgen oder zu l=C3=B6schen.
+
+
+CVE-2018-2645: Schwachstelle in Oracle MySQL Server erm=C3=B6glicht Aussp=
+=C3=A4hen von
+  Informationen
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Performan=
+ce
+  Schema) in den unterst=C3=BCtzten Versionen 5.6.38 und 5.7.20 sowie den j=
+eweils
+  fr=C3=BCheren existiert eine leicht auszunutzende Schwachstelle, die es e=
+inem
+  entfernten, einfach authentisierten und hoch privilegierten Angreifer mit
+  Netzwerkzugriff =C3=BCber verschiedene Protokolle erm=C3=B6glicht, unauto=
+risiert auf
+  kritische Daten oder alle =C3=BCber MySQL Server zug=C3=A4nglichen Daten =
+zuzugreifen
+  und somit Informationen auszusp=C3=A4hen.
+
+
+CVE-2018-2622 CVE-2018-2640 CVE-2018-2665 CVE-2018-2668: Schwachstellen in
+  Oracle MySQL Server erm=C3=B6glichen Denial-of-Service-Angriffe
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponenten: DDL,
+  Optimizer) in den unterst=C3=BCtzten Versionen 5.5.58, 5.6.38 und 5.7.20 =
+sowie
+  den jeweils fr=C3=BCheren existieren mehrere leicht auszunutzende Schwach=
+stellen,
+  die es einem entfernten, einfach authentisierten und niedrig privilegiert=
+en
+  Angreifer mit Netzwerkzugriff =C3=BCber verschiedene Protokolle erm=C3=B6=
+glichen,
+  MySQL Server zum H=C3=A4ngen oder wiederholten Absturz zu bringen (komple=
+tter
+  Denial-of-Service, DoS).
+
+
+CVE-2018-2612: Schwachstelle in Oracle MySQL Server erm=C3=B6glicht
+  Denial-of-Service-Angriff und Manipulation von Daten
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: InnoDB) in
+  den unterst=C3=BCtzten Versionen 5.6.38 und 5.7.20 sowie den jeweils fr=
+=C3=BCheren
+  existiert eine leicht auszunutzende Schwachstelle, die es einem entfernte=
+n,
+  einfach authentisierten und hoch privilegierten Angreifer mit
+  Netzwerkzugriff =C3=BCber verschiedene Protokolle erm=C3=B6glicht, unauto=
+risiert
+  kritische oder alle =C3=BCber MySQL Server zug=C3=A4nglichen Daten zu erz=
+eugen, zu
+  ver=C3=A4ndern oder zu l=C3=B6schen oder MySQL Server zum H=C3=A4ngen ode=
+r wiederholten
+  Absturz zu bringen (kompletter Denial-of-Service, DoS).
+
+
+CVE-2018-2591: Schwachstelle in Oracle MySQL Server erm=C3=B6glicht
+  Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Partition)
+  in den unterst=C3=BCtzten Versionen 5.6.38 und 5.7.19 sowie den jeweils f=
+r=C3=BCheren
+  existiert eine leicht auszunutzende Schwachstelle, die es einem entfernte=
+n,
+  einfach authentisierten und hoch privilegierten Angreifer mit
+  Netzwerkzugriff =C3=BCber verschiedene Protokolle erm=C3=B6glicht, MySQL =
+Server zum
+  H=C3=A4ngen oder wiederholten Absturz zu bringen (kompletter Denial-of-Se=
+rvice,
+  DoS).
+
+
+CVE-2018-2590: Schwachstelle in Oracle MySQL Server erm=C3=B6glicht
+  Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Server:
+  Performance Schema) in den unterst=C3=BCtzten Versionen 5.6.38 und 5.7.20=
+ sowie
+  den jeweils fr=C3=BCheren existiert eine leicht auszunutzende Schwachstel=
+le, die
+  es einem entfernten, einfach authentisierten und hoch privilegierten
+  Angreifer mit Netzwerkzugriff =C3=BCber verschiedene Protokolle erm=C3=B6=
+glicht, MySQL
+  Server zum H=C3=A4ngen oder wiederholten Absturz zu bringen (kompletter
+  Denial-of-Service, DoS).
+
+
+CVE-2018-2585: Schwachstelle in Oracle MySQL Connectors erm=C3=B6glicht
+  Denial-of-Service-Angriff
+
+  In der Komponente MySQL Connectors von Oracle MySQL (Subkomponente:
+  Connector/Net) - unterst=C3=BCtzte betroffene Versionen bis einschlie=C3=
+=9Flich 6.9.9
+  und bis einschlie=C3=9Flich 6.10.4 - existiert eine einfach auszunutzende
+  Schwachstelle. Ein entfernter, nicht authentisierter Angreifer mit
+  Netzwerkzugriff =C3=BCber mehrere Protokolle kann diese Schwachstelle aus=
+nutzen,
+  um MySQL Connectors zu kompromittieren und dadurch MySQL Connectors
+  wiederholt zum H=C3=A4ngen oder zum Absturz zu bringen (kompletter
+  Denial-of-Service, DOS).
+
+
+CVE-2018-2583: Schwachstelle in Oracle MySQL Server erm=C3=B6glicht
+  Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Stored
+  Procedure) in den unterst=C3=BCtzten Versionen 5.6.38 und 5.7.20 sowie den
+  jeweils fr=C3=BCheren existiert eine leicht auszunutzende Schwachstelle, =
+die es
+  einem entfernten, einfach authentisierten und hoch privilegierten Angreif=
+er
+  mit Netzwerkzugriff =C3=BCber verschiedene Protokolle erm=C3=B6glicht, My=
+SQL Server
+  zum H=C3=A4ngen oder wiederholten Absturz zu bringen (kompletter
+  Denial-of-Service, DoS).
+
+
+CVE-2018-2573 CVE-2018-2703: Schwachstellen in Oracle MySQL Server
+  erm=C3=B6glichen Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponenten: GIS,
+  Security : Privileges) in den unterst=C3=BCtzten Versionen 5.6.38 und 5.7=
+.20
+  sowie den jeweils fr=C3=BCheren existieren zwei leicht auszunutzende
+  Schwachstellen, die einem entfernten, einfach authentisierten und niedrig
+  privilegierten Angreifer mit Netzwerkzugriff =C3=BCber verschiedene Proto=
+kolle
+  erm=C3=B6glichen, MySQL Server zum H=C3=A4ngen oder wiederholten Absturz =
+zu bringen
+  (kompletter Denial-of-Service, DoS).
+
+
+CVE-2018-2565 CVE-2018-2576 CVE-2018-2586 CVE-2018-2600 CVE-2018-2646
+  CVE-2018-2667: Schwachstellen in Oracle MySQL Server erm=C3=B6glichen
+  Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponenten: DML,
+  InnoDB, Optimizer) in den unterst=C3=BCtzten Versionen 5.7.20 und fr=C3=
+=BCheren
+  existieren mehrere leicht auszunutzende Schwachstellen, die es einem
+  entfernten, einfach authentisierten und hoch privilegierten Angreifer mit
+  Netzwerkzugriff =C3=BCber verschiedene Protokolle erm=C3=B6glichen, MySQL=
+ Server zum
+  H=C3=A4ngen oder wiederholten Absturz zu bringen (kompletter Denial-of-Se=
+rvice,
+  DoS).
+
+
+CVE-2018-2562: Schwachstelle in Oracle MySQL Server erm=C3=B6glicht u.a.
+  Denial-of-Service-Angriff
+
+  In der Komponente MySQL Server von Oracle MySQL (Subkomponente: Server :
+  Partition) in den unterst=C3=BCtzten Versionen 5.5.58, 5.6.38 und 5.7.19 =
+sowie
+  den jeweils fr=C3=BCheren existiert eine leicht auszunutzende Schwachstel=
+le, die
+  es einem entfernten, einfach authentisierten und niedrig privilegierten
+  Angreifer mit Netzwerkzugriff =C3=BCber verschiedene Protokolle erm=C3=B6=
+glicht, MySQL
+  Server zum H=C3=A4ngen oder wiederholten Absturz zu bringen (kompletter
+  Denial-of-Service, DoS) oder unautorisiert einige der =C3=BCber MySQL Ser=
+ver
+  zug=C3=A4nglichen Daten zu ver=C3=A4ndern, einzuf=C3=BCgen und zu l=C3=B6=
+schen.
+
+
+CVE-2017-3738: Schwachstelle in OpenSSL erm=C3=B6glicht Aussp=C3=A4hen von
+  Informationen
+
+  Die zur Potenzierung von 1024-Bit Feldern verwendete 'AVX2 Montgomery
+  Mltiplication' Prozedur enth=C3=A4lt eine Puffer-=C3=9Cberlauf-Schwachste=
+lle (Overflow
+  Bug), die zu Angriffen gegen DH1024 (Diffie Hellman) ausgenutzt werden ka=
+nn.
+  Elliptic-Curve-Algorithmen sind nicht gef=C3=A4hrdet und Angriffe gegen R=
+SA und
+  DSA w=C3=A4ren mit unverh=C3=A4ltnism=C3=A4=C3=9Fig gro=C3=9Fem Aufwand v=
+erbunden. Ein entfernter,
+  nicht authentisierter Angreifer kann diese Schwachstelle ausnutzen, dadur=
+ch
+  private Schl=C3=BCssel ermitteln und in der Folge Informationen aussp=C3=
+=A4hen. Die
+  Schwachstelle betrifft Prozessoren die =C3=BCber den erweiterten Befehlss=
+atz AVX2
+  verf=C3=BCgen, wie z.B. Intel Haswell.
+
+
+CVE-2017-3737: Schwachstelle in OpenSSL erm=C3=B6glicht Umgehung von
+  Sicherheitsvorkehrungen
+
+  OpenSSL enth=C3=A4lt eine Schwachstelle, die auf einer fehlerhaften
+  Implementierung der 'error state' Prozedur in den Funktionen 'SSL_read' u=
+nd
+  'SSL_write' beruht. In der Folge werden Informationen am 'SSL/TLS
+  record-layer' u.a. nicht mehr verschl=C3=BCsselt, sofern eine fehlerhafte
+  Software diese Funktionen nach Auftreten eines Fehlers erneut aufruft. Ein
+  entfernter, nicht authentisierter Angreifer kann die Schwachstelle ausnut=
+zen
+  und dadurch beispielsweise Informationen aussp=C3=A4hen.
+  =
+
+  Im Kontext von Oracle MySQL betrifft diese Schwachstelle die Komponente
+  Server: Packaging (OpenSSL) des Produktes MySQL Server und erm=C3=B6glich=
+t dem
+  Angreifer das Aussp=C3=A4hen von Informationen.
+
+
+CVE-2017-3736: Schwachstelle in OpenSSL erm=C3=B6glicht Aussp=C3=A4hen von
+  Informationen
+
+  In der 'Montgomery Squaring' Prozedur auf x86_64-Architekturen existiert
+  eine Schwachstelle aufgrund einer fehlerhaften Berechnung in der Funktion
+  'bn_sqrx8x_internal'. Elliptic Curve Algorithmen sind davon nicht betroff=
+en
+  und auch Angriffe gegen RSA und DSA werden als sehr schwierig und deshalb
+  als wenig wahrscheinlich angesehen. Dagegen erscheinen Angriffe gegen Dif=
+fie
+  Hellman (DH) m=C3=B6glich, wenn persistente DH-Parameter verwendet und pr=
+ivate
+  Schl=C3=BCssel von vielen Clients geteilt werden. Ein entfernter, nicht
+  authentisierter Angreifer, der Online-Zugriff auf ein angreifbares System
+  hat, kann diese Schwachstelle ausnutzen, um private Schl=C3=BCssel zu erm=
+itteln
+  und damit sensible Informationen auszusp=C3=A4hen. Von der Schwachstelle
+  betroffen sind nur Prozessoren, die BMI1-, BMI2- und ADX-Erweiterungen
+  unterst=C3=BCtzen, wie Intel Broadwell (5th Generation) und sp=C3=A4tere =
+oder AMD
+  Ryzen. Diese Schwachstelle ist der in OpenSSL 1.0.2e behobenen CVE-2015-3=
+193
+  sowie der in OpenSSL 1.0.2k behobenen CVE-2017-3732 sehr =C3=A4hnlich, mu=
+ss aber
+  gesondert behandelt werden.
+  =
+
+  Im Kontext von Oracle MySQL betrifft diese Schwachstelle die Komponente
+  Connector/ODBC (OpenSSL) des Produktes MySQL Connectors, die Komponente
+  Monitoring: General (OpenSSL) des Produktes MySQL Enterprise Monitor sowie
+  die Komponente Core (OpenSSL) des Produktes VM VirtualBox.
+
+
+CVE-2017-12617: Schwachstelle in Apache Tomcat erm=C3=B6glicht Ausf=C3=BChr=
+ung
+  beliebigen Programmcodes
+
+  Eine Schwachstelle im Apache Tomcat basiert auf einem nicht n=C3=A4her
+  beschriebenen Fehler im Kontext der erlaubten Benutzung von 'HTTP PUT'. D=
+ie
+  Verwendung von 'HTTP PUT' wird beispielsweise durch das Setzen des
+  'readonly' Initialisierungsparameters des Default Servlets auf 'false'
+  erlaubt. Die Schwachstelle erm=C3=B6glicht einem entfernten, nicht
+  authentisierten Angreifer =C3=BCber speziell pr=C3=A4parierte Anfragen da=
+s Hochladen
+  beliebiger JSP-Dateien auf das Server-System. Diese JSP-Dateien k=C3=B6nn=
+en
+  anschlie=C3=9Fend angefragt werden, wodurch der enthaltene Programmcode d=
+urch das
+  Server-System zur Ausf=C3=BChrung gebracht wird.
+  =
+
+  Im Kontext von Oracle MySQL betrifft diese Schwachstelle die Komponente
+  Monitoring: General (Apache Tomcat) des Produktes MySQL Enterprise Monito=
+r.
+  Im Kontext der Oracle Fusion Middleware betrifft die Schwachstelle die
+  Komponenten Oracle Endeca Information Discovery Integrator und Oracle Tux=
+edo
+  System and Applications Monitor.
+
+
+CVE-2017-3735: Schwachstelle in OpenSSL erm=C3=B6glicht Darstellen falscher
+  Informationen
+
+  Bei der Verarbeitung einer IPAdressFamily-Extension eines X.509-Zertifika=
+ts
+  kann es zum Zugriff auf ein Byte au=C3=9Ferhalb des zugewiesenen Speicher=
+bereichs
+  kommen. Ein entfernter, nicht authentisierter Angreifer kann eine
+  Schwachstelle in OpenSSL ausnutzen, um falsche Informationen in der
+  Textansicht eines X.509-Zertifikats darzustellen. Da die Herkunft der
+  Informationen in einem nicht daf=C3=BCr vorgesehenen Speicherbereich lieg=
+t,
+  lassen sich dadurch m=C3=B6glicherweise auch Informationen aussp=C3=A4hen.
+
+
+Referenzen:
+
+Dieses Advisory finden Sie auch im DFN-CERT Portal unter:
+  <https://portal.cert.dfn.de/adv/DFN-CERT-2018-0101/>
+
+Schwachstelle CVE-2017-3735 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-3735>
+
+Schwachstelle CVE-2017-12617 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-12617>
+
+Schwachstelle CVE-2017-3736 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-3736>
+
+Schwachstelle CVE-2017-3737 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-3737>
+
+Schwachstelle CVE-2017-3738 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2017-3738>
+
+MySQL 5.5.59 Changelog:
+  <https://dev.mysql.com/doc/relnotes/mysql/5.5/en/news-5-5-59.html>
+
+MySQL 5.6.39 Changelog:
+  <https://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-39.html>
+
+MySQL 5.7.21 Changelog:
+  <https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-21.html>
+
+Oracle Critical Patch Update Advisory Januar 2018 - CPUJan2018 (Oracle MySQ=
+L):
+  <http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.h=
+tml#AppendixMSQL>
+
+Oracle CPUJan2018 Risk Matrix - Oracle MySQL:
+  <http://www.oracle.com/technetwork/security-advisory/cpujan2018verbose-32=
+36630.html#MSQL>
+
+Schwachstelle CVE-2018-2562 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2562>
+
+Schwachstelle CVE-2018-2565 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2565>
+
+Schwachstelle CVE-2018-2573 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2573>
+
+Schwachstelle CVE-2018-2576 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2576>
+
+Schwachstelle CVE-2018-2583 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2583>
+
+Schwachstelle CVE-2018-2585 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2585>
+
+Schwachstelle CVE-2018-2586 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2586>
+
+Schwachstelle CVE-2018-2590 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2590>
+
+Schwachstelle CVE-2018-2591 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2591>
+
+Schwachstelle CVE-2018-2600 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2600>
+
+Schwachstelle CVE-2018-2612 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2612>
+
+Schwachstelle CVE-2018-2622 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2622>
+
+Schwachstelle CVE-2018-2640 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2640>
+
+Schwachstelle CVE-2018-2645 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2645>
+
+Schwachstelle CVE-2018-2646 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2646>
+
+Schwachstelle CVE-2018-2647 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2647>
+
+Schwachstelle CVE-2018-2665 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2665>
+
+Schwachstelle CVE-2018-2667 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2667>
+
+Schwachstelle CVE-2018-2668 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2668>
+
+Schwachstelle CVE-2018-2696 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2696>
+
+Schwachstelle CVE-2018-2703 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-2703>
+
+Debian Security Advisory DSA-4091-1:
+  <https://www.debian.org/security/2018/dsa-4091>
+
+Fedora Security Udpate FEDORA-2018-d553b29a30 (Fedora 27,
+community-mysql-5.7.21-1.fc27):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-d553b29a30>
+
+Ubuntu Security Notice USN-3537-1:
+  <https://usn.ubuntu.com/usn/usn-3537-1/>
+
+Ubuntu Security Notice USN-3537-2:
+  <http://www.ubuntu.com/usn/usn-3537-2/>
+
+openSUSE Security Update openSUSE-SU-2018:0223-1:
+  <http://lists.opensuse.org/opensuse-updates/2018-01/msg00094.html>
+
+Fedora Security Update FEDORA-2018-394bf4fb5a (Fedora 26,
+community-mysql-5.7.21-6.fc26):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-394bf4fb5a>
+
+
+(c) DFN-CERT Services GmbH, all rights reserved!
+Die Weiterverbreitung ist mit Hinweis auf den Copyrightinhaber innerhalb der
+eigenen Einrichtung erlaubt. Eine dar=C3=BCber hinausgehende Verbreitung be=
+darf
+des schriftlichen Einverst=C3=A4ndnisses des Rechteinhabers.
+
+--===============0439729992124526319==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExDzANBglghkgBZQMEAgEFADCABgkqhkiG9w0BBwEAAKCCEMYw
+ggUSMIID+qADAgECAgkA4wvV+K8l2YEwDQYJKoZIhvcNAQELBQAwgYIxCzAJBgNVBAYTAkRFMSsw
+KQYDVQQKDCJULVN5c3RlbXMgRW50ZXJwcmlzZSBTZXJ2aWNlcyBHbWJIMR8wHQYDVQQLDBZULVN5
+c3RlbXMgVHJ1c3QgQ2VudGVyMSUwIwYDVQQDDBxULVRlbGVTZWMgR2xvYmFsUm9vdCBDbGFzcyAy
+MB4XDTE2MDIyMjEzMzgyMloXDTMxMDIyMjIzNTk1OVowgZUxCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+EzxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsTB0RGTi1QS0kxLTArBgNVBAMTJERGTi1WZXJlaW4gQ2VydGlmaWNhdGlv
+biBBdXRob3JpdHkgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMtg1/9moUHN0vqH
+l4pzq5lN6mc5WqFggEcVToyVsuXPztNXS43O+FZsFVV2B+pG/cgDRWM+cNSrVICxI5y+NyipCf8F
+XRgPxJiZN7Mg9mZ4F4fCnQ7MSjLnFp2uDo0peQcAIFTcFV9Kltd4tjTTwXS1nem/wHdN6r1ZB+Ba
+L2w8pQDcNb1lDY9/Mm3yWmpLYgHurDg0WUU2SQXaeMpqbVvAgWsRzNI8qIv4cRrKO+KA3Ra0Z3qL
+NupOkSk9s1FcragMvp0049ENF4N1xDkesJQLEvHVaY4l9Lg9K7/AjsMeO6W/VRCrKq4Xl14zzsjz
+9AkH4wKGMUZrAcUQDBHHWekCAwEAAaOCAXQwggFwMA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQU
+k+PYMiba1fFKpZFK4OpL4qIMz+EwHwYDVR0jBBgwFoAUv1kgNgB5oKAia4zV8mHSuCzLgkowEgYD
+VR0TAQH/BAgwBgEB/wIBAjAzBgNVHSAELDAqMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGC
+LB4wCAYGZ4EMAQICMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6Ly9wa2kwMzM2LnRlbGVzZWMuZGUv
+cmwvVGVsZVNlY19HbG9iYWxSb290X0NsYXNzXzIuY3JsMIGGBggrBgEFBQcBAQR6MHgwLAYIKwYB
+BQUHMAGGIGh0dHA6Ly9vY3NwMDMzNi50ZWxlc2VjLmRlL29jc3ByMEgGCCsGAQUFBzAChjxodHRw
+Oi8vcGtpMDMzNi50ZWxlc2VjLmRlL2NydC9UZWxlU2VjX0dsb2JhbFJvb3RfQ2xhc3NfMi5jZXIw
+DQYJKoZIhvcNAQELBQADggEBAIcL/z4Cm2XIVi3WO5qYi3FP2ropqiH5Ri71sqQPrhE4eTizDnS6
+dl2e6BiClmLbTDPo3flq3zK9LExHYFV/53RrtCyD2HlrtrdNUAtmB7Xts5et6u5/MOaZ/SLick0+
+hFvu+c+Z6n/XUjkurJgARH5pO7917tALOxrN5fcPImxHhPalR6D90Bo0fa3SPXez7vTXTf/D6OWS
+T1k+kEcQSrCFWMBvf/iu7QhCnh7U3xQuTY+8npTD5+32GPg8SecmqKc22CzeIs2LgtjZeOJVEqM7
+h0S2EQvVDFKvaYwPBt/QolOLV5h7z/0HJPT8vcP9SpIClxvyt7bPZYoaorVyGTkwggWsMIIElKAD
+AgECAgcbY7rQHiw9MA0GCSqGSIb3DQEBCwUAMIGVMQswCQYDVQQGEwJERTFFMEMGA1UEChM8VmVy
+ZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYu
+MRAwDgYDVQQLEwdERk4tUEtJMS0wKwYDVQQDEyRERk4tVmVyZWluIENlcnRpZmljYXRpb24gQXV0
+aG9yaXR5IDIwHhcNMTYwNTI0MTEzODQwWhcNMzEwMjIyMjM1OTU5WjCBjTELMAkGA1UEBhMCREUx
+RTBDBgNVBAoMPFZlcmVpbiB6dXIgRm9lcmRlcnVuZyBlaW5lcyBEZXV0c2NoZW4gRm9yc2NodW5n
+c25ldHplcyBlLiBWLjEQMA4GA1UECwwHREZOLVBLSTElMCMGA1UEAwwcREZOLVZlcmVpbiBHbG9i
+YWwgSXNzdWluZyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ07eRxH3h+Gy8Zp
+1xCeOdfZojDbchwFfylfS2jxrRnWTOFrG7ELf6Gr4HuLi9gtzm6IOhDuV+UefwRRNuu6cG1joL6W
+LkDh0YNMZj0cZGnlm6Stcq5oOVGHecwX064vXWNxSzl660Knl5BpBb+Q/6RAcL0D57+eGIgfn5mI
+TQ5HjUhfZZkQ0tkqSe3BuS0dnxLLFdM/fx5ULzquk1enfnjK1UriGuXtQX1TX8izKvWKMKztFwUk
+P7agCwf9TRqaA1KgNpzeJIdl5Of6x5ZzJBTN0OgbaJ4YWa52fvfRCng8h0uwN89Tyjo4EPPLR22M
+ZD08WkVKusqAfLjz56dMTM0CAwEAAaOCAgUwggIBMBIGA1UdEwEB/wQIMAYBAf8CAQEwDgYDVR0P
+AQH/BAQDAgEGMCkGA1UdIAQiMCAwDQYLKwYBBAGBrSGCLB4wDwYNKwYBBAGBrSGCLAEBBDAdBgNV
+HQ4EFgQUazqYi/nyU4na4K2yMh4JH+iqO3QwHwYDVR0jBBgwFoAUk+PYMiba1fFKpZFK4OpL4qIM
+z+EwgY8GA1UdHwSBhzCBhDBAoD6gPIY6aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9v
+dC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDBAoD6gPIY6aHR0cDovL2NkcDIucGNhLmRmbi5kZS9n
+bG9iYWwtcm9vdC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB3QYIKwYBBQUHAQEEgdAwgc0wMwYI
+KwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBKBggrBgEF
+BQcwAoY+aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9vdC1nMi1jYS9wdWIvY2FjZXJ0
+L2NhY2VydC5jcnQwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXJv
+b3QtZzItY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCBeEWkTqR/
+DlXwCbFqPnjMaDWpHPOVnj/z+N9rOHeJLI21rT7H8pTNoAauusyosa0zCLYkhmI2THhuUPDVbmCN
+T1IxQ5dGdfBi5G5mUcFCMWdQ5UnnOR7Ln8qGSN4IFP8VSytmm6A4nwDO/afr0X9XLchMX9wQEZc+
+lgQCXISoKTlslPwQkgZ7nu7YRrQbtQMMONncsKk/cQYLsgMHM8KNSGMlJTx6e1du94oFOO+4oK4v
+9NsH1VuEGMGpuEvObJAaguS5Pfp38dIfMwK/U+d2+dwmJUFvL6Yb+qQTkPp8ftkLYF3sv8pBoGH7
+EUkp2KgtdRXYShjqFu9VNCIaE40GMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3
+DQEBCwUAMIGNMQswCQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVp
+bmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUw
+IwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIw
+MTIwNDExNDExN1owgaIxCzAJBgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdI
+YW1idXJnMR8wHQYDVQQKDBZERk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAb
+BgNVBAMMFEdSUDogREZOLUNFUlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNl
+cnQuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0
+Yw0ZS9sOZLRfN6nFe6HOj8AzNO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZP
+juBRtsi+hKSvncR7oCNPDigsGbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVm
+W27fs5I61rP66DkqgrRXZh0wAZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvt
+sAJ2VXFhNNbtRY9XTDXi/Yar5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoG
+eUKrwG5TQM9FAgMBAAGjggJDMIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYB
+BAGBrSGCLAEBBAMGMBEGDysGAQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIG
+wDATBgNVHSUEDDAKBggrBgEFBQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYD
+VR0jBBgwFoAUazqYi/nyU4na4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0
+LmRlMIGNBgNVHR8EgYUwgYIwP6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWds
+b2JhbC1nMi9wdWIvY3JsL2NhY3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9k
+Zm4tY2EtZ2xvYmFsLWcyL3B1Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggr
+BgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9i
+YWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsX
+u7Gk4M32/Rs2jdf9rTw3/AagmeXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JH
+hwv5JSdyzM2/pG63uRi/WJ7zVYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB
+8Qb+p3YVTa9vcnmNpci1SYtM9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqoo
+GuMgkeB5hi2xUcxKhR8uUYhNftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYF
+S2sAbrrt2PhOtTHm5o51SbfIMYICYDCCAlwCAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+DDxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsMB0RGTi1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3Vp
+bmcgQ0ECDB5GA2zY8pjckgclSzANBglghkgBZQMEAgEFAKCBkzAYBgkqhkiG9w0BCQMxCwYJKoZI
+hvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xODAyMjgxNzUwMjZaMCgGCSqGSIb3DQEJDzEbMBkwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMC8GCSqGSIb3DQEJBDEiBCArfs6uIn7xN7sxjnHkWdh5ANmD
+VhPrudFXZ5p329JEIDANBgkqhkiG9w0BAQEFAASCAQBjcNjAhpp4jiqBe0KWJhlsqXKaipEUZxe2
+V+7I59VBVGapwsNOiqPtyS6/SxQoiqZUDr733oskPEq1wXHlnoRbh0dI53JgfidvuMsJwaXubNmU
+Vaga/7fb3BnaDaQIsFC04M83YNfoUZyDxGPYol1B3tc94kUSoAzXZMt5Z7IYIfyuz/xkJ7aQtpTS
+Ujzk9laGSuVABRMXXXHZ98fHR2Lye6QyEDcaRwgigQGFZHRCIEzxru5h/wHL4Vjmzvpn+qROcz6x
+QsM697NxzrCQjbS0cQjgMduUJqWtdvYq8Qn6482qg+1uFl8MxEwbuTR2u8GzwAwDvxCLHl6rp3g/
+m2pKAAAAAAAA
+
+--===============0439729992124526319==--

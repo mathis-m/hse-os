@@ -1,0 +1,307 @@
+Received: from mail.hs-esslingen.de (134.108.32.78) by exsmtp1.hs-esslingen.de
+ (134.108.29.105) with Microsoft SMTP Server (TLS) id 14.3.382.0; Thu, 1 Mar
+ 2018 17:20:46 +0100
+Received: by mail.hs-esslingen.de (Postfix)	id 06D3025A1D; Thu,  1 Mar 2018
+ 17:20:46 +0100 (CET)
+Delivered-To: rz+certapple@hs-esslingen.de
+Received: from localhost (localhost.localdomain [127.0.0.1])	by
+ mail.hs-esslingen.de (Postfix) with ESMTP id F050C25A1C	for
+ <rz+certapple@hs-esslingen.de>; Thu,  1 Mar 2018 17:20:45 +0100 (CET)
+X-Virus-Scanned: by amavisd-new-2.6.5 (20110407) (Debian) at hs-esslingen.de
+X-Spam-Flag: NO
+X-Spam-Score: -4.21
+X-Spam-Level:
+X-Spam-Status: No, score=-4.21 tagged_above=-12 required=3.51
+	tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, T_RP_MATCHES_RCVD=-0.01]
+	autolearn=ham
+Received: from mail.hs-esslingen.de ([127.0.0.1])	by localhost
+ (hs-esslingen.de [127.0.0.1]) (amavisd-new, port 10024)	with ESMTP id
+ hk0S8zCOfKSv for <rz+certapple@hs-esslingen.de>;	Thu,  1 Mar 2018 17:20:45
+ +0100 (CET)
+Received: from mail2.dfn-cert.de (mail2.dfn-cert.de [193.174.13.207])	(using
+ TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))	(No client certificate
+ requested)	by mail.hs-esslingen.de (Postfix) with ESMTPS	for
+ <rz+certapple@hs-esslingen.de>; Thu,  1 Mar 2018 17:20:45 +0100 (CET)
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+	micalg=SHA256; boundary="===============8476002856043539254=="
+From: DFN-CERT <portal@dfn-cert.de>
+Subject: =?utf-8?q?DFN-CERT-2018-0409_PostgreSQL=3A_Eine_Schwachstelle_erm=C3=B6glicht_die_Eskalation_von_Privilegien_=5BLinux=5D=5BFedora=5D=5BUnix=5D=5BFreeBSD=5D=5BApple=5D=5BOpenBSD=5D=5BSolaris=5D?=
+Date: Thu, 1 Mar 2018 16:20:02 +0000
+To: <rz+certapple@hs-esslingen.de>
+Message-ID: <20180301162044.B188A2E050D@mail2.dfn-cert.de>
+Return-Path: dfn-adv-bounces@dfn-cert.de
+X-MS-Exchange-Organization-AuthSource: rznt8102.rznt.rzdir.fht-esslingen.de
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AVStamp-Mailbox: Sophos;-1017342;0;PM
+MIME-Version: 1.0
+
+--===============8476002856043539254==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Liebe Kolleginnen und Kollegen,
+
+bitte beachten Sie die folgende Sicherheitsmeldung.
+
+Betroffene Software:
+
+  PostgreSQL < 9.3.22
+  PostgreSQL < 9.4.17
+  PostgreSQL < 9.5.12
+  PostgreSQL < 9.6.8
+  PostgreSQL < 10.3
+  =
+
+
+Betroffene Plattformen:
+
+  Apple macOS
+  FreeBSD
+  GNU/Linux
+  OpenBSD
+  Oracle Solaris
+  Red Hat Fedora 26
+  Red Hat Fedora 27
+  =
+
+
+
+Ein entfernter, einfach authentifizierter Angreifer kann eine Schwachstelle
+in PostgreSQL ausnutzen, um die beabsichtigten Funktionen von PostgreSQL zu
+=C3=A4ndern. Der Angreifer muss dazu ein Objekt im Schema 'public' erstelle=
+n und
+einen Benutzer der Software zum Zugriff auf ein gleichnamiges Objekt aus
+einem anderen Namensraum verleiten oder auf die Verwendung eines solchen
+Objekts warten. Ist der Benutzer Administrator, kann der Angreifer so
+beispielsweise seine Privilegien im Kontext von PostgreSQL beliebig
+eskalieren.
+
+Die PostgreSQL Global Development Group informiert =C3=BCber die Schwachste=
+lle in
+allen aktuellen Versionen von PostgreSQL und stellt die Versionen 10.3,
+9.6.8, 9.5.12, 9.4.17 und 9.3.22 als Sicherheitsupdates bereit.
+
+F=C3=BCr Fedora 26 und 27 stehen Sicherheitsupdates auf die Version 9.6.8 im
+Status 'pending' zur Verf=C3=BCgung.
+
+
+Workaround:
+
+  Der Hersteller gibt verschiedene L=C3=B6sungsans=C3=A4tze zum Schutz von
+  PostgreSQL-Datenbanken an, die alternativ zu Sicherheitsupdates angewendet
+  werden k=C3=B6nnen. Zum einen kann Benutzern der Zugriff auf das Schema '=
+public'
+  verweigert werden, zum anderen kann der PostgreSQL-Suchpfad auf zwei Arten
+  angepasst werden. Weitere Informationen dazu finden sich in der Referenz =
+'A
+  Guide to CVE-2018-1058: Protect Your Search Path'.
+
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-2999cf6426 (Fedora 26,
+  postgresql-9.6.8-1.fc26)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-2999cf6426>
+
+Patch:
+
+  Fedora Security Update FEDORA-2018-a32082df51 (Fedora 27,
+  postgresql-9.6.8-1.fc27)
+
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-a32082df51>
+
+Patch:
+
+  PostgreSQL 10.3 Release Notes
+
+  <https://www.postgresql.org/docs/10/static/release-10-3.html>
+
+Patch:
+
+  PostgreSQL 9.4.17 Release Notes
+
+  <https://www.postgresql.org/docs/9.4/static/release-9-4-17.html>
+
+Patch:
+
+  PostgreSQL 9.5.12 Release Notes
+
+  <https://www.postgresql.org/docs/9.5/static/release-9-5-12.html>
+
+Patch:
+
+  PostgreSQL 9.6.8 Release Notes
+
+  <https://www.postgresql.org/docs/9.6/static/release-9-6-8.html>
+
+Patch:
+
+  PostgreSQL Release Notes 9.3.22
+
+  <https://www.postgresql.org/docs/9.3/static/release-9-3-22.html>
+
+
+CVE-2018-1058: Schwachstelle in PostgreSQL erm=C3=B6glicht Privilegieneskal=
+ation
+
+  In PostgreSQL wurden beginnend mit Version 7.3 'schemas' eingef=C3=BChrt,=
+ welche
+  es Benutzern erlauben Objekte wie Tabellen oder Funktionen in
+  unterschiedlichen Namensr=C3=A4umen zu erstellen. Bei Einrichtung von Pos=
+tgreSQL
+  wird standardm=C3=A4=C3=9Fig das Schema 'public' angelegt, in dem als Vor=
+einstellung
+  alle neuen Objekte angelegt werden. Jeder Benutzer hat in unver=C3=A4nder=
+ten
+  Konfigurationen Zugriff auf dieses Schema. Durch ein Problem mit der Art =
+und
+  Weise, wie PostgreSQL den Suchpfad verwendet, um Objekte zu finden, kann =
+es
+  bei gleichnamigen Objekten in verschiedenen Namensr=C3=A4umen zu einer fa=
+lschen
+  Priorisierung kommen, so dass ein nicht daf=C3=BCr vorgesehenes Objekt f=
+=C3=BCr die
+  Ausf=C3=BChrung einer bestimmten Aktion verwendet wird.
+
+
+Referenzen:
+
+Dieses Advisory finden Sie auch im DFN-CERT Portal unter:
+  <https://portal.cert.dfn.de/adv/DFN-CERT-2018-0409/>
+
+Fedora Security Update FEDORA-2018-2999cf6426 (Fedora 26,
+postgresql-9.6.8-1.fc26):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-2999cf6426>
+
+Fedora Security Update FEDORA-2018-a32082df51 (Fedora 27,
+postgresql-9.6.8-1.fc27):
+  <https://bodhi.fedoraproject.org/updates/FEDORA-2018-a32082df51>
+
+PostgreSQL 10.3 Release Notes:
+  <https://www.postgresql.org/docs/10/static/release-10-3.html>
+
+PostgreSQL 9.4.17 Release Notes:
+  <https://www.postgresql.org/docs/9.4/static/release-9-4-17.html>
+
+PostgreSQL 9.5.12 Release Notes:
+  <https://www.postgresql.org/docs/9.5/static/release-9-5-12.html>
+
+PostgreSQL 9.6.8 Release Notes:
+  <https://www.postgresql.org/docs/9.6/static/release-9-6-8.html>
+
+PostgreSQL Release Notes 9.3.22:
+  <https://www.postgresql.org/docs/9.3/static/release-9-3-22.html>
+
+A Guide to CVE-2018-1058: Protect Your Search Path:
+  <https://wiki.postgresql.org/wiki/A_Guide_to_CVE-2018-1058:_Protect_Your_=
+Search_Path>
+
+PosgreSQL 2018-03-01 Security Update Release:
+  <https://www.postgresql.org/about/news/1834/>
+
+Schwachstelle CVE-2018-1058 (NVD):
+  <http://web.nvd.nist.gov/view/vuln/detail?vulnId=3DCVE-2018-1058>
+
+
+(c) DFN-CERT Services GmbH, all rights reserved!
+Die Weiterverbreitung ist mit Hinweis auf den Copyrightinhaber innerhalb der
+eigenen Einrichtung erlaubt. Eine dar=C3=BCber hinausgehende Verbreitung be=
+darf
+des schriftlichen Einverst=C3=A4ndnisses des Rechteinhabers.
+
+--===============8476002856043539254==
+Content-Transfer-Encoding: base64
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExDzANBglghkgBZQMEAgEFADCABgkqhkiG9w0BBwEAAKCCEMYw
+ggUSMIID+qADAgECAgkA4wvV+K8l2YEwDQYJKoZIhvcNAQELBQAwgYIxCzAJBgNVBAYTAkRFMSsw
+KQYDVQQKDCJULVN5c3RlbXMgRW50ZXJwcmlzZSBTZXJ2aWNlcyBHbWJIMR8wHQYDVQQLDBZULVN5
+c3RlbXMgVHJ1c3QgQ2VudGVyMSUwIwYDVQQDDBxULVRlbGVTZWMgR2xvYmFsUm9vdCBDbGFzcyAy
+MB4XDTE2MDIyMjEzMzgyMloXDTMxMDIyMjIzNTk1OVowgZUxCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+EzxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsTB0RGTi1QS0kxLTArBgNVBAMTJERGTi1WZXJlaW4gQ2VydGlmaWNhdGlv
+biBBdXRob3JpdHkgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMtg1/9moUHN0vqH
+l4pzq5lN6mc5WqFggEcVToyVsuXPztNXS43O+FZsFVV2B+pG/cgDRWM+cNSrVICxI5y+NyipCf8F
+XRgPxJiZN7Mg9mZ4F4fCnQ7MSjLnFp2uDo0peQcAIFTcFV9Kltd4tjTTwXS1nem/wHdN6r1ZB+Ba
+L2w8pQDcNb1lDY9/Mm3yWmpLYgHurDg0WUU2SQXaeMpqbVvAgWsRzNI8qIv4cRrKO+KA3Ra0Z3qL
+NupOkSk9s1FcragMvp0049ENF4N1xDkesJQLEvHVaY4l9Lg9K7/AjsMeO6W/VRCrKq4Xl14zzsjz
+9AkH4wKGMUZrAcUQDBHHWekCAwEAAaOCAXQwggFwMA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQU
+k+PYMiba1fFKpZFK4OpL4qIMz+EwHwYDVR0jBBgwFoAUv1kgNgB5oKAia4zV8mHSuCzLgkowEgYD
+VR0TAQH/BAgwBgEB/wIBAjAzBgNVHSAELDAqMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGC
+LB4wCAYGZ4EMAQICMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6Ly9wa2kwMzM2LnRlbGVzZWMuZGUv
+cmwvVGVsZVNlY19HbG9iYWxSb290X0NsYXNzXzIuY3JsMIGGBggrBgEFBQcBAQR6MHgwLAYIKwYB
+BQUHMAGGIGh0dHA6Ly9vY3NwMDMzNi50ZWxlc2VjLmRlL29jc3ByMEgGCCsGAQUFBzAChjxodHRw
+Oi8vcGtpMDMzNi50ZWxlc2VjLmRlL2NydC9UZWxlU2VjX0dsb2JhbFJvb3RfQ2xhc3NfMi5jZXIw
+DQYJKoZIhvcNAQELBQADggEBAIcL/z4Cm2XIVi3WO5qYi3FP2ropqiH5Ri71sqQPrhE4eTizDnS6
+dl2e6BiClmLbTDPo3flq3zK9LExHYFV/53RrtCyD2HlrtrdNUAtmB7Xts5et6u5/MOaZ/SLick0+
+hFvu+c+Z6n/XUjkurJgARH5pO7917tALOxrN5fcPImxHhPalR6D90Bo0fa3SPXez7vTXTf/D6OWS
+T1k+kEcQSrCFWMBvf/iu7QhCnh7U3xQuTY+8npTD5+32GPg8SecmqKc22CzeIs2LgtjZeOJVEqM7
+h0S2EQvVDFKvaYwPBt/QolOLV5h7z/0HJPT8vcP9SpIClxvyt7bPZYoaorVyGTkwggWsMIIElKAD
+AgECAgcbY7rQHiw9MA0GCSqGSIb3DQEBCwUAMIGVMQswCQYDVQQGEwJERTFFMEMGA1UEChM8VmVy
+ZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYu
+MRAwDgYDVQQLEwdERk4tUEtJMS0wKwYDVQQDEyRERk4tVmVyZWluIENlcnRpZmljYXRpb24gQXV0
+aG9yaXR5IDIwHhcNMTYwNTI0MTEzODQwWhcNMzEwMjIyMjM1OTU5WjCBjTELMAkGA1UEBhMCREUx
+RTBDBgNVBAoMPFZlcmVpbiB6dXIgRm9lcmRlcnVuZyBlaW5lcyBEZXV0c2NoZW4gRm9yc2NodW5n
+c25ldHplcyBlLiBWLjEQMA4GA1UECwwHREZOLVBLSTElMCMGA1UEAwwcREZOLVZlcmVpbiBHbG9i
+YWwgSXNzdWluZyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ07eRxH3h+Gy8Zp
+1xCeOdfZojDbchwFfylfS2jxrRnWTOFrG7ELf6Gr4HuLi9gtzm6IOhDuV+UefwRRNuu6cG1joL6W
+LkDh0YNMZj0cZGnlm6Stcq5oOVGHecwX064vXWNxSzl660Knl5BpBb+Q/6RAcL0D57+eGIgfn5mI
+TQ5HjUhfZZkQ0tkqSe3BuS0dnxLLFdM/fx5ULzquk1enfnjK1UriGuXtQX1TX8izKvWKMKztFwUk
+P7agCwf9TRqaA1KgNpzeJIdl5Of6x5ZzJBTN0OgbaJ4YWa52fvfRCng8h0uwN89Tyjo4EPPLR22M
+ZD08WkVKusqAfLjz56dMTM0CAwEAAaOCAgUwggIBMBIGA1UdEwEB/wQIMAYBAf8CAQEwDgYDVR0P
+AQH/BAQDAgEGMCkGA1UdIAQiMCAwDQYLKwYBBAGBrSGCLB4wDwYNKwYBBAGBrSGCLAEBBDAdBgNV
+HQ4EFgQUazqYi/nyU4na4K2yMh4JH+iqO3QwHwYDVR0jBBgwFoAUk+PYMiba1fFKpZFK4OpL4qIM
+z+EwgY8GA1UdHwSBhzCBhDBAoD6gPIY6aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9v
+dC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDBAoD6gPIY6aHR0cDovL2NkcDIucGNhLmRmbi5kZS9n
+bG9iYWwtcm9vdC1nMi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB3QYIKwYBBQUHAQEEgdAwgc0wMwYI
+KwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBKBggrBgEF
+BQcwAoY+aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9vdC1nMi1jYS9wdWIvY2FjZXJ0
+L2NhY2VydC5jcnQwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXJv
+b3QtZzItY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCBeEWkTqR/
+DlXwCbFqPnjMaDWpHPOVnj/z+N9rOHeJLI21rT7H8pTNoAauusyosa0zCLYkhmI2THhuUPDVbmCN
+T1IxQ5dGdfBi5G5mUcFCMWdQ5UnnOR7Ln8qGSN4IFP8VSytmm6A4nwDO/afr0X9XLchMX9wQEZc+
+lgQCXISoKTlslPwQkgZ7nu7YRrQbtQMMONncsKk/cQYLsgMHM8KNSGMlJTx6e1du94oFOO+4oK4v
+9NsH1VuEGMGpuEvObJAaguS5Pfp38dIfMwK/U+d2+dwmJUFvL6Yb+qQTkPp8ftkLYF3sv8pBoGH7
+EUkp2KgtdRXYShjqFu9VNCIaE40GMIIF/DCCBOSgAwIBAgIMHkYDbNjymNySByVLMA0GCSqGSIb3
+DQEBCwUAMIGNMQswCQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVp
+bmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUw
+IwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTE3MTIwNTExNDExN1oXDTIw
+MTIwNDExNDExN1owgaIxCzAJBgNVBAYTAkRFMRAwDgYDVQQIDAdIYW1idXJnMRAwDgYDVQQHDAdI
+YW1idXJnMR8wHQYDVQQKDBZERk4tQ0VSVCBTZXJ2aWNlcyBHbWJIMQwwCgYDVQQLDANJUlQxHTAb
+BgNVBAMMFEdSUDogREZOLUNFUlQgUG9ydGFsMSEwHwYJKoZIhvcNAQkBFhJwb3J0YWxAZGZuLWNl
+cnQuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCECFhysAmTToxz5ASfjrDIjK/0
+Yw0ZS9sOZLRfN6nFe6HOj8AzNO+SGQg9cPSxnmKnvfY/VVfg90TZF29J1q4VI3i94glRC8AMFdZP
+juBRtsi+hKSvncR7oCNPDigsGbAdNlMEExOAvNLJZ/EL8bEt96zc/acTGub0c/VltiVw8TfElnVm
+W27fs5I61rP66DkqgrRXZh0wAZpp6r2Bf6P/AjQ0teBdoeuOZRol0J9c7xeFJCJ/KCFEbgTjkEvt
+sAJ2VXFhNNbtRY9XTDXi/Yar5C5gQ4ryhL2QP4PPWruKlkLCO2kXaQ4Ok50+27n1r9F+XGlsgIoG
+eUKrwG5TQM9FAgMBAAGjggJDMIICPzBABgNVHSAEOTA3MA8GDSsGAQQBga0hgiwBAQQwEQYPKwYB
+BAGBrSGCLAEBBAMGMBEGDysGAQQBga0hgiwCAQQDBjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIG
+wDATBgNVHSUEDDAKBggrBgEFBQcDBDAdBgNVHQ4EFgQUFB93EGIL7SLMR8vfp/qJTAVXrjUwHwYD
+VR0jBBgwFoAUazqYi/nyU4na4K2yMh4JH+iqO3QwHQYDVR0RBBYwFIEScG9ydGFsQGRmbi1jZXJ0
+LmRlMIGNBgNVHR8EgYUwgYIwP6A9oDuGOWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWds
+b2JhbC1nMi9wdWIvY3JsL2NhY3JsLmNybDA/oD2gO4Y5aHR0cDovL2NkcDIucGNhLmRmbi5kZS9k
+Zm4tY2EtZ2xvYmFsLWcyL3B1Yi9jcmwvY2FjcmwuY3JsMIHbBggrBgEFBQcBAQSBzjCByzAzBggr
+BgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEkGCCsGAQUF
+BzAChj1odHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MEkGCCsGAQUFBzAChj1odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9i
+YWwtZzIvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCZppdWLSsdhGsX
+u7Gk4M32/Rs2jdf9rTw3/AagmeXOJu6mi961UdWEuTIBK60+fppPJtQg45ErztSmHKJsOqxWn+JH
+hwv5JSdyzM2/pG63uRi/WJ7zVYz7gem864+7brCQKHPOsb9vCODYbhpeESU3J7RYGiRIbgb8MZuB
+8Qb+p3YVTa9vcnmNpci1SYtM9DQyMjfOK6z8YThivTGB1goulFy0TBcrfCYCYkSKqD/fVHKiwqoo
+GuMgkeB5hi2xUcxKhR8uUYhNftCj/kFBHY3OHJw3z3OBSgBn4d++CbbVZwQOCe/9WMCT0iVAFJYF
+S2sAbrrt2PhOtTHm5o51SbfIMYICYDCCAlwCAQEwgZ4wgY0xCzAJBgNVBAYTAkRFMUUwQwYDVQQK
+DDxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMg
+ZS4gVi4xEDAOBgNVBAsMB0RGTi1QS0kxJTAjBgNVBAMMHERGTi1WZXJlaW4gR2xvYmFsIElzc3Vp
+bmcgQ0ECDB5GA2zY8pjckgclSzANBglghkgBZQMEAgEFAKCBkzAYBgkqhkiG9w0BCQMxCwYJKoZI
+hvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xODAzMDExNjIwMjdaMCgGCSqGSIb3DQEJDzEbMBkwCwYJ
+YIZIAWUDBAECMAoGCCqGSIb3DQMHMC8GCSqGSIb3DQEJBDEiBCCFG6CykQBa9mVZl0UAsjNrrl6Y
+tFEcehRzBDgK8jhQljANBgkqhkiG9w0BAQEFAASCAQBxlulZwxNROY3kAlC3EM+zjkpIIdC5oEHc
+q0TS/qKvlTipdCiseCVqr0M1X2zdGnsPMB5Hl4oMKQFooJB9DRl2sg9/Uto5zsIrKRgFbs9TA9Iu
+nZf1NXi1oacwlF1NSzwwESC/+WIm6ZWus2EPYrY6VKJAa5zQ5m/S4z1pHnRL81LVIfeCGDc/75Qv
+Bbm7aR1HgKOd72uUCGFUeFx5x3GC2qnBoV+rL/i0wMSkL/5M9GOszZeY/8V6qYODyYx6mO5wHB9I
+yC0VuY9jhbxRXbZuzWwrWbdFqOogLgtKm8DApRr4ZAQ5AbHYQgMe45zvdiK+VpmnVvQpPaiTLasa
+WtR6AAAAAAAA
+
+--===============8476002856043539254==--
